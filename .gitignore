@@ -1,7 +1,9 @@
+docs/superpowers/
 __pycache__/
 *.pyc
 *.pyo
 .env
+.claude
 data/raw/
 results/
 *.csv
