@@ -20,6 +20,8 @@ Palta et al. show that LLM-generated rationales systematically shift how LLMs ra
 
 **Extension (Part 2).** In order to test whether LLMs can be swayed in other "expert" level tasks, we constructed a cybersecurity attribution dataset from TRACER (https://github.com/skcoll-umd/TRACER), a labeled Cyber Threat Intelligence (CTI) corpus of 957 Advanced Persistent Threats (APT) reports across 8 nation-state actors (APT28, Turla, APT29, Sandworm, Lazarus Group, menuPass, FIN7, APT34). Each question is a de-identified threat report (actor and malware names redacted, IOCs scrubbed); each choice is an APT group name. Distractors are drawn from the same nation-state nexus where possible (e.g., APT28 vs. Turla vs. APT29 within Russia) to match the genuine confusability of real attribution decisions. The final dataset is 219 reports × 2 choices = 438 rows.
 
+The key question for Part 2 is not whether LLMs are *accurate* at APT attribution — the task is genuinely hard and even human analysts disagree. The question is whether they can be *moved* by a rationale relative to their own NO-baseline rating. This makes the cyber task a useful stress test: on commonsense QA (SIQA/CQA) models have strong priors and may resist sway because they already lean toward the right answer. On APT attribution, models have weaker priors and more uncertainty. If sway is larger in the cyber domain, it suggests rationale influence scales with the rater's underlying uncertainty — a meaningful finding for how AI tools should be used in high-stakes analytical contexts where ground truth is contested.
+
 ---
 
 ## Results
@@ -48,7 +50,7 @@ Known limitations going in:
 - **Rationale source mismatch:** replication uses GPT-4o-generated rationales rather than model-generated ones, which may underestimate sway for models whose own rationales are more persuasive to themselves.
 - **Cyber dataset imbalance:** FIN7 has only 7 usable reports vs. 56 for APT28; effects may be noisy for underrepresented actors.
 - **Distractor validity:** for single-nexus actors (Lazarus, menuPass, APT34, FIN7) distractors are chosen by TTP overlap rather than nation-state nexus — these may be less genuinely confusable than the Russian-actor pairs.
-- **No human baseline:** the paper tests both human and LLM raters; we test LLMs only.
+- **No human baseline:** the paper tests both human and LLM raters; we test LLMs only. This matters especially for the cyber extension — APT attribution is hard enough that human analysts also disagree, but without a human baseline we cannot say whether LLM sway is larger or smaller than what a human analyst would show under the same rationale conditions.
 
 ---
 
