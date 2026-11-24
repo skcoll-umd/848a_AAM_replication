@@ -1,13 +1,13 @@
 # AAM Replication — Arguments that Alter Minds
 
 **Palta, Rankel, Wiegreffe & Rudinger (ACL 2026)**
-**Course:** INST 848a · **Team:** [names]
+**Course:** CMSC 848A · **Team:** [Susan Collins and Mike Ledford]
 
 ---
 
 ## Claim
 
-Palta et al. show that LLM-generated rationales systematically shift how LLMs rate the plausibility of answer choices — PRO rationales inflate ratings, CON rationales suppress them, and the effect is asymmetric by answer type (gold vs. distractor). We test two things: (1) whether this effect replicates on open-weight models run locally, and (2) whether it extends to APT threat attribution, a cybersecurity domain where attribution ambiguity is genuine and high-stakes.
+Palta et al. show that LLM-generated rationales systematically shift how LLMs rate the plausibility of answer choices — PRO rationales inflate ratings, CON rationales suppress them, and the effect is asymmetric by answer type (gold vs. distractor). We test two things: (1) whether this effect replicates on open-weight models run locally, and (2) whether it extends to a more nuanced "experts" setting that uses a cybersecurity task (malware attribution)
 
 ---
 
@@ -15,7 +15,7 @@ Palta et al. show that LLM-generated rationales systematically shift how LLMs ra
 
 **Replication (Part 1).** We ran the paper's LLM-rater pipeline on 50 SIQA and 50 CQA questions using three open-weight models: `qwen3.6:35b`, `gemma4:31b`, and `deepseek-r1:32b`, served locally via Ollama. Each (question, choice) pair was rated under four conditions — NO rationale, PRO only, CON only, PRO+CON — using the exact prompt templates from the paper (Appendix A.5). Rationales were taken from the paper's pre-generated GPT-4o outputs rather than re-generated. We replicate Tables 2/3/4 and violin plots (Figures 2/3).
 
-**Extension (Part 2).** We constructed a cybersecurity attribution dataset from TRACER, a labeled CTI corpus of 957 APT threat reports across 8 nation-state actors (APT28, Turla, APT29, Sandworm, Lazarus Group, menuPass, FIN7, APT34). Each question is a de-identified threat report (actor and malware names redacted, IOCs scrubbed); each choice is an APT group name. Distractors are drawn from the same nation-state nexus where possible (e.g., APT28 vs. Turla vs. APT29 within Russia) to match the genuine confusability of real attribution decisions. The final dataset is 219 reports × 2 choices = 438 rows.
+**Extension (Part 2).** We constructed a cybersecurity attribution dataset from TRACER, a labeled CTI corpus of 957 Advanced Persisten Threats (APT) reports across 8 nation-state actors (APT28, Turla, APT29, Sandworm, Lazarus Group, menuPass, FIN7, APT34). Each question is a de-identified threat report (actor and malware names redacted, IOCs scrubbed); each choice is an APT group name. Distractors are drawn from the same nation-state nexus where possible (e.g., APT28 vs. Turla vs. APT29 within Russia) to match the genuine confusability of real attribution decisions. The final dataset is 219 reports × 2 choices = 438 rows.
 
 ---
 
