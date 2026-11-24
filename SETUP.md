@@ -70,7 +70,7 @@ Rationale generation is required here (no pre-generated rationales).
 ### Analysis
 
 ```bash
-python analysis/run_analysis.py --results-dir results/
+python analysis/analyze.py
 ```
 
 Produces Tables 2/3/4 equivalents and violin plots. Output written to `results/figures/`.
