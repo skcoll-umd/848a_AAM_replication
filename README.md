@@ -1,7 +1,9 @@
 # AAM Replication — Arguments that Alter Minds
 
 **Palta, Rankel, Wiegreffe & Rudinger (ACL 2026)**
+
 **Course:** CMSC 848A
+
 **Team:** Susan Collins and Mike Ledford
 
 ---
