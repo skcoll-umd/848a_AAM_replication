@@ -95,6 +95,19 @@ Output schema: `question, choice, condition, rating, rating_raw, model, answer_l
 
 ---
 
+## Experiment Scale
+
+| Dataset | Questions | Choices/question | Rows | Conditions | Ratings/model |
+|---------|-----------|-----------------|------|------------|---------------|
+| SIQA    | 50        | 2 (gold + distractor) | 100  | 4          | 400           |
+| CQA     | 50        | 2 (gold + distractor) | 100  | 4          | 400           |
+| Cyber   | 219       | 2 (gold + distractor) | 438  | 4          | 1,752         |
+| **Total** | **319** | | **638** | | **2,552/model** |
+
+Three models × 2,552 ratings = **7,656 total ratings**. Part 2 also requires rationale generation (PRO + CON per row = 876 rationale calls per model).
+
+---
+
 ## Part 1 Dataset
 
 **Source:** AAM paper repository (https://github.com/shramay-palta/AAM). Run `prepare_data.py` to regenerate from source:
@@ -132,9 +145,19 @@ Distractors are chosen by **nation-state nexus** where possible — real attribu
 | G0046  | FIN7 | 7 | Criminal |
 | G0049  | APT34 | 16 | Iran |
 
-### Question text
+### Question text format
 
-Each question contains: behavioral narrative (actor/malware redacted), ATT&CK technique IDs, tactic categories, targeted sectors, delivery vectors, and observed tools.
+Each question is a structured block assembled from the extracted JSON fields:
+
+```
+<narrative prose (actor/malware names redacted)>
+ATT&CK techniques observed: T1012, T1016, ... Tactic categories: Collection, Discovery, ...
+Targeted sectors: Defense, Energy, Government.
+Delivery method(s): email, phishing.
+Tools/frameworks observed: powershell.
+```
+
+Fields are only included if present — not every report has delivery vectors or observed tools. The narrative is always required (quality filter enforces this). ATT&CK technique IDs give the rater behavioral signal independent of actor-linked terminology; tactic categories give higher-level framing; sectors and delivery vectors add context a human analyst would use for attribution.
 
 **Scrubbing applied:**
 - Hashes, IPs, hex values → `[HASH]`, `[IP]`, `[HEX]`
