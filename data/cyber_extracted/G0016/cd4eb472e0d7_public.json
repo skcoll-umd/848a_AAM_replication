@@ -1,0 +1,65 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "website"
+  ],
+  "sectors": [
+    "Government",
+    "Media",
+    "Technology"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "beacon",
+      "cloud storage",
+      "command and control",
+      "http",
+      "https"
+    ],
+    "tools": [
+      "powershell"
+    ],
+    "domains": [
+      "29[.]en",
+      "877[.]fireeye",
+      "content[.]usatoday",
+      "doctorhandbook",
+      "doctorhandbook[.]com",
+      "fireeye",
+      "fireeye[.]com",
+      "intego",
+      "j[.]cuolym",
+      "labs[.]bitdefender",
+      "miniduke_paper_final[.]pdf",
+      "reports[.]html",
+      "sp[.]apt",
+      "symantec",
+      "tdiscoverer[.]exe",
+      "twitter",
+      "uploader[.]pdb",
+      "welivesecurity"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "42e6da9a08802b5ce5d1f754d4567665637b47bc",
+      "d3109c83e07dd5d7fe032dc80c581d08"
+    ],
+    "domains": [
+      "doctorhandbook.com",
+      "welivesecurity.com",
+      "labs.bitdefender.com",
+      "intego.com",
+      "content.usatoday.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "In our GitHub example, the decrypted instructions to execute commands via data instructed the backdoor to obtain a list of PowerShell, execute a direct command or running tasks—reconnaissance on the victim file, or save an executable to disk and execute it. The image looks normal, the decrypted commands, which but actually contains hidden may instruct the malware to and encrypted data using 010111101101 Note: The images are conduct reconnaissance, execute steganography. We have broken down the malware primary backdoors to execute commands communication process into five stages •.",
+  "_meta": {
+    "label": "G0016",
+    "doc_id": "cd4eb472e0d7",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2015/2015.07.27.HAMMERTOSS/apt29-hammertoss-stealthy-tactics-define-a.pdf"
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "attachment",
+    "document",
+    "email",
+    "website"
+  ],
+  "sectors": [
+    "Energy",
+    "Government",
+    "Insurance",
+    "Media",
+    "Technology",
+    "Telecom",
+    "Transport"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "c2",
+      "command and control",
+      "dns",
+      "http"
+    ],
+    "tools": [],
+    "domains": [
+      "appeur[.]gnway",
+      "awviewwx[.]exe",
+      "ca-bundle[.]exe",
+      "client[.]mailsecurityservice",
+      "connect[.]php",
+      "ermit[.]jpg",
+      "fxsst[.]dll",
+      "gmail[.]iyouthen",
+      "gov[.]mm",
+      "hjclub",
+      "hjclub[.]info",
+      "iyouthen[.]com",
+      "lsass[.]exe",
+      "mailsecurityservice[.]com",
+      "mcf[.]ep",
+      "mcf[.]exe",
+      "mcutil[.]dll",
+      "moi",
+      "permit[.]zip",
+      "reforms[.]docx",
+      "reforms[.]scr",
+      "reforms[.]zip",
+      "sohu[.]com",
+      "t1[.]mailsecurityservice",
+      "t2[.]mailsecurityservice",
+      "uecmyanmar",
+      "usacia[.]websecexp",
+      "usafbi[.]websecexp",
+      "webhttps[.]websecexp",
+      "xlbug[.]dat",
+      "xlbughandler[.]dll",
+      "zxishanchu1106[.]exe"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "884d46c01c762ad6ddd2759fd921bf71",
+      "15c926d2602f65be0de65fa9c06aa6c6",
+      "53f81415ccedf453d6e3ebcdc142b966",
+      "c4c147bdfddffec2eea6bf99661e69ee",
+      "56f0e67d981024ddcc215543698f44fb"
+    ],
+    "domains": [
+      "uecmyanmar.org",
+      "client.mailsecurityservice.com",
+      "usafbi.websecexp.com",
+      "usacia.websecexp.com",
+      "webhttps.websecexp.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "This zip folder containsP \u0000ermit.jpg.lnk, a shortcut that opens a command prompt to download and run ca-bundle.exe from the Chinese forum site hjclub.info (hxxp://www.hjclub.info/bbs/uploadfiles/45/ca-bundle.exe’,’%TEMP%\\ca-bundle[.]exe). The malware connects to the C2 t2.mailsecurityservice[.]com and t1.mailsecurityservice[.]com, which resolve to 118.193.212.98, a server registered to a customer in Shanghai, China,a ccording to WHOIS results. The C2 domain mailsecurityservice.com that was used in Attack 1 was registered with the same email (wojiaojilao2@sohu.com) as another C2 domain iyouthen.com that we identified on VirusTotal.\u0000 Passive DNS records from PassiveTotal show that in March 2015, both domains also resolved to the same IP address 103.20.222.0.",
+  "_meta": {
+    "label": "G0032",
+    "doc_id": "6c4ce7663892",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2015/2015.10.16.NGO_Burmese_Government/2015.10.targeted-attacks-ngo-burma.pdf"
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "attack_ttp_ids": [
+    "T1005",
+    "T1012",
+    "T1025",
+    "T1027",
+    "T1041",
+    "T1055",
+    "T1057",
+    "T1071",
+    "T1083",
+    "T1084",
+    "T1086",
+    "T1099",
+    "T1120",
+    "T1140"
+  ],
+  "attack_tactic_ids": [
+    "TA0002",
+    "TA0003",
+    "TA0004",
+    "TA0005",
+    "TA0007",
+    "TA0009",
+    "TA0010",
+    "TA0011"
+  ],
+  "attack_tactics": [
+    "Execution",
+    "Persistence",
+    "Privilege Escalation",
+    "Stealth",
+    "Discovery",
+    "Collection",
+    "Exfiltration",
+    "Command and Control"
+  ],
+  "delivery_vectors": [
+    "email",
+    "usb"
+  ],
+  "sectors": [
+    "Defense",
+    "Media"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "command and control",
+      "https",
+      "rpc",
+      "smb",
+      "tcp"
+    ],
+    "tools": [
+      "cmd",
+      "powershell",
+      "powersploit"
+    ],
+    "domains": [
+      "_[.]filter",
+      "_[.]processid",
+      "_[.]user",
+      "amsi[.]dll",
+      "ascii[.]getbytes",
+      "ascii[.]getstring",
+      "avp[.]exe",
+      "avpsus[.]exe",
+      "cmd[.]exe",
+      "cryptography[.]ciphermode",
+      "cryptography[.]cryptostream",
+      "cryptography[.]cryptostreammode",
+      "cryptography[.]passwordderivebytes",
+      "csrss[.]exe",
+      "dcr12ffg[.]close",
+      "desktop[.]db",
+      "desktop[.]ini",
+      "en594ca[.]clear",
+      "en594ca[.]createdecryptor",
+      "en594ca[.]mode",
+      "eset[.]com",
+      "icore[.]dat",
+      "id796ea[.]length",
+      "interopservices[.]marshal",
+      "klnagent[.]exe",
+      "lsass[.]exe",
+      "lsm[.]exe",
+      "msctx[.]ps",
+      "now[.]tostring",
+      "oq09hd[.]length",
+      "out-encryptedscript[.]ps",
+      "pm[.]exe",
+      "powershell[.]exe",
+      "profile[.]ps",
+      "reflectivepeinjection[.]ps",
+      "rpcrt4[.]dll",
+      "rpcspoofserverinstall[.]pdb",
+      "sb49gje[.]getbytes",
+      "smss[.]exe",
+      "spoolsv[.]exe",
+      "std33abh[.]length",
+      "svchost[.]exe",
+      "system[.]io",
+      "system[.]runtime",
+      "system[.]security",
+      "system[.]text",
+      "targetinstance[.]hour",
+      "targetinstance[.]minute",
+      "targetinstance[.]second",
+      "targetinstance[.]systemuptime",
+      "text[.]encoding",
+      "thumbs[.]ini",
+      "turla[.]bq",
+      "turla[.]br",
+      "turla[.]bs",
+      "turla[.]bz",
+      "unicode[.]getstring",
+      "vapm[.]exe",
+      "welivesecurity",
+      "welivesecurity[.]com",
+      "wg731ff[.]close",
+      "wg731ff[.]read",
+      "wininit[.]exe",
+      "winlogon[.]exe",
+      "xz228hha[.]getbytes",
+      "xz228hha[.]getstring"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "ec54ef8d79bf30b63c5249af7a8a3c652595b923",
+      "9d1c563e5228b2572f5ca14f0ec33ca0deda3d57",
+      "b948e25d061039d64115cfde74d2ff4372e83765"
+    ],
+    "domains": [
+      "welivesecurity.com",
+      "eset.com",
+      "turla.br"
+    ],
+    "mutexes": []
+  },
+  "narrative": "1 $IgnoreNames = @(\"smss.exe\",\"csrss.exe\",\"wininit.exe\",\"winlogon.exe\",\"lsass.exe\",\"lsm.exe\",\"svchost.exe\",\"avp.exe\",\"avpsus.exe\",\"klnagent.exe\",\"va pm.exe\",\"spoolsv.exe\"); Figure 5. Discovery T1083 File and Directory Discovery. PowerStallion msctx.ps1 C:\\Users\\Public\\Documents\\desktop.db Registry keys RPC components HKLM\\SYSTEM\\CurrentControlSet\\services\\LanmanServer\\Parameters\\NullSessionPipes contains atctl MITRE ATT&CK Execution T1086 [REDACTED_MALWARE].",
+  "_meta": {
+    "label": "G0010",
+    "doc_id": "bfade44ddcc4",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2019/2019.05.29.Turla_PowerShell/A dive into Turla PowerShell usage.pdf"
+  }
+}

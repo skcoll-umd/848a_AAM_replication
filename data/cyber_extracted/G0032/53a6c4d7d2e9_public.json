@@ -1,0 +1,98 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "attachment",
+    "document",
+    "exploit kit",
+    "watering-hole",
+    "website"
+  ],
+  "sectors": [
+    "Financial",
+    "Media"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "api",
+      "ftp",
+      "http",
+      "https",
+      "kerberos",
+      "smtp",
+      "ssl",
+      "tls"
+    ],
+    "tools": [
+      "curl",
+      "ftp"
+    ],
+    "domains": [
+      "back283671047171[.]dat",
+      "baesystems[.]com",
+      "blob[.]length",
+      "blob[.]position",
+      "cambio[.]sw",
+      "cambio[.]swf",
+      "cambio[.]xap",
+      "chainik[.]call",
+      "config[.]dat",
+      "d[.]no",
+      "document[.]write",
+      "download[.]macromedia",
+      "exploit[.]get",
+      "explorer[.]exe",
+      "fdsvc[.]dll",
+      "fdsvc[.]exe",
+      "key[.]charcodeat",
+      "key[.]length",
+      "loaderinfo[.]parameters",
+      "lsass[.]exe",
+      "mark180789172360[.]ico",
+      "meml102783047891[.]dat",
+      "niebezpiecznik[.]pl",
+      "notepad[.]exe",
+      "objloader[.]contentloaderinfo",
+      "objloader[.]loadbytes",
+      "objshelldata[.]clear",
+      "objshelldata[.]data",
+      "objshelldata[.]flush",
+      "rand[.]nextint",
+      "request[.]getrequesturl",
+      "response[.]setheader",
+      "sharedobject[.]getlocal",
+      "srservice[.]chm",
+      "srservice[.]dll",
+      "srservice[.]hlp",
+      "string[.]format",
+      "swflash[.]cab",
+      "this[.]params",
+      "urlmon[.]dll",
+      "view[.]jsp",
+      "view_jsp[.]java"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "6dffcfa68433f886b2e88fd984b4995a",
+      "889e320cf66520485e1a0475107d7419",
+      "9cc6854bc5e217104734043c89dc4ff8",
+      "9914075cc687bdc352ee136ac6579707",
+      "e29fe3c181ac9ddbb242688b151f3310"
+    ],
+    "domains": [
+      "download.macromedia.com",
+      "niebezpiecznik.pl",
+      "d.no",
+      "baesystems.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "ANALYSIS Sample #1 – srservice.chm Most likely, this file is an [REDACTED_MALWARE] that is decrypted and injected by DLL loader. Sample #4 – fdsvc.exe This file is a command line tool that accepts several parameters such as [REDACTED_MALWARE] file name and process ID. Sample #3 – srservice.dll This DLL loads, decrypts and injects the 'CHM' file into the system lsass.exe process.",
+  "_meta": {
+    "label": "G0032",
+    "doc_id": "53a6c4d7d2e9",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2017/2017.02.20.Lazarus_False_Flag_Malware/lazarus-false-flag-malware.html.pdf"
+  }
+}

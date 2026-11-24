@@ -1,0 +1,98 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "document",
+    "usb",
+    "website"
+  ],
+  "sectors": [
+    "Defense",
+    "Energy",
+    "Financial",
+    "Government",
+    "Media",
+    "Technology",
+    "Transport"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "command and control",
+      "dns",
+      "http",
+      "https",
+      "onion",
+      "proxy",
+      "tor"
+    ],
+    "tools": [],
+    "domains": [
+      "_main[.]main",
+      "alienvault",
+      "bcn5w6eqglytlnnn[.]onion",
+      "caution-detected-malicious-file-using[.]html",
+      "cdn[.]securelist",
+      "cryptam[.]com",
+      "deleteservice[.]pdb",
+      "docsearch[.]php",
+      "dog[.]jpg",
+      "en-erteam[.]nprotect",
+      "en[.]wikipedia",
+      "epp-status-codes-30jun11-en[.]pdf",
+      "fbi",
+      "group[.]eng",
+      "hancom",
+      "hwp[.]exe",
+      "icann",
+      "index2[.]php",
+      "index[.]html",
+      "j2kiphmeb4m4ek66[.]onion",
+      "main[.]php",
+      "msserver[.]exe",
+      "mstmpdata[.]dat",
+      "onion[.]city",
+      "onion[.]link",
+      "operationblockbuster",
+      "qp4xhrnjuzq6glwx[.]onion",
+      "research[.]domaintools",
+      "securelist[.]com",
+      "sejonng",
+      "sejonng[.]org",
+      "strj3ya55r367jqd[.]onion",
+      "tmp[.]hwp",
+      "turns[.]pdf",
+      "u6y2j2ggtyplvzfm[.]onion",
+      "usbman[.]dll",
+      "usbrun[.]exe",
+      "uudv6kfdmm4pdbdm[.]onion",
+      "viruslab[.]tistory",
+      "virustracker[.]info",
+      "whois[.]domaintools",
+      "xxx_yyy[.]jpg"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "588eef80e6f2515a2e96c9d8f4d67d5a",
+      "700e94d4e52c4c15ebed24ec07f91f33",
+      "b9164dd8260e387a061208b89df7bb6b",
+      "3c983b300c533c6909a28cef7d7469ba",
+      "3df1c88a4a7dae7fdf9282d2c4375433"
+    ],
+    "domains": [
+      "operationblockbuster.com",
+      "securelist.com",
+      "alienvault.com",
+      "en.wikipedia.org",
+      "hancom.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "City URLs hXXp://uudv6kfdmm4pdbdm.onion.city/main.php hXXp://strj3ya55r367jqd.onion.city/main.php hXXp://u6y2j2ggtyplvzfm.onion.city/index2.php hXXp://qp4xhrnjuzq6glwx.onion.city/index2.php hXXp://j2kiphmeb4m4ek66.onion.city/index2.php hXXp://bcn5w6eqglytlnnn.onion.city/index2.php Table 7 Related Onion. The role of URLs related to “index2.php” is to download other malicious codes while the URLs related to “main.php” are used to steal data from the pass-back process. C&C IP Geo location 218.153.172.53 Korea 218.145.131.130 Korea 222.107.13.113 Korea 221.149.32.213 Korea 221.149.223.209 Korea 220.85.160.3 Korea 112.169.154.65 Korea 121.133.8.2 Korea Table 8 Associations between the fixed IPs and their geo locations Chapter 5 [REDACTED_MALWARE] “Rebirth”：aimed at misleading or false flagging? 1.",
+  "_meta": {
+    "label": "G0032",
+    "doc_id": "47a930a8fe5d",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2016/2016.03.08.OnionDog/APT-C-03-en.pdf"
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "document"
+  ],
+  "sectors": [],
+  "infrastructure_hints": {
+    "types": [
+      "api",
+      "c2",
+      "http",
+      "https",
+      "proxy",
+      "s3"
+    ],
+    "tools": [],
+    "domains": [
+      "dcomnet[.]dll",
+      "dcomnet[.]pdb",
+      "dcomnetsrv[.]cpp",
+      "neuron2[.]exe",
+      "neuron2[.]pdb",
+      "org[.]uk",
+      "share[.]cisp"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "51616b207fde2ff1360a1364ff58270e0d46cf87a4c0c21b374a834dd9676927",
+      "83d8922e7a8212f1a2a9015973e668d7999b90e7000c31f57be83803747df015",
+      "c9fc7ce10aba20894ef914d2073021a48995db17",
+      "2fb145c64263006a95a0771b57e967977f63954d",
+      "60bcc6bc746078d81a9cd15cd4f199bb"
+    ],
+    "domains": [
+      "share.cisp.org.uk"
+    ],
+    "mutexes": []
+  },
+  "narrative": "The .NET payload is loaded in-memory as opposed to being dropped to disk; • Communications have been modified to avoid detection; •. Loader With previous versions of Neuron, a native dropper was utilised to write the main payload to disk, establish persistence and ensure execution. Portions of the updated Neuron service have been migrated to AES, however, some components still rely on the RC4 implementation, such as encrypting command information.",
+  "_meta": {
+    "label": "G0010",
+    "doc_id": "7447184449a9",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2018/2018.01.18.Turla_group_update_Neuron_malware/Turla Neuron Malware Update.pdf"
+  }
+}

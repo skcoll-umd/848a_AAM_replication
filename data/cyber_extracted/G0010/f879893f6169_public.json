@@ -1,0 +1,96 @@
+{
+  "attack_ttp_ids": [
+    "T1016",
+    "T1032",
+    "T1041",
+    "T1043",
+    "T1053",
+    "T1057",
+    "T1065",
+    "T1071",
+    "T1082",
+    "T1189",
+    "T1204"
+  ],
+  "attack_tactic_ids": [
+    "TA0001",
+    "TA0002",
+    "TA0003",
+    "TA0004",
+    "TA0007",
+    "TA0010",
+    "TA0011"
+  ],
+  "attack_tactics": [
+    "Initial Access",
+    "Execution",
+    "Persistence",
+    "Privilege Escalation",
+    "Discovery",
+    "Exfiltration",
+    "Command and Control"
+  ],
+  "delivery_vectors": [
+    "drive-by",
+    "watering hole",
+    "website"
+  ],
+  "sectors": [
+    "Government"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "http",
+      "https",
+      "scp"
+    ],
+    "tools": [
+      "python",
+      "scp",
+      "tasklist"
+    ],
+    "domains": [
+      "0eb0f2cb2808b4b35a94[.]js",
+      "adgf[.]am",
+      "adobe[.]exe",
+      "aiisa[.]am",
+      "armconsul",
+      "armconsul[.]ru",
+      "data_from_db_top[.]php",
+      "ec[.]get",
+      "ec[.]set",
+      "eset[.]com",
+      "jquery-migrate[.]min",
+      "js_ra9bo8_o3pnw_5wjxexnhtkumdfbyciftjctej8c_mg[.]js",
+      "json[.]stringify",
+      "mnp[.]nkr",
+      "ms-locale[.]php",
+      "screen[.]height",
+      "screen[.]pixeldepth",
+      "screen[.]width",
+      "skategirlchina[.]com",
+      "subprocess32[.]popen",
+      "turla[.]ej",
+      "turla[.]em",
+      "welivesecurity",
+      "welivesecurity[.]com",
+      "winhost[.]exe"
+    ]
+  },
+  "iocs": {
+    "hashes": [],
+    "domains": [
+      "welivesecurity.com",
+      "skategirlchina.com",
+      "armconsul.ru",
+      "eset.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "The [REDACTED_MALWARE] payload was a .NET application that dropped an installer for Adobe Flash v32 in %TEMP%\\adobe.exe, and NetFlash (a .NET downloader) in %TEMP%\\winhost.exe. In comparison to a regular cookie, it will be much more persistent as it won’t be deleted if the user just deletes the browser’s cookies. NetFlash downloads its second stage malware from a hardcoded URL and establishes persistence for this [REDACTED_MALWARE] using a Windows scheduled task.",
+  "_meta": {
+    "label": "G0010",
+    "doc_id": "f879893f6169",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2020/2020.03.12_Tracking_Turla/Tracking Turla_ New backdoor delivered via Armenian watering holes _ WeLiveSecurity.pdf"
+  }
+}

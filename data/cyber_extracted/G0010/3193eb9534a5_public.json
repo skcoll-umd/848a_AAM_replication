@@ -1,0 +1,65 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "email",
+    "website"
+  ],
+  "sectors": [
+    "Defense",
+    "Education",
+    "Legal",
+    "Mining",
+    "Transport"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "api",
+      "beacon",
+      "c2",
+      "command and control",
+      "ftp",
+      "http",
+      "https"
+    ],
+    "tools": [
+      "bash",
+      "cmd",
+      "ftp",
+      "tasklist"
+    ],
+    "domains": [
+      "cmd[.]exe",
+      "environment[.]osversion",
+      "explorer[.]exe",
+      "gaismustudija[.]lv",
+      "gallen",
+      "gzencode[.]php",
+      "hcdh-tunisie[.]org",
+      "kontakti[.]php",
+      "platform[.]platformid"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "8490daab736aa638b500b27c962a8250bbb8615ae1c68ef77494875ac9d2ada2",
+      "b51105c56d1bf8f98b7e924aa5caded8322d037745a128781fa0bc23841d1e70",
+      "bf6f30673cf771d52d589865675a293dc5c3668a956d0c2fc0d9403424d429b2",
+      "cd4c2e85213c96f79ddda564242efec3b970eded8c59f1f6f4d9a420eb8f1858"
+    ],
+    "domains": [
+      "hcdh-tunisie.org",
+      "gallen.fi"
+    ],
+    "mutexes": [
+      "creation"
+    ]
+  },
+  "narrative": "The createGET and getWebRequest classes define the construction of the HTTP request used for command and control communication.\u0000 During our analysis, we observed the beacon seen in Figure 6 sent via HTTP from a Kazuar sample to its C2 server. Unable to delete task #{0} file due to {1}\u0000 Unable to execute command due to {0} Unable to execute task #{0} due to {1} Unable to get last contact time due to {0} Unable to get task from {0} due to {1} Unable to impersonate {0} [{1}]. Kazuar’s Autorun class is a Windows specific method that contains multiple options for persistence using the startup folder and registry.\u0000 Command and Control (C2).",
+  "_meta": {
+    "label": "G0010",
+    "doc_id": "3193eb9534a5",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2017/2017.05.03.kazuar-multiplatform-espionage-backdoor-api-access/kazuar.pdf"
+  }
+}

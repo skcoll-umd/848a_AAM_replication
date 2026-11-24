@@ -1,0 +1,71 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "document",
+    "email",
+    "macro"
+  ],
+  "sectors": [
+    "Defense",
+    "Education",
+    "Government",
+    "Media"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "dns",
+      "http",
+      "vpn"
+    ],
+    "tools": [
+      "mimikatz",
+      "mshta",
+      "powershell"
+    ],
+    "domains": [
+      "0011[.]ps",
+      "13[.]doc",
+      "1[.]doc",
+      "1[.]vbs",
+      "2[.]doc",
+      "3[.]doc",
+      "558[.]doc",
+      "alenupdate[.]info",
+      "backup1[.]vbs",
+      "comonscar[.]in",
+      "default[.]bat",
+      "dne1[.]ps",
+      "dns1[.]ps",
+      "index[.]aspx",
+      "maralen[.]tk",
+      "mshta[.]exe",
+      "syncinit[.]lnk",
+      "test1[.]hta",
+      "test4[.]hta",
+      "test5[.]hta",
+      "vpsupdate[.]tk",
+      "wininit[.]lnk"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "a9bbbf5e4797d90d579b2cf6f9d61443dff82ead9d9ffd10f3c31b686ccf81ab",
+      "2869664d456034a611b90500f0503d7d6a64abf62d9f9dd432a8659fa6659a84",
+      "832cc791aad6462687e42e40fd9b261f3d2fbe91c5256241264309a5d437e4d8",
+      "d4eb4035e11da04841087a181c48cd85f75c620a84832375925e6b03973d8e48",
+      "5ac61ea5142d53412a251eb77f2961e3334a00c83da9087d355a49618220ac43"
+    ],
+    "domains": [
+      "comonscar.in"
+    ],
+    "mutexes": []
+  },
+  "narrative": "5ac61ea5142d53412a251eb77f2961e3334a00c83da9087d355a49618220ac43 The .hta \u0000le is immediately executed by mshta.exe, the Windows process which executes html executables. This \u0000le executes some of the same commands executed by VBS script in the previous campaign, but there are differences as well. The DnS1.Ps1 is also executed and communicates with the C&C using DNS exchange queries (the same as in the previous campaign).",
+  "_meta": {
+    "label": "G0049",
+    "doc_id": "7dfdc0875b30",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2017/2017.01.05.Iranian_Threat_Agent_OilRig/Iranian Fileless Attack Infiltrates Israeli Organizations.pdf"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "document",
+    "email",
+    "macro",
+    "phishing"
+  ],
+  "sectors": [
+    "Financial",
+    "Government",
+    "Media"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "command and control",
+      "dropbox",
+      "https"
+    ],
+    "tools": [],
+    "domains": [
+      "expand[.]exe",
+      "nda_usa[.]pdf",
+      "securesoftcorp[.]com",
+      "securitysummitperu[.]com"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "1c4745c82fdcb9d05e210eff346d7bee2f087357b17bfcf7c2038c854f0dee61",
+      "e23900b00ffd67cd8dfa3283d9ced691566df6d63d1d46c95b22569b49011f09",
+      "49a23160ba2af4fba0186512783482918b07a32b0e809de0336ba723636ae3b6",
+      "f4bdf0f967330f9704b01cc962137a70596822b8319d3b35404eafc9c6d2efe7",
+      "9894f6993cae186981ecb034899353a04f1a9b009bdf265cecda9595b725ee20"
+    ],
+    "domains": [
+      "securitysummitperu.com",
+      "securesoftcorp.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "Once executed, it performs several initializations, contacts a Command and Control server (C & C) and waits indefinitely to receive new commands. The VBS script downloads a CAB file from the server in the download area, extracts the embedded EXE file ([REDACTED_MALWARE]) with the Windows \"expand.exe\" utility, and finally executes it. Each received command is processed by the backdoor and is handled within an appropriate function, which in turn collects an information or performs an action on the target computer.",
+  "_meta": {
+    "label": "G0032",
+    "doc_id": "6394a5305469",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2019/2019.02.20.LAZARUS_to_RUSSIA/LAZARUS GROUP DIRECTED TO ORGANIZATIONS IN RUSSIA_google_translate.pdf"
+  }
+}

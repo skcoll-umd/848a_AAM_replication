@@ -1,0 +1,61 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "email",
+    "phishing"
+  ],
+  "sectors": [
+    "Financial",
+    "Hospitality",
+    "Retail"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "beacon",
+      "c2",
+      "https",
+      "sharepoint"
+    ],
+    "tools": [
+      "cobalt strike",
+      "powershell",
+      "psexec"
+    ],
+    "domains": [
+      "besaintegration[.]com",
+      "blog[.]truesec",
+      "dmnadmin[.]com",
+      "kill[.]bat",
+      "list[.]txt",
+      "m2stor4ge[.]xyz",
+      "myrric-uses[.]singlejets",
+      "sephardimension[.]com",
+      "svchost[.]exe"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "fcaaf4b85c42bec0426ce7a827f437c3cf0e2c502a393dd8c3c327f035fe1a2c",
+      "1bbe96a888c6e3a52cdb0676f38a8a379a72e6f4ade58f101a0559c7ad6f99c7",
+      "53430abd76a5cfcfada4962cd8925b2e32620c44a8863b445ba145f42dbfea64",
+      "b49ca670cd9cef54a5f372375bd6ca1be7b68fd68535d6498374970cd69aaae2",
+      "d9a6dd7216faafc65d419d09b6b7b5ddf24991a1f65f23113dde40d4936eea55"
+    ],
+    "domains": [
+      "besaintegration.com",
+      "blog.truesec.com",
+      "sephardimension.com",
+      "dmnadmin.com",
+      "myrric-uses.singlejets.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "The attacker downloaded an obfuscated script that when executed, loads a DLL file in memory and executes it through reflection methods. The attacker deployed Cobalt Strike on the network and began reconnaissance and data discovery on the network. The exfiltration was done using the SmartFTP Client that connected to an IP address controlled by the attacker.",
+  "_meta": {
+    "label": "G0046",
+    "doc_id": "5ec4a266eb1f",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2020/2020.12.22.FIN7_RYUK/blog.truesec.com-Collaboration between FIN7 and the RYUK group a Truesec Investigation.pdf"
+  }
+}

@@ -1,0 +1,78 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "email",
+    "usb",
+    "website"
+  ],
+  "sectors": [
+    "Defense",
+    "Financial",
+    "Government",
+    "Transport"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "api",
+      "c2",
+      "command and control",
+      "http"
+    ],
+    "tools": [
+      "cmd",
+      "mimikatz",
+      "powershell",
+      "rundll32"
+    ],
+    "domains": [
+      "32[.]generic",
+      "32[.]sofacy",
+      "64[.]sofacy",
+      "__tmpdt[.]tmp",
+      "advshellstore[.]dll",
+      "chkdbg[.]log",
+      "conhost[.]dll",
+      "dllhost[.]exe",
+      "drivres-update[.]info",
+      "dwn_dll_main[.]dll",
+      "igfsrvc[.]dll",
+      "intelnetservice[.]com",
+      "intelsupport[.]net",
+      "msdeltemp[.]dll",
+      "msdetltemp[.]dll",
+      "nvcpld[.]dat",
+      "nvcpld[.]dll",
+      "rundll32[.]exe",
+      "sechost[.]dll",
+      "sfc[.]dll",
+      "snd[.]dll",
+      "softupdates[.]info",
+      "svchost[.]exe",
+      "tf394kv[.]dll",
+      "trojan[.]win"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "a96f4b8ac7aa9dbf4624424b7602d4f7",
+      "9d2f9e19db8c20dc0d20d50869c7a373",
+      "ce8b99df8642c065b6af43fde1f786a3",
+      "8c4d896957c36ec4abeb07b2802268b9",
+      "8b238931a7f64fddcad3057a96855f6c"
+    ],
+    "domains": [
+      "intelnetservice.com",
+      "intelsupport.net",
+      "trojan.win32.sofacy.be"
+    ],
+    "mutexes": []
+  },
+  "narrative": "The dropped “tf394kv.dll” file is an external C&C communications library, compiled on July 24th, 2015 and used by the main backdoor for all Internet-based communications. The module aborts the thread receiving C2 command after it fails to correctly execute commands more than six times in a row, i.e. if file or process creation fails. The export called “SendDataToServer_2” does exactly what the name means: it encrypts all collected data, encodes it using Base64 encoding and calls its additional library to send the data to the C2 server.",
+  "_meta": {
+    "label": "G0007",
+    "doc_id": "203c6e1a0264",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2015/2015.12.04.Sofacy_APT/sofacy-apt-hits-high-profile-targets-with-updated-toolset.pdf"
+  }
+}

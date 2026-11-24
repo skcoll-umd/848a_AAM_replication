@@ -1,0 +1,20 @@
+{
+  "threat_actor": "Sandworm Team",
+  "group_name": "Sandworm Team",
+  "group_id": "G0034",
+  "mitre_intrusion_set": {
+    "id": "intrusion-set--381fcf73-60f6-4ab2-9991-6af3cbc35192",
+    "gid": "G0034",
+    "name": "Sandworm Team",
+    "matched_alias": "telebots"
+  },
+  "malware_family": "This backdoor",
+  "campaign_name": "that we discovered",
+  "attack_ttp_map": {},
+  "technique_to_tactics": {},
+  "_meta": {
+    "label": "G0034",
+    "doc_id": "e2077f744d3b",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2016/2016.12.13.rise-telebots-analyzing-disruptive-killdisk-attacks/rise-telebots-analyzing-disruptive-killdisk-attacks.pdf"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "threat_actor": "APT29",
+  "group_name": "APT29",
+  "group_id": "G0016",
+  "mitre_intrusion_set": {
+    "id": "intrusion-set--899ce53f-13a0-479b-a0e4-67d46e241542",
+    "gid": "G0016",
+    "name": "APT29",
+    "matched_alias": "cozy bear"
+  },
+  "malware_family": "custom backdoor",
+  "campaign_name": null,
+  "attack_ttp_map": {
+    "T1071.004": "DNS",
+    "T1190": "Exploit Public-Facing Application",
+    "T1552": "Unsecured Credentials",
+    "T1595.002": "Vulnerability Scanning",
+    "T1505.003": "Web Shell",
+    "T1552.004": "Private Keys",
+    "T1199": "Trusted Relationship",
+    "T1078": "Valid Accounts",
+    "T1114.002": "Remote Email Collection",
+    "T1195.002": "Compromise Software Supply Chain",
+    "T1573.002": "Asymmetric Cryptography",
+    "T1071.001": "Web Protocols",
+    "T1059.005": "Visual Basic"
+  },
+  "technique_to_tactics": {
+    "T1071.004": [
+      "TA0011"
+    ],
+    "T1190": [
+      "TA0001"
+    ],
+    "T1552": [
+      "TA0006"
+    ],
+    "T1595.002": [
+      "TA0043"
+    ],
+    "T1505.003": [
+      "TA0003"
+    ],
+    "T1552.004": [
+      "TA0006"
+    ],
+    "T1199": [
+      "TA0001"
+    ],
+    "T1078": [
+      "TA0001",
+      "TA0003",
+      "TA0004",
+      "TA0005"
+    ],
+    "T1114.002": [
+      "TA0009"
+    ],
+    "T1195.002": [
+      "TA0001"
+    ],
+    "T1573.002": [
+      "TA0011"
+    ],
+    "T1071.001": [
+      "TA0011"
+    ],
+    "T1059.005": [
+      "TA0002"
+    ]
+  },
+  "_meta": {
+    "label": "G0016",
+    "doc_id": "07dc3e9dcc47",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2021/2021.05.07.SVR_TTPs/Advisory Further TTPs associated with SVR cyber actors.pdf"
+  }
+}

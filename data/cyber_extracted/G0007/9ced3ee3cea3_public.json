@@ -1,0 +1,61 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "email",
+    "website"
+  ],
+  "sectors": [
+    "Government"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "c2",
+      "command and control",
+      "https"
+    ],
+    "tools": [
+      "cmd",
+      "tasklist"
+    ],
+    "domains": [
+      "15486216ab9c8b474fe8a773fc46bb37a19c6af47d5bd50f5670cd9950a7207c[.]exe",
+      "87bffb0370c9e14ed5d01d6cc0747cb30a544a71345ea68ef235320378f582ef[.]exe",
+      "cmd[.]exe",
+      "csecybsec",
+      "csecybsec[.]com",
+      "e53bd956c4ef79d54b4860e74c68e6d93a49008034afb42b092ea19344309914[.]exe",
+      "e7dd9678b0a1c4881e80230ac716b21a41757648d71c538417755521438576f6[.]exe",
+      "marina-info[.]net",
+      "name-signed[.]php",
+      "pe[.]number",
+      "pe[.]resource",
+      "pe[.]resources",
+      "pe[.]sections",
+      "pe[.]version",
+      "sdbn[.]dll",
+      "upnphost[.]exe"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "87bffb0370c9e14ed5d01d6cc0747cb30a544a71345ea68ef235320378f582ef",
+      "15486216ab9c8b474fe8a773fc46bb37a19c6af47d5bd50f5670cd9950a7207c",
+      "e7dd9678b0a1c4881e80230ac716b21a41757648d71c538417755521438576f6",
+      "e53bd956c4ef79d54b4860e74c68e6d93a49008034afb42b092ea19344309914",
+      "1228e9066819f115e8b2a6c1b75352566a6a5dc002d9d36a8c5b47758c9f6a45"
+    ],
+    "domains": [
+      "marina-info.net",
+      "csecybsec.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "The attack we analyzed is multi-stage, an initial dropper malware written in Delphi programming language (a language used by the [REDACTED_MALWARE] in other campaigns) downloads a second stage payload from internet and executes it. Script The communication with the command and control is managed with a script written in the AutoIt language. This malware is particularly interesting for us because it contacts a command and control with the name “marina-info.net” a clear reference to the Italian Military corp, Marina Militare.",
+  "_meta": {
+    "label": "G0007",
+    "doc_id": "9ced3ee3cea3",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2018/2018.07.13.Operation_Roman_Holiday/20180713_CSE_APT28_X-Agent_Op-Roman Holiday-Report_v6_1.pdf"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "threat_actor": "Sandworm Team",
+  "group_name": "Sandworm Team",
+  "group_id": "G0034",
+  "mitre_intrusion_set": {
+    "id": "intrusion-set--381fcf73-60f6-4ab2-9991-6af3cbc35192",
+    "gid": "G0034",
+    "name": "Sandworm Team",
+    "matched_alias": "quedagh"
+  },
+  "malware_family": "dangerous backdoor",
+  "campaign_name": "Potao Express",
+  "attack_ttp_map": {},
+  "technique_to_tactics": {},
+  "_meta": {
+    "label": "G0034",
+    "doc_id": "a9dd9cd98b6c",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2015/2015.07.30.Operation-Potao-Express/blog.pdf"
+  }
+}

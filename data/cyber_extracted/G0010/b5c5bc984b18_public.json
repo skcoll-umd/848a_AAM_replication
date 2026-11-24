@@ -1,0 +1,108 @@
+{
+  "attack_ttp_ids": [
+    "T1001",
+    "T1005",
+    "T1016",
+    "T1020",
+    "T1022",
+    "T1029",
+    "T1032",
+    "T1041",
+    "T1071",
+    "T1078",
+    "T1086",
+    "T1114",
+    "T1119"
+  ],
+  "attack_tactic_ids": [
+    "TA0001",
+    "TA0002",
+    "TA0003",
+    "TA0004",
+    "TA0005",
+    "TA0007",
+    "TA0009",
+    "TA0010",
+    "TA0011"
+  ],
+  "attack_tactics": [
+    "Initial Access",
+    "Execution",
+    "Persistence",
+    "Privilege Escalation",
+    "Stealth",
+    "Discovery",
+    "Collection",
+    "Exfiltration",
+    "Command and Control"
+  ],
+  "delivery_vectors": [
+    "attachment",
+    "document",
+    "email",
+    "rdp",
+    "watering hole",
+    "watering-hole"
+  ],
+  "sectors": [
+    "Defense",
+    "Energy",
+    "Government",
+    "Media",
+    "Technology",
+    "Transport"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "command and control",
+      "http",
+      "https",
+      "rdp",
+      "rpc",
+      "smtp"
+    ],
+    "tools": [
+      "cmd",
+      "metasploit",
+      "powershell"
+    ],
+    "domains": [
+      "agents[.]config",
+      "bpa[.]transport",
+      "cmd[.]exe",
+      "data[.]transport",
+      "exrwdb[.]dll",
+      "messagingpolicies[.]search",
+      "microsoft[.]exchange",
+      "msinp[.]ps",
+      "msmocf[.]xml",
+      "msmodl[.]dat",
+      "routing[.]routingagent",
+      "security[.]interop",
+      "smtp[.]smtpreceiveagent",
+      "thumbcache_32[.]db",
+      "thumbcache_idx[.]db",
+      "turla[.]cc",
+      "winmail[.]dat"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "3c851e239fbf67a03e0dae8f63eee702b330db6c",
+      "76ee1802a6c920cbeb3a1053a4ec03c71b7e46f8",
+      "ff28b53b55bc77a5b4626f9db856e67ac598c787",
+      "c1ff6804fdb8656ab08928d187837d28060a552f",
+      "f9d52bb5a30b42fc2d1763be586cee8a57424732"
+    ],
+    "domains": [],
+    "mutexes": [
+      "names"
+    ]
+  },
+  "narrative": "0x02 Delete a file File path N/A N/A Set to “1” to 0x03 Exfiltrate a file File path N/A delete the file 0x04 Execute a process (CreateProcess) Command line N/A N/A 0x05 Execute a command line (cmd.exe /c). Using a backdoor function, attackers can exfiltrate Collection T1005 Data from Local System any local file. Depending on the configuration, LightNeuron T1119 Automated Collection can collect the files in a specific path.",
+  "_meta": {
+    "label": "G0010",
+    "doc_id": "b5c5bc984b18",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2019/2019.05.07.Turla_LightNeuron/ESET-LightNeuron.pdf"
+  }
+}

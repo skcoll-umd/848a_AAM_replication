@@ -1,0 +1,48 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "email",
+    "macro",
+    "phishing"
+  ],
+  "sectors": [
+    "Energy",
+    "Government",
+    "Media"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "api",
+      "c2",
+      "https"
+    ],
+    "tools": [
+      "empire",
+      "mimikatz",
+      "powershell",
+      "python"
+    ],
+    "domains": [
+      "rammatica[.]com",
+      "raveston[.]com",
+      "securelist[.]com"
+    ]
+  },
+  "iocs": {
+    "hashes": [],
+    "domains": [
+      "securelist.com",
+      "rammatica.com",
+      "raveston.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "The same initial profiling functionality is maintained almost four years later in various newer Go and C# downloader variants, with screengrabs, system info and running process collection built into the startup routine of each one. They also include the screengrab and system information collection, along with running process enumeration in order to profile targets and further inform their second stage credential harvesting efforts. In order to account for unexpected software installations at victim systems, no matter which language, each first stage backdoor implementation collects a “system information” listing, screengrab, and enumerates running processes.",
+  "_meta": {
+    "label": "G0007",
+    "doc_id": "84948adc1fed",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2019/2019.06.03.Zebrocy/Zebrocy Multilanguage Malware Salad.pdf"
+  }
+}

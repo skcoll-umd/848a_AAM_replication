@@ -1,0 +1,118 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "attachment",
+    "document",
+    "email",
+    "malicious attachment",
+    "phishing",
+    "supply chain",
+    "usb",
+    "website"
+  ],
+  "sectors": [
+    "Aerospace",
+    "Education",
+    "Energy",
+    "Financial",
+    "Government",
+    "Manufacturing",
+    "Media",
+    "Technology",
+    "Telecom",
+    "Telecommunications",
+    "Utilities"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "command and control",
+      "http"
+    ],
+    "tools": [
+      "cmd"
+    ],
+    "domains": [
+      "02[.]exe",
+      "04[.]exe",
+      "32[.]agent",
+      "32[.]bazon",
+      "32[.]desertfalcons",
+      "abuhmaid[.]net",
+      "advtravel[.]info",
+      "ahmedfaiez[.]info",
+      "alg[.]exe",
+      "androcity[.]com",
+      "blogging-host[.]info",
+      "cmd[.]exe",
+      "docx[.]rar",
+      "docx[.]scr",
+      "edu[.]ps",
+      "eeee[.]scr",
+      "facebook-emoticons[.]bitblogoo",
+      "flushupate[.]com",
+      "flushupdate[.]com",
+      "fpupdate",
+      "fpupdate[.]info",
+      "gmail[.]com",
+      "h[.]exe",
+      "image21[.]jpeg",
+      "ineltdriver[.]com",
+      "italy[.]officce",
+      "iwork-sys[.]com",
+      "jpg[.]scr",
+      "linkedim",
+      "linkedim[.]in",
+      "linksis[.]info",
+      "liptona[.]net",
+      "login[.]php",
+      "mail[.]mtit",
+      "me[.]rar",
+      "mediahitech[.]info",
+      "meetings-recordrcs[.]pdf",
+      "mixedwork[.]com",
+      "msn[.]exe",
+      "msnn[.]dll",
+      "myaccount[.]jawwal",
+      "mypic[.]rar",
+      "nauss-lab[.]com",
+      "nice-mobiles[.]com",
+      "plmedgroup[.]com",
+      "pluse[.]dll",
+      "pna[.]ps",
+      "portal[.]iugaza",
+      "pstcmedia[.]com",
+      "skype[.]exe",
+      "ss[.]scr",
+      "trojan-spy[.]win",
+      "trojan[.]win",
+      "tvgate[.]rocks",
+      "unrar[.]exe",
+      "winrar[.]exe"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "363d7b99fee999a4c39a2a1052fa7919",
+      "667b5004fa197beb0129e1ddbc416864",
+      "003082ee859edccd104ab4cb38deb131",
+      "59482460da44c3d7192970e705688162",
+      "00eef6a2ac57e987f4750c6eff4e93d6"
+    ],
+    "domains": [
+      "liptona.net",
+      "gmail.com",
+      "linkedim.in",
+      "flushupate.com",
+      "flushupdate.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "Once executed, the Falcons’ downloader will send a registration request to the Command and Control (C&C) server with the victim’s IP address and a harddisk ID. The downloader will request a registration confirmation from the C&C. Encrypted versions of the latest Falcons’ backdoor will then be downloaded and installed on the victim’s machine. Attacker e-mail accounts used in spear phishing attacks newsletar05@gmail.com ynet48@gmail.com mako22014@gmail.com italy.officce@gmail.com TLP: White 27.",
+  "_meta": {
+    "label": "G0010",
+    "doc_id": "16d77d6cf003",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2015/2015.02.17.Desert_Falcons_APT/The-Desert-Falcons-targeted-attacks.pdf"
+  }
+}

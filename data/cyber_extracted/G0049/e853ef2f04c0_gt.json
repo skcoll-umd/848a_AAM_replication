@@ -1,0 +1,20 @@
+{
+  "threat_actor": "Indrik Spider",
+  "group_name": "Indrik Spider",
+  "group_id": "G0119",
+  "mitre_intrusion_set": {
+    "id": "intrusion-set--01e28736-2ffc-455b-9880-ed4d1407ae07",
+    "gid": "G0119",
+    "name": "Indrik Spider",
+    "matched_alias": "evil corp"
+  },
+  "malware_family": "potential ransomware",
+  "campaign_name": null,
+  "attack_ttp_map": {},
+  "technique_to_tactics": {},
+  "_meta": {
+    "label": "G0049",
+    "doc_id": "e853ef2f04c0",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/Report/ESET/eset_threat_report_t32021.pdf"
+  }
+}

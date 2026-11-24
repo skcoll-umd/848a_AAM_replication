@@ -1,0 +1,20 @@
+{
+  "threat_actor": "Strider",
+  "group_name": "Strider",
+  "group_id": "G0041",
+  "mitre_intrusion_set": {
+    "id": "intrusion-set--277d2f87-2ae5-4730-a3aa-50c1fdff9656",
+    "gid": "G0041",
+    "name": "Strider",
+    "matched_alias": "projectsauron"
+  },
+  "malware_family": "Digital Ransomware",
+  "campaign_name": null,
+  "attack_ttp_map": {},
+  "technique_to_tactics": {},
+  "_meta": {
+    "label": "G0007",
+    "doc_id": "c534402736c0",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/Report/2019.02.Targeted_Attacks/security-report-2019.pdf"
+  }
+}

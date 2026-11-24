@@ -1,0 +1,20 @@
+{
+  "threat_actor": "APT38",
+  "group_name": "APT38",
+  "group_id": "G0082",
+  "mitre_intrusion_set": {
+    "id": "intrusion-set--00f67a77-86a4-4adf-be26-1a54fc713340",
+    "gid": "G0082",
+    "name": "APT38",
+    "matched_alias": "bluenoroff"
+  },
+  "malware_family": "WannaCry ransomware",
+  "campaign_name": "Timeline",
+  "attack_ttp_map": {},
+  "technique_to_tactics": {},
+  "_meta": {
+    "label": "G0032",
+    "doc_id": "95df09544955",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2017/2017.12.19.North_Korea_Bitten_by_Bitcoin_Bug/pfpt-us-wp-north-korea-bitten-by-bitcoin-bug.pdf"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "email",
+    "supply chain"
+  ],
+  "sectors": [
+    "Energy",
+    "Financial",
+    "Government"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "https",
+      "vpn"
+    ],
+    "tools": [],
+    "domains": [
+      "gov[.]uk",
+      "microsoft",
+      "ncsc",
+      "resecurity[.]com"
+    ]
+  },
+  "iocs": {
+    "hashes": [],
+    "domains": [
+      "resecurity.com",
+      "ncsc.gov.uk"
+    ],
+    "mutexes": []
+  },
+  "narrative": "The threat actors leveraged it for further reconnaissance and accounts compromise. Based on our analysis, one of these elevated actions was conducted on Monday, October 15, 2018 at 1:57 AM. Friday, December 28, 2018 at 10:25 AM – Resecurity reached out to Citrix and shared an early warning notification about a targeted attack and data breach.",
+  "_meta": {
+    "label": "G0034",
+    "doc_id": "ab41f5817e68",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2019/2019.03.08.Supply_Chain_Groups/Supply Chain – The Major Target of Cyberespionage Groups.pdf"
+  }
+}

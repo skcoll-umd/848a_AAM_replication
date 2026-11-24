@@ -1,0 +1,49 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "supply chain"
+  ],
+  "sectors": [],
+  "infrastructure_hints": {
+    "types": [
+      "command and control",
+      "https"
+    ],
+    "tools": [
+      "cmd",
+      "powershell"
+    ],
+    "domains": [
+      "backdoor[.]syskit",
+      "bak[.]exe",
+      "cmd[.]exe",
+      "get-logon-history[.]ps",
+      "mcaunrterce[.]cnomtly",
+      "rconfig[.]xml",
+      "sha432[.]exe",
+      "sha[.]exe",
+      "stereoversioncontrol[.]exe",
+      "symantec",
+      "symc[.]ly",
+      "wwww[.]esy"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "d9ac9c950e5495c9005b04843a40f01fa49d5fd49226cb5b03a055232ffc36f3",
+      "f71732f997c53fa45eef5c988697eb4aa62c8655d8f0be3268636fc23addd193",
+      "02a3296238a3d127a2e517f4949d31914c15d96726fb4902322c065153b364b2",
+      "07d123364d8d04e3fe0bfa4e0e23ddc7050ef039602ecd72baed70e6553c3ae4"
+    ],
+    "domains": [],
+    "mutexes": []
+  },
+  "narrative": "This is a basic backdoor that can download and execute additional tools and commands. This contains the command and control (C&C) information. Infostealer/Sha.exe/Sha432.exe operates in a similar manner, gathering information about the infected machine.",
+  "_meta": {
+    "label": "G0049",
+    "doc_id": "e33dbf8ce55b",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2019/2019.09.18.Tortoiseshell-APT/Tortoiseshell Group Targets IT Providers in Saudi Arabia in Probable Supply Chain Attacks.pdf"
+  }
+}

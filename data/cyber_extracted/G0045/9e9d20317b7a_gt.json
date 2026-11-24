@@ -1,0 +1,90 @@
+{
+  "threat_actor": "menuPass",
+  "group_name": "menuPass",
+  "group_id": "G0045",
+  "mitre_intrusion_set": {
+    "id": "intrusion-set--222fbd21-fc4f-4b7e-9f85-0e6e3a76c33f",
+    "gid": "G0045",
+    "name": "menuPass",
+    "matched_alias": "apt10"
+  },
+  "malware_family": "Fileless RAT",
+  "campaign_name": "Threatening Japan Yusuke Niwa",
+  "attack_ttp_map": {
+    "T1053.005": "Scheduled Task",
+    "T1560.001": "Archive via Utility",
+    "T1047": "Windows Management Instrumentation",
+    "T1133": "External Remote Services",
+    "T1003.002": "Security Account Manager",
+    "T1087.002": "Domain Account",
+    "T1574.001": "DLL",
+    "T1140": "Deobfuscate/Decode Files or Information",
+    "T1070.001": "Clear Windows Event Logs",
+    "T1482": "Domain Trust Discovery",
+    "T1059.001": "PowerShell",
+    "T1518.001": "Security Software Discovery",
+    "T1132.002": "Non-Standard Encoding",
+    "T1071.001": "Web Protocols",
+    "T1021.001": "Remote Desktop Protocol",
+    "T1003.003": "NTDS"
+  },
+  "technique_to_tactics": {
+    "T1053.005": [
+      "TA0002",
+      "TA0003",
+      "TA0004"
+    ],
+    "T1560.001": [
+      "TA0009"
+    ],
+    "T1047": [
+      "TA0002"
+    ],
+    "T1133": [
+      "TA0001",
+      "TA0003"
+    ],
+    "T1003.002": [
+      "TA0006"
+    ],
+    "T1087.002": [
+      "TA0007"
+    ],
+    "T1574.001": [
+      "TA0002",
+      "TA0005"
+    ],
+    "T1140": [
+      "TA0005"
+    ],
+    "T1070.001": [
+      "TA0005"
+    ],
+    "T1482": [
+      "TA0007"
+    ],
+    "T1059.001": [
+      "TA0002"
+    ],
+    "T1518.001": [
+      "TA0007"
+    ],
+    "T1132.002": [
+      "TA0011"
+    ],
+    "T1071.001": [
+      "TA0011"
+    ],
+    "T1021.001": [
+      "TA0008"
+    ],
+    "T1003.003": [
+      "TA0006"
+    ]
+  },
+  "_meta": {
+    "label": "G0045",
+    "doc_id": "9e9d20317b7a",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2021/2021.01.31.A41APT/JSAC2021_202_niwa-yanagishita_en.pdf"
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "document",
+    "phishing",
+    "website"
+  ],
+  "sectors": [
+    "Defense",
+    "Media"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "cloud storage",
+      "command and control",
+      "http",
+      "https"
+    ],
+    "tools": [
+      "python"
+    ],
+    "domains": [
+      "5442[.]zip",
+      "archive[.]php",
+      "co[.]th",
+      "cognimuse[.]cs",
+      "drop_v2[.]pdb",
+      "files[.]counseling",
+      "flockfilmseries[.]com",
+      "minidionis[.]pdb",
+      "ntua[.]gr",
+      "onedrive[.]pdb",
+      "portal[.]sbn",
+      "rss[.]php",
+      "search[.]php"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "28d29c702fdf3c16f27b33f3e32687dd82185e8b",
+      "04299c0b549d4a46154e0a754dda2bc9e43dff76",
+      "2f53bfcd2016d506674d0a05852318f9e8188ee1",
+      "317bde14307d8777d613280546f47dd0ce54f95b",
+      "476099ea132bf16fa96a5f618cb44f87446e3b02"
+    ],
+    "domains": [
+      "cognimuse.cs.ntua.gr",
+      "flockfilmseries.com",
+      "recordsmanagementservices.com",
+      "files.counseling.org"
+    ],
+    "mutexes": []
+  },
+  "narrative": "In most observed cases, the downloader will attempt to connect to a compromised website to download an encrypted malicious payload which the downloader will decrypt and execute. CloudDuke also greatly expands on the Duke group's usage of cloud storage services, specifically Microsoft's OneDrive, as a channel for both command and control as well as the exfiltration of stolen data. The purpose of the downloader is to download and execute additional malware on the victim's system.",
+  "_meta": {
+    "label": "G0016",
+    "doc_id": "31db7d25a2cb",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2015/2015.07.22.Duke_APT_groups_latest_tools/Duke_cloud_Linux.pdf"
+  }
+}

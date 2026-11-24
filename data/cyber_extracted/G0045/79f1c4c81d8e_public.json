@@ -1,0 +1,73 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "rdp",
+    "supply chain"
+  ],
+  "sectors": [
+    "Defense",
+    "Government",
+    "Legal"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "api",
+      "c2",
+      "command and control",
+      "dropbox",
+      "http",
+      "https",
+      "kerberos",
+      "rdp",
+      "tcp"
+    ],
+    "tools": [
+      "curl",
+      "git",
+      "metasploit",
+      "meterpreter",
+      "mimikatz",
+      "powershell",
+      "procdump",
+      "smbexec"
+    ],
+    "domains": [
+      "cta-2019-0206[.]pdf",
+      "cyber",
+      "docs[.]microsoft",
+      "go[.]recordedfuture",
+      "lg[.]exe",
+      "lsass[.]exe",
+      "microsoft",
+      "nj[.]gov",
+      "scmagazineuk",
+      "secureworks",
+      "secureworks[.]com",
+      "unit42[.]paloaltonetworks"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "9c162e042e0a892924f8415f7d72fe4f966bae7d",
+      "ff693988afa9ee34be78057ac51bad77691aa552",
+      "2e84fd87150a002df98233093f2842337c594604",
+      "8f0fcb5a80b2bca62d79f0d1cbdc93fb",
+      "16e9c238c6a77ebbb3c5b75ba78e6584"
+    ],
+    "domains": [
+      "secureworks.com",
+      "go.recordedfuture.com",
+      "scmagazineuk.com",
+      "docs.microsoft.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "DropboxAES RAT — This simple RAT uses Dropbox for command and control, relies on ChaCha20 to encrypt communications data, and is launched using DLL search order hijacking. This script can be used to enumerate system information, download files, and run commands using PowerShell or the Windows command prompt. Discovery and lateral movement Like other targeted threats, BRONZE VINEWOOD uses a variety of native operating system and publicly available tools for network discovery and lateral movement.",
+  "_meta": {
+    "label": "G0045",
+    "doc_id": "79f1c4c81d8e",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2020/2020.06.24.BRONZE_VINEWOOD/BRONZE VINEWOOD Targets Supply Chains _ Secureworks.pdf"
+  }
+}

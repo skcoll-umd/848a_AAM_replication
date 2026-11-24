@@ -1,0 +1,92 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [],
+  "sectors": [
+    "Media"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "api",
+      "command and control",
+      "http",
+      "https",
+      "proxy",
+      "ssh",
+      "tcp",
+      "tls"
+    ],
+    "tools": [
+      "cmd",
+      "netsh"
+    ],
+    "domains": [
+      "adobeupdaterprefs[.]dat",
+      "advapi32[.]dll",
+      "ahnlab",
+      "ahnlab[.]com",
+      "ahnlab[.]nefficient",
+      "altools[.]com",
+      "alyac",
+      "alyac[.]co",
+      "autoexeo[.]bat",
+      "boho",
+      "boho[.]or",
+      "cmd[.]exe",
+      "co[.]kr",
+      "d[.]bat",
+      "download[.]boho",
+      "explicitupdate[.]alyac",
+      "explorer[.]exe",
+      "frameworkservice[.]exe",
+      "gms[.]ahnlab",
+      "go[.]microsoft",
+      "iconcache[.]dat",
+      "iphapi[.]dll",
+      "kc[.]mcafee",
+      "kernel32[.]dll",
+      "ko-kr[.]albn",
+      "ko-kr[.]alupdatealyac",
+      "mcshield[.]exe",
+      "mctray[.]exe",
+      "mfeann[.]exe",
+      "mscorsw[.]exe",
+      "mspaint[.]exe",
+      "naprdmgr[.]exe",
+      "novetta",
+      "operation-blockbuster-rat-and-staging-report[.]pdf",
+      "operationblockbuster",
+      "or[.]kr",
+      "pmsconfig[.]msi",
+      "pmslog[.]msi",
+      "processhacker[.]sourceforge",
+      "shstat[.]exe",
+      "su3[.]ahnlab",
+      "su[.]ahnlab",
+      "udaterui[.]exe",
+      "update[.]ahnlab",
+      "vstskmgr[.]exe",
+      "ws2_32[.]dll",
+      "wsock32[.]dll",
+      "zawq[.]bat"
+    ]
+  },
+  "iocs": {
+    "hashes": [],
+    "domains": [
+      "operationblockbuster.com",
+      "go.microsoft.com",
+      "processhacker.sourceforge.net",
+      "kc.mcafee.com",
+      "novetta.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "PapaAlfa-One uses a very simple, unencrypted communication subsystem and a straight-forward command processing system, while PapaAlfa-Two employs the fake TLS communication scheme to encrypt communication between the client and the admin channel and uses a more robust command processing system. Note that not all variants of hosts 127.0.0.1 TangoBravo overwrite all of the domains; specifically, alyac.co.kr, boho.or.kr, download.boho.or.kr, and ahnlab.com are not found in all samples. When activated without any command line arguments or with the command line argument , KiloAlfa activates its persistence functionality.",
+  "_meta": {
+    "label": "G0032",
+    "doc_id": "e5b5340f0524",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2016/2016.02.24.Operation_Blockbuster/Operation-Blockbuster-Tools-Report.pdf"
+  }
+}

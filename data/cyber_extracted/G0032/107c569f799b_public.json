@@ -1,0 +1,35 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "iso"
+  ],
+  "sectors": [
+    "Financial",
+    "Government"
+  ],
+  "infrastructure_hints": {
+    "types": [],
+    "tools": [],
+    "domains": [
+      "trojan[.]fastcash"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "d465637518024262c063f4a82d799a4e40ff3381014972f24ea18bc23c3b27ee",
+      "ca9ab48d293cc84092e8db8f0ca99cb155b30c61d32a1da7cd3687de454fe86c",
+      "10ac312c8dd02e417dd24d53c99525c29d74dcbc84730351ad7a4e0a4b1a0eba",
+      "3a5ba44f140821849de2d82d5a137c3bb5a736130dddb86b296d94e6b421594c"
+    ],
+    "domains": [],
+    "mutexes": []
+  },
+  "narrative": "This malware in turn intercepts fraudulent [REDACTED_ACTOR] cash withdrawal requests and sends fake approval responses, allowing the attackers to steal cash from ATMs. How the attackers gain control of these accounts remains unclear. Software updates will frequently include patches for newly discovered security vulnerabilities that could be exploited by attackers.",
+  "_meta": {
+    "label": "G0032",
+    "doc_id": "107c569f799b",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2018/2018.11.08.FASTCash/FASTCash How the Lazarus Group is Emptying Millions from ATMs.pdf"
+  }
+}

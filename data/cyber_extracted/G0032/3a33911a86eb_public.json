@@ -1,0 +1,101 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "website"
+  ],
+  "sectors": [
+    "Financial",
+    "Media"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "c2",
+      "http",
+      "https"
+    ],
+    "tools": [
+      "cmd",
+      "tasklist"
+    ],
+    "domains": [
+      "-bot[.]org",
+      "-invest[.]net",
+      "-kurier[.]com",
+      "-zucht[.]de",
+      "365[.]com",
+      "4_5983241673595946132[.]dmg",
+      "adobe[.]icx",
+      "adobearm[.]exe",
+      "adobeupdator[.]exe",
+      "aeroplans[.]info",
+      "beastgoc[.]com",
+      "bitcointrader[.]pkg",
+      "buckfast",
+      "celasllc",
+      "celastradepro[.]pkg",
+      "centerupdater[.]exe",
+      "certpkg[.]php",
+      "chainfun",
+      "chainfun365[.]com",
+      "checkupdate[.]php",
+      "cmd[.]exe",
+      "cyptian[.]com",
+      "device[.]exe",
+      "grepmonux[.]php",
+      "iexplore[.]exe",
+      "index[.]do",
+      "invesuccess[.]com",
+      "jmttrader[.]pkg",
+      "jmttrader_mac[.]dmg",
+      "jmttrading",
+      "macinstaller[.]dmg",
+      "markmakingbot[.]dmg",
+      "msctfp[.]dat",
+      "mydealoman[.]com",
+      "private",
+      "private-kurier[.]com",
+      "rasext[.]dll",
+      "securelist[.]com",
+      "unioncrypto[.]vip",
+      "unioncryptotrader[.]dmg",
+      "unioncryptotrader[.]pkg",
+      "unioncryptotradersetup[.]exe",
+      "unioncryptoupdater[.]exe",
+      "unistore[.]exe",
+      "wb",
+      "wbbot[.]pkg",
+      "wfc[.]cfg",
+      "wfcupdater[.]exe",
+      "wfcwallet[.]com",
+      "winloaderexe[.]pdb"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "48ded52752de9f9b73c6bf9ae81cb429",
+      "3efeccfc6daf0bf99dcb36f247364052",
+      "c2ffbf7f2f98c73b98198b4937119a18",
+      "cb56955b70c87767dee81e23503086c3",
+      "8b4c532f10603a8e199aa4281384764e"
+    ],
+    "domains": [
+      "wb-bot.org",
+      "securelist.com",
+      "beastgoc.com",
+      "celasllc.com",
+      "wfcwallet.com"
+    ],
+    "mutexes": [
+      "Local\\unioncryptotrader\\UnionCryptoUpdater.exe",
+      "Local\\Comms\\Unistore.exe"
+    ]
+  },
+  "narrative": "After fundamental reconnaissance, the malware operator implanted the delivered payload by manually using the following commands: cmd.exe /c dir rasext.dll cmd.exe /c dir msctfp.dat cmd.exe /c tasklist /svc. It was executed from the Telegram messenger download folder: C:\\Users\\[user name]\\Downloads\\Telegram Desktop\\UnionCryptoTraderSetup.exe We also found the actor’s Telegram group on their fake website. It injects the next payload into the Internet Explorer process, and the tainted iexplore.exe process carries out the attacker’s commands.",
+  "_meta": {
+    "label": "G0032",
+    "doc_id": "3a33911a86eb",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2020/2020.01.08_Operation_AppleJeus_Sequel/Operation AppleJeus Sequel.pdf"
+  }
+}

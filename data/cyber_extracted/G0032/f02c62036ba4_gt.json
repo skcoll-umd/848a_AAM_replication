@@ -1,0 +1,20 @@
+{
+  "threat_actor": "AppleJeus",
+  "group_name": "AppleJeus",
+  "group_id": "G1049",
+  "mitre_intrusion_set": {
+    "id": "intrusion-set--14225573-63b5-4e50-ba9a-5fdcaf6a7b4c",
+    "gid": "G1049",
+    "name": "AppleJeus",
+    "matched_alias": "applejeus"
+  },
+  "malware_family": "Fallchill loader",
+  "campaign_name": "AppleJeus",
+  "attack_ttp_map": {},
+  "technique_to_tactics": {},
+  "_meta": {
+    "label": "G0032",
+    "doc_id": "f02c62036ba4",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2018/2018.08.23.Operation_AppleJeus/Operation_AppleJeus.pdf"
+  }
+}

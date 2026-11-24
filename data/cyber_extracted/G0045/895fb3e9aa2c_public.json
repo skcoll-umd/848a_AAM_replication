@@ -1,0 +1,50 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "document",
+    "email",
+    "macro",
+    "phishing"
+  ],
+  "sectors": [
+    "Defense",
+    "Media"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "api",
+      "c2",
+      "https"
+    ],
+    "tools": [],
+    "domains": [
+      "blog-en[.]itochuci",
+      "co[.]jp",
+      "elze[.]exe",
+      "frau[.]dll",
+      "settings[.]xml",
+      "template[.]dotm"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "69dd7fd355d79db0325816569ae2129a",
+      "e82d98bae599cd172bb194adbdc76873",
+      "d1a925ddb6d0defc94afb5996ed148bd",
+      "9598b2af9dd1493dd213dbca56912af4",
+      "2a9012499d15145b5f63700c05adc426"
+    ],
+    "domains": [
+      "blog-en.itochuci.co.jp"
+    ],
+    "mutexes": []
+  },
+  "narrative": "Change in the hash calculation algorithm Change 2: Additions to backdoor commands [REDACTED_MALWARE] implements the following backdoor commands to control infected hosts: The number of backdoor commands was reduced to 11 in v0.6.5, but v0.7.1 restored 6 commands and added the new runas command, bringing the total to 18. The structure and encryption of the communication data with the C2 server are very complex, as shown in the figure below. Overview of the unique data structure and encryption used for communication with the C2 server Our analysis of multiple [REDACTED_MALWARE] samples found in 2023 revealed the following differences from previously published information: 1.",
+  "_meta": {
+    "label": "G0045",
+    "doc_id": "895fb3e9aa2c",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2024/2024.01.24.APT10_LODEINFO/The Endless Struggle Against APT10_ Insights from LODEINFO v0.6.6 - v0.7.3 Analysis - Researcher Blog - ITOCHU Cyber & Intelligence Inc_.pdf"
+  }
+}

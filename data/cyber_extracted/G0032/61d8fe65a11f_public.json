@@ -1,0 +1,74 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "document",
+    "email",
+    "phishing",
+    "website"
+  ],
+  "sectors": [
+    "Defense",
+    "Finance",
+    "Financial",
+    "Government",
+    "Legal",
+    "Media"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "api",
+      "beacon",
+      "command and control",
+      "http",
+      "https"
+    ],
+    "tools": [
+      "cmd"
+    ],
+    "domains": [
+      "agreement[.]docx",
+      "apvapi32[.]dll",
+      "charset[.]php",
+      "cmd[.]exe",
+      "common[.]php",
+      "dream[.]avi",
+      "falcancoin[.]io",
+      "generic[.]dx",
+      "generic[.]hbg",
+      "hp01[.]avi",
+      "img01_29[.]jpg",
+      "iphlp[.]dll",
+      "kernel32[.]dll",
+      "king[.]jpg",
+      "my[.]doc",
+      "oleaut32[.]dll",
+      "pratice[.]pdf",
+      "star[.]avi",
+      "t[.]co",
+      "urlmon[.]dll",
+      "wsock32[.]dll"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "843c17b06a3aee22447f021307909890b68828b9",
+      "343ebca579bb888eb8ccb811f9b52280c72e484c",
+      "a2e966edee45b30bb6bb5c978e55833eec169098",
+      "650b7d25f4ed87490f8467eb48e0443fb244a8c4",
+      "65e7d2338735ec04fd9692d020298e5a7953fd8d"
+    ],
+    "domains": [
+      "t.co",
+      "falcancoin.io"
+    ],
+    "mutexes": []
+  },
+  "narrative": "APIs from the following libraries are loaded at runtime: Kernel32.dll PDFmyURL lets you convert a complete website to PDF automatically! Ws2_32/wsock32.dll Apvapi32.dll Oleaut32.dll Iphlp.dll Urlmon.dll A dynamic API loaded by the malware. script that exploits CVE-2018-4878 and downloads and executes the DLL implant from falcancoin.io. Commands received from the control server are encoded DWORDs After decoding, these DWORDs should be in the range 123459h to 123490h Malware checking to make sure a received command is in the correct range.",
+  "_meta": {
+    "label": "G0032",
+    "doc_id": "61d8fe65a11f",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2018/2018.03.08.hidden-cobra-targets-turkish-financial/hidden-cobra-targets-turkish-financial-sector-new-bankshot-implant.pdf"
+  }
+}

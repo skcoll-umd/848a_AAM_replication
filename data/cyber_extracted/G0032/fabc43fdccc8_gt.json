@@ -1,0 +1,20 @@
+{
+  "threat_actor": "Sharpshooter",
+  "group_name": "Sharpshooter",
+  "group_id": "G0104",
+  "mitre_intrusion_set": {
+    "id": "intrusion-set--5e78ae92-3ffd-4b16-bf62-e798529d73f1",
+    "gid": "G0104",
+    "name": "Sharpshooter",
+    "matched_alias": "sharpshooter"
+  },
+  "malware_family": "Operation Dream Job",
+  "campaign_name": "Dream Job",
+  "attack_ttp_map": {},
+  "technique_to_tactics": {},
+  "_meta": {
+    "label": "G0032",
+    "doc_id": "fabc43fdccc8",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/Report/AhnLab/ASEC_REPORT_vol.102_ENG.pdf"
+  }
+}

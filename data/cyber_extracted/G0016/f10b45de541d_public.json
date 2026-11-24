@@ -1,0 +1,63 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "attachment",
+    "document",
+    "email",
+    "iso",
+    "phishing",
+    "supply chain"
+  ],
+  "sectors": [
+    "Defense",
+    "Government",
+    "Media"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "api",
+      "dropbox",
+      "http",
+      "https",
+      "vpn"
+    ],
+    "tools": [
+      "cobalt strike"
+    ],
+    "domains": [
+      "ambassador_absense[.]docx",
+      "api[.]dropbox",
+      "api[.]trello",
+      "blog[.]bushidotoken",
+      "blogspot[.]com",
+      "eu3[.]biz",
+      "eu3[.]org",
+      "frge[.]io",
+      "m[.]pipedream",
+      "overview-of-russian-gru-and-svr[.]html",
+      "threat[.]rtf",
+      "tinyurl[.]com",
+      "ukr[.]net",
+      "ukrscanner[.]rar"
+    ]
+  },
+  "iocs": {
+    "hashes": [],
+    "domains": [
+      "blog.bushidotoken.net",
+      "eu3.org",
+      "blogspot.com",
+      "ukr.net",
+      "frge.io"
+    ],
+    "mutexes": []
+  },
+  "narrative": "Opening the document downloads a HTML Application (.HTA) file with embedded JavaScript that decrypts and executes the payload. Once launched, the malicious payload collects data about the local system and exfiltrates it to a remote server using api[.]trello[.]com. Data collected by the malware was exfiltrated via HTTP POST requests to *.m.pipedream[.]net hostnames.",
+  "_meta": {
+    "label": "G0016",
+    "doc_id": "f10b45de541d",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/Report/Overview of Russian GRU and SVR Cyberespionage Campaigns 1H 2022.pdf"
+  }
+}

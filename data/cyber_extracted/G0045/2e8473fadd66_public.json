@@ -1,0 +1,98 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "attachment",
+    "document",
+    "email",
+    "macro",
+    "phishing"
+  ],
+  "sectors": [
+    "Education",
+    "Energy",
+    "Media",
+    "Utilities"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "beacon",
+      "c2",
+      "command and control",
+      "dns",
+      "dropbox",
+      "http",
+      "https",
+      "proxy",
+      "ssl"
+    ],
+    "tools": [
+      "certutil"
+    ],
+    "domains": [
+      "379[.]com",
+      "asce[.]email",
+      "asce[.]org",
+      "cert[.]pem",
+      "certutil[.]exe",
+      "dlcore[.]dll",
+      "driver[.]pdb",
+      "dropbox",
+      "ehstorauthn[.]exe",
+      "ehstorauthn_shadow[.]exe",
+      "energysemi[.]com",
+      "fcclientdll[.]pdb",
+      "ffca[.]caibi",
+      "globalenergycertification[.]com",
+      "gup[.]exe",
+      "hha[.]dll",
+      "hhw[.]exe",
+      "mails",
+      "mails[.]daveengineer",
+      "mails[.]energysemi",
+      "nceess[.]com",
+      "nerc[.]email",
+      "pense1[.]txt",
+      "powersafetraining",
+      "powersafetraining[.]net",
+      "powersafetrainings",
+      "powersafetrainings[.]org",
+      "proofpoint",
+      "proofpoint[.]com",
+      "qqsetupex[.]exe",
+      "qqsetupex_func[.]pdb",
+      "qtinfo[.]txt",
+      "rebare[.]dat",
+      "rescure64[.]dat",
+      "rescure86[.]dat",
+      "rescure[.]dat",
+      "responsor[.]dat",
+      "temptcm[.]tmp",
+      "ver[.]pdb"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "b7960d1f40b727bbea18a0e5c62bafcb54c9ec73be3e69e787b7ddafd2aae364",
+      "26eb8a1f0bdde626601d039ea0f2c92a7921152371bafe5e811c6a1831f071ce",
+      "1334c742f2aec7e8412d76ba228b99935a49dc96a1e8e1f3446d9f61247ae47e",
+      "de30929ef958211f9315e27a7aa45ef061726a76990ddc6b9d9f189b9fbdd45a",
+      "479954b9e7d5c5f7086a2a1ff1dba99de2eab2e1b1bc75ad8f3b211088eb4ee9"
+    ],
+    "domains": [
+      "proofpoint.com",
+      "ffca.caibi379.com",
+      "powersafetrainings.org",
+      "nceess.com",
+      "globalenergycertification.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "FlowCloud malware is capable of RAT functionalities based on its available commands including accessing the clipboard, installed applications, keyboard, mouse, screen, files, services, and processes with the ability to exfiltrate information via command and control. Its remote access trojan (RAT) functionality includes the ability to access installed applications, the keyboard, mouse, screen, files, services, and processes with the ability to exfiltrate information via command and control. When the shellcode within rebare.dat is executed it in turn executes a RAT installer file named rescure.dat.",
+  "_meta": {
+    "label": "G0045",
+    "doc_id": "2e8473fadd66",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2020/2020.06.08.TA410/TA410_ The Group Behind LookBack Attacks Against U.S. Utilities Sector Returns with New Malware _ Proofpoint US.pdf"
+  }
+}

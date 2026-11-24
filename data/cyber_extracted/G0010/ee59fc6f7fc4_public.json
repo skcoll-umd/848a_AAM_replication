@@ -1,0 +1,114 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "document",
+    "website"
+  ],
+  "sectors": [
+    "Defense"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "api",
+      "command and control",
+      "dns",
+      "http",
+      "https",
+      "proxy",
+      "tcp"
+    ],
+    "tools": [
+      "cmd",
+      "powershell",
+      "rundll32",
+      "tasklist"
+    ],
+    "domains": [
+      "-it[.]com",
+      "1[.]txt",
+      "3d-game[.]com",
+      "4irc[.]com",
+      "admdownload[.]adobe",
+      "adobe[.]com",
+      "adobesysfnt09[.]pdb",
+      "adobesysfnt09[.]tlb",
+      "adstore[.]twilightparadox",
+      "agent[.]nwb",
+      "agony[.]compress",
+      "artemonsecurity[.]com",
+      "auberdine[.]etowns",
+      "bigpen[.]ga",
+      "blog[.]fox",
+      "cmd[.]exe",
+      "debugparser[.]dll",
+      "docs[.]google",
+      "drive[.]google",
+      "ebay-global[.]publicvm",
+      "ehstorshell[.]dll",
+      "en[.]wikipedia",
+      "eset-gazer[.]pdf",
+      "eset[.]com",
+      "explorer[.]exe",
+      "flashplayer27_xa_install[.]exe",
+      "fleetwood[.]tk",
+      "gallop[.]mefound",
+      "gdatasoftware",
+      "get[.]adobe",
+      "google_update_checker[.]js",
+      "instructionerdll[.]dll",
+      "kb6867[.]bin",
+      "local_update_checker[.]js",
+      "ntshrui[.]dll",
+      "otx[.]alienvault",
+      "psychology-blog[.]ezua",
+      "query[.]php",
+      "ripe",
+      "robot[.]wikaba",
+      "rundll32[.]exe",
+      "script[.]google",
+      "securelist[.]com",
+      "sendmessage[.]mooo",
+      "smallcloud[.]ga",
+      "snake_whitepaper[.]pdf",
+      "technet[.]microsoft",
+      "trojandownloader[.]agent",
+      "trojandownloader[.]cam",
+      "trojandownloader[.]dmu",
+      "turla[.]cp",
+      "turla[.]cq",
+      "turla[.]cr",
+      "turla[.]cs",
+      "turla[.]ct",
+      "turla[.]cu",
+      "turla[.]cv",
+      "turla[.]cw",
+      "turla[.]cx",
+      "welivesecurity"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "2a61b4d0a7c5d7dc13f4f1dd5e0e3117036a86638dbafaec6ae96da507fb7624",
+      "f6c9ae06dfc9c6898e62087cc7dbf1ac29cbd0a4bcdb12e58e0c467e11ad4f75",
+      "e7fd14ca45818044690ca67f201cc8cfb916ccc941a105927fc4c932c72b425d",
+      "f667680df596631fba58754c16c3041fae12ed6bf25d6068e6981ee68a6c9d0a",
+      "26a1a42bc74e14887616f9d6048c17b1b4231466716a6426e7162426e1a08030"
+    ],
+    "domains": [
+      "admdownload.adobe.com",
+      "get.adobe.com",
+      "script.google.com",
+      "welivesecurity.com",
+      "otx.alienvault.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "URLs 9 4. analysis of the Win32 backdoor 12 4.1 Installer 12 Crypter 12 Installation 13 4.2 DebugParser (launcher) 15 4.3 Commander ([REDACTED_MALWARE]) 17 Setup 18 Encryption 19 Log 20 C&C server communications and backdoor commands 20 5. the log file Figure 19 Beginning of the log file C&C server communications and backdoor commands The backdoor’s [REDACTED_MALWARE] loop is responsible for managing the communication with the C&C server and executing the commands it sends. 0x3002 Launch a process (or load a library if there is .dll in the filename) 0x3003 Delete a file using DeleteFileW. 0x3004 Exfiltrate a file (max size sent = 104,857,600 bytes).",
+  "_meta": {
+    "label": "G0010",
+    "doc_id": "ee59fc6f7fc4",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2018/2018.01.09.Turla_Mosquito/ESET_Turla_Mosquito.pdf"
+  }
+}

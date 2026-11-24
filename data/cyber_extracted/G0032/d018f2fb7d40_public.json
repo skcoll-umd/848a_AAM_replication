@@ -1,0 +1,98 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "brute force",
+    "email",
+    "phishing",
+    "supply chain",
+    "website"
+  ],
+  "sectors": [
+    "Defense",
+    "Education",
+    "Energy",
+    "Financial",
+    "Government",
+    "Healthcare",
+    "Legal",
+    "Media",
+    "Public sector",
+    "Technology",
+    "Telecom",
+    "Telecommunications"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "c2",
+      "command and control",
+      "https",
+      "mongodb",
+      "sharepoint"
+    ],
+    "tools": [],
+    "domains": [
+      "2019[.]pymnts",
+      "2019[.]usa",
+      "accountingtoday",
+      "bankinfosecurity",
+      "bbc",
+      "businessinsider",
+      "cbronline",
+      "co[.]za",
+      "comparitech",
+      "cpomagazine",
+      "cyberdefensemagazine",
+      "cyberscoop",
+      "darkreading",
+      "enisa",
+      "enisa[.]europa",
+      "enisa[.]threat",
+      "europa[.]eu",
+      "forbes",
+      "gdpr[.]report",
+      "helpnetsecurity",
+      "infosecurity",
+      "justice",
+      "latesthackingnews[.]com",
+      "magazine[.]com",
+      "media[.]cert",
+      "news[.]https",
+      "pymnts",
+      "recordedfuture",
+      "research[.]checkpoint",
+      "reuters",
+      "rewterz",
+      "romaniajournal",
+      "scmagazineuk",
+      "security[.]https",
+      "securitymagazine",
+      "techcrunch[.]com",
+      "threatpost[.]com",
+      "tlp-white-cert-eu-memo-190927-2[.]pdf",
+      "verification[.]io",
+      "verifications[.]io",
+      "web[.]br",
+      "welivesecurity",
+      "zdnet"
+    ]
+  },
+  "iocs": {
+    "hashes": [],
+    "domains": [
+      "latesthackingnews.com",
+      "cpomagazine.com",
+      "recordedfuture.com",
+      "techcrunch.com",
+      "web.br.de"
+    ],
+    "mutexes": []
+  },
+  "narrative": "Once installed, it helps the adversary to do reconnaissance, move around the victim’s systems and networks, install additional tools such as ransomware, steal data and communicate with a C2 server. These services include distribution of ransomware, command and control (C2), distributed denial of service (DDoS), spam and other illicit activities. https://www.securitymagazine.com/articles/91921-brno- university-hospital-in-czech-republic-suffers-cyberattack-during-covid-19-outbreak 34.“Most malware in Q1 2020 was delivered via encrypted HTTPS connections”.",
+  "_meta": {
+    "label": "G0032",
+    "doc_id": "d018f2fb7d40",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/Report/ENISA/ETL2020_Incidents_A4.pdf"
+  }
+}

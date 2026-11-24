@@ -1,0 +1,59 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "document",
+    "email",
+    "phishing",
+    "social media",
+    "website"
+  ],
+  "sectors": [
+    "Defense",
+    "Energy",
+    "Government",
+    "Media",
+    "Technology"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "dns"
+    ],
+    "tools": [
+      "empire",
+      "metasploit",
+      "powershell"
+    ],
+    "domains": [
+      "-cas[.]org",
+      "0nedrive-0ffice365[.]com",
+      "877[.]fireeye",
+      "bbc-news[.]org",
+      "fancybear[.]net",
+      "fireeye",
+      "fireeye[.]com",
+      "nato-news[.]com",
+      "reports[.]html",
+      "tas",
+      "theguardiannews[.]org"
+    ]
+  },
+  "iocs": {
+    "hashes": [],
+    "domains": [
+      "nato-news.com",
+      "bbc-news.org",
+      "fancybear.net",
+      "tas-cas.org",
+      "0nedrive-0ffice365.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "To download this or other FireEye iSIGHT Intelligence reports, visit: www.fireeye.com/reports.html FireEye, Inc. 1440 McCarthy Blvd. Milpitas, CA 95035 408.321.6300 / 877.FIREEYE (347.3393) / info@FireEye.com www.FireEye.com © 2016 FireEye, Inc. The group, almost certainly compromised of a sophisticated and prolific set of developers and operators, has historically collected intelligence on defense and geopolitical issues.",
+  "_meta": {
+    "label": "G0007",
+    "doc_id": "83ede176fb4c",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2017/2017.01.11.apt28_at_the_center/APT28-Center-of-Storm-2017.pdf"
+  }
+}

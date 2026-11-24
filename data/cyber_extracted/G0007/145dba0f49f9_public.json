@@ -1,0 +1,54 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "document",
+    "macro"
+  ],
+  "sectors": [
+    "Government",
+    "Media",
+    "Mining"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "c2",
+      "https"
+    ],
+    "tools": [],
+    "domains": [
+      "adodb[.]stream",
+      "bin[.]base",
+      "c4csa[.]org",
+      "ert[.]datatype",
+      "felims[.]php",
+      "labs[.]sentinelone",
+      "normal[.]dotm",
+      "style[.]php",
+      "wininition[.]exe",
+      "xbhp"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "3b548a851fb889d3cc84243eb8ce9cbf8a857c7d725a24408934c0d8342d5811",
+      "1dd03c4ea4d630a59f73e053d705185e27e2e2545dd9caedb26a824ac5d11466",
+      "1e8261104cbe4e09c19af7910f83e9545fd435483f24f60ec70c3186b98603cc",
+      "c213b60a63da80f960e7a7344f478eb1b72cee89fd0145361a088478c51b2c0e",
+      "2bf088955007b4f47fe9187affe65fffea234ff16596313a74958a7c85129172"
+    ],
+    "domains": [
+      "xbhp.com",
+      "c4csa.org",
+      "labs.sentinelone.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "style.php 68747470733A2F2F7777772E63346373612E6F72672F696E636C756465732F736F75726365732F66656 hxxps://www.c4csa[.]org/includes/sources/felims.php Note: These appear to be compromised domains. In total, we found six Delphocy Word documents that appear to be related to this cluster, all of which contain the same VBA script that drops a PE. In this post, we take a deep dive into these samples and share some techniques other analysts can employ to reverse engineer Delphocy dropper docs.",
+  "_meta": {
+    "label": "G0007",
+    "doc_id": "145dba0f49f9",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2021/2021.04.19.A_Deep_Dive_into_Zebrocys_Dropper_Docs/2021.04.19.A_Deep_Dive_into_Zebrocys_Dropper_Docs.pdf"
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "email",
+    "website"
+  ],
+  "sectors": [
+    "Defense",
+    "Government",
+    "Media",
+    "Technology"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "api",
+      "http",
+      "https",
+      "proxy"
+    ],
+    "tools": [],
+    "domains": [
+      "7-series-chipset-pch-datasheet[.]pdf",
+      "absolute",
+      "and-reality[.]pdf",
+      "asert[.]arbornetworks",
+      "assets[.]documentcloud",
+      "autoche[.]exe",
+      "autochk[.]exe",
+      "bbc",
+      "blackhat",
+      "blog[.]trendmicro",
+      "bromiumlabs[.]files",
+      "cert[.]org",
+      "cmhokd[.]euxlee",
+      "coresecurity",
+      "crowdstrike",
+      "doj-russia-dnc-hack-indictment[.]pdf",
+      "elaxo[.]org",
+      "eset-sednit-full[.]pdf",
+      "eset[.]com",
+      "gigabyte-brix-systems-vulnerabilities[.]html",
+      "iexplore[.]exe",
+      "ikmtrust[.]com",
+      "image[.]bin",
+      "info_efi[.]exe",
+      "intel",
+      "introbios[.]html",
+      "jflynci[.]com",
+      "kb",
+      "lxwo[.]org",
+      "opensecuritytraining[.]info",
+      "page_13763820[.]html",
+      "rdsnets[.]com",
+      "remotepx[.]net",
+      "rewriter_binary[.]exe",
+      "rewriter_read[.]exe",
+      "rpcnetconnect[.]com",
+      "rpcnetp[.]exe",
+      "rwdrv[.]sys",
+      "rweverything[.]com",
+      "secao[.]org",
+      "speed_racer_whitepaper[.]pdf",
+      "svchost[.]exe",
+      "sysanalyticweb[.]com",
+      "the-rootkit-aortega-asacco[.]pdf",
+      "threatvector[.]cylance",
+      "us-14-kamluk-computrace-backdoor-revisited-wp[.]pdf",
+      "webstp[.]com",
+      "welivesecurity",
+      "wikileaks[.]org",
+      "wired",
+      "wordpress[.]com"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "ea728abe26bac161e110970051e1561fd51db93b",
+      "cc217342373967d1916cb20eca5ccb29caaf7c1b",
+      "f2be778971ad9df2082a266bd04ab657bd287413",
+      "4b9e71615b37aea1eaeb5b1cfa0eee048118ff72",
+      "700d7e763f59e706b4f05c69911319690f85432e"
+    ],
+    "domains": [
+      "crowdstrike.com",
+      "assets.documentcloud.org",
+      "bbc.com",
+      "wired.com",
+      "welivesecurity.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "As no authentication mechanism exists, if adversaries could control the server with which the small agent communicates, they could make it download and execute arbitrary code . autoche.exe vs. autochk.exe The malicious autoche.exe is used to set up persistence for the small agent rpcnetp.exe . Available: https://www.blackhat.com/docs/us-14/materials/us-14-Kamluk-Computrace-Backdoor-Revisited-WP.pdf 13 ASERT team, “Lojack Becomes a Double-Agent,” 1 May 2018 .",
+  "_meta": {
+    "label": "G0007",
+    "doc_id": "81612fa846df",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2018/2018.09.27.LoJax/ESET-LoJax.pdf"
+  }
+}

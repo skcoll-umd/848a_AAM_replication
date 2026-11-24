@@ -1,0 +1,113 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "email",
+    "usb",
+    "watering-hole",
+    "website"
+  ],
+  "sectors": [
+    "Defense",
+    "Media",
+    "Utilities"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "c2",
+      "proxy",
+      "tcp"
+    ],
+    "tools": [
+      "powershell"
+    ],
+    "domains": [
+      "-game[.]org",
+      "03[.]com",
+      "25u[.]com",
+      "2waky[.]com",
+      "32[.]agent",
+      "32[.]turla",
+      "3[.]com",
+      "3utilities[.]com",
+      "4dq[.]com",
+      "accessdest[.]strangled",
+      "africankingdom[.]deaftone",
+      "agent[.]btz",
+      "agent[.]dne",
+      "aromatravel[.]org",
+      "backdoor[.]win",
+      "bookstore[.]strangled",
+      "bug[.]ignorelist",
+      "cars-online[.]zapto",
+      "chinafood[.]chickenkiller",
+      "coldriver[.]strangled",
+      "developarea[.]mooo",
+      "downtown[.]crabdance",
+      "easport-news[.]publicvm",
+      "eu-society[.]com",
+      "eurovision[.]chickenkiller",
+      "forum[.]sytes",
+      "goldenroade[.]strangled",
+      "greateplan[.]ocry",
+      "health-everyday[.]faqserv",
+      "highhills[.]ignorelist",
+      "hockey-news[.]servehttp",
+      "industrywork[.]mooo",
+      "leagueoflegends[.]servequake",
+      "marketplace[.]servehttp",
+      "mediahistory[.]linkpc",
+      "music-world[.]servemp",
+      "new-book[.]linkpc",
+      "nhl-blog[.]servegame",
+      "nightstreet[.]toh",
+      "onlineshop[.]sellclassics",
+      "people-health[.]net",
+      "pressforum[.]serveblog",
+      "radiobutton[.]mooo",
+      "satbeams",
+      "satbeams[.]com",
+      "sealand[.]publicvm",
+      "securesource[.]strangled",
+      "softstream[.]strangled",
+      "sportacademy[.]my",
+      "sportnewspaper[.]strangled",
+      "supercar[.]ignorelist",
+      "supernews[.]instanthq",
+      "supernews[.]sytes",
+      "telesport[.]mooo",
+      "tiger[.]got",
+      "top-facts[.]sytes",
+      "track[.]strangled",
+      "trojan[.]win",
+      "wargame[.]ignorelist",
+      "weather-online[.]hopto",
+      "wintersport[.]mrbasic",
+      "x-files[.]zapto"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "0328dedfce54e185ad395ac44aa4223c",
+      "18da7eea4e8a862a19c8c4f10d7341c0",
+      "2a7670aa9d1cc64e61fd50f9f64296f9",
+      "49d6cf436aa7bc5314aa4e78608872d8",
+      "a44ee30f9f14e156ac0c2137af595cf7"
+    ],
+    "domains": [
+      "satbeams.com",
+      "pressforum.serveblog.net",
+      "music-world.servemp3.com",
+      "hockey-news.servehttp.com",
+      "eu-society.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "One of them, and perhaps the biggest, is the constant seizure and takedown of domains and servers used for command-and- control (C&C). Another way of getting a C&C server into a satellite’s IP range is to hijack the network traffic between the victim and the satellite operator and to inject packets along the way. For example, an attack that appeared to come from a Comcast IP located in New Jersey may really have been from a hijacker located in Eastern Europe, briefly commandeering Comcast IP space.",
+  "_meta": {
+    "label": "G0010",
+    "doc_id": "bc125fec0666",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2015/2015.09.09.satellite-turla-apt/Satellite-turla-apt-command-and-control-in-the-sky.pdf"
+  }
+}

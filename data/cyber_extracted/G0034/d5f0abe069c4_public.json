@@ -1,0 +1,88 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "document",
+    "email",
+    "phishing",
+    "usb",
+    "website"
+  ],
+  "sectors": [
+    "Energy",
+    "Financial",
+    "Government",
+    "Media"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "api",
+      "dropbox",
+      "http",
+      "https",
+      "proxy",
+      "rpc"
+    ],
+    "tools": [
+      "cmd",
+      "rundll32"
+    ],
+    "domains": [
+      "autorun[.]inf",
+      "camprainbowgold[.]ru",
+      "chrome[.]exe",
+      "eset[.]com",
+      "explorer[.]exe",
+      "filepathstealer[.]dll",
+      "firefox[.]exe",
+      "getallsysteminfo[.]dll",
+      "iexplore[.]exe",
+      "keylog2runner[.]dll",
+      "loader-updater[.]dll",
+      "mntexpress[.]com",
+      "opera[.]exe",
+      "passwordstealer[.]dll",
+      "poker2[.]dll",
+      "poolwaterslide2011[.]ru",
+      "rootkit[.]blackenergy",
+      "rundll32[.]exe",
+      "safari[.]exe",
+      "screen[.]dll",
+      "skype[.]exe",
+      "task-diskscanner[.]dll",
+      "truecryptrussia[.]ru",
+      "utorrent[.]exe",
+      "wedding_invitation[.]exe",
+      "wordairpost[.]com",
+      "wordairpost[.]net",
+      "worldairpost[.]com",
+      "worldairpost[.]net"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "8839d3e213717b88a06ffc48827929891a10059e",
+      "5c52996d9f68ba6fd0da4982f238ec1d279a7f9d",
+      "ce7f96b400ed51f7fab465dea26147984f2627bd",
+      "d88c7c1e465bea7bf7377c08fba3aaf77cbf485f",
+      "81efb422ed2631c739cc690d0a9a5eaa07897531"
+    ],
+    "domains": [
+      "truecryptrussia.ru",
+      "worldairpost.com",
+      "wordairpost.net",
+      "wordairpost.com",
+      "worldairpost.net"
+    ],
+    "mutexes": [
+      "check"
+    ]
+  },
+  "narrative": "plugin chrome.exe iexplore.exe C&C Skype.exe explorer.exe Opera.exe plugin firefox.exe uTorrent.exe safari.exe plugin \\\\.\\pipe\\\\%name% Figure 24 – Win32/[REDACTED_MALWARE] architecture 17 When the malware is installed, its main DLL will be injected into the explorer.exe process. 87.106.44.200:8080 62.76.42.14:443 62.76.42.14:8080 94.242.199.78:443 178.239.60.96:8080 84.234.71.215:8080 67.103.159.141:8080 62.76.184.245:80 62.76.184.245:443 62.76.184.245:8080 The malware randomly picks one of these IP addresses and makes an attempt to establish a connection. The DLL is dropped to the following path, loaded and injected into explorer.exe: %APPDATA%\\Microsoft\\%LUID%.dll8 Before the DLL is dropped to the drive, however, a simple trick is applied.",
+  "_meta": {
+    "label": "G0034",
+    "doc_id": "d5f0abe069c4",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2015/2015.07.30.Operation-Potao-Express/Operation-Potao-Express_final_v2.pdf"
+  }
+}

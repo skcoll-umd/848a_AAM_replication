@@ -1,0 +1,635 @@
+{
+  "threat_actor": "APT28",
+  "group_name": "APT28",
+  "group_id": "G0007",
+  "mitre_intrusion_set": {
+    "id": "intrusion-set--bef4c620-0787-42a8-a96d-b7eb6e85917c",
+    "gid": "G0007",
+    "name": "APT28",
+    "matched_alias": "fancy bear"
+  },
+  "malware_family": null,
+  "campaign_name": "is often",
+  "attack_ttp_map": {
+    "T1053.005": "Scheduled Task",
+    "T1560.001": "Archive via Utility",
+    "T1047": "Windows Management Instrumentation",
+    "T1113": "Screen Capture",
+    "T1033": "System Owner/User Discovery",
+    "T1218.011": "Rundll32",
+    "T1132.001": "Standard Encoding",
+    "T1056.001": "Keylogging",
+    "T1561.002": "Disk Structure Wipe",
+    "T1213.002": "Sharepoint",
+    "T1014": "Rootkit",
+    "T1123": "Audio Capture",
+    "T1133": "External Remote Services",
+    "T1568.002": "Domain Generation Algorithms",
+    "T1548.002": "Bypass User Account Control",
+    "T1560.003": "Archive via Custom Method",
+    "T1003.002": "Security Account Manager",
+    "T1071.004": "DNS",
+    "T1542.003": "Bootkit",
+    "T1025": "Data from Removable Media",
+    "T1074.001": "Local Data Staging",
+    "T1036.005": "Match Legitimate Resource Name or Location",
+    "T1110.002": "Password Cracking",
+    "T1114.001": "Local Email Collection",
+    "T1003.004": "LSA Secrets",
+    "T1087.002": "Domain Account",
+    "T1559.002": "Dynamic Data Exchange",
+    "T1204.002": "Malicious File",
+    "T1080": "Taint Shared Content",
+    "T1573.001": "Symmetric Cryptography",
+    "T1087.001": "Local Account",
+    "T1543.003": "Windows Service",
+    "T1069.002": "Domain Groups",
+    "T1566.002": "Spearphishing Link",
+    "T1021.004": "SSH",
+    "T1566.001": "Spearphishing Attachment",
+    "T1119": "Automated Collection",
+    "T1007": "System Service Discovery",
+    "T1040": "Network Sniffing",
+    "T1553.002": "Code Signing",
+    "T1135": "Network Share Discovery",
+    "T1120": "Peripheral Device Discovery",
+    "T1082": "System Information Discovery",
+    "T1176": "Software Extensions",
+    "T1106": "Native API",
+    "T1091": "Replication Through Removable Media",
+    "T1005": "Data from Local System",
+    "T1140": "Deobfuscate/Decode Files or Information",
+    "T1190": "Exploit Public-Facing Application",
+    "T1219": "Remote Access Tools",
+    "T1055": "Process Injection",
+    "T1070.006": "Timestomp",
+    "T1547.009": "Shortcut Modification",
+    "T1572": "Protocol Tunneling",
+    "T1562.004": "Disable or Modify System Firewall",
+    "T1071.003": "Mail Protocols",
+    "T1112": "Modify Registry",
+    "T1555.003": "Credentials from Web Browsers",
+    "T1027.001": "Binary Padding",
+    "T1505.003": "Web Shell",
+    "T1136.001": "Local Account",
+    "T1092": "Communication Through Removable Media",
+    "T1070.001": "Clear Windows Event Logs",
+    "T1003.001": "LSASS Memory",
+    "T1110.003": "Password Spraying",
+    "T1090.002": "External Proxy",
+    "T1003.005": "Cached Domain Credentials",
+    "T1016": "System Network Configuration Discovery",
+    "T1546.008": "Accessibility Features",
+    "T1550.003": "Pass the Ticket",
+    "T1083": "File and Directory Discovery",
+    "T1049": "System Network Connections Discovery",
+    "T1552.001": "Credentials In Files",
+    "T1218.005": "Mshta",
+    "T1104": "Multi-Stage Channels",
+    "T1134.001": "Token Impersonation/Theft",
+    "T1528": "Steal Application Access Token",
+    "T1552.006": "Group Policy Preferences",
+    "T1057": "Process Discovery",
+    "T1546.003": "Windows Management Instrumentation Event Subscription",
+    "T1041": "Exfiltration Over C2 Channel",
+    "T1059.001": "PowerShell",
+    "T1546.001": "Change Default File Association",
+    "T1071.002": "File Transfer Protocols",
+    "T1210": "Exploitation of Remote Services",
+    "T1547.001": "Registry Run Keys / Startup Folder",
+    "T1199": "Trusted Relationship",
+    "T1069.001": "Local Groups",
+    "T1218.001": "Compiled HTML File",
+    "T1090.003": "Multi-hop Proxy",
+    "T1059.004": "Unix Shell",
+    "T1562.001": "Disable or Modify Tools",
+    "T1027.005": "Indicator Removal from Tools",
+    "T1078": "Valid Accounts",
+    "T1571": "Non-Standard Port",
+    "T1055.012": "Process Hollowing",
+    "T1068": "Exploitation for Privilege Escalation",
+    "T1114.002": "Remote Email Collection",
+    "T1201": "Password Policy Discovery",
+    "T1187": "Forced Authentication",
+    "T1486": "Data Encrypted for Impact",
+    "T1546.015": "Component Object Model Hijacking",
+    "T1195.002": "Compromise Software Supply Chain",
+    "T1102.002": "Bidirectional Communication",
+    "T1203": "Exploitation for Client Execution",
+    "T1137.004": "Outlook Home Page",
+    "T1573.002": "Asymmetric Cryptography",
+    "T1095": "Non-Application Layer Protocol",
+    "T1027.003": "Steganography",
+    "T1012": "Query Registry",
+    "T1197": "BITS Jobs",
+    "T1090.004": "Domain Fronting",
+    "T1518.001": "Security Software Discovery",
+    "T1564.003": "Hidden Window",
+    "T1059.006": "Python",
+    "T1496": "Resource Hijacking",
+    "T1059.003": "Windows Command Shell",
+    "T1070.004": "File Deletion",
+    "T1189": "Drive-by Compromise",
+    "T1221": "Template Injection",
+    "T1027.002": "Software Packing",
+    "T1071.001": "Web Protocols",
+    "T1059.005": "Visual Basic",
+    "T1018": "Remote System Discovery",
+    "T1046": "Network Service Discovery",
+    "T1550.002": "Pass the Hash",
+    "T1574.002": "DLL Side-Loading",
+    "T1105": "Ingress Tool Transfer",
+    "T1098.002": "Additional Email Delegate Permissions",
+    "T1021.001": "Remote Desktop Protocol",
+    "T1037.001": "Logon Script (Windows)",
+    "T1564.001": "Hidden Files and Directories",
+    "T1137.002": "Office Test",
+    "T1003.003": "NTDS",
+    "T1204.001": "Malicious Link",
+    "T1550.001": "Application Access Token",
+    "T1569.002": "Service Execution",
+    "T1078.004": "Cloud Accounts",
+    "T1480.001": "Environmental Keying",
+    "T1008": "Fallback Channels",
+    "T1566.003": "Spearphishing via Service",
+    "T1102.001": "Dead Drop Resolver",
+    "T1001.001": "Junk Data",
+    "T1048.003": "Exfiltration Over Unencrypted Non-C2 Protocol",
+    "T1211": "Exploitation for Stealth",
+    "T1529": "System Shutdown/Reboot"
+  },
+  "technique_to_tactics": {
+    "T1053.005": [
+      "TA0002",
+      "TA0003",
+      "TA0004"
+    ],
+    "T1560.001": [
+      "TA0009"
+    ],
+    "T1047": [
+      "TA0002"
+    ],
+    "T1113": [
+      "TA0009"
+    ],
+    "T1033": [
+      "TA0007"
+    ],
+    "T1218.011": [
+      "TA0005"
+    ],
+    "T1132.001": [
+      "TA0011"
+    ],
+    "T1056.001": [
+      "TA0006",
+      "TA0009"
+    ],
+    "T1561.002": [
+      "TA0040"
+    ],
+    "T1213.002": [
+      "TA0009"
+    ],
+    "T1014": [
+      "TA0005"
+    ],
+    "T1123": [
+      "TA0009"
+    ],
+    "T1133": [
+      "TA0001",
+      "TA0003"
+    ],
+    "T1568.002": [
+      "TA0011"
+    ],
+    "T1548.002": [
+      "TA0004"
+    ],
+    "T1560.003": [
+      "TA0009"
+    ],
+    "T1003.002": [
+      "TA0006"
+    ],
+    "T1071.004": [
+      "TA0011"
+    ],
+    "T1542.003": [
+      "TA0003",
+      "TA0005"
+    ],
+    "T1025": [
+      "TA0009"
+    ],
+    "T1074.001": [
+      "TA0009"
+    ],
+    "T1036.005": [
+      "TA0005"
+    ],
+    "T1110.002": [
+      "TA0006"
+    ],
+    "T1114.001": [
+      "TA0009"
+    ],
+    "T1003.004": [
+      "TA0006"
+    ],
+    "T1087.002": [
+      "TA0007"
+    ],
+    "T1559.002": [
+      "TA0002"
+    ],
+    "T1204.002": [
+      "TA0002"
+    ],
+    "T1080": [
+      "TA0008"
+    ],
+    "T1573.001": [
+      "TA0011"
+    ],
+    "T1087.001": [
+      "TA0007"
+    ],
+    "T1543.003": [
+      "TA0003",
+      "TA0004"
+    ],
+    "T1069.002": [
+      "TA0007"
+    ],
+    "T1566.002": [
+      "TA0001"
+    ],
+    "T1021.004": [
+      "TA0008"
+    ],
+    "T1566.001": [
+      "TA0001"
+    ],
+    "T1119": [
+      "TA0009"
+    ],
+    "T1007": [
+      "TA0007"
+    ],
+    "T1040": [
+      "TA0006",
+      "TA0007"
+    ],
+    "T1553.002": [
+      "TA0112"
+    ],
+    "T1135": [
+      "TA0007"
+    ],
+    "T1120": [
+      "TA0007"
+    ],
+    "T1082": [
+      "TA0007"
+    ],
+    "T1176": [
+      "TA0003"
+    ],
+    "T1106": [
+      "TA0002"
+    ],
+    "T1091": [
+      "TA0001",
+      "TA0008"
+    ],
+    "T1005": [
+      "TA0009"
+    ],
+    "T1140": [
+      "TA0005"
+    ],
+    "T1190": [
+      "TA0001"
+    ],
+    "T1219": [
+      "TA0011"
+    ],
+    "T1055": [
+      "TA0004",
+      "TA0005"
+    ],
+    "T1070.006": [
+      "TA0005"
+    ],
+    "T1547.009": [
+      "TA0003",
+      "TA0004"
+    ],
+    "T1572": [
+      "TA0011"
+    ],
+    "T1562.004": [
+      "TA0005"
+    ],
+    "T1071.003": [
+      "TA0011"
+    ],
+    "T1112": [
+      "TA0003",
+      "TA0112"
+    ],
+    "T1555.003": [
+      "TA0006"
+    ],
+    "T1027.001": [
+      "TA0005"
+    ],
+    "T1505.003": [
+      "TA0003"
+    ],
+    "T1136.001": [
+      "TA0003"
+    ],
+    "T1092": [
+      "TA0011"
+    ],
+    "T1070.001": [
+      "TA0005"
+    ],
+    "T1003.001": [
+      "TA0006"
+    ],
+    "T1110.003": [
+      "TA0006"
+    ],
+    "T1090.002": [
+      "TA0011"
+    ],
+    "T1003.005": [
+      "TA0006"
+    ],
+    "T1016": [
+      "TA0007"
+    ],
+    "T1546.008": [
+      "TA0003",
+      "TA0004"
+    ],
+    "T1550.003": [
+      "TA0008"
+    ],
+    "T1083": [
+      "TA0007"
+    ],
+    "T1049": [
+      "TA0007"
+    ],
+    "T1552.001": [
+      "TA0006"
+    ],
+    "T1218.005": [
+      "TA0005"
+    ],
+    "T1104": [
+      "TA0011"
+    ],
+    "T1134.001": [
+      "TA0004",
+      "TA0005"
+    ],
+    "T1528": [
+      "TA0006"
+    ],
+    "T1552.006": [
+      "TA0006"
+    ],
+    "T1057": [
+      "TA0007"
+    ],
+    "T1546.003": [
+      "TA0003",
+      "TA0004"
+    ],
+    "T1041": [
+      "TA0010"
+    ],
+    "T1059.001": [
+      "TA0002"
+    ],
+    "T1546.001": [
+      "TA0003",
+      "TA0004"
+    ],
+    "T1071.002": [
+      "TA0011"
+    ],
+    "T1210": [
+      "TA0008"
+    ],
+    "T1547.001": [
+      "TA0003",
+      "TA0004"
+    ],
+    "T1199": [
+      "TA0001"
+    ],
+    "T1069.001": [
+      "TA0007"
+    ],
+    "T1218.001": [
+      "TA0005"
+    ],
+    "T1090.003": [
+      "TA0011"
+    ],
+    "T1059.004": [
+      "TA0002"
+    ],
+    "T1562.001": [
+      "TA0005"
+    ],
+    "T1027.005": [
+      "TA0005"
+    ],
+    "T1078": [
+      "TA0001",
+      "TA0003",
+      "TA0004",
+      "TA0005"
+    ],
+    "T1571": [
+      "TA0011"
+    ],
+    "T1055.012": [
+      "TA0004",
+      "TA0005"
+    ],
+    "T1068": [
+      "TA0004"
+    ],
+    "T1114.002": [
+      "TA0009"
+    ],
+    "T1201": [
+      "TA0007"
+    ],
+    "T1187": [
+      "TA0006"
+    ],
+    "T1486": [
+      "TA0040"
+    ],
+    "T1546.015": [
+      "TA0003",
+      "TA0004"
+    ],
+    "T1195.002": [
+      "TA0001"
+    ],
+    "T1102.002": [
+      "TA0011"
+    ],
+    "T1203": [
+      "TA0002"
+    ],
+    "T1137.004": [
+      "TA0003"
+    ],
+    "T1573.002": [
+      "TA0011"
+    ],
+    "T1095": [
+      "TA0011"
+    ],
+    "T1027.003": [
+      "TA0005"
+    ],
+    "T1012": [
+      "TA0007"
+    ],
+    "T1197": [
+      "TA0002",
+      "TA0003",
+      "TA0005"
+    ],
+    "T1090.004": [
+      "TA0011"
+    ],
+    "T1518.001": [
+      "TA0007"
+    ],
+    "T1564.003": [
+      "TA0005"
+    ],
+    "T1059.006": [
+      "TA0002"
+    ],
+    "T1496": [
+      "TA0040"
+    ],
+    "T1059.003": [
+      "TA0002"
+    ],
+    "T1070.004": [
+      "TA0005"
+    ],
+    "T1189": [
+      "TA0001"
+    ],
+    "T1221": [
+      "TA0005"
+    ],
+    "T1027.002": [
+      "TA0005"
+    ],
+    "T1071.001": [
+      "TA0011"
+    ],
+    "T1059.005": [
+      "TA0002"
+    ],
+    "T1018": [
+      "TA0007"
+    ],
+    "T1046": [
+      "TA0007"
+    ],
+    "T1550.002": [
+      "TA0008"
+    ],
+    "T1574.002": [
+      "TA0002",
+      "TA0005"
+    ],
+    "T1105": [
+      "TA0011"
+    ],
+    "T1098.002": [
+      "TA0003",
+      "TA0004"
+    ],
+    "T1021.001": [
+      "TA0008"
+    ],
+    "T1037.001": [
+      "TA0003",
+      "TA0004"
+    ],
+    "T1564.001": [
+      "TA0005"
+    ],
+    "T1137.002": [
+      "TA0003"
+    ],
+    "T1003.003": [
+      "TA0006"
+    ],
+    "T1204.001": [
+      "TA0002"
+    ],
+    "T1550.001": [
+      "TA0008"
+    ],
+    "T1569.002": [
+      "TA0002"
+    ],
+    "T1078.004": [
+      "TA0001",
+      "TA0003",
+      "TA0004",
+      "TA0005"
+    ],
+    "T1480.001": [
+      "TA0005"
+    ],
+    "T1008": [
+      "TA0011"
+    ],
+    "T1566.003": [
+      "TA0001"
+    ],
+    "T1102.001": [
+      "TA0011"
+    ],
+    "T1001.001": [
+      "TA0011"
+    ],
+    "T1048.003": [
+      "TA0010"
+    ],
+    "T1211": [
+      "TA0005"
+    ],
+    "T1529": [
+      "TA0040"
+    ]
+  },
+  "_meta": {
+    "label": "G0007",
+    "doc_id": "d030695f376c",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2020/2020.12.01.APT_US_Think_Tanks/AA20-336A-APT_Actors_Targeting_US_ThinkTanks.pdf"
+  }
+}

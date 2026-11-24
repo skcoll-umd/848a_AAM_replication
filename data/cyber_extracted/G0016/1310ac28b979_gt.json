@@ -1,0 +1,20 @@
+{
+  "threat_actor": "APT29",
+  "group_name": "APT29",
+  "group_id": "G0016",
+  "mitre_intrusion_set": {
+    "id": "intrusion-set--899ce53f-13a0-479b-a0e4-67d46e241542",
+    "gid": "G0016",
+    "name": "APT29",
+    "matched_alias": "apt29"
+  },
+  "malware_family": null,
+  "campaign_name": null,
+  "attack_ttp_map": {},
+  "technique_to_tactics": {},
+  "_meta": {
+    "label": "G0016",
+    "doc_id": "1310ac28b979",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2023/2023.11.14.APT29_CVE-2023-38831/APT29 attacks Embassies using CVE-2023-38831 - report en.pdf"
+  }
+}

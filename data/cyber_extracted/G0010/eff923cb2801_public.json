@@ -1,0 +1,70 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "supply chain"
+  ],
+  "sectors": [
+    "Defense",
+    "Government",
+    "Technology",
+    "Telecom"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "http",
+      "https"
+    ],
+    "tools": [
+      "metasploit",
+      "meterpreter",
+      "mimikatz",
+      "powershell"
+    ],
+    "domains": [
+      "26cyber[.]html",
+      "admin[.]ch",
+      "drive[.]google",
+      "eset[.]com",
+      "eset_turla_mosquito[.]pdf",
+      "flashplayer28_xa_install[.]exe",
+      "get[.]adobe",
+      "labs[.]bitdefender",
+      "melani",
+      "msupdateconf[.]exe",
+      "msupdatesmal[.]exe",
+      "nytimes",
+      "offensive",
+      "psychology-blog[.]ezua",
+      "radare[.]today",
+      "security[.]com",
+      "technical-report_apt_case_ruag[.]html",
+      "welivesecurity",
+      "x86[.]dll"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "f9b83eff6d705c214993be9575f8990aa8150128a815e849c6faee90df14a0ea",
+      "1193033d6526416e07a5f20022cd3c5c79b73e8a33e80f29f9b06cdc3cb12e26",
+      "6868cdac0f06232608178b101ca3a8afda7f31538a165a045b439edf9dadf048",
+      "33d3b0ec31bfc16dcb1b1ff82550aa17fa4c07c5",
+      "114c1585f1ca2878a187f1ce7079154cc60db7f5"
+    ],
+    "domains": [
+      "nytimes.com",
+      "melani.admin.ch",
+      "welivesecurity.com",
+      "labs.bitdefender.com",
+      "get.adobe.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "campaign still relies on a fake Flash installer but, instead of directly dropping the two malicious DLLs, it executes a Metasploit shellcode and drops, or downloads from Google Drive, a legitimate Flash installer. Available: https://labs.bitdefender.com/wp-content/uploads/downloads/pacifier-apt/. [6] “About the Metasploit Meterpreter,” [Online]. Available: http://radare.today/posts/unpacking-shikata-ga-nai-by-scripting-radare2/. [8] “meterpreter/source/extensions/priv/server/elevate/,” Rapid7, 26 11 2013.",
+  "_meta": {
+    "label": "G0010",
+    "doc_id": "eff923cb2801",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2018/2018.05.22.Turla_Mosquito/turla-mosquito-shift-towards-generic-tools.pdf"
+  }
+}

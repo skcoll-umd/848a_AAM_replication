@@ -1,0 +1,76 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "email"
+  ],
+  "sectors": [
+    "Defense",
+    "Financial",
+    "Media",
+    "Mining",
+    "Telecom",
+    "Telecommunications"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "c2",
+      "dns",
+      "https",
+      "proxy"
+    ],
+    "tools": [
+      "china chopper",
+      "cmd",
+      "htran",
+      "mimikatz",
+      "nbtscan",
+      "net.exe",
+      "netstat",
+      "powershell",
+      "psexec",
+      "wmic"
+    ],
+    "domains": [
+      "a[.]bat",
+      "aasofnte[.]cor",
+      "al-iwsot[.]rldwide",
+      "alsoant[.]ceorma",
+      "cmd[.]exe",
+      "cyb",
+      "cybereason",
+      "cybereason[.]com",
+      "dynamic[.]dns",
+      "eeasvoan[.]dcoem",
+      "enasaont[.]icoonm",
+      "ip[.]address",
+      "maybemimi[.]exe",
+      "net[.]exe",
+      "ntds[.]dit",
+      "portqry[.]exe",
+      "rar[.]exe",
+      "reg[.]exe",
+      "runhelp[.]exe",
+      "samsclass[.]info",
+      "ssmuidll[.]dll",
+      "w3wp[.]exe",
+      "wwfw[.]ocyrb",
+      "wwhw[.]acyvbeer",
+      "wwtwh[.]ceymber"
+    ]
+  },
+  "iocs": {
+    "hashes": [],
+    "domains": [
+      "cybereason.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "From these web shells, they launched reconnaissance commands, stole data, and dropped additional tools including portqry.exe, renamed cmd.exe, winrar, and the notorious hTran. The threat actor was able to leverage the web shell to run reconnaissance commands, steal credentials, and deploy other tools. Reconnaissance and lateral movement commands launched from the secondary web shell.",
+  "_meta": {
+    "label": "G0045",
+    "doc_id": "8ab3fd9854d2",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2019/2019.06.25.Operation_Soft_Cell/Operation Soft Cell_ A Worldwide Campaign Against Telecommunications Providers.pdf"
+  }
+}

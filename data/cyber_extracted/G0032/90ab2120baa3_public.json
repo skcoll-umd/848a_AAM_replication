@@ -1,0 +1,126 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "email",
+    "iso",
+    "usb"
+  ],
+  "sectors": [
+    "Media",
+    "Mining",
+    "Technology",
+    "Utilities"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "api",
+      "c2",
+      "dns",
+      "http",
+      "https",
+      "icmp",
+      "ntp",
+      "proxy",
+      "udp"
+    ],
+    "tools": [
+      "cmd"
+    ],
+    "domains": [
+      "4-1[.]fc",
+      "alphabetradiotelephony[.]aspx",
+      "ams[.]exe",
+      "bgyesvc[.]dll",
+      "briggsoft",
+      "bsunanotechnology[.]com",
+      "cmd[.]exe",
+      "crxlsvc[.]dll",
+      "dap1[.]qwstartsectortowrite",
+      "dap[.]lbastartingsectortowrite",
+      "dasrrvm[.]dat",
+      "daum[.]net",
+      "dmosvc[.]dll",
+      "dnsec[.]dat",
+      "doqmcru[.]dat",
+      "dzkrsvc[.]dll",
+      "edbchk[.]log",
+      "eldos",
+      "epdtsvc[.]dll",
+      "esthsvc[.]dll",
+      "gensvc[.]dll",
+      "hnbsvc[.]dll",
+      "icao",
+      "iissvr[.]exe",
+      "ilpksvc[.]dll",
+      "index[.]php",
+      "ithsvc[.]dll",
+      "jdfsvc[.]dll",
+      "jiusvc[.]dll",
+      "kfvesvc[.]dll",
+      "khp[.]sys",
+      "kznsvc[.]dll",
+      "mcafee",
+      "msvcrt[.]bat",
+      "mujsvc[.]dll",
+      "naver[.]com",
+      "netplg[.]log",
+      "noise03[.]dat",
+      "novetta",
+      "npf[.]sys",
+      "ocynsvc[.]dll",
+      "operation-blockbuster-report[.]pdf",
+      "operation-blockbuster-tools-report[.]pdf",
+      "operationblockbuster",
+      "pdaisvc[.]dll",
+      "rhpysvc[.]dll",
+      "rvtqsvc[.]dll",
+      "rwzsvc[.]dll",
+      "securelist[.]com",
+      "skinpfu[.]dat",
+      "skmsvxd[.]dat",
+      "support[.]microsoft",
+      "systemtime[.]wyear",
+      "trvesvc[.]dll",
+      "twrasvc[.]dll",
+      "tyei08[.]dep",
+      "usbdrv3[.]sys",
+      "verclvid[.]exe",
+      "versioninformation[.]dwmajorversion",
+      "versioninformation[.]dwosversioninfosize",
+      "versioninformation[.]dwplatformid",
+      "vnd[.]ms",
+      "wevtapi[.]dll",
+      "wevtuil[.]exe",
+      "wevtutil[.]exe",
+      "wp-10-days-of-rain[.]pdf",
+      "yahoo[.]com",
+      "zwdfsvc[.]dll",
+      "zwzsvc[.]dll",
+      "zxtxsvc[.]dll"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "d7b50b1546653bff68220996190446bdc7fc4e38373715b8848d1fb44fe3f53c"
+    ],
+    "domains": [
+      "operationblockbuster.com",
+      "eldos.com",
+      "securelist.com",
+      "briggsoft.com",
+      "mcafee.com"
+    ],
+    "mutexes": [
+      "with",
+      "Global\\NetplugDiscovery0.7"
+    ]
+  },
+  "narrative": "[file] esthsvc.dll Securely deletes file named esthsvc.dll [file] bgyesvc.dll Securely deletes file named bgyesvc.dll [file] zwdfsvc.dll Securely deletes file named zwdfsvc.dll [file] rvtqsvc.dll Securely deletes file named rvtqsvc.dll. [file] ilpksvc.dll Securely deletes file named ilpksvc.dll [file] rwzsvc.dll Securely deletes file named rwzsvc.dll [file] kfvesvc.dll Securely deletes file named kfvesvc.dll. In order to keep track of commands that have already been executed, thereby avoiding unnecessary network load on the C2 server, DeltaCharlie transmits the command ID number of the last command it executed.",
+  "_meta": {
+    "label": "G0032",
+    "doc_id": "90ab2120baa3",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2016/2016.02.24.Operation_Blockbuster/Operation-Blockbuster-Destructive-Malware-Report.pdf"
+  }
+}

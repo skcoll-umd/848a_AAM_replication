@@ -1,0 +1,20 @@
+{
+  "threat_actor": "Sandworm Team",
+  "group_name": "Sandworm Team",
+  "group_id": "G0034",
+  "mitre_intrusion_set": {
+    "id": "intrusion-set--381fcf73-60f6-4ab2-9991-6af3cbc35192",
+    "gid": "G0034",
+    "name": "Sandworm Team",
+    "matched_alias": "electrum"
+  },
+  "malware_family": "information stealer",
+  "campaign_name": null,
+  "attack_ttp_map": {},
+  "technique_to_tactics": {},
+  "_meta": {
+    "label": "G0007",
+    "doc_id": "0da8d75f6f12",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2021/2021.11.10.Void_Balaur/wp-void-balaur-tracking-a-cybermercenarys-activities (1).pdf"
+  }
+}

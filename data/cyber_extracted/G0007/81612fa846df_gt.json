@@ -1,0 +1,20 @@
+{
+  "threat_actor": "APT28",
+  "group_name": "APT28",
+  "group_id": "G0007",
+  "mitre_intrusion_set": {
+    "id": "intrusion-set--bef4c620-0787-42a8-a96d-b7eb6e85917c",
+    "gid": "G0007",
+    "name": "APT28",
+    "matched_alias": "strontium"
+  },
+  "malware_family": "first-stage backdoor",
+  "campaign_name": "since at least 2004",
+  "attack_ttp_map": {},
+  "technique_to_tactics": {},
+  "_meta": {
+    "label": "G0007",
+    "doc_id": "81612fa846df",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2018/2018.09.27.LoJax/ESET-LoJax.pdf"
+  }
+}

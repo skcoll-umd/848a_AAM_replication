@@ -1,0 +1,43 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "document",
+    "email",
+    "macro",
+    "phishing"
+  ],
+  "sectors": [
+    "Defense",
+    "Energy",
+    "Finance",
+    "Government",
+    "Manufacturing",
+    "Technology",
+    "Telecom",
+    "Telecommunications"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "api",
+      "cloud storage",
+      "dropbox"
+    ],
+    "tools": [],
+    "domains": [
+      "temp[.]isotope"
+    ]
+  },
+  "iocs": {
+    "hashes": [],
+    "domains": [],
+    "mutexes": []
+  },
+  "narrative": "The following is information that I’ve compiled using freely available Open-Source Intelligence (OSINT) information collection methods. “Initial access to the network was gained using a phishing attack against network admins and senior staff to steal their login credentials.”. SSF teams of hackers exfiltrated the data by chunking it into small segments of data and then silently siphoning the data out of the network to public Cloud storage services.",
+  "_meta": {
+    "label": "G0045",
+    "doc_id": "bfdf40f76696",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/Report/2019.01.07.APT_chronicles_december_2018_edition/The APT Chronicles_December 2018nbspedition.pdf"
+  }
+}

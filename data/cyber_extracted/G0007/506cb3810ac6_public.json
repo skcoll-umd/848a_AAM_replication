@@ -1,0 +1,46 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "email"
+  ],
+  "sectors": [
+    "Chemical",
+    "Financial",
+    "Media",
+    "Mining",
+    "Technology"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "dns",
+      "http",
+      "https",
+      "proxy",
+      "ssl",
+      "tcp",
+      "tls",
+      "vpn"
+    ],
+    "tools": [],
+    "domains": [
+      "cyclops-blink-sets-sights-on-asus-routers--[.]html",
+      "trendmicro",
+      "trendmicro[.]com"
+    ]
+  },
+  "iocs": {
+    "hashes": [],
+    "domains": [
+      "trendmicro.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "This report discusses the technical capabilities of this Cyclops Blink malware variant and includes a list of more than 150 current and historical command-and-control (C&C) servers of the Cyclops Blink botnet. For every hard-coded TCP port used to communicate with the C&C servers, the malware creates a rule in Netfilter — the Linux kernel firewall — using the iptc_insert_entry() function from libiptc1 to allow output communication to it. C&C communication After obtaining data from the modules, the core component starts the encryption routines that will cipher the data before sending it to the C&C server.",
+  "_meta": {
+    "label": "G0007",
+    "doc_id": "506cb3810ac6",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2022/2022.03.17.Cyclops_Blink_Voodoo_Bear/Cyclops Blink Sets Sights on Asus Routers.pdf"
+  }
+}

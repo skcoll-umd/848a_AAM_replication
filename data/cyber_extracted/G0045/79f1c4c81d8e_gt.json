@@ -1,0 +1,20 @@
+{
+  "threat_actor": "APT41",
+  "group_name": "APT41",
+  "group_id": "G0096",
+  "mitre_intrusion_set": {
+    "id": "intrusion-set--18854f55-ac7c-4634-bd9a-352dd07613b7",
+    "gid": "G0096",
+    "name": "APT41",
+    "matched_alias": "barium"
+  },
+  "malware_family": "encrypted loader",
+  "campaign_name": null,
+  "attack_ttp_map": {},
+  "technique_to_tactics": {},
+  "_meta": {
+    "label": "G0045",
+    "doc_id": "79f1c4c81d8e",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2020/2020.06.24.BRONZE_VINEWOOD/BRONZE VINEWOOD Targets Supply Chains _ Secureworks.pdf"
+  }
+}

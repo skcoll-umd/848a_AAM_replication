@@ -1,0 +1,105 @@
+{
+  "attack_ttp_ids": [
+    "T1001",
+    "T1016",
+    "T1030",
+    "T1032",
+    "T1033",
+    "T1035",
+    "T1041",
+    "T1043",
+    "T1050",
+    "T1059",
+    "T1064",
+    "T1071",
+    "T1082",
+    "T1103",
+    "T1105",
+    "T1106",
+    "T1113",
+    "T1136",
+    "T1140"
+  ],
+  "attack_tactic_ids": [
+    "TA0002",
+    "TA0003",
+    "TA0004",
+    "TA0005",
+    "TA0007",
+    "TA0009",
+    "TA0010",
+    "TA0011"
+  ],
+  "attack_tactics": [
+    "Execution",
+    "Persistence",
+    "Privilege Escalation",
+    "Stealth",
+    "Discovery",
+    "Collection",
+    "Exfiltration",
+    "Command and Control"
+  ],
+  "delivery_vectors": [
+    "phishing"
+  ],
+  "sectors": [
+    "Defense",
+    "Government",
+    "Public sector",
+    "Telecom",
+    "Telecommunications"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "api",
+      "c2",
+      "http",
+      "https",
+      "proxy",
+      "ssl"
+    ],
+    "tools": [
+      "mimikatz",
+      "sc.exe"
+    ],
+    "domains": [
+      "5e8c6ff0[.]cab",
+      "7b296fb0[.]cab",
+      "farfli[.]csy",
+      "hacktool[.]agent",
+      "installer[.]exe",
+      "mktz64[.]dll",
+      "mktzx64[.]pdb",
+      "pcaudit[.]dll",
+      "rastls[.]dll",
+      "riskware[.]mimikatz",
+      "sc[.]exe",
+      "svchost[.]dll",
+      "svchost[.]exe",
+      "w52g86st[.]tmp",
+      "welivesecurity",
+      "welivesecurity[.]com",
+      "yokel64[.]exe",
+      "yuemt[.]zzux"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "383a2d8f421ad2f243cbc142e9715c78f867a114b037626c2097cb3e070f67d6",
+      "fc525c9683e8fe067095ba2ddc971889",
+      "7771e1738fc2e4de210ac06a5e62c534"
+    ],
+    "domains": [
+      "welivesecurity.com",
+      "yuemt.zzux.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "Lateral movement via Mimikatz The attackers used their implementation of Mimikatz, delivered via a two-stage mechanism: the first stage was a dropper usually called installer.exe or Yokel64.exe, which dropped the main payload with an indicative external DLL name mktz64.dll in the second stage. Evasion T1140 Deobfuscate/Decode Files or The commands of the RAT and some of its components are Information encoded/encrypted. Persistence T1050 New Service.",
+  "_meta": {
+    "label": "G0034",
+    "doc_id": "088a3fa6a684",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2020/2020.05.14.Mikroceen/Mikroceen_ Spying backdoor leveraged in high‑profile networks in Central Asia _ WeLiveSecurity.pdf"
+  }
+}

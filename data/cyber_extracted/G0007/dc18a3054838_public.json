@@ -1,0 +1,103 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "document",
+    "email",
+    "phishing",
+    "website"
+  ],
+  "sectors": [
+    "Defense",
+    "Financial",
+    "Government",
+    "Media",
+    "Mining",
+    "Technology",
+    "Utilities"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "c2",
+      "command and control",
+      "http"
+    ],
+    "tools": [],
+    "domains": [
+      "10root9b[.]com",
+      "americ[.]com",
+      "aspnix[.]com",
+      "b-of-americ[.]com",
+      "bbcnewsweek[.]com",
+      "bloomberg",
+      "bulkbreakers[.]com",
+      "carbon2u[.]com",
+      "cbibuae[.]com",
+      "cbiuae[.]com",
+      "cbiuaebank[.]com",
+      "cbiuaebn[.]com",
+      "cbiuaeonline[.]com",
+      "cibuaeonline[.]com",
+      "cibuaeonlinebn[.]com",
+      "fbonlinelottery[.]com",
+      "fubnt[.]com",
+      "globeshippers[.]biz",
+      "globeshippers[.]net",
+      "googlesetting[.]com",
+      "gsandsc[.]com",
+      "gshippers[.]com",
+      "hesselawchambers[.]com",
+      "hostzeal[.]com",
+      "kwqx[.]us",
+      "largefarm[.]net",
+      "middle-eastreview[.]org",
+      "newsweek",
+      "nvhserver[.]com",
+      "ok2host[.]com",
+      "osce-military[.]org",
+      "qov[.]hu",
+      "regionsbnk[.]info",
+      "root9b[.]com",
+      "royalbsuk[.]com",
+      "russias-greatest-weapon-may-be-its-hackers-328864[.]html",
+      "seatreasures[.]org",
+      "settings-yahoo[.]com",
+      "site4now[.]net",
+      "ssandsc[.]com",
+      "t-d-canadatrust[.]com",
+      "techcruncln[.]com",
+      "techielawfirms[.]com",
+      "theguardian",
+      "togounoffice[.]com",
+      "ubagroupsgh[.]com",
+      "un-unicef[.]org",
+      "unicomba[.]com",
+      "unitednat[.]org",
+      "universalcoba[.]com",
+      "yovtube[.]co"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "0450aaf8ed309ca6baf303837701b5b23aac6f05",
+      "bb909d9c27a509bf97cdc85268556ff5a6d2550a",
+      "f325970fd24bb088f1befdae5788152329e26bf3",
+      "a351842ee01374d66bae35354ffe72f0b1b8a40b"
+    ],
+    "domains": [
+      "newsweek.com",
+      "bloomberg.com",
+      "theguardian.com",
+      "root9b.com",
+      "carbon2u.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "In typical attacks of this nature, once users navigate Command and Control (C2) Server: to the link, visitors are prompted to supply account 176.31.112.10 credentials and personal information under the false assumption that they are communicating with their bank via a secure link. blocking the following hashes and communications Understanding the scope of the newly staged malicious with the identified Command and Control (C2) operations, root9B also tipped the information to the server: appropriate international and domestic government authorities. Calling on years of collective intelligence and adversary tactics to discover and experience in positions that placed their analysts at reveal the prepositioning of Sofacy zero-day malware.",
+  "_meta": {
+    "label": "G0007",
+    "doc_id": "dc18a3054838",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2015/2015.05.12.Sofacy_root9B/R9b_FSOFACY_0.pdf"
+  }
+}

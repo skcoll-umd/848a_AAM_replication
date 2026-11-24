@@ -1,0 +1,40 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "email"
+  ],
+  "sectors": [
+    "Aerospace",
+    "Defense",
+    "Financial",
+    "Government",
+    "Media"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "http",
+      "proxy"
+    ],
+    "tools": [],
+    "domains": [
+      "novetta[.]com",
+      "operationblockbuster"
+    ]
+  },
+  "iocs": {
+    "hashes": [],
+    "domains": [
+      "operationblockbuster.com",
+      "novetta.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "The urgency information and took decisive action to protect collective customers. AT: } The depth and scope of evidence suggests that the Sony Pictures attack was carried out www.OperationBlockbuster.com by a well-structured, well-resourced and highly motivated organization, and not the work of a pop-up hacktivist group. The incident caused significant financial and reputational damage to Sony Pictures and its executives.",
+  "_meta": {
+    "label": "G0032",
+    "doc_id": "2bfe05aa1cdb",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2016/2016.02.24.Operation_Blockbuster/Operation-Blockbuster-Ex-Summary.pdf"
+  }
+}

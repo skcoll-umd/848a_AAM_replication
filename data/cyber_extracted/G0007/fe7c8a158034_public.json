@@ -1,0 +1,121 @@
+{
+  "attack_ttp_ids": [
+    "T1059.001",
+    "T1102.002",
+    "T1104",
+    "T1136.001",
+    "T1203",
+    "T1546.015",
+    "T1566.001",
+    "T1573.001",
+    "T1573.002",
+    "T1583.001",
+    "T1587.001",
+    "T1588.002",
+    "T1620"
+  ],
+  "attack_tactic_ids": [
+    "TA0001",
+    "TA0002",
+    "TA0003",
+    "TA0004",
+    "TA0005",
+    "TA0011",
+    "TA0042"
+  ],
+  "attack_tactics": [
+    "Initial Access",
+    "Execution",
+    "Persistence",
+    "Privilege Escalation",
+    "Stealth",
+    "Command and Control",
+    "Resource Development"
+  ],
+  "delivery_vectors": [
+    "attachment",
+    "document",
+    "email",
+    "phishing"
+  ],
+  "sectors": [
+    "Defense",
+    "Government"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "api",
+      "command and control",
+      "dns",
+      "http",
+      "https"
+    ],
+    "tools": [
+      "empire",
+      "powershell"
+    ],
+    "domains": [
+      "0247[.]xlsx",
+      "0yol4[.]cab",
+      "ari2rc[.]html",
+      "budget[.]xls",
+      "budget[.]xlsx",
+      "bwh7196[.]bitcoinwebhosting",
+      "csiresources[.]dll",
+      "customui[.]onload",
+      "customui[.]xml",
+      "d9v5e[.]cab",
+      "dfsvc[.]dll",
+      "ehstorshell[.]dll",
+      "explorer[.]exe",
+      "fontsubc[.]dll",
+      "get[.]php",
+      "index[.]jsp",
+      "index[.]php",
+      "iz7hfd[.]html",
+      "jimbeam[.]live",
+      "jjnjq3[.]html",
+      "lb[.]xls",
+      "news[.]php",
+      "od4cnq[.]html",
+      "parliament_rew[.]xls",
+      "parliament_rew[.]xlsx",
+      "powershell[.]exe",
+      "prime-ministers-office-compromised[.]html",
+      "process[.]php",
+      "schemas[.]microsoft",
+      "service[.]exe",
+      "tr_comparison[.]xls",
+      "trellix",
+      "udopq[.]cab",
+      "update[.]dat",
+      "whmel[.]cab",
+      "wordkeyvpload[.]net",
+      "wordkeyvpload[.]org"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "f007020c74daa0645b181b7b604181613b68d195bd585afd71c3cd5160fb8fc4",
+      "7bd11553409d635fe8ad72c5d1c56f77b6be55f1ace4f77f42f6bfb4408f4b3a",
+      "1ee602e9b6e4e58dfff0fb8606a41336723169f8d6b4b1b433372bf6573baf40",
+      "f229a8eb6f5285a1762677c38175c71dead77768f6f5a6ebc320679068293231",
+      "25765faedcfee59ce3f5eb3540d70f99f124af4942f24f0666c1374b01b24bd9"
+    ],
+    "domains": [
+      "schemas.microsoft.com",
+      "wordkeyvpload.net",
+      "wordkeyvpload.org",
+      "bwh7196.bitcoinwebhosting.net"
+    ],
+    "mutexes": [
+      "with"
+    ]
+  },
+  "narrative": "Persistence T1136.001 Create Adversaries net user /add user1 Account: Local created a local Account account to maintain access to victim systems. The last phases of this multi-stage attack, which we believe is associated with an APT operation, includes the execution of different Empire stagers to finally download an Empire agent on victims’ computers and engage the command and control server to remotely control the systems. The command value “1” will instruct the malware to send the system information to the command and control again, which is the attackers’ OneDrive.",
+  "_meta": {
+    "label": "G0007",
+    "doc_id": "fe7c8a158034",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2022/2022.01.25.Prime_Minister_Compromised/Prime Minister’s Office Compromised_ Details of Recent Espionage Campaign.pdf"
+  }
+}

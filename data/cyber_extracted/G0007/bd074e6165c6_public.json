@@ -1,0 +1,104 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "attachment",
+    "document",
+    "email",
+    "phishing",
+    "usb"
+  ],
+  "sectors": [
+    "Chemical",
+    "Defense",
+    "Energy",
+    "Government",
+    "Manufacturing",
+    "Media",
+    "Technology",
+    "Telecom",
+    "Telecommunications"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "c2",
+      "http",
+      "https",
+      "smtp",
+      "ssl",
+      "tls",
+      "vpn"
+    ],
+    "tools": [],
+    "domains": [
+      "8569985[.]securefastserver",
+      "adobe-flash-updates[.]org",
+      "adobeupgradeflash[.]com",
+      "analyticsbar[.]org",
+      "analyticstest[.]net",
+      "appexsrv[.]net",
+      "audiwheel[.]com",
+      "encoder-info[.]tk",
+      "etcrem[.]net",
+      "fastdataexchange[.]org",
+      "fsportal[.]net",
+      "generalsecurityscan[.]com",
+      "globalresearching[.]org",
+      "hostsvcnet[.]com",
+      "kiteim[.]org",
+      "lifeofmentalservice[.]com",
+      "liveweatherview[.]com",
+      "lvueton[.]com",
+      "meteost[.]com",
+      "miropc[.]org",
+      "movieultimate[.]com",
+      "mvband[.]net",
+      "mvtband[.]net",
+      "netcorpscanprotect[.]com",
+      "nethostnet[.]com",
+      "newfilmts[.]com",
+      "online-reggi[.]com",
+      "postlkwarn[.]com",
+      "ppcodecs[.]com",
+      "qhoster",
+      "righttopregnantpower[.]com",
+      "s_attack_on_syria_english[.]docx",
+      "satellitedeluxpanorama[.]com",
+      "securityprotectingcorp[.]com",
+      "sendmevideo[.]org",
+      "shcserv[.]com",
+      "treepastwillingmoment[.]com",
+      "uniquecorpind[.]com",
+      "versiontask[.]com",
+      "viters[.]org",
+      "webcdelivery[.]com",
+      "wmdmediacodecs[.]com"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "8f9f697aa6697acee70336f66f295837",
+      "1a4b9a6b321da199aa6d10180e889313",
+      "842454b48f5f800029946b1555fba7fc",
+      "d4a5d44184333442f5015699c2b8af28",
+      "1421419d1be31f1f9ea60e8ed87277db"
+    ],
+    "domains": [
+      "qhoster.com",
+      "8569985.securefastserver.com",
+      "nethostnet.com",
+      "hostsvcnet.com",
+      "etcrem.net"
+    ],
+    "mutexes": [
+      "format"
+    ]
+  },
+  "narrative": "While recent Zebrocy versioning was 7.1, some of the related Zebrocy modules that drop file-stealing MSIL modules we call Covfacy were v7.0. For example, one sent out to a handful of countries identifies network drives when they are added to target systems, and then RC4-like-encrypts and writes certain file metadata and contents to a local path for later exfiltration. It’s interesting to note that this version of SPLM implements communications that are fully encrypted over HTTPS.",
+  "_meta": {
+    "label": "G0007",
+    "doc_id": "bd074e6165c6",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2018/2018.02.20.a-slice-of-2017-sofacy-activity/A Slice of 2017 Sofacy Activity - Securelist.pdf"
+  }
+}

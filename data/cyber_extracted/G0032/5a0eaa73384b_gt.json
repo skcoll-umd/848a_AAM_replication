@@ -1,0 +1,20 @@
+{
+  "threat_actor": "APT38",
+  "group_name": "APT38",
+  "group_id": "G0082",
+  "mitre_intrusion_set": {
+    "id": "intrusion-set--00f67a77-86a4-4adf-be26-1a54fc713340",
+    "gid": "G0082",
+    "name": "APT38",
+    "matched_alias": "apt38"
+  },
+  "malware_family": "different RAT",
+  "campaign_name": null,
+  "attack_ttp_map": {},
+  "technique_to_tactics": {},
+  "_meta": {
+    "label": "G0032",
+    "doc_id": "5a0eaa73384b",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2021/2021.05.01.CryptoCore-Lazarus/CryptoCore-Lazarus-Clearsky.pdf"
+  }
+}

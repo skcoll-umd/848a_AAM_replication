@@ -1,0 +1,20 @@
+{
+  "threat_actor": "Patchwork",
+  "group_name": "Patchwork",
+  "group_id": "G0040",
+  "mitre_intrusion_set": {
+    "id": "intrusion-set--17862c7d-9e60-48a0-b48e-da4dc4c3f6b0",
+    "gid": "G0040",
+    "name": "Patchwork",
+    "matched_alias": "dropping elephant"
+  },
+  "malware_family": "REFLECTIVE LOADER",
+  "campaign_name": null,
+  "attack_ttp_map": {},
+  "technique_to_tactics": {},
+  "_meta": {
+    "label": "G0046",
+    "doc_id": "88e8cd2acf00",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2018/2018.08.02.Goldfin_Security_Alert/Accenture-Goldfin-Security-Alert-1.pdf"
+  }
+}

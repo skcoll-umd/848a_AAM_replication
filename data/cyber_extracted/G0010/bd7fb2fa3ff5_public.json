@@ -1,0 +1,78 @@
+{
+  "attack_ttp_ids": [
+    "T1001",
+    "T1041",
+    "T1053",
+    "T1060",
+    "T1073",
+    "T1132",
+    "T1204",
+    "T1543"
+  ],
+  "attack_tactic_ids": [
+    "TA0002",
+    "TA0003",
+    "TA0004",
+    "TA0005",
+    "TA0010",
+    "TA0011"
+  ],
+  "attack_tactics": [
+    "Execution",
+    "Persistence",
+    "Privilege Escalation",
+    "Stealth",
+    "Exfiltration",
+    "Command and Control"
+  ],
+  "delivery_vectors": [],
+  "sectors": [
+    "Defense",
+    "Utilities"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "c2",
+      "command and control",
+      "http",
+      "https"
+    ],
+    "tools": [
+      "regsvr32",
+      "rundll32"
+    ],
+    "domains": [
+      "210_47[.]dat",
+      "graphicspatialstore[.]swid",
+      "lastjournalx32[.]adf",
+      "latest[.]php",
+      "lib3dxquery[.]dll",
+      "newshealthsport[.]com",
+      "regsvr32[.]exe",
+      "rundll32[.]exe",
+      "service[.]dll",
+      "telsy",
+      "telsy[.]com",
+      "vice[.]dll"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "e1741e02d9387542cc809f747c78d5a352e7682a9b83cbe210c09e2241af6078",
+      "f966ef66d0510da597fec917451c891480a785097b167c6a7ea130cf1e8ff514",
+      "6e730ea7b38ea80f2e852781f0a96e0b",
+      "b16ebed8793a5ea4902e94c594bb6ae0"
+    ],
+    "domains": [
+      "telsy.com",
+      "newshealthsport.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "Command and control (C2) communications are hidden in an mand and attempt to make the content more difficult to discover or Control decipher T1041 Exfiltra-. Command and control (C2) information is encoded using a stan- mand and dard data encoding system control T1001 Com-. Threat actor adds an entry to the “run keys” in the Registry or tence startup folder to allow the program will be executed when a user logs in T1053 Persis-.",
+  "_meta": {
+    "label": "G0010",
+    "doc_id": "bd7fb2fa3ff5",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2020/2020.07.14_Turla_VENOMOUS_BEAR/Turla _ Venomous Bear updates its arsenal_ _NewPass_ appears on the APT threat scene - Telsy.pdf"
+  }
+}

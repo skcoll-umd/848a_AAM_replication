@@ -1,0 +1,75 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "rdp"
+  ],
+  "sectors": [
+    "Energy"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "api",
+      "dhcp",
+      "dns",
+      "https",
+      "proxy",
+      "rdp",
+      "s3",
+      "ssl",
+      "vpn",
+      "winrm"
+    ],
+    "tools": [
+      "cmd",
+      "powershell",
+      "psexec"
+    ],
+    "domains": [
+      "0x[.]pppp",
+      "agent[.]exe",
+      "agent[.]plain",
+      "api-ms-win-core-synch-l1-2-0[.]dll",
+      "assisstant[.]sys",
+      "assistant[.]sys",
+      "blogs[.]technet",
+      "cmd[.]exe",
+      "docs[.]microsoft",
+      "dustman[.]exe",
+      "dustman[.]pdb",
+      "elrawdisk[.]sys",
+      "elrawdsk[.]pdb",
+      "elrawdsk[.]sys",
+      "hdr[.]cbin",
+      "memobj-r0drv[.]cpp",
+      "pe[.]exports",
+      "pe[.]imphash",
+      "u[.]in",
+      "vboxdrv[.]pdb",
+      "vboxdrv[.]sys",
+      "win[.]amd",
+      "winobjex64[.]exe"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "f07b0c79a8c88a5760847226af277cf34ab5508394a58820db4db5a8d0340fc7",
+      "36a4e35abf2217887e97041e3e0b17483aa4d2c1aee6feadd48ef448bf1b9e6c",
+      "cf3a7d4285d65bf8688215407bce1b51d7c6b22497f09021f0fce31cbeb78986",
+      "44100c73c6e2529c591a10cd3668691d92dc0241152ec82a72c6e63da299d3a2",
+      "e3ae32ebe8465c7df1225a51234f13e8a44969cc"
+    ],
+    "domains": [
+      "blogs.technet.microsoft.com",
+      "docs.microsoft.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "The command used to wipe the volume will have the volume letter appended to the command, for example, to wipe the C drive, the command would be “$:\\windows\\system32\\cmd.exe /c agent.exe C” where the “C” at the end of the command indicates the volume to be wiped. Execution The attackers then executed a set of commands on the anti-virus management control to distribute the malware to all connected machines, and through (PSEXEC) the malware executed and dropped (3) additional files, two drivers and the wiper. Once the “DUSTMAN” executable is executed, the two drivers gets dropped and installed and then the agent.exe (the wiper) gets executed with the assistance of the recently installed drivers.",
+  "_meta": {
+    "label": "G0010",
+    "doc_id": "dab7a01c8937",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2020/2020.01.07_Destructive_Attack_DUSTMAN/Saudi-Arabia-CNA-report.pdf"
+  }
+}

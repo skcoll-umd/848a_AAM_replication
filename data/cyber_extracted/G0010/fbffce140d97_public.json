@@ -1,0 +1,97 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "email"
+  ],
+  "sectors": [
+    "Transport"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "api",
+      "command and control",
+      "dhcp",
+      "http",
+      "vpn"
+    ],
+    "tools": [],
+    "domains": [
+      "61paris[.]fr",
+      "a67ncodc[.]ax",
+      "adobeupdater[.]exe",
+      "agent[.]btz",
+      "asmcerts[.]rs",
+      "b9s3coff[.]ax",
+      "backdoor[.]turlacarbon",
+      "bing",
+      "bootmisc[.]sdi",
+      "c_56743[.]nls",
+      "carbon[.]dll",
+      "carbon_system[.]dll",
+      "carbon_system[.]pdb",
+      "chrome[.]exe",
+      "class-wp-edit[.]php",
+      "decrypt[.]py",
+      "feed-rss-comments[.]php",
+      "feed[.]php",
+      "firefox[.]exe",
+      "getcert[.]rs",
+      "google",
+      "ieframe[.]lockdefaultbrowser",
+      "iexplore[.]exe",
+      "ipvpn[.]dll",
+      "jucheafrica[.]com",
+      "kmsvc[.]dll",
+      "miniport[.]dat",
+      "mozilla[.]exe",
+      "ms-set[.]php",
+      "msctf[.]shared",
+      "msimghlp[.]dll",
+      "msimn[.]exe",
+      "msximl[.]dll",
+      "mutex[.]zrx",
+      "netscape[.]exe",
+      "opera[.]exe",
+      "outlook[.]exe",
+      "qavsrc[.]dat",
+      "sens[.]lockstartercacheresource",
+      "soheylistore[.]ir",
+      "srsvc[.]dll",
+      "tazohor[.]com",
+      "update[.]microsoft",
+      "vndkrmn[.]dic",
+      "win32[.]trojan",
+      "windowsupdate[.]microsoft",
+      "yahoo"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "cb1b68d9971c2353c2d6a8119c49b51f",
+      "e6d1dcc6c2601e592f2b03f35b06fa8f",
+      "554450c1ecb925693fedbb9e56702646"
+    ],
+    "domains": [
+      "soheylistore.ir",
+      "tazohor.com",
+      "jucheafrica.com",
+      "61paris.fr",
+      "yahoo.com"
+    ],
+    "mutexes": [
+      "creation",
+      "check",
+      "Global\\MSCTF.Shared.MUTEX.zRX",
+      "Global\\DBWindowsBase",
+      "Global\\IEFrame.LockDefaultBrowser"
+    ]
+  },
+  "narrative": "The list of the targeted processes is stored in the configuration file: iproc = iexplore.exe,outlook.exe,msimn.exe,firefox.exe,opera.exe,chrome.exe As usual, the injected library is executed via the ModuleStart() exports. [CW_LOCAL] quantity = 0 [CW_INET] quantity = 4 address1 = soheylistore.ir:80:/modules/mod_feed/feed.php address2 = tazohor.com:80:/wp-includes/feed-rss-comments.php address3 = jucheafrica.com:80:/wp-includes/class-wp-edit.php address4 = 61paris.fr:80:/wp-includes/ms-set.php. This framework is generally downloaded and dropped by a reconnaissance malware for example Tavdig, aka Wipbot (Symantec) or also [REDACTED_MALWARE] (Kaspersky).",
+  "_meta": {
+    "label": "G0010",
+    "doc_id": "fbffce140d97",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2015/2015.01.20.Project_Cobra/Project_Cobra_Analysis.pdf"
+  }
+}

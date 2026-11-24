@@ -1,0 +1,54 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "email",
+    "phishing",
+    "watering-hole",
+    "website"
+  ],
+  "sectors": [
+    "Defense",
+    "Government",
+    "Legal",
+    "Technology"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "beacon",
+      "c2",
+      "command and control",
+      "dns",
+      "sharepoint",
+      "tcp"
+    ],
+    "tools": [],
+    "domains": [
+      "azureon-line[.]com",
+      "mozilla-plugins[.]com",
+      "mozillaplagins[.]com"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "364ff454dcf00420cff13a57bcb78467",
+      "075b6695ab63f36af65f7ffd45cccd39",
+      "e107c5c84ded6cd9391aede7f04d64c8",
+      "02c7cf55fd5c5809ce2dce56085ba437",
+      "95f2480423a4256537bfdfda0df85592"
+    ],
+    "domains": [
+      "azureon-line.com",
+      "mozilla-plugins.com",
+      "mozillaplagins.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "This is followed by a number of [REDACTED_MALWARE] shell command style commands related to the malware establishing persistence. The oldest sample (Table 1), was found to beacon to the domain azureon-line[.]com, which had already been widely publicized as a known command and control domain for the Sofacy group. Figure 8: Sample 2 C2 resolutions The newest sample (Table 3), introduces a previously unknown command and control beacon to mozilla-plugins[.]com.",
+  "_meta": {
+    "label": "G0007",
+    "doc_id": "381f3268bd17",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2016/2016.02.12.Fysbis_Sofacy_Linux_Backdoor/a-look-into-fysbis-sofacys-linux-backdoor.pdf"
+  }
+}

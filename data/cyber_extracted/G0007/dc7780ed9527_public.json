@@ -1,0 +1,59 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "document",
+    "email"
+  ],
+  "sectors": [
+    "Technology"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "ftp",
+      "http",
+      "proxy"
+    ],
+    "tools": [
+      "cmd",
+      "ftp"
+    ],
+    "domains": [
+      "12[.]bef",
+      "apple-checker[.]org",
+      "apple-iclods[.]net",
+      "apple-iclods[.]org",
+      "apple-search[.]info",
+      "apple-uptoday[.]org",
+      "bitdefender",
+      "com[.]apple",
+      "enterprise[.]bitdefender",
+      "preview[.]app",
+      "roskosmos_2015-2025[.]app",
+      "roskosmos_2015-2025[.]pdf",
+      "start[.]sh",
+      "trojan[.]mac",
+      "updates[.]plist"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "4fe4b9560e99e33dabca553e2eeee510"
+    ],
+    "domains": [
+      "apple-iclods.org",
+      "apple-checker.org",
+      "apple-uptoday.org",
+      "bitdefender.com",
+      "apple-iclods.net"
+    ],
+    "mutexes": []
+  },
+  "narrative": "Receiving commands from C&C server The agent awaits C&C commands from the server and inserts them into a command queue that will be executed in a separate thread by MainHandler module. These modules are used for communication with the C&C server, encryption and encoding and - most importantly - for data exfiltration and espionage. InjectApp: Leverages existing higher-level vel interprocess communication mechanisms by sending an kASAppleScriptSuite/ kGetAEUTused event to a process to make it load Apple scripting additions.",
+  "_meta": {
+    "label": "G0007",
+    "doc_id": "dc7780ed9527",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2017/2017.02.23.APT28_Mac_OS_X_Payload/Bitdefender-Whitepaper-APT-Mac-A4-en-EN-web.pdf"
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "document",
+    "email",
+    "phishing",
+    "social media",
+    "website"
+  ],
+  "sectors": [
+    "Government",
+    "Legal",
+    "Media",
+    "Technology"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "dns",
+      "http",
+      "https",
+      "tor"
+    ],
+    "tools": [],
+    "domains": [
+      "-ama[.]org",
+      "-arna[.]org",
+      "-awa[.]org",
+      "-cas[.]org",
+      "adfs[.]wada",
+      "ama[.]org",
+      "app[.]threatconnect",
+      "arna[.]org",
+      "bbc",
+      "com[.]co",
+      "dailydot",
+      "domains4bitcoins[.]com",
+      "domaintools",
+      "en[.]wikipedia",
+      "espn-com[.]co",
+      "espn-live[.]co",
+      "facebook",
+      "farsightsecurity",
+      "globalnews[.]ca",
+      "gmarine[.]com",
+      "google[.]pl",
+      "google[.]ru",
+      "hackread",
+      "hackread[.]com",
+      "hubs[.]ly",
+      "incident[.]xhtml",
+      "index[.]html",
+      "inside[.]wada",
+      "ititch[.]com",
+      "m[.]paralympic",
+      "macie[.]dietrich",
+      "mail[.]com",
+      "mail[.]wada",
+      "nytimes",
+      "olympics-2014[.]html",
+      "passivetotal",
+      "presse[.]wdr",
+      "reuters",
+      "skript[.]pdf",
+      "sqlmap[.]org",
+      "stepanova-rio-olympics[.]html",
+      "tas",
+      "tas-cas[.]org",
+      "tas-cass[.]org",
+      "theguardian",
+      "threatconnect",
+      "threatconnect[.]com",
+      "wada",
+      "wada-ama[.]org",
+      "wada-arna[.]org",
+      "wada-awa[.]org",
+      "youtube"
+    ]
+  },
+  "iocs": {
+    "hashes": [],
+    "domains": [
+      "threatconnect.com",
+      "m.paralympic.org",
+      "wada-ama.org",
+      "dailydot.com",
+      "hackread.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "[http://globalnews.ca/news/2831251/[REDACTED_MALWARE]-doping-report-who-is- richard-mclaren/] to investigate allegations of [REDACTED_MALWARE] state manipulation of the doping control process for [REDACTED_MALWARE] athletes. On August 13, the WADA [https://www.wada- ama.org/en/media/news/2016-08/wada-con\u0000rms-illegal-activity-on- yuliya-stepanovas-adams-account] and email. Activity Targeting the WADA and CAS [https://app.threatconnect.com/auth/incident/incident.xhtml? incident=1412887] .",
+  "_meta": {
+    "label": "G0007",
+    "doc_id": "98f352675ee9",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2016/2016.08.19.fancy-bear-anti-doping-agency-phishing/Russian_Cyber_Operations_On_Steroids.pdf"
+  }
+}

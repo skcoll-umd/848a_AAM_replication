@@ -1,0 +1,43 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [],
+  "sectors": [
+    "Aerospace",
+    "Defense",
+    "Energy",
+    "Financial",
+    "Government",
+    "Legal",
+    "Manufacturing",
+    "Media",
+    "Technology",
+    "Telecom"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "c2",
+      "command and control"
+    ],
+    "tools": [],
+    "domains": [
+      "crowdstrike[.]com",
+      "us[.]ibm"
+    ]
+  },
+  "iocs": {
+    "hashes": [],
+    "domains": [
+      "us.ibm.com",
+      "crowdstrike.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "– Visibility, Visibility, Visibilty – If you can find them at: exploitation, installation, command and control • You can stop them quickly – If you understand the pattern of the attack you have additional options •. This is a technical question Multiple Adversaries? Plans to purchase What adversaries would be interested? Understand the negotiation plans Hunting and Responding Do you have access in multiple environments? Law firm?",
+  "_meta": {
+    "label": "G0016",
+    "doc_id": "b6169c77381e",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2016/2016.04.15.pandas_and_bears/Detecting-and-Responding-to-Pandas-and-Bears-Christopher-Scott-CrowdStrike-and-Wendi-Whitmore-IBM.pdf"
+  }
+}

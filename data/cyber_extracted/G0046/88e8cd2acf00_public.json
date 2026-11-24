@@ -1,0 +1,101 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "email",
+    "phishing",
+    "website"
+  ],
+  "sectors": [
+    "Defense",
+    "Financial",
+    "Legal",
+    "Technology"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "api",
+      "c2",
+      "http"
+    ],
+    "tools": [
+      "empire",
+      "powershell",
+      "powersploit"
+    ],
+    "domains": [
+      "1[.]tmp",
+      "a[.]cody",
+      "a[.]php",
+      "a[.]ray",
+      "accenture",
+      "accenture[.]com",
+      "avgnt[.]exe",
+      "avp[.]exe",
+      "bank[.]com",
+      "bipovnerlvd[.]com",
+      "blopsadmvdrl[.]com",
+      "bnrnboerxce[.]com",
+      "c[.]coderre",
+      "checkupdate[.]ps",
+      "cis[.]exe",
+      "despanabrandfood[.]com",
+      "despanabrandfoods[.]com",
+      "dewifal[.]com",
+      "dog[.]js",
+      "dog[.]zip",
+      "doneckforum[.]com",
+      "ekrn[.]exe",
+      "essentialetimes[.]com",
+      "fisrteditionps[.]com",
+      "halyk-bank[.]com",
+      "howard[.]marshall",
+      "jayson[.]jean",
+      "kiprovol[.]com",
+      "kiprovolswe[.]com",
+      "math[.]floor",
+      "math[.]random",
+      "micro-earth[.]com",
+      "moneyma-r[.]com",
+      "possible[.]charat",
+      "powershell[.]exe",
+      "privat-bankau[.]com",
+      "privatbank-ua[.]com",
+      "rambler[.]ru",
+      "setup[.]ps",
+      "silverdiners[.]com",
+      "socksbot[.]dll",
+      "svchost[.]exe",
+      "tejara-bank[.]com",
+      "voievnenibrinw[.]com",
+      "wedogreatpurchases[.]com",
+      "wininit[.]exe"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "211fbf34749df5e717e8b11fecb3f648",
+      "b3fb88a5aa791aea141bf3b4cf045355",
+      "9a273653364dfb143ff196d826d2bac4",
+      "21a09cf81f3584a741c7167f622d6c50",
+      "521c81c62836a233a6e771bc3491300f"
+    ],
+    "domains": [
+      "halyk-bank.com",
+      "privatbank-ua.com",
+      "doneckforum.com",
+      "privat-bankau.com",
+      "bank.com"
+    ],
+    "mutexes": [
+      "Creation"
+    ]
+  },
+  "narrative": "Howard Marshall howard.marshall@accenture.com Robert Coderre robert.c.coderre@accenture.com Jayson Jean jayson.jean@accenture.com Emily Cody emily.a.cody@accenture.com Copyright © 2018 Accenture Security. Finally, the dropper will start a new svchost.exe process in a suspended state and consequently reflectively load (and inject) the SOCKSBOT implant into the process. 12 • Execute PowerShell scripts • Execute a PowerShell script and exit SOCKSBOT can thus write other PowerShell scripts to the %TEMP% folder and execute these hidden from the user.",
+  "_meta": {
+    "label": "G0046",
+    "doc_id": "88e8cd2acf00",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2018/2018.08.02.Goldfin_Security_Alert/Accenture-Goldfin-Security-Alert-1.pdf"
+  }
+}

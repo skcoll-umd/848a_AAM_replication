@@ -1,0 +1,80 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "email",
+    "rdp"
+  ],
+  "sectors": [
+    "Financial",
+    "Government",
+    "Mining",
+    "Telecom",
+    "Telecommunications"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "api",
+      "http",
+      "https",
+      "proxy",
+      "rdp",
+      "reverse proxy",
+      "sharepoint",
+      "tcp"
+    ],
+    "tools": [
+      "cmd",
+      "sc.exe"
+    ],
+    "domains": [
+      "1[.]aspx",
+      "32[.]liontail",
+      "apt[.]wins",
+      "asp[.]net",
+      "assembly[.]load",
+      "backdoor[.]win",
+      "base64[.]dll",
+      "base[.]apprelativevirtualpath",
+      "bsae64[.]dll",
+      "clientbin[.]aspx",
+      "cmd[.]exe",
+      "design[.]dll",
+      "encryption[.]xoro",
+      "exchange[.]asmx",
+      "explorer[.]exe",
+      "http[.]sys",
+      "kernel32[.]dll",
+      "research[.]checkpoint",
+      "sc[.]exe",
+      "system[.]drawing",
+      "system[.]reflection",
+      "system[.]web",
+      "wblsctrl[.]dll",
+      "wlanapi[.]dll",
+      "wlbsctrl[.]dll",
+      "xoro[.]dll"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "daa362f070ba121b9a2fa3567abc345edcde33c54cabefa71dd2faad78c10c33",
+      "f4639c63fb01875946a4272c3515f005d558823311d0ee4c34896c2b66122596",
+      "2097320e71990865f04b9484858d279875cf5c66a5f6d12c819a34e2385da838",
+      "67560e05383e38b2fcc30df84f0792ad095d5594838087076b214d849cde9542",
+      "4f6351b8fb3f49ff0061ee6f338cd1af88893ed20e71e211e8adb6b90e50a3b8"
+    ],
+    "domains": [
+      "research.checkpoint.com",
+      "asp.net"
+    ],
+    "mutexes": []
+  },
+  "narrative": "C&C command execution The backdoor has several capabilities: execute commands using cmd.exe, upload and download files, execute processes with specified arguments, and run additional .NET assemblies. After decrypting the data of the message, the malware parses it according to the following order: DWORD command_type DWORD command_name_length STRING command_name STRING data Figure 26 – Switch that handles possible SDD backdoor command types. The App_Web* DLL is affected by the class and method obfuscation, and all the strings are encrypted with a combination of Base64, XOR with the first byte, and AES: Figure 20 – The inchpublic function, responsible for string encryption, showcases obfuscations of methods and classes.",
+  "_meta": {
+    "label": "G0049",
+    "doc_id": "12c4d980f296",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2023/2023.10.31.Scarred_Manticore/From Albania to the Middle East_ The Scarred Manticore is Listening - Check Point Research.pdf"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [],
+  "sectors": [],
+  "infrastructure_hints": {
+    "types": [
+      "api",
+      "command and control",
+      "http",
+      "https"
+    ],
+    "tools": [
+      "python"
+    ],
+    "domains": [
+      "aes[.]mode",
+      "aes[.]new",
+      "allyourbase[.]belong",
+      "blog_0x54[.]html",
+      "com[.]apple",
+      "crypto[.]cipher",
+      "deploy[.]py",
+      "encryptor[.]encrypt",
+      "hashlib[.]md",
+      "infile[.]read",
+      "objective-see[.]com",
+      "osx[.]applejeus",
+      "outfile[.]write",
+      "posts[.]specterops",
+      "see[.]com",
+      "server[.]py",
+      "unioncrypto[.]vip",
+      "vip[.]unioncrypto"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "6588d262529dc372c400bef8478c2eec",
+      "ca57054ea39f84a6f5ba0c65539a0762"
+    ],
+    "domains": [
+      "objective-see.com",
+      "posts.specterops.io",
+      "see.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": ": Persistence: /Library/LaunchDaemons/vip.unioncrypto.plist -> /Library/UnionCrypto/unioncryptoupdater Command and Control (C&C) Server: https://unioncrypto.vip/update Capabilities: The in-memory execution of a remotely downloaded payloads. = 0: 19 chunk += ' ' * (16 - len(chunk) % 16) 20 21 data += encryptor.encrypt(chunk) 22 23 outfile.write(base64.b64encode(data)). As a 1st-[REDACTED_MALWARE], it simply beacons out to a remote server for 2nd-[REDACTED_MALWARE] payloads (which as noted, are executed directly from memory).",
+  "_meta": {
+    "label": "G0032",
+    "doc_id": "0771293579e4",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2020/2020.02.22_Lazarus_Group_Weaponizing/Weaponizing a Lazarus Group Implant.pdf"
+  }
+}

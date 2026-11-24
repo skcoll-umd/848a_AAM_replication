@@ -1,0 +1,20 @@
+{
+  "threat_actor": "Turla",
+  "group_name": "Turla",
+  "group_id": "G0010",
+  "mitre_intrusion_set": {
+    "id": "intrusion-set--7a19ecb1-3c65-4de3-a230-993516aed6a6",
+    "gid": "G0010",
+    "name": "Turla",
+    "matched_alias": "turla"
+  },
+  "malware_family": "full backdoor",
+  "campaign_name": null,
+  "attack_ttp_map": {},
+  "technique_to_tactics": {},
+  "_meta": {
+    "label": "G0010",
+    "doc_id": "16d77d6cf003",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2015/2015.02.17.Desert_Falcons_APT/The-Desert-Falcons-targeted-attacks.pdf"
+  }
+}

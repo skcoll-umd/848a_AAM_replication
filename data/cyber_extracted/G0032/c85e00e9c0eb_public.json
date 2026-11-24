@@ -1,0 +1,95 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "exploit kit",
+    "watering hole",
+    "watering-hole",
+    "website"
+  ],
+  "sectors": [
+    "Financial",
+    "Mining"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "beacon",
+      "http",
+      "https",
+      "tcp"
+    ],
+    "tools": [
+      "cmd",
+      "netstat",
+      "tasklist"
+    ],
+    "domains": [
+      "-watch[.]in",
+      "_siver[.]pdb",
+      "appmanifest[.]xaml",
+      "args[.]get",
+      "array[.]length",
+      "badcyber[.]com",
+      "baesystems[.]com",
+      "binaryreader[.]dll",
+      "binaryreader[.]exploit",
+      "brou[.]com",
+      "buffer[.]blockcopy",
+      "cambio[.]swf",
+      "cambio[.]xa",
+      "cambio[.]xap",
+      "cmd[.]exe",
+      "cnbv",
+      "default[.]html",
+      "eye",
+      "eye-watch[.]in",
+      "go[.]microsoft",
+      "gob[.]mx",
+      "google",
+      "gpsvc[.]ex",
+      "gpsvc[.]exe",
+      "images[.]jsp",
+      "knf[.]gov",
+      "linq[.]dll",
+      "list[.]jsp",
+      "misaporportalui[.]xap",
+      "pnf[.]action",
+      "r[.]ch",
+      "sanciones[.]aspx",
+      "sap[.]misapo",
+      "sap[.]misapor",
+      "shell_siver[.]dll",
+      "silverlight[.]js",
+      "svchost[.]ex",
+      "system[.]xml",
+      "this[.]initializecomponent",
+      "type[.]invokemember",
+      "view[.]jsp",
+      "web[.]archive"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "85d316590edfb4212049c4490db08c4b",
+      "c1364bbf63b3617b25b58209e4529d8c",
+      "1bfbc0c9e0d9ceb5c3f4f6ced6bcfeae",
+      "1f7897b041a812f96f1925138ea38c46",
+      "4cc10ab3f4ee6769e520694a10f611d5"
+    ],
+    "domains": [
+      "sap.misapor.ch",
+      "eye-watch.in",
+      "web.archive.org",
+      "go.microsoft.com",
+      "cnbv.gob.mx"
+    ],
+    "mutexes": []
+  },
+  "narrative": "This second-stage DLL assembly, binaryreader.dll, is heavily obfuscated. The unpacked executable takes several command line arguments: -l: list service names, available for its own registration -o: open specified event -t: set specified event -x. [SERVICE_NAME]: drop/install DLL under specified [SERVICE_NAME] -x.",
+  "_meta": {
+    "label": "G0032",
+    "doc_id": "c85e00e9c0eb",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2017/2017.02.12.lazarus-watering-hole-attacks/lazarus-watering-hole-attacks.html.pdf"
+  }
+}

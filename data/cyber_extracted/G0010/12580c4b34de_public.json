@@ -1,0 +1,31 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "email",
+    "watering hole",
+    "website"
+  ],
+  "sectors": [],
+  "infrastructure_hints": {
+    "types": [],
+    "tools": [],
+    "domains": [
+      "adobe[.]com"
+    ]
+  },
+  "iocs": {
+    "hashes": [],
+    "domains": [
+      "adobe.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "At the final part of the process, the fake installer drops – or downloads – and then runs a legitimate Flash Player application. Once the fake Flash installer is downloaded and launched, one of several backdoors is dropped. It uses a custom encryption algorithm and can execute certain predefined actions.",
+  "_meta": {
+    "label": "G0010",
+    "doc_id": "12580c4b34de",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2018/2018.01.09.Turla_Mosquito/blog.pdf"
+  }
+}

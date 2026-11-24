@@ -1,0 +1,89 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "attachment",
+    "document",
+    "email",
+    "phishing",
+    "website"
+  ],
+  "sectors": [
+    "Aerospace",
+    "Defense",
+    "Education",
+    "Financial",
+    "Government",
+    "Legal",
+    "Media"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "http",
+      "imap",
+      "ssl"
+    ],
+    "tools": [],
+    "domains": [
+      "about-threats[.]trendmicro",
+      "advstoreshell[.]dll",
+      "attack_011012[.]doc",
+      "bkdr_sednit[.]ae",
+      "bkdr_sednit[.]sm",
+      "conhost[.]dll",
+      "coreshell[.]dll",
+      "cve",
+      "cve[.]mitre",
+      "cvename[.]cgi",
+      "dropper[.]exe",
+      "en[.]wikipedia",
+      "eurosatory",
+      "gov[.]hu",
+      "homelandsecurityme[.]com",
+      "infostealer[.]sofacy",
+      "install[.]exe",
+      "mail[.]hm",
+      "malware-info[.]html",
+      "malware[.]prevenity",
+      "malware_27[.]html",
+      "mh17[.]doc",
+      "military[.]rtf",
+      "msmvs[.]exe",
+      "netids[.]dll",
+      "netidt[.]dll",
+      "netui[.]dll",
+      "nypost[.]com",
+      "part1[.]xls",
+      "part2[.]xls",
+      "s[.]vbs",
+      "saver[.]scr",
+      "skype[.]exe",
+      "symantec",
+      "thegoldenmessenger[.]blogspot",
+      "threats[.]trendmicro",
+      "tmp64[.]dat",
+      "trendmicro",
+      "troj_artief[.]ap",
+      "troj_sednit[.]tok",
+      "writeup[.]jsp"
+    ]
+  },
+  "iocs": {
+    "hashes": [],
+    "domains": [
+      "nypost.com",
+      "malware.prevenity.com",
+      "about-threats.trendmicro.com",
+      "cve.mitre.org",
+      "trendmicro.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "doc has been encoded using Cyrillic characters and opens in Word • Skype.exe drops: • Downloader (netids.dll; SHA-1: 6b87 5661a74c46 73ae6ee89a cc5cb6927ca Netids.dll downloads Install.exe drops Coreshell.dll 5fd0d), a and saves msmvs. Saver.scr drops: doc; SHA-1: 0E Dropper.exe drops: • IDF_ 12C8AB9B89B6 • Decoy file Spokesperson_ EB6BAF16C4B W.q drops: (Letter to IAEA. Last Preparedness: Advancing Command and accessed October 13, 2014, http://about- Control and Communication for Increased threats.trendmicro.com/us/malware/ Identification, Access, Surveillance, BKDR_SEDNIT.AE.",
+  "_meta": {
+    "label": "G0007",
+    "doc_id": "68c6335b2f8c",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2014/2014.10.22.Operation_Pawn_Storm/wp-operation-pawn-storm.pdf"
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "attack_ttp_ids": [
+    "T1022",
+    "T1027",
+    "T1038",
+    "T1106",
+    "T1107",
+    "T1116",
+    "T1129",
+    "T1140",
+    "T1179"
+  ],
+  "attack_tactic_ids": [
+    "TA0002",
+    "TA0003",
+    "TA0004",
+    "TA0005",
+    "TA0006",
+    "TA0010"
+  ],
+  "attack_tactics": [
+    "Execution",
+    "Persistence",
+    "Privilege Escalation",
+    "Stealth",
+    "Credential Access",
+    "Exfiltration"
+  ],
+  "delivery_vectors": [
+    "email",
+    "phishing"
+  ],
+  "sectors": [
+    "Financial",
+    "Technology"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "api",
+      "c2",
+      "https",
+      "ssl"
+    ],
+    "tools": [],
+    "domains": [
+      "aptfin[.]backdoor",
+      "aptfin[.]dropper",
+      "details-part-one-pdb-paths-malware[.]html",
+      "dwrite[.]dll",
+      "dwriteimpl[.]dll",
+      "dwriteimpl[.]pdb",
+      "fireeye",
+      "fireeye[.]com",
+      "mahalo-fin7-responding-to-new-tools-and-techniques[.]html",
+      "malware[.]binary",
+      "module_ls[.]dll",
+      "pe32[.]dlls",
+      "pe[.]data",
+      "pe[.]image",
+      "pe[.]number",
+      "pe[.]rva",
+      "pe[.]signatures",
+      "pe[.]timestamp",
+      "win[.]boostwrite",
+      "win[.]rdfsniffer"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "18cc54e2fbdad5a317b6aeb2e7db3973cc5ffb01bbf810869d79e9cb3bf02bd5",
+      "8773aeb53d9034dc8de339651e61d8d6ae0a895c4c89b670d501db8dc60cd2d0",
+      "a873f3417d54220e978d0ca9ceb63cf13ec71f84",
+      "09f3c9ae382fbd29fb47ecdfeb3bb149d7e961a1",
+      "a67d6e87283c34459b4660f19747a306"
+    ],
+    "domains": [
+      "fireeye.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "This backdoor allows an attacker to upload, download, execute and/or delete arbitrary files (Table 2). Figure 1: BOOSTWRITE log file Before exiting, the malware resolves the location of the benign DWrite.dll library and passes the execution control to its DWriteCreateFactory method. The first of [REDACTED_ACTOR]'s new tools is BOOSTWRITE – an in-memory-only dropper that decrypts embedded payloads using an encryption key retrieved from a remote server at runtime.",
+  "_meta": {
+    "label": "G0046",
+    "doc_id": "ca52b35fb09b",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2019/2019.10.10.Fin7/Mahalo_FIN7.pdf"
+  }
+}

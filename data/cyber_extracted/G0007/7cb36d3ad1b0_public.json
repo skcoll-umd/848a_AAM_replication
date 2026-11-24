@@ -1,0 +1,74 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "document",
+    "email",
+    "exploit kit",
+    "macro",
+    "phishing",
+    "website"
+  ],
+  "sectors": [
+    "Government",
+    "Legal",
+    "Media",
+    "Mining"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "api",
+      "c2",
+      "http"
+    ],
+    "tools": [
+      "certutil",
+      "cmd",
+      "empire",
+      "metasploit",
+      "mshta",
+      "powershell",
+      "rundll32"
+    ],
+    "domains": [
+      "4[.]tmp",
+      "5[.]vbs",
+      "cmd[.]exe",
+      "document[.]xml",
+      "flashrun[.]vbs",
+      "graph[.]exe",
+      "mscertificate[.]exe",
+      "objshell[.]run",
+      "pageupd[.]php",
+      "powershell[.]exe",
+      "protocol[.]php",
+      "rundll32[.]exe",
+      "shell32[.]dll",
+      "supservermgr[.]com",
+      "system[.]net",
+      "word[.]exe",
+      "wscript[.]shell",
+      "x00flashrun[.]vbs"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "d697160aecf152a81a89a6b5a7d9e1b8b5e121724038c676157ac72f20364edc",
+      "cba5ab65a24be52214736bc1a5bc984953a9c15d0a3826d5b15e94036e5497df",
+      "25f0d1cbcc53d8cfd6d848e12895ce376fbbfaf279be591774b28f70852a4fd8",
+      "115fd8c619fa173622c7a1e84efdf6fed08a25d3ca3095404dcbd5ac3deb1f03",
+      "f27836430742c9e014e1b080d89c47e43db299c2e00d0c0801a2830b41b57bc1"
+    ],
+    "domains": [
+      "supservermgr.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "First, we determined the sample we collected, d697160ae… was attempting to communicate to its C2 at hxxp://supservermgr[.]com/sys/upd/pageupd.php to retrieve a Zebrocy AutoIT downloader. The DDE instructions attempt to run the following the following command on the victim host, which attempts to download and execute a payload from a remote server: 1 C:\\\\Programs\\\\Microsoft\\\\MSOffice\\\\Word.exe\\\\..\\\\..\\\\..\\\\..\\\\Windows\\\\. The following shows this unused command, which exposed an additional server within Sofacy’s infrastructure would download and execute an encoded PowerShell script from 92.114.92[.]102: 1 C:\\\\Programs\\\\Microsoft\\\\MSOffice\\\\Word.exe\\\\..\\\\..\\\\..\\\\..\\\\Windows\\\\.",
+  "_meta": {
+    "label": "G0007",
+    "doc_id": "7cb36d3ad1b0",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2018/2018.06.06.sofacy-groups-parallel-attacks/sofacy-groups-parallel-attacks.pdf"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "attachment",
+    "phishing",
+    "website"
+  ],
+  "sectors": [
+    "Education",
+    "Government",
+    "Media"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "beacon",
+      "c2",
+      "command and control",
+      "http",
+      "https",
+      "proxy",
+      "ssl"
+    ],
+    "tools": [
+      "cmd",
+      "wget"
+    ],
+    "domains": [
+      "betawebservices[.]ntnonline",
+      "co[.]uk",
+      "connectads[.]com",
+      "edadmin[.]kearsney",
+      "extranet[.]qualityplanning",
+      "ff[.]whitebirchpaper",
+      "illuminatistudios",
+      "illuminatistudios[.]net",
+      "kane-consulting[.]net",
+      "minidionis[.]pdb",
+      "player[.]swf",
+      "redbluffchamber[.]com",
+      "researchcenter[.]paloaltonetworks",
+      "secure[.]hgl",
+      "securelist[.]com",
+      "staff[.]shasta",
+      "symantec",
+      "theregister",
+      "viewer[.]php",
+      "visionresearch[.]com",
+      "wuauctl[.]exe"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "0d132ee171768dc30d14590ed2dbadd1",
+      "01039a95e0a14767784acc8f07035935",
+      "0f9534b63cb7af1e3aa34839d7d6e632",
+      "2e64131c0426a18c1c363ec69ae6b5f2",
+      "70f5574e4e7ad360f4f5c2117a7a1ca7"
+    ],
+    "domains": [
+      "illuminatistudios.net",
+      "securelist.com",
+      "theregister.co.uk",
+      "researchcenter.paloaltonetworks.com",
+      "extranet.qualityplanning.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "Command handler Once the C2 and Trojan have synchronized and can decrypt their network communications the C2 server will begin responding to beacons from the Trojan with JSON blobs. [3], and utilizes compromised, legitimate websites for spear phishing and command and control activity. To obtain tasks, the Trojan will issue an HTTPS request to the C2 server (“host_scripts” in the configuration) that resembles the following example beacon: GET /mobile/viewer.php.",
+  "_meta": {
+    "label": "G0016",
+    "doc_id": "8234d28f2b2e",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2015/2015.07.14.tracking-minidionis-cozycars/MiniDionis_CozyCar_Seaduke.pdf"
+  }
+}

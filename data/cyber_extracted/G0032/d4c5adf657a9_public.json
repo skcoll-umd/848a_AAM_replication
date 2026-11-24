@@ -1,0 +1,47 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "document",
+    "email",
+    "phishing"
+  ],
+  "sectors": [
+    "Financial",
+    "Government",
+    "Mining"
+  ],
+  "infrastructure_hints": {
+    "types": [],
+    "tools": [
+      "powershell",
+      "python"
+    ],
+    "domains": [
+      "coinlink[.]co",
+      "pwncode[.]club",
+      "ww[.]recordedfuture"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "da02193fc7f2a628770382d9b39fe8e0",
+      "3d0d71fdedfd8945d78b64cdf0fb11ed",
+      "63069c9bcc4f8e16412ea1a25f3edf14",
+      "8152e241b3f1fdb85d21bfcf2aa8ab1d",
+      "46d1d1f6e396a1908471e8a8d8b38417"
+    ],
+    "domains": [
+      "ww.recordedfuture.com",
+      "coinlink.co.kr"
+    ],
+    "mutexes": []
+  },
+  "narrative": "Beginning in 2016, researchers discovered a shift in North Korean operations toward attacks against financial institutions ​designed to steal money and generate funds for the Kim regime. This campaign relies on multiple payloads fashioned out of the Destover infostealer code to collect information about the victim system and exfiltrate files. The shellcode in turn triggers the GhostScript vulnerability in order to execute an embedded DLL that has also been XORed.",
+  "_meta": {
+    "label": "G0032",
+    "doc_id": "d4c5adf657a9",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2018/2018.01.16.north-korea-cryptocurrency-campaign/cta-2018-0116.pdf"
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "attack_ttp_ids": [
+    "T1005",
+    "T1012",
+    "T1014",
+    "T1021",
+    "T1027",
+    "T1036",
+    "T1036.003",
+    "T1036.004",
+    "T1041",
+    "T1057",
+    "T1070",
+    "T1070.004",
+    "T1071",
+    "T1071.001",
+    "T1071.004",
+    "T1072",
+    "T1078",
+    "T1078.002",
+    "T1132",
+    "T1195",
+    "T1195.002",
+    "T1480.001",
+    "T1497",
+    "T1497.003",
+    "T1543",
+    "T1543.002",
+    "T1543.003",
+    "T1553",
+    "T1553.002",
+    "T1562.001",
+    "T1568",
+    "T1568.002",
+    "T1569",
+    "T1569.002",
+    "T1583",
+    "T1583.001",
+    "T1583.003",
+    "T1583.006",
+    "T1587",
+    "T1587.001",
+    "T1587.003"
+  ],
+  "attack_tactic_ids": [
+    "TA0001",
+    "TA0002",
+    "TA0003",
+    "TA0004",
+    "TA0005",
+    "TA0007",
+    "TA0008",
+    "TA0009",
+    "TA0010",
+    "TA0011",
+    "TA0042",
+    "TA0112"
+  ],
+  "attack_tactics": [
+    "Initial Access",
+    "Execution",
+    "Persistence",
+    "Privilege Escalation",
+    "Stealth",
+    "Discovery",
+    "Lateral Movement",
+    "Collection",
+    "Exfiltration",
+    "Command and Control",
+    "Resource Development",
+    "Defense Impairment"
+  ],
+  "delivery_vectors": [
+    "exploit kit",
+    "supply chain"
+  ],
+  "sectors": [
+    "Defense",
+    "Government",
+    "Healthcare",
+    "Media",
+    "Technology",
+    "Telecom",
+    "Telecommunications",
+    "Utilities"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "c2",
+      "command and control",
+      "dns",
+      "https",
+      "tls",
+      "web protocols"
+    ],
+    "tools": [
+      "powershell"
+    ],
+    "domains": [
+      "abuseipdb[.]com",
+      "app_web_logoimagehandler[.]ashx",
+      "avsvmcloud[.]com",
+      "b6031896[.]dll",
+      "freescanonline[.]com",
+      "globalnetworkissues[.]com",
+      "highdatabase[.]com",
+      "incomeupdate[.]com",
+      "inteleksys[.]com",
+      "kubecloud[.]com",
+      "lcomputers[.]com",
+      "panhardware[.]com",
+      "recordedfuture",
+      "seobundlekit[.]com",
+      "solartrackingsystem[.]com",
+      "solartrackingsystem[.]net",
+      "urlscan[.]io",
+      "virtualwebdata[.]com",
+      "webcodez[.]com"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "21bab0d279d15a548a84a9d9eed34575b2dc9072cc36ebfe7b517850eea92756",
+      "c5864330c247e2cd2a98d69b852e42f59a16d9613a6536c8b0b25e16c934533d"
+    ],
+    "domains": [
+      "urlscan.io",
+      "recordedfuture.com",
+      "avsvmcloud.com",
+      "freescanonline.com",
+      "highdatabase.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "Indicator Removal on Host (File Deletion T1070.004) • T1078 Valid accounts (Domain accounts T1078.002 for [REDACTED_ACTOR]) • T1027 Obfuscated Files or Information. For example, within ATT&CK Navigator, several techniques are automatically assigned to tactics, such as T1078 Valid Accounts, which is assigned to Initial Access, Persistence, and Defense Evasion tactics. However, the domains hashed with FNV-1a are also used to standardize various components of information in checks prior to downloading the second-stage payload, creating efficiencies for communication as well as obfuscation.",
+  "_meta": {
+    "label": "G0016",
+    "doc_id": "e4a570f6c544",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2020/2020.12.30.SolarWinds_Attribution/pov-2020-1230.pdf"
+  }
+}

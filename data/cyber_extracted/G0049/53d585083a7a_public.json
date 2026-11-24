@@ -1,0 +1,71 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "attachment",
+    "email",
+    "malicious attachment",
+    "phishing",
+    "website"
+  ],
+  "sectors": [
+    "Government",
+    "Legal"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "beacon",
+      "c2",
+      "command and control",
+      "dns",
+      "http"
+    ],
+    "tools": [
+      "cmd",
+      "schtasks"
+    ],
+    "domains": [
+      "cmd[.]exe",
+      "defender-update[.]com",
+      "encodedstringclass[.]return",
+      "gdi[.]bin",
+      "gid[.]bin",
+      "interaction[.]msgbox",
+      "msgboxstyle[.]critical",
+      "obfuscated_string[.]split",
+      "sbiedll[.]dll",
+      "schwin[.]vbs",
+      "shwdoc[.]srv",
+      "shwdoc[.]vbs",
+      "timezone[.]currenttimezone",
+      "user32[.]dll",
+      "vboxmrxnp[.]dll",
+      "vmbusres[.]dll",
+      "vmguestlib[.]dll",
+      "windowsimplantment[.]exe",
+      "windowspatch",
+      "windowspatch[.]com",
+      "wscript[.]shell"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "36e66597a3ff808acf9b3ed9bc93a33a027678b1e262707682a2fd1de7731e23",
+      "055b7607848777634b2b17a5c51da7949829ff88084c3cb30bcb3e58aae5d8e9",
+      "6b240178eedba4ebc9f1c8b56bac02676ce896e609577f4fb64fa977d67c0761",
+      "9e8ec04e534db1e714159cc68891be454c2459f179ab1df27d7f89d2b6793b17"
+    ],
+    "domains": [
+      "windowspatch.com",
+      "defender-update.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "communications begins with a beacon to the following URL: hxxp://www.windowspatch[.]com/khc?<hex(STDOUT of whoami command)>. If the C2 server wishes to send a command, it will respond to the beacon above by echoing the whoami command results sent by the Trojan to the C2 in the URL. Command Description 1 Runs a supplied command and writes it output to %APPDATA%\\SchWin.vbs, which will then be uploaded to the C2 server.",
+  "_meta": {
+    "label": "G0049",
+    "doc_id": "53d585083a7a",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2018/2018.09.04.OilRig_Targets_Middle_Eastern/oilrig-targets-middle-eastern-government-adds-evasion-techniques-oopsie.pdf"
+  }
+}

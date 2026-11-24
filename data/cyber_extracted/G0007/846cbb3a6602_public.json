@@ -1,0 +1,47 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [],
+  "sectors": [],
+  "infrastructure_hints": {
+    "types": [
+      "api",
+      "c2",
+      "http",
+      "https"
+    ],
+    "tools": [
+      "cmd",
+      "rundll32",
+      "tasklist"
+    ],
+    "domains": [
+      "2021-05_fancybear[.]pdf",
+      "cluster25[.]io",
+      "cybergeeks[.]tech",
+      "docs[.]microsoft",
+      "fvjoik[.]dll",
+      "rundll32[.]exe",
+      "updaterweb[.]com",
+      "virustotal"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "ae0bc3358fef0ca2a103e694aa556f55a3fed4e98ba57d16f5ae7ad4ad583698"
+    ],
+    "domains": [
+      "docs.microsoft.com",
+      "cluster25.io",
+      "updaterweb.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "The “cmd=y” command is used to download a DLL file from the C2 server, which is loaded using the LoadLibraryW API, and the first ordinal function is executed. The user agent used during the network communication is set to “Opera”, and the following is the structure of the POST request: “id=<hostname>#Username#<Serial number in decimal>&current=1&total=1&data=<data to be exfiltrated>”. The content of the following directories, along with the processes’ output, is base64-encoded and exfiltrated to the C2 server updaterweb[.]com: Desktop folder C:\\Program.",
+  "_meta": {
+    "label": "G0007",
+    "doc_id": "846cbb3a6602",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2021/2021.08.03.SKINNYBOY/A step-by-step analysis of the new malware used by APT28_Sofacy called SkinnyBoy – CYBER GEEKS.pdf"
+  }
+}

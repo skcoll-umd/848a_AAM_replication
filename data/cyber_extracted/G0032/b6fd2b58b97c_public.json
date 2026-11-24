@@ -1,0 +1,49 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "document",
+    "email",
+    "phishing",
+    "supply chain",
+    "watering hole",
+    "website"
+  ],
+  "sectors": [
+    "Financial"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "command and control",
+      "vpn"
+    ],
+    "tools": [],
+    "domains": [
+      "asap[.]dll",
+      "cgproc[.]sys",
+      "gmasvc[.]dll",
+      "gmrproc[.]sys",
+      "kisa[.]or",
+      "nrproc[.]sys",
+      "ntmssvc[.]dll",
+      "srcsvc[.]dat",
+      "thproc[.]sys",
+      "vuproc[.]sys",
+      "wndmpmsps[.]dll"
+    ]
+  },
+  "iocs": {
+    "hashes": [],
+    "domains": [
+      "kisa.or.kr"
+    ],
+    "mutexes": []
+  },
+  "narrative": "Execution (cid:19)(cid:17)(cid:18)(cid:25) (cid:19)(cid:17)(cid:19)(cid:17) (cid:19)(cid:17)(cid:19)(cid:18) (cid:19)(cid:17)(cid:19)(cid:20) ATTRIBUTION.",
+  "_meta": {
+    "label": "G0032",
+    "doc_id": "b6fd2b58b97c",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2024/2024.01.25.Lazarus_Group/JSAC2024_1_6_dongwook-kim_seulgi-lee_en.pdf"
+  }
+}

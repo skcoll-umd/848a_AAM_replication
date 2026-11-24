@@ -1,0 +1,42 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "usb"
+  ],
+  "sectors": [
+    "Defense",
+    "Government",
+    "Media"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "c2",
+      "ftp",
+      "http",
+      "https"
+    ],
+    "tools": [
+      "ftp"
+    ],
+    "domains": [
+      "xagent[.]plist"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "05298a48e4ca6d9778b32259c8ae74527be33815",
+      "176e92e7cfc0e57be83e901c36ba17b255ba0b1b",
+      "30e4decd68808cb607c2aba4aa69fb5fdb598c64"
+    ],
+    "domains": [],
+    "mutexes": []
+  },
+  "narrative": "The obvious goal of the SEDNIT-related spyware is to steal personal data, record audio, make screenshots, and send them to a remote command-and-control (C&C) server. Collect text messages Get contact lists Get pictures Collect geo-location data Start voice recording Get a list of installed apps Get a list of processes Get the Wi-Fi status Figure 1. XAgent code structure C&C Communication Besides collecting information from the iOS device, the app sends the information out via HTTP.",
+  "_meta": {
+    "label": "G0007",
+    "doc_id": "2c3a3349a1eb",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2015/2015.02.04.Pawn_Storm_Update_iOS_Espionage/PawnStorm_iOS.pdf"
+  }
+}

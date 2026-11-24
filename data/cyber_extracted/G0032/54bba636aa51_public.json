@@ -1,0 +1,52 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "document",
+    "email",
+    "phishing",
+    "rdp",
+    "website"
+  ],
+  "sectors": [
+    "Aerospace",
+    "Defense",
+    "Financial",
+    "Government",
+    "Media",
+    "Technology"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "beacon",
+      "c2",
+      "dns",
+      "http",
+      "icmp",
+      "ntp",
+      "rdp",
+      "smb",
+      "tcp",
+      "vpn"
+    ],
+    "tools": [
+      "powershell"
+    ],
+    "domains": [
+      "fbi[.]gov",
+      "hq[.]dhs"
+    ]
+  },
+  "iocs": {
+    "hashes": [],
+    "domains": [],
+    "mutexes": []
+  },
+  "narrative": "Description Since 2009, HIDDEN COBRA actors have leveraged their capabilities to target and compromise a range of victims; some intrusions have resulted in the exfiltration of data while others have been disruptive in nature. Tools and capabilities used by HIDDEN COBRA actors include [REDACTED_MALWARE] botnets, keyloggers, remote access tools (RATs), and wiper malware. The malware operates on victims’ systems as a svchost-based service and is capable of downloading executables, changing its own configuration, updating its own binaries, terminating its own processes, and activating and terminating denial-of-service attacks.",
+  "_meta": {
+    "label": "G0032",
+    "doc_id": "54bba636aa51",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2017/2017.06.13.HIDDEN_COBRA/TA17-164A.pdf"
+  }
+}

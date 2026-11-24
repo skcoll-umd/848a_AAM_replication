@@ -1,0 +1,103 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "email",
+    "website"
+  ],
+  "sectors": [
+    "Government"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "api",
+      "c2",
+      "http",
+      "https",
+      "tor"
+    ],
+    "tools": [
+      "cmd",
+      "rundll32"
+    ],
+    "domains": [
+      "32[.]cozybear",
+      "32[.]cozyduke",
+      "7[.]txt",
+      "ajax[.]php",
+      "amdhcp32[.]dll",
+      "amdocl_as32[.]exe",
+      "api[.]php",
+      "aticaldd[.]dll",
+      "atiumdag[.]dll",
+      "cache[.]dll",
+      "chromeupdate[.]ex",
+      "chromeupdate[.]exe",
+      "cmd_task[.]dll",
+      "com[.]ar",
+      "conf[.]xml",
+      "data_amdmiracast_api_[.]aaf",
+      "dcom_amdocl_ld_api_[.]raw",
+      "diplomacy[.]pl",
+      "error[.]php",
+      "evernote",
+      "fsearch[.]php",
+      "getiton",
+      "hants[.]org",
+      "index[.]php",
+      "json[.]php",
+      "last_amdpcom_subsystem_[.]max",
+      "links[.]php",
+      "loader[.]php",
+      "mobile[.]php",
+      "monkeys[.]exe",
+      "msearch[.]php",
+      "news[.]php",
+      "online[.]php",
+      "player[.]exe",
+      "profile[.]php",
+      "racss[.]dat",
+      "rss[.]php",
+      "rundll32[.]exe",
+      "sanjosemaristas",
+      "screenshot_task[.]dll",
+      "sdfg3d[.]db",
+      "search[.]php",
+      "seccionpolitica",
+      "securelist[.]com",
+      "settings[.]db",
+      "show[.]dll",
+      "trojan[.]win",
+      "twitter[.]php",
+      "update[.]dll",
+      "usercache[.]dll",
+      "util_amdave_system_[.]vol",
+      "video[.]zip",
+      "wp-ajax[.]php"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "68271df868f462c06e24a896a9494225",
+      "95b3ec0a4e539efaa1faa3d4e25d51de",
+      "2aabd78ef11926d7b562fd0d91e68ad3",
+      "3d3363598f87c78826c859077606e514",
+      "6761106f816313394a653db5172dc487"
+    ],
+    "domains": [
+      "evernote.com",
+      "sanjosemaristas.com",
+      "securelist.com",
+      "diplomacy.pl",
+      "getiton.hants.org.uk"
+    ],
+    "mutexes": []
+  },
+  "narrative": "Cache.dll code flow overview rc4 decrypt hardcoded c2 and urls resolve hidden function calls collect identifying victim system data encrypt collected data send stolen data to c2 and retrieve commands Cache.dll code details Structurally, cache.dll is a fairly [REDACTED_MALWARE] at 425kb. It uses standard Win32 base cryptography functions to generate a CALG_RC4 session key to encrypt the collected data communications and POSTs it to the server. ChromeUpdate.exe starts the file with \"rundll32 cache.dll,ADB_Setup\" Cache.dll analysis Cache.dll was written in C/C++ and built with a Microsoft compiler.",
+  "_meta": {
+    "label": "G0016",
+    "doc_id": "dbda67853d09",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2015/2015.04.21.CozyDuke_APT/The CozyDuke APT - Securelist.pdf"
+  }
+}

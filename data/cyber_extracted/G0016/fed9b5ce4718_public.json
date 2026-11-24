@@ -1,0 +1,43 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "email",
+    "website"
+  ],
+  "sectors": [
+    "Government"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "command and control",
+      "http",
+      "https",
+      "kerberos"
+    ],
+    "tools": [
+      "mimikatz",
+      "powershell",
+      "python"
+    ],
+    "domains": [
+      "backdoor[.]miniduke",
+      "backdoor[.]tinybaron",
+      "ezlzma_x86_exe[.]pdb",
+      "trojan[.]cozer",
+      "trojan[.]seaduke"
+    ]
+  },
+  "iocs": {
+    "hashes": [],
+    "domains": [],
+    "mutexes": []
+  },
+  "narrative": "The communication protocol employed had many layers of encryption and obfuscation, using over 200 compromised web servers for command and control. The malware hides behind numerous layers of encryption and obfuscation and is capable of quietly stealing and exfiltrating sensitive information such as email from the victimâ€™s computer. It has a range of malware tools at its disposal, known as the Dukes, including Cozyduke (Trojan.Cozer), Miniduke (Backdoor.Miniduke) and Cosmicduke (Backdoor.Tinybaron).",
+  "_meta": {
+    "label": "G0016",
+    "doc_id": "fed9b5ce4718",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2015/2015.07.13.Forkmeiamfamous/Forkmeiamfamous_SeaDuke.pdf"
+  }
+}

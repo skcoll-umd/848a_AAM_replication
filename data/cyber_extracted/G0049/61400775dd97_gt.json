@@ -1,0 +1,20 @@
+{
+  "threat_actor": "OilRig",
+  "group_name": "OilRig",
+  "group_id": "G0049",
+  "mitre_intrusion_set": {
+    "id": "intrusion-set--4ca1929c-7d64-4aab-b849-badbfc0c760d",
+    "gid": "G0049",
+    "name": "OilRig",
+    "matched_alias": "oilrig"
+  },
+  "malware_family": "IIS Backdoor",
+  "campaign_name": null,
+  "attack_ttp_map": {},
+  "technique_to_tactics": {},
+  "_meta": {
+    "label": "G0049",
+    "doc_id": "61400775dd97",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2018/2018.01.25.oilrig_Middle_East/unit42-oilrig-uses-rgdoor-iis-backdoor-targets-middle-east.pdf"
+  }
+}

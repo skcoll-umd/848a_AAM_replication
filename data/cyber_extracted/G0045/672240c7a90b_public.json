@@ -1,0 +1,47 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [],
+  "sectors": [
+    "Government",
+    "Manufacturing",
+    "Technology"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "api",
+      "https"
+    ],
+    "tools": [
+      "adfind",
+      "certutil",
+      "powershell",
+      "wmic",
+      "wmiexec"
+    ],
+    "domains": [
+      "backdoor[.]hartip",
+      "symantec-enterprise-blogs[.]security"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "8b6ad87e408e38fc1db868da6e643f616dac59fbae08382c4a7dd4ea119ea057",
+      "d5e38ac1187c607e701f506c4015bde94be6c485d566d004d810d7565c188743",
+      "26460aa2df29f766cb5712ebca44cb3365ebfdb5cae0b2ec36ef1e3568911d6a",
+      "cdec58a57381bb8c1e374efb0bf1897d89d1e096d2b704820893859d9f08d086",
+      "ea9d994de91389280b334f2af991baa49ca613a6bf898d7bb25f88cc66488f5c"
+    ],
+    "domains": [
+      "symantec-enterprise-blogs.security.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "WMIExec – can be used for lateral movement and to execute commands remotely. Among the machines compromised during this attack campaign were domain controllers and file servers, and there was evidence of files being exfiltrated from some of the compromised machines. Certutil – a command-line utility that can be exploited and used for various malicious purposes, such as to decode information, to download files, and to install browser root certificates.",
+  "_meta": {
+    "label": "G0045",
+    "doc_id": "672240c7a90b",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2020/2020.11.17.Cicada_Japan/Japan-Linked Organizations Targeted in Long-Running and Sophisticated Attack Campaign _ Symantec Blogs.pdf"
+  }
+}

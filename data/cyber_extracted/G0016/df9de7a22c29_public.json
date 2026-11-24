@@ -1,0 +1,91 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "document",
+    "email",
+    "phishing",
+    "website"
+  ],
+  "sectors": [
+    "Defense",
+    "Government",
+    "Media",
+    "Transport"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "beacon",
+      "c2",
+      "command and control",
+      "dns",
+      "http",
+      "https",
+      "ssl",
+      "tcp"
+    ],
+    "tools": [
+      "cobalt strike",
+      "powershell",
+      "rundll32"
+    ],
+    "domains": [
+      "37486-the-shocking-truth-about-election-rigging-in-america[.]rtf",
+      "ascii[.]getstring",
+      "cyzfc[.]dat",
+      "ds7002[.]lnk",
+      "ds7002[.]pdf",
+      "ds7002[.]zip",
+      "eforms[.]state",
+      "fireeye[.]com",
+      "fz[.]invoke",
+      "generic[.]mg",
+      "getcontentfeatures[.]dlna",
+      "io[.]directory",
+      "io[.]fileaccess",
+      "io[.]filestream",
+      "io[.]seekorigin",
+      "jmj",
+      "malware[.]archive",
+      "malware[.]binary",
+      "northshorehealthgm[.]org",
+      "not-so-cozy-an-uncomfortable-examination-of-a-suspected-apt29-phishing-campaign[.]html",
+      "oe[.]directoryname",
+      "oe[.]length",
+      "pandorasong[.]com",
+      "powershell[.]exe",
+      "rundll32[.]exe",
+      "suspicious[.]backdoor",
+      "text[.]encoding",
+      "tutanota[.]com",
+      "vzvi[.]read",
+      "vzvi[.]seek"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "6ed0020b0851fb71d5b0076f4ee95f3c",
+      "f713d5df826c6051e65f995e57d6817d",
+      "3fccf531ff0ae6fedd7c586774b17a2d",
+      "658c6fe38f95995fa8dc8f6cfe41df7b",
+      "313f4808aa2a2073005d219bc68971cd"
+    ],
+    "domains": [
+      "jmj.com",
+      "fireeye.com",
+      "pandorasong.com",
+      "northshorehealthgm.org",
+      "tutanota.com"
+    ],
+    "mutexes": [
+      "Local\\cyzfc.dat"
+    ]
+  },
+  "narrative": "E ncoding]::ASCII.GetString([Convert]::$fz.Invoke($zk));iex $rhia; This command included some specific obfuscation, which may indicate attempts to bypass specific detection logic. ds7002.lnk was a malicious shortcut (LNK) file that contained an embedded [REDACTED_MALWARE] DLL and decoy PDF, and was crafted to launch a PowerShell command. The shortcut file was crafted to execute a PowerShell command that read, decoded, and executed additional code from within the shortcut file.",
+  "_meta": {
+    "label": "G0016",
+    "doc_id": "df9de7a22c29",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2018/2018.11.19.APT29_Phishing/not-so-cozy-an-uncomfortable-examination-of-a-suspected-apt29-phishing-campaign.pdf"
+  }
+}

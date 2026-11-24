@@ -1,0 +1,29 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [],
+  "sectors": [
+    "Energy"
+  ],
+  "infrastructure_hints": {
+    "types": [],
+    "tools": [
+      "git"
+    ],
+    "domains": [
+      "shutdown[.]exe"
+    ]
+  },
+  "iocs": {
+    "hashes": [],
+    "domains": [],
+    "mutexes": []
+  },
+  "narrative": "This low confidence but persistent hunch is what motivates us to ask other researchers around the world to join us in investigating these similarities and attempt to discover more facts about the origin of ExPetr/Petya. 9:39 pm Much has been written about the recent ExPetr/NotPetya/Nyetya/Petya outbreak – you can read our findings here:Schroedinger’s Pet(ya) and ExPetr is a wiper, [REDACTED_MALWARE]. During the analysis, we focused on the similar extensions list and the code responsible for parsing the file system for encryption or wiping.",
+  "_meta": {
+    "label": "G0032",
+    "doc_id": "a21fcddcaa2c",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2017/2017.06.30.From_BlackEnergy_to_ExPetr/From BlackEnergy to ExPetr - Securelist.pdf"
+  }
+}

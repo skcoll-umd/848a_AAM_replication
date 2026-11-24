@@ -1,0 +1,123 @@
+{
+  "attack_ttp_ids": [
+    "T1003.004",
+    "T1003.006",
+    "T1012",
+    "T1016",
+    "T1021.004",
+    "T1027",
+    "T1037.004",
+    "T1049",
+    "T1057",
+    "T1059.001",
+    "T1059.003",
+    "T1071",
+    "T1090.003",
+    "T1095",
+    "T1098.001",
+    "T1111",
+    "T1114",
+    "T1114.002",
+    "T1505.003",
+    "T1518",
+    "T1572",
+    "T1573.002",
+    "T1583.003",
+    "T1584",
+    "T1608.003"
+  ],
+  "attack_tactic_ids": [
+    "TA0002",
+    "TA0003",
+    "TA0004",
+    "TA0005",
+    "TA0006",
+    "TA0007",
+    "TA0008",
+    "TA0009",
+    "TA0011",
+    "TA0042"
+  ],
+  "attack_tactics": [
+    "Execution",
+    "Persistence",
+    "Privilege Escalation",
+    "Stealth",
+    "Credential Access",
+    "Discovery",
+    "Lateral Movement",
+    "Collection",
+    "Command and Control",
+    "Resource Development"
+  ],
+  "delivery_vectors": [
+    "email"
+  ],
+  "sectors": [
+    "Defense",
+    "Financial",
+    "Media",
+    "Technology"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "api",
+      "c2",
+      "command and control",
+      "dns",
+      "http",
+      "https",
+      "proxy",
+      "s3",
+      "ssh",
+      "tcp",
+      "tor"
+    ],
+    "tools": [
+      "impacket",
+      "powershell",
+      "wmiexec"
+    ],
+    "domains": [
+      "cloudns[.]asia",
+      "debug[.]log",
+      "dynu[.]net",
+      "mandiant",
+      "mandiant[.]com",
+      "openssh[.]com",
+      "rc[.]local",
+      "request[.]headers",
+      "request[.]inputstream",
+      "response[.]addheader",
+      "response[.]binarywrite",
+      "response[.]write",
+      "schemas[.]microsoft",
+      "schemas[.]xmlsoap",
+      "system[.]buffer",
+      "system[.]net",
+      "t[.]org",
+      "victimorg[.]com",
+      "w3[.]org"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "3d4dcc859c6ca7e5b36483ad84c9ceef34973f9a",
+      "ba22992ce835dadcd06bff4ab7b162f9"
+    ],
+    "domains": [
+      "mandiant.com",
+      "schemas.xmlsoap.org",
+      "schemas.microsoft.com",
+      "w3.org",
+      "victimorg.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "/ Find QUIETEXIT by looking for the hard-coded password value: grep '\\xDD\\xE5\\xD5\\x97\\x20\\x53\\x27\\xBF\\xF0\\xA2\\xBA\\xCD\\x96\\x35\\x9A\\xAD\\x1C\\x75\\xEB\\x47' -rs / Find QUIETEXIT persistence mechanisms in the appliance’s rc.local directory by looking for the command line arguments: grep -e \" -[Xx] -p. By tunneling over SOCKS, the threat actor can execute tools to steal data from their own computer, leaving no traces of the tooling itself on victim computers. We also observed the threat actor using the built-in reg save command to save registry hives and extract LSA secrets offline.",
+  "_meta": {
+    "label": "G0016",
+    "doc_id": "0850f7616848",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2022/2022.05.02.UNC3524/UNC3524_ Eye Spy on Your Email _ Mandiant.pdf"
+  }
+}

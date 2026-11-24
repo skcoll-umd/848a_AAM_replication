@@ -1,0 +1,79 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "document",
+    "email"
+  ],
+  "sectors": [
+    "Energy",
+    "Government",
+    "Mining"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "api",
+      "command and control",
+      "http",
+      "proxy",
+      "rpc"
+    ],
+    "tools": [
+      "cmd",
+      "netstat",
+      "rundll32",
+      "tasklist"
+    ],
+    "domains": [
+      "00002715[.]html",
+      "00002721[.]html",
+      "account[.]cfg",
+      "account[.]cfn",
+      "botnetkernel[.]html",
+      "cmd[.]exe",
+      "en[.]wikipedia",
+      "f-secure[.]com",
+      "giknpc[.]com",
+      "ipconfig[.]exe",
+      "malware[.]dontneedcoffee",
+      "msiexec[.]exe",
+      "netstat[.]exe",
+      "ping[.]exe",
+      "regedt32[.]exe",
+      "route[.]exe",
+      "rundll32[.]exe",
+      "secureworks",
+      "signons[.]sqlite",
+      "sndvol[.]exe",
+      "svchost[.]exe",
+      "systeminfo[.]exe",
+      "tasklist[.]exe",
+      "tracert[.]exe",
+      "user32[.]dll"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "26b9816b3f9e2f350cc92ef4c30a097c6fec7798",
+      "bf9937489cb268f974d3527e877575b4fbb07cb0",
+      "78636f7bbd52ea80d79b4e2a7882403092bbb02d",
+      "bf9172e87e9264d1cddfc36cbaa74402bb405708",
+      "441cfbaba1dfd58ce03792ef74d183529e8e0104"
+    ],
+    "domains": [
+      "en.wikipedia.org",
+      "f-secure.com",
+      "malware.dontneedcoffee.com",
+      "secureworks.com",
+      "giknpc.com.ua"
+    ],
+    "mutexes": []
+  },
+  "narrative": "The response of the command and control server will be encrypted using the id field in the POST request as BlackEnergy communicates with its C&C server via HTTP the key. The LNK file is a to communicate with a central command and control. However, it is delivered and executed by a dropper which Most of the recent BlackEnergy installers collected are opens a decoy document in the foreground.",
+  "_meta": {
+    "label": "G0034",
+    "doc_id": "b5c1129fb8bc",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2014/2014.09.26.BlackEnergy_Quedagh/blackenergy_whitepaper.pdf"
+  }
+}

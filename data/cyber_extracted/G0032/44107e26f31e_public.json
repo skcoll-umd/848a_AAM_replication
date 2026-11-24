@@ -1,0 +1,96 @@
+{
+  "attack_ttp_ids": [
+    "T1036",
+    "T1036.003",
+    "T1059",
+    "T1132",
+    "T1140",
+    "T1204",
+    "T1204.002",
+    "T1566",
+    "T1566.001"
+  ],
+  "attack_tactic_ids": [
+    "TA0001",
+    "TA0002",
+    "TA0005",
+    "TA0011"
+  ],
+  "attack_tactics": [
+    "Initial Access",
+    "Execution",
+    "Stealth",
+    "Command and Control"
+  ],
+  "delivery_vectors": [
+    "attachment",
+    "document",
+    "macro",
+    "phishing"
+  ],
+  "sectors": [
+    "Defense",
+    "Government",
+    "Telecom",
+    "Utilities"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "beacon",
+      "command and control",
+      "http",
+      "https",
+      "proxy",
+      "tls"
+    ],
+    "tools": [
+      "certutil",
+      "cmd"
+    ],
+    "domains": [
+      "airbus_job_opportunity_confidential[.]doc",
+      "airbus_job_vacancie[.]doc",
+      "airbus_job_vacancies[.]doc",
+      "airbus_job_vacancy[.]doc",
+      "allgraphicart[.]com",
+      "certutil[.]exe",
+      "cybersecurity[.]att",
+      "explorer[.]exe",
+      "general_motors_car[.]doc",
+      "general_motors_car[.]docx",
+      "general_motors_car[.]rtf",
+      "general_motors_cars[.]doc",
+      "image_slider[.]png",
+      "logo[.]png",
+      "mavinject[.]exe",
+      "otx[.]alienvault",
+      "rheinmetall_job_requirements[.]doc",
+      "scripting[.]filesystemobject",
+      "shopweblive[.]com",
+      "wicall[.]ir"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "294acafed42c6a4f546486636b4859c074e53d74be049df99932804be048f42c",
+      "f5563f0e63d9deed90b683a15ebd2a1fda6b72987742afb40a1202ddb9e867d0",
+      "e6dff9a5f74fff3a95e2dcb48b81b05af5cf5be73823d56c10eee80c8f17c845",
+      "ffec6e6d4e314f64f5d31c62024252abde7f77acdd63991cb16923ff17828885",
+      "8e1746829851d28c555c143ce62283bc011bbd2acfa60909566339118c9c5c97"
+    ],
+    "domains": [
+      "cybersecurity.att.com",
+      "otx.alienvault.com",
+      "allgraphicart.com",
+      "shopweblive.com",
+      "wicall.ir"
+    ],
+    "mutexes": []
+  },
+  "narrative": "The payload is in fact a downloader, which requests the next stage to a hardcoded Command and Control (C&C) server and saves it to a new file. Whether it was successfully executed or not, the Macro will proceed to send the beacon to the C&C with the execution status and delete all the temporary files, attempting to clean their tracks. There is a high emphasis on renaming system utilities (Certutil and Explorer) to obfuscate the adversary’s activities (T1036.003).",
+  "_meta": {
+    "label": "G0032",
+    "doc_id": "44107e26f31e",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2021/2021.07.06.Lazarus_TTPs_evolution/Lazarus campaign TTPs and evolution _ AT&T Alien Labs.pdf"
+  }
+}

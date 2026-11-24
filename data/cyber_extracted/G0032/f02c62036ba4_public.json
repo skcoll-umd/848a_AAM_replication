@@ -1,0 +1,93 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "email",
+    "phishing",
+    "software update",
+    "supply chain",
+    "website"
+  ],
+  "sectors": [
+    "Financial",
+    "Legal",
+    "Media",
+    "Real estate",
+    "Technology"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "api",
+      "c2",
+      "command and control",
+      "dns",
+      "http",
+      "https",
+      "ssl"
+    ],
+    "tools": [],
+    "domains": [
+      "00[.]dmg",
+      "00[.]msi",
+      "1a7ea920[.]bitcoin",
+      "4bitcoins[.]com",
+      "a8332f3a[.]bitcoin",
+      "ad636824[.]bitcoin",
+      "apple",
+      "black[.]host",
+      "c358ea2d[.]bitcoin",
+      "celasllc",
+      "celasllc[.]com",
+      "celastradepro-installer[.]msi",
+      "cellasllc[.]com",
+      "changeip",
+      "checkupdate[.]php",
+      "com[.]celasllc",
+      "com[.]celastradepro",
+      "dloader[.]pdb",
+      "dns[.]hosting",
+      "domains",
+      "gmail[.]com",
+      "info[.]plist",
+      "libertyvps[.]net",
+      "msn[.]exe",
+      "msncf[.]dat",
+      "msndll[.]dat",
+      "msndll[.]log",
+      "msndll[.]tmp",
+      "namecheap",
+      "njal[.]la",
+      "securelist[.]com",
+      "serverdll[.]pdb",
+      "svc[.]dll",
+      "temp[.]gif",
+      "updater[.]exe",
+      "uploadmgr[.]dat",
+      "uploadmgrsvc[.]dll"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "9e740241ca2acdc79f30ad2c3f50990a",
+      "b054a7382adf6b774b15f52d971f3799",
+      "48ded52752de9f9b73c6bf9ae81cb429",
+      "0a15a33844c9df11f12a4889ae7b7e4b",
+      "e1ed584a672cab33af29114576ad6cce"
+    ],
+    "domains": [
+      "securelist.com",
+      "celasllc.com",
+      "apple.com",
+      "libertyvps.net",
+      "domains4bitcoins.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "The malware contains references to several files inside: The file passed as argument: contains a 16-byte key msncf.dat: Encrypted configuration data msndll.tmp: Encrypted [REDACTED_MALWARE] msndll.dat: Encrypted [REDACTED_MALWARE] (payload for the loader). Lazarus hits cryptocurrency exchange with fake installer and macOS malware - Securelist keeps contacting the command and control (C2) server in order to download and run an additional executable from the server. The communication conforms to the Windows version of the updater and is disguised as an image file upload and download, while carrying encrypted data inside.",
+  "_meta": {
+    "label": "G0032",
+    "doc_id": "f02c62036ba4",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2018/2018.08.23.Operation_AppleJeus/Operation_AppleJeus.pdf"
+  }
+}

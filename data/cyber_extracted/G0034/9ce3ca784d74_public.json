@@ -1,0 +1,41 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "website"
+  ],
+  "sectors": [
+    "Energy",
+    "Financial"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "proxy",
+      "tor"
+    ],
+    "tools": [
+      "mimikatz",
+      "nmap",
+      "psexec"
+    ],
+    "domains": [
+      "eset[.]com",
+      "welivesecurity[.]com"
+    ]
+  },
+  "iocs": {
+    "hashes": [],
+    "domains": [
+      "welivesecurity.com",
+      "eset.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "Compared to BlackEnergy, GreyEnergy is a more modern toolkit with an even greater focus on stealth. One basic stealth technique – employed by both families – is to push only selected modules to selected targets, and only when needed. On top of that, some GreyEnergy modules are partially encrypted using AES-256 and some remain fileless – running only in memory – with the intention of hindering analysis and detection.",
+  "_meta": {
+    "label": "G0034",
+    "doc_id": "9ce3ca784d74",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2018/2018.10.17.GreyEnergy/blog_GreyEnergy_Updated.pdf"
+  }
+}

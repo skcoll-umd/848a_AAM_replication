@@ -1,0 +1,77 @@
+{
+  "attack_ttp_ids": [
+    "T1012",
+    "T1016",
+    "T1033",
+    "T1041",
+    "T1047",
+    "T1049",
+    "T1057",
+    "T1082",
+    "T1083",
+    "T1105",
+    "T1113",
+    "T1119",
+    "T1120",
+    "T1124",
+    "T1135",
+    "T1140",
+    "T1560"
+  ],
+  "attack_tactic_ids": [
+    "TA0002",
+    "TA0005",
+    "TA0007",
+    "TA0009",
+    "TA0010",
+    "TA0011"
+  ],
+  "attack_tactics": [
+    "Execution",
+    "Stealth",
+    "Discovery",
+    "Collection",
+    "Exfiltration",
+    "Command and Control"
+  ],
+  "delivery_vectors": [],
+  "sectors": [
+    "Defense",
+    "Energy",
+    "Government",
+    "Mining"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "c2",
+      "http",
+      "https"
+    ],
+    "tools": [],
+    "domains": [
+      "2020[.]exe",
+      "2020[.]xls",
+      "2020[.]zipx",
+      "get-upd-id[.]php",
+      "quointelligence[.]eu",
+      "sqlservice[.]exe"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "aac3b1221366cf7e4421bdd555d0bc33d4b92d6f65fa58c1bb4d8474db883fec",
+      "b45dc885949d29cba06595305923a0ed8969774dae995f0ce5b947b5ab5fe185",
+      "6e89e098816f3d353b155ab0f3377fe3eb3951f45f8c34c4a48c5b61cd8425aa",
+      "fae335a465bb9faac24c58304a199f3bf9bb1b0bd07b05b18e2be6b9e90d72e6",
+      "eb81c1be62f23ac7700c70d866e84f5bc354f88e6f7d84fd65374f84e252e76b"
+    ],
+    "domains": [],
+    "mutexes": []
+  },
+  "narrative": "In particular, we found a malicious file uploaded to VirusTotal, which ultimately drops a Zebrocy malware and communicates with a C2 in France. This padding is used to evade hash-matching security controls, since the dropped malware will always have a different file hash value. At the time of the discovery, the C2 infrastructure hosted in France was still live.",
+  "_meta": {
+    "label": "G0007",
+    "doc_id": "06a60d24b4a5",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2020/2020.09.22.APT28_Zebrocy_Malware_Campaign/APT28 Delivers Zebrocy Malware Campaign Using NATO Theme as Lure.pdf"
+  }
+}

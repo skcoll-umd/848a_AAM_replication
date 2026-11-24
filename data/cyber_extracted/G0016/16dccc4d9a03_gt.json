@@ -1,0 +1,150 @@
+{
+  "threat_actor": "Sandworm Team",
+  "group_name": "Sandworm Team",
+  "group_id": "G0034",
+  "mitre_intrusion_set": {
+    "id": "intrusion-set--381fcf73-60f6-4ab2-9991-6af3cbc35192",
+    "gid": "G0034",
+    "name": "Sandworm Team",
+    "matched_alias": "telebots"
+  },
+  "malware_family": "Dukes backdoor",
+  "campaign_name": null,
+  "attack_ttp_map": {
+    "T1129": "Shared Modules",
+    "T1025": "Data from Removable Media",
+    "T1135": "Network Share Discovery",
+    "T1071": "Application Layer Protocol",
+    "T1053": "Scheduled Task/Job",
+    "T1106": "Native API",
+    "T1005": "Data from Local System",
+    "T1140": "Deobfuscate/Decode Files or Information",
+    "T1107": "File Deletion",
+    "T1112": "Modify Registry",
+    "T1085": "Rundll32",
+    "T1193": "Spearphishing Attachment",
+    "T1045": "Software Packing",
+    "T1090": "Proxy",
+    "T1083": "File and Directory Discovery",
+    "T1049": "System Network Connections Discovery",
+    "T1064": "Scripting",
+    "T1102": "Web Service",
+    "T1057": "Process Discovery",
+    "T1041": "Exfiltration Over C2 Channel",
+    "T1060": "Registry Run Keys / Startup Folder",
+    "T1001": "Data Obfuscation",
+    "T1039": "Data from Network Shared Drive",
+    "T1078": "Valid Accounts",
+    "T1027": "Obfuscated Files or Information",
+    "T1084": "Windows Management Instrumentation Event Subscription",
+    "T1008": "Fallback Channels",
+    "T1035": "Service Execution",
+    "T1086": "PowerShell",
+    "T1077": "Windows Admin Shares"
+  },
+  "technique_to_tactics": {
+    "T1129": [
+      "TA0002"
+    ],
+    "T1025": [
+      "TA0009"
+    ],
+    "T1135": [
+      "TA0007"
+    ],
+    "T1071": [
+      "TA0011"
+    ],
+    "T1053": [
+      "TA0002",
+      "TA0003",
+      "TA0004"
+    ],
+    "T1106": [
+      "TA0002"
+    ],
+    "T1005": [
+      "TA0009"
+    ],
+    "T1140": [
+      "TA0005"
+    ],
+    "T1107": [
+      "TA0005"
+    ],
+    "T1112": [
+      "TA0003",
+      "TA0112"
+    ],
+    "T1085": [
+      "TA0002",
+      "TA0005"
+    ],
+    "T1193": [
+      "TA0001"
+    ],
+    "T1045": [
+      "TA0005"
+    ],
+    "T1090": [
+      "TA0011"
+    ],
+    "T1083": [
+      "TA0007"
+    ],
+    "T1049": [
+      "TA0007"
+    ],
+    "T1064": [
+      "TA0002",
+      "TA0005"
+    ],
+    "T1102": [
+      "TA0011"
+    ],
+    "T1057": [
+      "TA0007"
+    ],
+    "T1041": [
+      "TA0010"
+    ],
+    "T1060": [
+      "TA0003"
+    ],
+    "T1001": [
+      "TA0011"
+    ],
+    "T1039": [
+      "TA0009"
+    ],
+    "T1078": [
+      "TA0001",
+      "TA0003",
+      "TA0004",
+      "TA0005"
+    ],
+    "T1027": [
+      "TA0005"
+    ],
+    "T1084": [
+      "TA0003"
+    ],
+    "T1008": [
+      "TA0011"
+    ],
+    "T1035": [
+      "TA0002"
+    ],
+    "T1086": [
+      "TA0002"
+    ],
+    "T1077": [
+      "TA0008"
+    ]
+  },
+  "_meta": {
+    "label": "G0016",
+    "doc_id": "16dccc4d9a03",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2019/2019.10.17.Operation_Ghost/ESET_Operation_Ghost_Dukes.pdf"
+  }
+}

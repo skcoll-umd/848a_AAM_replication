@@ -1,0 +1,101 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "document",
+    "email",
+    "macro",
+    "website"
+  ],
+  "sectors": [
+    "Aerospace",
+    "Defense"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "http",
+      "https"
+    ],
+    "tools": [],
+    "domains": [
+      "9[.]com",
+      "_malware2[.]html",
+      "ac[.]kr",
+      "ag",
+      "ahnlab",
+      "ahnlab[.]com",
+      "appstore[.]php",
+      "blogs[.]jpcert",
+      "china",
+      "citrixvessystem_laptop[.]exe",
+      "citrixvesystem_laptop[.]exe",
+      "co",
+      "co[.]kr",
+      "common[.]fileserviceserver",
+      "d3d10[.]dll",
+      "dcm[.]asp",
+      "download[.]asp",
+      "fabioluciani",
+      "fabioluciani[.]com",
+      "faq[.]asp",
+      "gbflatinamerica[.]com",
+      "global[.]info",
+      "googleupdate[.]exe",
+      "igfxaudio[.]exe",
+      "leemble",
+      "left_ajax[.]asp",
+      "ll[.]com",
+      "love",
+      "mail[.]clicktocareers",
+      "mailview[.]php",
+      "main_1[.]php",
+      "mcafee",
+      "member_bk[.]asp",
+      "myu",
+      "netframework[.]asp",
+      "ntuser[.]exe",
+      "ntuser[.]log",
+      "or[.]jp",
+      "or[.]kr",
+      "platform[.]asp",
+      "qnadelok[.]asp",
+      "sec[.]com",
+      "st[.]com",
+      "test1[.]php",
+      "to",
+      "tronslog",
+      "un[.]co",
+      "webconf[.]php",
+      "welivesecurity",
+      "win32[.]lcpdot",
+      "win32[.]nukesped",
+      "win32[.]pretendapp",
+      "win64[.]manuscrypt",
+      "win64[.]nukesped"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "06adca7a28b6d1d983912f7f544ee413",
+      "5b831eaed711d5c4bc19d7e75fcaf46e",
+      "d59a0a04abcb38fdb391a09972aa3ff4",
+      "d7ec4cc00b212a4a8c574ce22775eb52",
+      "ec0c8d2cb8da72f4b82ebe3c33c9f24f"
+    ],
+    "domains": [
+      "co****st.com",
+      "myu*****un.co.kr",
+      "gbflatinamerica.com",
+      "to****9.com",
+      "ag****ll.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "URLs hxxps://www.to****9.com/common/Download.asp?id=293 hxxps://www.ag****ll.com/customer/qnaDelOk.asp hxxps://www.l*****al.k***.or.kr/_include/left_ajax.asp hxxps://www.china-c*****.co.kr/Interview/dcm.asp hxxp://www.w***.ac.kr/w***/listboard/faq.asp Table 4. When malware is executed, it attempts to download the file from an industrial supply mall (hxxps://www.to****9.com/common/Download.asp?id=293). URLs hxxps://www.leemble.com/5mai-lyon/public/webconf.php hxxps://www.tronslog.com/public/appstore.php hxxps://mail.clicktocareers.com/dev_clicktocareers/public/mailview.php Table 5.",
+  "_meta": {
+    "label": "G0032",
+    "doc_id": "fabc43fdccc8",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/Report/AhnLab/ASEC_REPORT_vol.102_ENG.pdf"
+  }
+}

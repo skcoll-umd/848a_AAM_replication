@@ -1,0 +1,128 @@
+{
+  "attack_ttp_ids": [
+    "T1037"
+  ],
+  "attack_tactic_ids": [
+    "TA0003",
+    "TA0004"
+  ],
+  "attack_tactics": [
+    "Persistence",
+    "Privilege Escalation"
+  ],
+  "delivery_vectors": [
+    "attachment",
+    "document",
+    "email",
+    "macro",
+    "phishing",
+    "website"
+  ],
+  "sectors": [
+    "Defense",
+    "Government",
+    "Legal"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "api",
+      "c2",
+      "command and control",
+      "http",
+      "https"
+    ],
+    "tools": [
+      "certutil",
+      "powershell",
+      "python",
+      "rundll32"
+    ],
+    "domains": [
+      "0[.]dll",
+      "2018[.]xls",
+      "2fresearchcenter[.]paloaltonetworks",
+      "activesheet[.]range",
+      "application[.]userlibrarypath",
+      "attack[.]mitre",
+      "autofocus[.]paloaltonetworks",
+      "carveddll[.]dat",
+      "carveddll_decrypted[.]dat",
+      "cdnver[.]bat",
+      "cdnver[.]dll",
+      "cdnverify[.]net",
+      "chrome[.]exe",
+      "connect[.]paloaltonetworks",
+      "ctypes[.]byref",
+      "ctypes[.]windll",
+      "decrpted[.]append",
+      "docs[.]microsoft",
+      "eset-sednit-part1[.]pdf",
+      "explorer[.]exe",
+      "facebook",
+      "firefox[.]exe",
+      "font[.]color",
+      "fp[.]read",
+      "hotfixmsupload[.]com",
+      "iexplore[.]exe",
+      "ignite[.]paloaltonetworks",
+      "ihsmarkit[.]com",
+      "isc[.]sans",
+      "janes",
+      "kernel32[.]dll",
+      "linkedin",
+      "luckystrike_diff[.]png",
+      "noticeofpleadings[.]com",
+      "nt[.]rtldecompressbuffer",
+      "ntdll[.]dll",
+      "ntdll[.]zwclose",
+      "ntdll[.]zwfreevirtualmemory",
+      "ntdll[.]zwopenprocess",
+      "ntdll[.]zwprotectvirtualmemory",
+      "ntdll[.]zwquerysysteminformation",
+      "ntdll[.]zwwritevirtualmemory",
+      "paloaltonetworks",
+      "reddit",
+      "researchcenter[.]paloaltonetworks",
+      "rundll32[.]exe",
+      "sharer[.]php",
+      "shellntel",
+      "threatconnect",
+      "uncompressed[.]raw",
+      "unit42[.]github",
+      "unit42[.]sofacy",
+      "unit42[.]sofacycarberp",
+      "unit42[.]sofacymacrodoc",
+      "vnd[.]flatland",
+      "vnd[.]radisys",
+      "vnd[.]wmc",
+      "welivesecurity",
+      "windowsapp[.]lib",
+      "wp[.]write"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "ff808d0a12676bfac88fd26f955154f8884f2bb7c534b9936510fd6296c543e8",
+      "12e6642cf6413bdf5388bee663080fa299591b2ba023d069286f3be9647547c8",
+      "cb85072e6ca66a29cb0b73659a0fe5ba2456d9ba0b52e3a4c89e86549bc6e2c7",
+      "23411bb30042c9357ac4928dc6fca6955390361e660fec7ac238bbdcc8b83701"
+    ],
+    "domains": [
+      "researchcenter.paloaltonetworks.com",
+      "janes.com",
+      "shellntel.com",
+      "threatconnect.com",
+      "noticeofpleadings.com"
+    ],
+    "mutexes": [
+      "Local\\cdnver.dll",
+      "Local\\cdnver.bat"
+    ]
+  },
+  "narrative": "To execute the dropped DLL, the [REDACTED_MALWARE] first checks the integrity level of the executing process, and if it does not have the necessary permissions, the [REDACTED_MALWARE] will enumerate the system’s processes searching for explorer.exe. To carry out C2 communications via injected code in a remote process, the injected code reaches out to the C2 server and saves the response to a memory mapped file named SNFIRNW. In addition to being able to communicate with its C2 server from code injected into a web browser, the Trojan can also carry out the same communication process within its own process.",
+  "_meta": {
+    "label": "G0007",
+    "doc_id": "29461750501a",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2018/2018.02.28.sofacy-attacks-multiple-government-entities/Sofacy Attacks Multiple Government Entities.pdf"
+  }
+}

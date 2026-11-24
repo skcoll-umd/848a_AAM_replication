@@ -1,0 +1,132 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "watering hole"
+  ],
+  "sectors": [
+    "Government",
+    "Healthcare",
+    "Transport"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "api",
+      "http",
+      "proxy",
+      "s3"
+    ],
+    "tools": [
+      "cmd"
+    ],
+    "domains": [
+      "-mill[.]es",
+      "16mb[.]com",
+      "4d4idgkxxx[.]php",
+      "acrobatreader[.]adobe",
+      "activation[.]php",
+      "admin[.]php",
+      "adobeup[.]exe",
+      "adobeupdater[.]exe",
+      "ales[.]ball",
+      "aviasiya",
+      "baby[.]greenweb",
+      "buildtest[.]php",
+      "chagiocaxuanson[.]esy",
+      "class[.]php",
+      "cmd[.]exe",
+      "co[.]il",
+      "commandhandler[.]php",
+      "config[.]php",
+      "content-header[.]php",
+      "cvrg1a6b[.]tmp",
+      "cvrg38d9[.]tmp",
+      "cvrg72b5[.]tmp",
+      "daybreakhealthcare[.]co",
+      "db[.]php",
+      "delicious[.]php",
+      "df1e06[.]tmp",
+      "dyskurs[.]com",
+      "eset[.]com",
+      "explorer[.]exe",
+      "firefox[.]exe",
+      "front_footer[.]old",
+      "full-hight[.]php",
+      "gallery_preview_page_field[.]old",
+      "giadinhvabe[.]net",
+      "grunion-table-form[.]php",
+      "http-module[.]php",
+      "kb943729[.]log",
+      "kennynguyen[.]esy",
+      "lo3r6v4xxx[.]php",
+      "map-menu[.]php",
+      "murad[.]by",
+      "ntuser[.]dat",
+      "outletpiumini[.]springwaterfeatures",
+      "page-search[.]php",
+      "pe[.]number",
+      "pe[.]signatures",
+      "plugins[.]deactivate",
+      "rss_0[.]php",
+      "safari[.]exe",
+      "scrnsave[.]exe",
+      "settings[.]php",
+      "shinestars-lifestyle[.]com",
+      "simplecreative[.]design",
+      "single[.]php",
+      "solidloop[.]org",
+      "soligro[.]com",
+      "sonneteck[.]com",
+      "systemtime[.]wday",
+      "systemtime[.]wmonth",
+      "systemtime[.]wyear",
+      "t3x0ftu9xxx[.]php",
+      "tekfordummies[.]com",
+      "themees[.]php",
+      "turla[.]aa",
+      "turla[.]ad",
+      "turla[.]ag",
+      "turla[.]ah",
+      "turla[.]cc",
+      "turla[.]cf",
+      "turla[.]cl",
+      "ultimatecomsup[.]biz",
+      "update[.]microsoft",
+      "warrixmalaysia[.]com",
+      "weandcats[.]com",
+      "windowsupdate[.]microsoft",
+      "x3ljjxxx[.]php",
+      "xxx[.]php",
+      "yahoo[.]com",
+      "zerogov[.]com",
+      "zszinhyosz[.]pe"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "27fa78de705ebaa4b11c4b5fe7277f91906b3f92",
+      "35f205367e2e5f8a121925bbae6ff07626b526a7",
+      "b151cd7c4f9e53a8dcbdeb7ce61ccdd146eb68ab",
+      "e40bb5beec5678537e8fe537f872b2ad6b77e08a",
+      "522e5f02c06ad215c9d0c23c5a6a523d34ae4e91"
+    ],
+    "domains": [
+      "update.microsoft.com",
+      "windowsupdate.microsoft.com",
+      "yahoo.com",
+      "eset.com",
+      "daybreakhealthcare.co.uk"
+    ],
+    "mutexes": [
+      "name",
+      "Local\\Adobe\\AdobeUpdater.exe"
+    ]
+  },
+  "narrative": "5: LinkAutorun [REDACTED_MALWARE] persistence method modifies existing LNK files to execute the malware through cmd.exe. The injection library is the same as the one found in the loader to inject the orchestrator into “explorer.exe”. Send tasks’ May forward task Injected into a process that results legitimately communicate over the internet.",
+  "_meta": {
+    "label": "G0010",
+    "doc_id": "77b09b26c798",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2017/2017.08.30.Gazing_at_Gazer/eset-gazer.pdf"
+  }
+}

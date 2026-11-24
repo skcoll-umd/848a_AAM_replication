@@ -1,0 +1,20 @@
+{
+  "threat_actor": "Lazarus Group",
+  "group_name": "Lazarus Group",
+  "group_id": "G0032",
+  "mitre_intrusion_set": {
+    "id": "intrusion-set--c93fccb1-e8e8-42cf-ae33-2ad1d183913a",
+    "gid": "G0032",
+    "name": "Lazarus Group",
+    "matched_alias": "zinc"
+  },
+  "malware_family": "typical RAT",
+  "campaign_name": null,
+  "attack_ttp_map": {},
+  "technique_to_tactics": {},
+  "_meta": {
+    "label": "G0032",
+    "doc_id": "6c4ce7663892",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2015/2015.10.16.NGO_Burmese_Government/2015.10.targeted-attacks-ngo-burma.pdf"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "threat_actor": "Gallmaker",
+  "group_name": "Gallmaker",
+  "group_id": "G0084",
+  "mitre_intrusion_set": {
+    "id": "intrusion-set--2fd2be6a-d3a2-4a65-b499-05ea2693abee",
+    "gid": "G0084",
+    "name": "Gallmaker",
+    "matched_alias": "gallmaker"
+  },
+  "malware_family": "social bot",
+  "campaign_name": null,
+  "attack_ttp_map": {
+    "T1189": "Drive-by Compromise"
+  },
+  "technique_to_tactics": {
+    "T1189": [
+      "TA0001"
+    ]
+  },
+  "_meta": {
+    "label": "G0007",
+    "doc_id": "da20e4971aee",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/Report/ENISA/ENISA_Threat_Landscape_2018.pdf"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "email",
+    "exploit kit",
+    "phishing",
+    "watering hole",
+    "website"
+  ],
+  "sectors": [
+    "Healthcare",
+    "Legal",
+    "Retail"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "beacon",
+      "c2",
+      "http"
+    ],
+    "tools": [
+      "python"
+    ],
+    "domains": [
+      "bit[.]ly",
+      "blog[.]trendmicro",
+      "delta[.]value",
+      "drwaston[.]exe",
+      "index[.]html",
+      "sum[.]value",
+      "y[.]value",
+      "ymailer[.]log",
+      "ymailer[.]pdb",
+      "ymailermini[.]log",
+      "z[.]value"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "52d6b30bc578465d8079d9abd0d4c4826b51b25f",
+      "800c7d54280f5f35e3b58a6d4dfd4845f6ed9e15",
+      "8b6614562a79a13e60d100a88f1ba4eb601636db",
+      "98efee8dde7d493c0d35d02a2170b6d1b52987d3",
+      "02785ebcb683a380c80958f3fe2a52f805c5c12d"
+    ],
+    "domains": [
+      "blog.trendmicro.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "y.value -= (z.value + sum.value) ^ (z.value * 16 + k[0]) ^ (( z.value >> 5 ) + k[1]) sum.value += delta.value n -= 1 w[0]=y.value w[1]=z.value return w if __name__. Once the victim executes it, it executes the downloader in the background, drops a decoy folder that includes fake documents, then delete itself. Downloader TSPY_RAMNY TSPY_RAMNY is a downloader dropped by TROJ_BLAGFLDR malware.",
+  "_meta": {
+    "label": "G0007",
+    "doc_id": "0b8f8bc3ba46",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2016/2016.10.27.BLACKGEAR_Espionage_Campaign_Evolves/TrendLabs Security Intelligence BlogBLACKGEAR Espionage Campaign Evolves, Adds Japan To Target List - TrendLabs Security Intelligence Blog.pdf"
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "document",
+    "usb",
+    "website"
+  ],
+  "sectors": [
+    "Education",
+    "Financial",
+    "Government",
+    "Media",
+    "Telecom",
+    "Transport",
+    "Utilities"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "api",
+      "c2",
+      "dns",
+      "http",
+      "https",
+      "icmp",
+      "pop3",
+      "proxy",
+      "smb",
+      "smtp"
+    ],
+    "tools": [
+      "rundll32"
+    ],
+    "domains": [
+      "32[.]regin",
+      "3[.]sys",
+      "50121[.]dll",
+      "applicationlog[.]evt",
+      "audit[.]evt",
+      "bsc[.]html",
+      "bssec3[.]dat",
+      "businessin",
+      "cdata[.]dat",
+      "cdata[.]edb",
+      "disp[.]dll",
+      "displn32[.]dat",
+      "dmdskwk[.]dat",
+      "dnscache[.]dat",
+      "downloads[.]sourceforge",
+      "en[.]wikipedia",
+      "explorer[.]exe",
+      "imagehlp[.]dll",
+      "index2[.]data",
+      "kaspersky",
+      "lsass[.]exe",
+      "mailservice[.]exe",
+      "mirrorservice",
+      "mregnx[.]dat",
+      "msiexec[.]exe",
+      "msrdc64[.]dat",
+      "nsreg1[.]dat",
+      "nvwrsnu[.]dat",
+      "objects2[.]data",
+      "pp[.]dll",
+      "rootkit[.]win",
+      "rundll32[.]exe",
+      "securelist[.]com",
+      "securitylog[.]evt",
+      "setup[.]etl",
+      "sider[.]com",
+      "snort[.]exe",
+      "svcstat[.]exe",
+      "symantec",
+      "systemaudit[.]evt",
+      "tapiscfg[.]dat",
+      "team-m[.]co",
+      "telecomabc",
+      "trojan[.]win",
+      "update[.]exe",
+      "usrclass[.]dat",
+      "usrevent[.]evt",
+      "vmem[.]sys",
+      "vmwareservice[.]exe",
+      "wireshark[.]exe",
+      "wsharp[.]dll",
+      "wshnetc[.]dll",
+      "y[.]yt"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "01c2f321b6bfdb9473c079b0797567ba",
+      "06665b96e293b23acc80451abb413e50",
+      "187044596bc1328efa0ed636d8aa4a5c",
+      "1c024e599ac055312a4ab75b3950040a",
+      "26297dc3cd0b688de3b846983c5385e5"
+    ],
+    "domains": [
+      "en.wikipedia.org",
+      "mirrorservice.org",
+      "telecomabc.com",
+      "securelist.com",
+      "downloads.sourceforge.net"
+    ],
+    "mutexes": []
+  },
+  "narrative": "Used in a 64-bit infection C:\\Windows\\System32\\wbem\\repository\\ INDEX2.DATA, New style encryption, May 2014 OBJECTS2.DATA C:\\Windows\\System32\\ dnscache.dat, mregnx.dat New style encryption, May 2014 displn32.dat, dmdskwk.dat, nvwrsnu.dat, tapiscfg.dat TLP: GREEN Contact: intelreports@kaspersky.com 11. It also includes timestamps that indicate exactly when the command was executed. Adm[ ] In total, the log indicates that commands were executed on 136 different cells.",
+  "_meta": {
+    "label": "G0010",
+    "doc_id": "47e95652e78d",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2014/2014.11.24.Regin_Platform/Kaspersky_Lab_whitepaper_Regin_platform_eng.pdf"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "threat_actor": "APT38",
+  "group_name": "APT38",
+  "group_id": "G0082",
+  "mitre_intrusion_set": {
+    "id": "intrusion-set--00f67a77-86a4-4adf-be26-1a54fc713340",
+    "gid": "G0082",
+    "name": "APT38",
+    "matched_alias": "bluenoroff"
+  },
+  "malware_family": "encrypted backdoor",
+  "campaign_name": null,
+  "attack_ttp_map": {},
+  "technique_to_tactics": {},
+  "_meta": {
+    "label": "G0032",
+    "doc_id": "b7067ecd6e2c",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2018/2018.11.20.lazarus-in-latin-america/blog.trendmicro.com-Lazarus Continues Heists Mounts Attacks on Financial Organizations in Latin America.pdf"
+  }
+}

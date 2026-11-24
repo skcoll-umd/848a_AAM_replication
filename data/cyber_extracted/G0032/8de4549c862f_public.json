@@ -1,0 +1,78 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "watering-hole"
+  ],
+  "sectors": [
+    "Financial",
+    "Media"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "http",
+      "https",
+      "s3",
+      "sharepoint",
+      "smb"
+    ],
+    "tools": [
+      "cmd",
+      "powershell",
+      "schtasks",
+      "taskkill"
+    ],
+    "domains": [
+      "baesystems",
+      "baesystemsai[.]blogspot",
+      "bitcoin",
+      "bitmessage[.]ch",
+      "bitsran[.]exe",
+      "cmd[.]exe",
+      "cntaosmgr[.]exe",
+      "dll[.]mui",
+      "fdsvc[.]dll",
+      "filetokenbroker[.]dll",
+      "msmpeng[.]exe",
+      "netsvc[.]dll",
+      "ntrtscan[.]exe",
+      "pccntmon[.]exe",
+      "powershell[.]exe",
+      "rsw7b37[.]tmp",
+      "rswxxxx[.]tmp",
+      "splwow32[.]exe",
+      "svchost[.]dll",
+      "svchost[.]exe",
+      "taiwan-heist-lazarus-tools[.]html",
+      "testlib[.]dll",
+      "tmbmsrv[.]exe",
+      "tmccsf[.]exe",
+      "tmlisten[.]exe",
+      "tmpfw[.]exe",
+      "vssadmin[.]exe"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "9563e2f443c3b4e1b00f25be0a30d56e",
+      "d08f1211fe0138134e822e31a47ec5d4",
+      "b27881f59c8d8cc529fa80a58709db36",
+      "3c9e71400b72cc0213c9c3e4ab4df9df",
+      "0edbad9e6041d43f97c7369439a40138"
+    ],
+    "domains": [
+      "bitcoin.com",
+      "baesystems.com",
+      "baesystemsai.blogspot.kr",
+      "bitmessage.ch"
+    ],
+    "mutexes": []
+  },
+  "narrative": "Hence, FileTokenBroker.dll decrypts and executes a payload that is created by an external dropper or is implanted by the attackers. Otherwise, it will execute the remote command, effectively giving the attackers full control over the compromised system. The full command executed is: cmd.exe /c schtasks /create /tn.",
+  "_meta": {
+    "label": "G0032",
+    "doc_id": "8de4549c862f",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2017/2017.10.16.Taiwan-Heist/BAESytems_Taiwan-Heist-Lazarus-Tools-Ransomware(10-16-2017).pdf"
+  }
+}

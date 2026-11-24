@@ -1,0 +1,68 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "document",
+    "email",
+    "macro",
+    "phishing",
+    "website"
+  ],
+  "sectors": [
+    "Government",
+    "Media",
+    "Utilities"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "beacon",
+      "c2",
+      "command and control",
+      "http",
+      "proxy"
+    ],
+    "tools": [
+      "certutil",
+      "cmd"
+    ],
+    "domains": [
+      "apt10-targeting-japanese-corporations-using-updated-ttps[.]html",
+      "apt[.]backdoor",
+      "certutil[.]exe",
+      "cmd[.]exe",
+      "esentutil[.]exe",
+      "esentutl[.]exe",
+      "eservake[.]jetos",
+      "fireeye[.]com",
+      "gup[.]exe",
+      "gup[.]txt",
+      "libcurl[.]dll",
+      "libcurl[.]txt",
+      "padre1[.]txt",
+      "padre2[.]txt",
+      "padre3[.]txt",
+      "win[.]uppercut"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "bdc4b9f5af9868e028dd0adc10099a4e6656e9f0ad12b2e75a30f5ca0e34489d",
+      "fb9f7fb3c709373523ff27824ed6a31d800e275ec5217d8a11024a3dffb577dd",
+      "d3450966ceb2eba93282aace7d7684380d87c6621bbd3c4f621caa079356004a",
+      "f12df6984bb65d18e2561bd017df29ee1cf946efa5e510802005aeee9035dd53",
+      "4f83c01e8f7507d23c67ab085bf79e97"
+    ],
+    "domains": [
+      "eservake.jetos.com",
+      "fireeye.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "The macro decodes the dropped files using Windows certutil.exe with the following commands (certutil.exe is a legitimate built-in command-line program to manage certificates in Windows): C:\\Windows\\System32\\cmd.exe\" /c certutil -decode C:\\ProgramData\\padre1.txt C:\\ProgramData\\\\GUP.txt C:\\Windows\\System32\\cmd.exe\" /c. Figure 9: Example of callback Earlier versions of [REDACTED_MALWARE] used the hard-coded string “this is the encrypt key” for Blowfish encryption when communicating with a C2. The macro drops three PEM files, padre1.txt, padre2.txt, and padre3.txt, to the victim’s %TEMP% folder and then copies them from %TEMP% to the %AllUserProfile% folder.",
+  "_meta": {
+    "label": "G0045",
+    "doc_id": "eb02d404e8f0",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2018/2018.09.13.APT10_Targeting_Japanese/APT10 Targeting Japanese Corporations Using Updated TTPs.pdf"
+  }
+}

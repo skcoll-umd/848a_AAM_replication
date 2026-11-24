@@ -1,0 +1,117 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "document"
+  ],
+  "sectors": [
+    "Chemical",
+    "Defense",
+    "Energy",
+    "Legal",
+    "Media",
+    "Mining",
+    "Transport"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "https",
+      "sharepoint",
+      "smb",
+      "vpn"
+    ],
+    "tools": [
+      "china chopper",
+      "cmd",
+      "mimikatz",
+      "net.exe",
+      "powershell",
+      "wmic"
+    ],
+    "domains": [
+      "-cert[.]gov",
+      "1[.]bat",
+      "2[.]bat",
+      "330[.]htm",
+      "3[.]bat",
+      "4[.]bat",
+      "5[.]bat",
+      "_clientupdate[.]ps",
+      "clientupdate[.]exe",
+      "clientupdate[.]ps",
+      "clientupdate[.]txt",
+      "clientupdatecore[.]ps",
+      "cmd[.]exe",
+      "cnbc",
+      "copytrade[.]shtml",
+      "cu[.]bat",
+      "cyber-strat[.]pdf",
+      "dc01[.]domain",
+      "e[.]ps",
+      "elrawdsk[.]sys",
+      "energy",
+      "exchange[.]xforce",
+      "extension[.]aspx",
+      "fas[.]org",
+      "gpoclientupdatecore[.]ps",
+      "gpt[.]ini",
+      "ibm[.]com",
+      "ibmcloud[.]com",
+      "index[.]cfm",
+      "listfile[.]txt",
+      "net[.]exe",
+      "news[.]php",
+      "opec",
+      "passwordcollection[.]raw",
+      "powershell[.]exe",
+      "psscripts[.]ini",
+      "publicpolicy[.]wharton",
+      "reuters",
+      "saddrv[.]sys",
+      "saudi-aramco-attacks-could-predict-cyber-warfare-from-iran[.]html",
+      "securityintelligence[.]com",
+      "senate[.]gov",
+      "soy[.]exe",
+      "soy[.]pdb",
+      "this[.]dcname",
+      "this[.]dcobject",
+      "this[.]dnshostname",
+      "this[.]localscriptfilepath",
+      "this[.]localscriptpath",
+      "unit42[.]paloaltonetworks",
+      "upenn[.]edu",
+      "us",
+      "usernamecollection[.]raw",
+      "v[.]bat",
+      "vboxdrv[.]sys",
+      "zeroclear[.]exe",
+      "zeroclear[.]pdb"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "b1ba74d92395012253b33462c67a726ff266c126f2652092c2f57659d0f46e77",
+      "37680a5a26abc22cde99c5222881a279a04b90680231736efac1e17a8e976755",
+      "36a4e35abf2217887e97041e3e0b17483aa4d2c1aee6feadd48ef448bf1b9e6c",
+      "cf3a7d4285d65bf8688215407bce1b51d7c6b22497f09021f0fce31cbeb78986",
+      "1a69a02b0cd10b1764521fec4b7376c9"
+    ],
+    "domains": [
+      "exchange.xforce.ibmcloud.com",
+      "reuters.com",
+      "cnbc.com",
+      "fas.org",
+      "opec.org"
+    ],
+    "mutexes": [
+      "called"
+    ]
+  },
+  "narrative": "ClientUpdate.exe executes soy.exe via the following command line: cmd.exe /c soy.exe In order to activate the disk management [REDACTED_MALWARE], the malware needed to open a file handle via a unique filename using the logical drive (For example, C:\\). It identifies all non-DC client/target systems and begins to copy and execute the ClientUpdate.exe wiper malware on them, with the other initiated domain controllers doing the same. Batch files 1.bat, 2.bat, 3.bat, 4.bat, and 5.bat appear redundant as they were all identified to have the same function as v.bat.",
+  "_meta": {
+    "label": "G0049",
+    "doc_id": "dd88a6c17462",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2019/2019.12.04.ZeroCleare/New_Destructive_Wiper_ZeroCleare_Final_.pdf"
+  }
+}

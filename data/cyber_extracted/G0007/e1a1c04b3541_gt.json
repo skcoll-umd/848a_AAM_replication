@@ -1,0 +1,20 @@
+{
+  "threat_actor": "BlackTech",
+  "group_name": "BlackTech",
+  "group_id": "G0098",
+  "mitre_intrusion_set": {
+    "id": "intrusion-set--6fe8a2a1-a1b0-4af8-953d-4babd329f8f8",
+    "gid": "G0098",
+    "name": "BlackTech",
+    "matched_alias": "blacktech"
+  },
+  "malware_family": "Encrypting Ransomware",
+  "campaign_name": null,
+  "attack_ttp_map": {},
+  "technique_to_tactics": {},
+  "_meta": {
+    "label": "G0007",
+    "doc_id": "e1a1c04b3541",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2018/2018.01.12.update-pawn-storm-new-targets-politically/Pawn_Storm_Update_2018.Jan.pdf"
+  }
+}

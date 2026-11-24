@@ -1,0 +1,81 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "attachment",
+    "phishing",
+    "social media",
+    "supply chain"
+  ],
+  "sectors": [
+    "Defense",
+    "Financial",
+    "Government",
+    "Legal",
+    "Media",
+    "Technology",
+    "Telecom"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "api",
+      "dns",
+      "http",
+      "https",
+      "proxy",
+      "vpn"
+    ],
+    "tools": [
+      "cmd",
+      "cobalt strike",
+      "empire",
+      "metasploit",
+      "mimikatz",
+      "netstat",
+      "powershell",
+      "psexec",
+      "tasklist"
+    ],
+    "domains": [
+      "1004650[.]pdf",
+      "180620-slides-evan[.]pdf",
+      "20180724-economic-espionage-pub[.]pdf",
+      "acsc[.]gov",
+      "activeresponse",
+      "apps[.]dtic",
+      "arstechnica[.]com",
+      "attack[.]mitre",
+      "bug-bounty[.]html",
+      "cam[.]ac",
+      "cyber-kill-chain[.]html",
+      "diamond[.]pdf",
+      "dni",
+      "jbs",
+      "lockheedmartin",
+      "mitigations-2017-table[.]htm",
+      "mitre",
+      "pr-18-0944-11-mitre-attack-design-and-philosophy[.]pdf",
+      "swisscom",
+      "wilsoncenter",
+      "yara[.]readthedocs"
+    ]
+  },
+  "iocs": {
+    "hashes": [],
+    "domains": [
+      "acsc.gov.au",
+      "arstechnica.com",
+      "jbs.cam.ac.uk",
+      "wilsoncenter.org",
+      "lockheedmartin.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "The command & control channel is the attacker’s means of communication to keep the Command & compromised target infrastructure under his control. Collection This is the final phase required to successfully complete the mission and involves Exfiltration exfiltrating the relevant data. The usage of sophisticated techniques for infection, persistence or exfiltration.",
+  "_meta": {
+    "label": "G0007",
+    "doc_id": "c534402736c0",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/Report/2019.02.Targeted_Attacks/security-report-2019.pdf"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "email",
+    "phishing",
+    "rdp",
+    "usb"
+  ],
+  "sectors": [
+    "Aerospace",
+    "Chemical",
+    "Defense",
+    "Education",
+    "Energy",
+    "Financial",
+    "Government",
+    "Hospitality",
+    "Media",
+    "Retail",
+    "Telecom",
+    "Telecommunications"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "command and control",
+      "dns",
+      "https",
+      "proxy",
+      "rdp",
+      "smb",
+      "vpn"
+    ],
+    "tools": [
+      "mimikatz",
+      "powershell"
+    ],
+    "domains": [
+      "agent[.]btz",
+      "companies[.]this",
+      "ironnet[.]com",
+      "temp[.]mixmaster",
+      "temp[.]noble",
+      "temp[.]veles"
+    ]
+  },
+  "iocs": {
+    "hashes": [],
+    "domains": [
+      "ironnet.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "As the digital revolution has accelerated, so, too, has the Russian cyber attack landscape — hold-over Cold War tactics that evolved to take advantage of new electronic methods of communication. Energetic Bear campaigns began in 2010 in order to collect intelligence used for espionage (as opposed to attempting destruction or disruption of systems) and have continued through at least 2017. Crowdstrike reports that this group has strong ties to Moscow, as targeting aligns closely with likely collection priorities of Russian intelligence.",
+  "_meta": {
+    "label": "G0034",
+    "doc_id": "afa5d1142135",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2020/2020.05.29_russian-cyber-attack-campaigns-and-actors/Russian Cyber Attack Campaigns and Actors - Threat Research.pdf"
+  }
+}

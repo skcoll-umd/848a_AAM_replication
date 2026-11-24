@@ -1,0 +1,104 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "email",
+    "phishing",
+    "usb",
+    "website"
+  ],
+  "sectors": [
+    "Defense",
+    "Energy",
+    "Financial",
+    "Government",
+    "Technology",
+    "Transport"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "c2",
+      "ftp",
+      "http",
+      "https",
+      "imap",
+      "ldap",
+      "pop3",
+      "proxy",
+      "smtp",
+      "tcp",
+      "telnet",
+      "tor",
+      "udp",
+      "vpn"
+    ],
+    "tools": [
+      "ftp",
+      "metasploit",
+      "netstat",
+      "powershell",
+      "psexec",
+      "tasklist"
+    ],
+    "domains": [
+      "32[.]blakken",
+      "32[.]fonten",
+      "3nt[.]com",
+      "backdoor[.]win",
+      "besthosting[.]ua",
+      "cache[.]dat",
+      "ccprojectmgr[.]exe",
+      "ciscoapi[.]tcl",
+      "digitalone[.]com",
+      "favicon[.]ico",
+      "flashplayerapp[.]exe",
+      "fontcache[.]dat",
+      "getcfg[.]php",
+      "google",
+      "hostnoc[.]net",
+      "killint[.]tcl",
+      "main[.]dll",
+      "mlang[.]dat",
+      "ntuser[.]log",
+      "osver32nt[.]dat",
+      "plus[.]google",
+      "serverius[.]com",
+      "settings[.]sol",
+      "stub1[.]tcl",
+      "stub[.]tcl",
+      "telnetapi2[.]tcl",
+      "telnetu[.]tcl",
+      "upgrade[.]php",
+      "wincache[.]dat",
+      "wind002[.]dat",
+      "winntd[.]dat",
+      "winntd_[.]dat",
+      "winver[.]dat",
+      "worldstream[.]nl"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "f3395cd54cf857ddf8f2056768ff49ae",
+      "bf0dac805798cc1f633f19ce8ed6382f",
+      "d57ccbb25882b16198a0f43285dafbb4",
+      "7740a9e5e3feecd3b7274f929d37bccf",
+      "948cd0bf83a670c05401c8b67d2eb310"
+    ],
+    "domains": [
+      "plus.google.com",
+      "hostnoc.net",
+      "besthosting.ua",
+      "worldstream.nl",
+      "digitalone.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "Starting in March 2014 and ending in July 2014, Siemens “ccprojectmgr.exe” downloaded and executed a handful of different payloads hosted at 94.185.85.122/favicon.ico. And, according to the collected config files, the group upgraded their malware communications from plain text http to encrypted https in October 2013. The organization managed to discover what scripts were hosted on the server before BE/[REDACTED_ACTOR] gang deleted them, and unfortunately couldn’t restore them after they were deleted.",
+  "_meta": {
+    "label": "G0034",
+    "doc_id": "dbb04e6354c9",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2016/2016.01.28.BlackEnergy_APT/reference/be2-custom-plugins-router-abuse-and-target-profiles.pdf"
+  }
+}

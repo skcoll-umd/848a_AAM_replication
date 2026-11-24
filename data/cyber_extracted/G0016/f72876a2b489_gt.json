@@ -1,0 +1,20 @@
+{
+  "threat_actor": "Leviathan",
+  "group_name": "Leviathan",
+  "group_id": "G0065",
+  "mitre_intrusion_set": {
+    "id": "intrusion-set--7113eaa5-ba79-4fb3-b68a-398ee9cd698e",
+    "gid": "G0065",
+    "name": "Leviathan",
+    "matched_alias": "leviathan"
+  },
+  "malware_family": "PinchDuke trojan",
+  "campaign_name": null,
+  "attack_ttp_map": {},
+  "technique_to_tactics": {},
+  "_meta": {
+    "label": "G0016",
+    "doc_id": "f72876a2b489",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2015/2015.09.17.duke_russian/dukes_whitepaper.pdf"
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "email",
+    "phishing",
+    "social media"
+  ],
+  "sectors": [
+    "Defense",
+    "Financial",
+    "Media",
+    "Technology"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "c2",
+      "https",
+      "sharepoint",
+      "ssl"
+    ],
+    "tools": [
+      "cmd",
+      "powershell"
+    ],
+    "domains": [
+      "alexisdanger[.]com",
+      "attractivology[.]com",
+      "bungalowphotographyblog[.]com",
+      "cscript[.]exe",
+      "culturehiphopcafe[.]com",
+      "dempoloka[.]com",
+      "freshenvironmentaldesigns[.]com",
+      "gate[.]php",
+      "huskerblackshirts[.]com",
+      "medinamarina[.]com",
+      "mekanuum[.]com",
+      "monusorge[.]com",
+      "morphisec",
+      "petshopbook[.]com",
+      "runll32[.]exe",
+      "skedoilltd[.]com",
+      "spacemetic[.]com",
+      "theelitevailcollection[.]com"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "db1d98e9cca11beea4cfd1bfbe097dffd9fc4cc8b1b02e781863658d8c6f16c7",
+      "148d74e453e49bc21169b7cca683e5764d0f02941b705aaa147977ffd1501376",
+      "c1e7d6ec47169ffb1118c4be5ecb492cd1ea34f3f3dd124500d337af3e980436",
+      "d2b080b9af5d39d72af149afb065e769b1da8005edfe84237942a1b99f4fa36c",
+      "a0c5b1fdcb95037e57dd502d848aa3137882d7af6fbf301262e8cd35db7f58b7"
+    ],
+    "domains": [
+      "dempoloka.com",
+      "huskerblackshirts.com",
+      "petshopbook.com",
+      "culturehiphopcafe.com",
+      "bungalowphotographyblog.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "The downloaded VBScript decodes and executes the in-memory VBScript that then downloads and executes the next stage JSSloader through a scheduled task, possibly to avoid sequential monitoring of the attack chain. Immediately following a persistence stage, the RAT will wait for a base64 encoded command string to be delivered via a ‘Get’ command from the same domain the data had been sent to. The in-memory script downloads and writes a .NET module (JSSLoader) on disk, then executes the module through a scheduled task with a newly introduced timeout delay to bypass attack chain monitoring.",
+  "_meta": {
+    "label": "G0046",
+    "doc_id": "ace89f949b1a",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2021/2021.01.04.Carbanak_evolution_of_FIN7_JssLoader/[Morphisec]_The_Evolution_of_the_FIN7_JssLoader.pdf"
+  }
+}

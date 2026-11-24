@@ -1,0 +1,69 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "document"
+  ],
+  "sectors": [
+    "Defense",
+    "Government",
+    "Transport"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "c2",
+      "command and control",
+      "http"
+    ],
+    "tools": [
+      "cmd"
+    ],
+    "domains": [
+      "0x20020000[.]entrypoint",
+      "1433[.]heaps",
+      "2344[.]tid",
+      "agent[.]btz",
+      "chrome[.]exe",
+      "cmd[.]exe",
+      "cvrg1a6b[.]tmp",
+      "cvrg38d9[.]tmp",
+      "cvrg72b5[.]tmp",
+      "df1e05[.]tmp",
+      "explorer[.]exe",
+      "firefox[.]exe",
+      "iexplore[.]exe",
+      "kb943729[.]log",
+      "mydreamhoroscope[.]com",
+      "ntuser[.]dat",
+      "opera[.]exe",
+      "outlook[.]exe",
+      "safari[.]exe",
+      "soligro[.]com",
+      "update[.]microsoft",
+      "windowsupdate[.]microsoft",
+      "yahoo[.]com"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "b099b82acb860d9a9a571515024b35f0",
+      "06bd89448a10aa5c2f4ca46b4709a879",
+      "19ce5c912768958aa3ee7bc19b2b032c"
+    ],
+    "domains": [
+      "update.microsoft.com",
+      "windowsupdate.microsoft.com",
+      "yahoo.com",
+      "soligro.com",
+      "mydreamhoroscope.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "Like previous [REDACTED_ACTOR] activity, WhiteBear leverages compromised websites and hijacked satellite connections for command and control (C2) infrastructure. The pipe is used to communicate with the target process and the transport module; the running code also reads its own image body and writes it to the pipe. This data is encrypted with a new RSA key (which is also stored in the registry).",
+  "_meta": {
+    "label": "G0010",
+    "doc_id": "57f95ad45181",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2017/2017.08.30.Introducing_WhiteBear/Introducing WhiteBear - Securelist.pdf"
+  }
+}

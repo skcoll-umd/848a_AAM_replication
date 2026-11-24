@@ -1,0 +1,20 @@
+{
+  "threat_actor": "OilRig",
+  "group_name": "OilRig",
+  "group_id": "G0049",
+  "mitre_intrusion_set": {
+    "id": "intrusion-set--4ca1929c-7d64-4aab-b849-badbfc0c760d",
+    "gid": "G0049",
+    "name": "OilRig",
+    "matched_alias": "oilrig"
+  },
+  "malware_family": "RDAT Backdoor",
+  "campaign_name": null,
+  "attack_ttp_map": {},
+  "technique_to_tactics": {},
+  "_meta": {
+    "label": "G0049",
+    "doc_id": "9298a36fcf92",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2020/2020.07.22.OilRig_Middle_Eastern_Telecommunication/OilRig Targets Middle Eastern Telecommunications Organization and Adds Novel C2 Channel with Steganography to Its Inventory.pdf"
+  }
+}

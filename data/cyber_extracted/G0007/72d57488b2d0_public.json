@@ -1,0 +1,60 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "email",
+    "exploit kit",
+    "malvertising",
+    "phishing",
+    "rdp",
+    "social media",
+    "website"
+  ],
+  "sectors": [
+    "Defense",
+    "Legal",
+    "Media",
+    "Mining",
+    "Transport"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "ftp",
+      "https",
+      "onion",
+      "proxy",
+      "rdp",
+      "tor"
+    ],
+    "tools": [
+      "ftp"
+    ],
+    "domains": [
+      "8[.]zip",
+      "archive[.]torproject",
+      "blog[.]trendmicro",
+      "cadwork[.]dir",
+      "ftp[.]cadwork",
+      "mswsock[.]dll",
+      "taskhost[.]exe",
+      "tor[.]exe",
+      "unzip[.]exe"
+    ]
+  },
+  "iocs": {
+    "hashes": [],
+    "domains": [
+      "blog.trendmicro.com",
+      "archive.torproject.org",
+      "ftp.cadwork.ch"
+    ],
+    "mutexes": []
+  },
+  "narrative": "Screengrab of processes where the malicious DLL provider has been injected Best practices against spam and vulnerabilities Operation Overtrap uses a variety of attack vectors to steal [REDACTED_MALWARE] credentials. Cinobi uses RC4 encryption with a hardcoded key. https://blog.trendmicro.com/trendlabs-security-intelligence/operation-overtrap-targets-japanese-online-[REDACTED_MALWARE]-users-via-bottle-exploit-kit-and-brand-new-cinob…. Screengrab of the .JPG file that contains the filename of the first stage downloader After this, Cinobi will run the second stage of its downloader on the victim’s machine.",
+  "_meta": {
+    "label": "G0007",
+    "doc_id": "72d57488b2d0",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2020/2020.03.11.Operation_Overtrap/Operation Overtrap Targets Japanese Online Banking Users Via Bottle Exploit Kit and Brand-New Cinobi Banking Trojan.pdf"
+  }
+}

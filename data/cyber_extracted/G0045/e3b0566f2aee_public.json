@@ -1,0 +1,38 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "document"
+  ],
+  "sectors": [
+    "Media"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "api",
+      "https"
+    ],
+    "tools": [],
+    "domains": [
+      "carbonblack",
+      "carbonblack[.]com",
+      "idc[.]load"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "3d2b3c9f50ed36bef90139e6dd250f140c373664984b97a97a5a70333387d18d"
+    ],
+    "domains": [
+      "carbonblack.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "Another obfuscation, control flow flattening, was applied to [REDACTED_ACTOR] ANEL and [REDACTED_MALWARE] packer. According to SecureWorks, all ANEL samples whose version is 5.3.0 or later are obfuscated with opaque predicates and control flow flattening. Control flow flattening is an obfuscation method where programs do not cleanly flow from beginning to end.",
+  "_meta": {
+    "label": "G0045",
+    "doc_id": "e3b0566f2aee",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2019/2019.02.25.APT10_Defeating_Compiler_Level/Defeating Compiler-Level Obfuscations Used in APT10 Malware.pdf"
+  }
+}

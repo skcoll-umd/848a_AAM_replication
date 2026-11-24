@@ -1,0 +1,77 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "document",
+    "phishing",
+    "watering hole",
+    "watering-hole",
+    "website"
+  ],
+  "sectors": [
+    "Energy",
+    "Financial",
+    "Media",
+    "Mining",
+    "Technology"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "beacon",
+      "c2",
+      "command and control",
+      "http",
+      "https",
+      "onion"
+    ],
+    "tools": [],
+    "domains": [
+      "admin[.]ch",
+      "appidpolicyconverter[.]js",
+      "bmwi[.]de",
+      "bug-attack-group[.]pdf",
+      "class-wc-log[.]php",
+      "en[.]wikipedia",
+      "gdatasoftware",
+      "google",
+      "govcert",
+      "govcert[.]ch",
+      "huluwa",
+      "logsloader[.]php",
+      "october[.]pdf",
+      "rpt-witchcoven[.]pdf",
+      "runer[.]exe",
+      "runer[.]pdb",
+      "scr[.]js",
+      "securelist[.]com",
+      "symantec",
+      "tresor-rare[.]com",
+      "welivesecurity",
+      "www2[.]fireeye"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "7481e87023604e7534d02339540ddd9565273dd51c13d7677b9b4c9623f0440b",
+      "1c76a66a670a6f69b4fea25ca0ba4885eca9e1b85a2afbab61da3b4a6d52ae19",
+      "5698c92fb8fe7ded0ff940c75979f44734650e4f2c852bdb4cbc9d46e7993185",
+      "c978da455018a73ddbc9e1d2bf8c208ad3ec2e622850f68ef6b0aae939e5d2ab",
+      "01a8cbd328df18fd49965d68e2879433"
+    ],
+    "domains": [
+      "en.wikipedia.org",
+      "govcert.admin.ch",
+      "securelist.com",
+      "www2.fireeye.com",
+      "welivesecurity.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "Scr.js Analysis Scr.js is essentially a dropper for the actual backdoor in addition to running all the necessary commands to fingerprint the infected system and set up persistence. Figure 8: HTTP POST to [REDACTED_MALWARE] C2 Responses from the command and control are also encrypted using RC4 and the same key. Next, Scr.js decodes a large base64 blob containing the JS backdoor decryptor and saves it to the following location: “C:\\Users\\[executing user]\\AppData\\Roaming\\Microsoft\\Protect\\appidpolicyconverter.js” Lastly, Scr.js executes various commands to fingerprint details about the infected system.",
+  "_meta": {
+    "label": "G0010",
+    "doc_id": "19518239ae39",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2017/2017.08.17.turla-apt-actor-refreshes-kopiluwak-javascript-backdoor/Turla_APT.pdf"
+  }
+}

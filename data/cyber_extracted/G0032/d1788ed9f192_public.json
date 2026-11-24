@@ -1,0 +1,47 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "document",
+    "macro"
+  ],
+  "sectors": [
+    "Media",
+    "Technology"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "c2",
+      "https"
+    ],
+    "tools": [
+      "powershell"
+    ],
+    "domains": [
+      "album[.]app",
+      "backdoor[.]macos",
+      "blog[.]trendmicro",
+      "board[.]php",
+      "com[.]adobe",
+      "crabbedly[.]club",
+      "craypot[.]live",
+      "indagator[.]club",
+      "macromedia[.]plist",
+      "trojan[.]macos"
+    ]
+  },
+  "iocs": {
+    "hashes": [],
+    "domains": [
+      "blog.trendmicro.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "Subsequently, a persistence mechanism for this hidden file is installed through dropped PLIST file ~/Library/Launchagents/com.adobe.macromedia.plist. The MacOS hidden file has backdoor functions that are similar to those of the executed hidden PowerShell script in the Excel spreadsheet sample (for example, the command 11 for both is the GetHostInfo function). Code snippet of ~/Library/Launchagents/com.adobe.macromedia.plist being dropped.",
+  "_meta": {
+    "label": "G0032",
+    "doc_id": "d1788ed9f192",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2019/2019.11.20.Mac_Lazarus/Mac Backdoor Linked to Lazarus Targets Korean Users.pdf"
+  }
+}

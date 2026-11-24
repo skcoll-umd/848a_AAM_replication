@@ -1,0 +1,71 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "email",
+    "supply chain",
+    "website"
+  ],
+  "sectors": [
+    "Media",
+    "Technology"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "c2",
+      "command and control",
+      "dns",
+      "http",
+      "https",
+      "ssl",
+      "tls"
+    ],
+    "tools": [],
+    "domains": [
+      "ab1145b758c30[.]com",
+      "ab1abad1d0c2a[.]com",
+      "ab1c403220c27[.]com",
+      "ab2da3d400c20[.]com",
+      "ab3520430c23[.]com",
+      "ab3d685a0c37[.]com",
+      "ab6d54340c1a[.]com",
+      "ab70a139cc3a[.]com",
+      "ab890e964c34[.]com",
+      "blog[.]talosintelligence",
+      "caabr8ecerese60c2d[.]com",
+      "cbkdr[.]dll",
+      "cbkrdr[.]dll",
+      "ccleanebbbbr[.]eaaaaxccccekkkk",
+      "ccleaner-c2-concern[.]html",
+      "ccleaner[.]exe",
+      "ccleaner[.]pdb",
+      "destinraotipomn[.]emu",
+      "enuoxlpgoehgrc[.]giesres",
+      "immunet",
+      "speccy[.]piriform",
+      "t[.]er",
+      "tsoooolns[.]your",
+      "w32[.]hacktool"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "6f7840c77f99049d788155c1351e1560b62b8ad18ad0e9adda8218b9f432f0a9"
+    ],
+    "domains": [
+      "blog.talosintelligence.com",
+      "immunet.com",
+      "speccy.piriform.com",
+      "ab6d54340c1a.com",
+      "ab2da3d400c20.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "The malware then establishes a Command and Control (C2) channel as described in the following section. Reply SJON287612 SEPTEMBER 21, 2017 AT 6:29 PM Is the process of installing ccleaner alone enough to execute the malicious payload or Softwarewould the 32bit executable of ccleaneBBBBr.eAAAAxCCCCeKKKK itself have to be executed post-installation? We identi\u0000ed that even though the downloaded installation executable was signed using a valid digital signature issued to Piriform, CCleaner was not the only application that came with the download.",
+  "_meta": {
+    "label": "G0046",
+    "doc_id": "0d3fc988a240",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2017/2017.09.18.CCleanup/CCleanup.pdf"
+  }
+}

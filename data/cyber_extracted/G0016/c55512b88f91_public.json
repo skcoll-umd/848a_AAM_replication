@@ -1,0 +1,106 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "document",
+    "phishing"
+  ],
+  "sectors": [
+    "Energy",
+    "Government",
+    "Healthcare",
+    "Media"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "beacon",
+      "c2",
+      "command and control",
+      "dns",
+      "http",
+      "https",
+      "proxy",
+      "s3",
+      "tls",
+      "vpn"
+    ],
+    "tools": [],
+    "domains": [
+      "agent[.]sh",
+      "blogs[.]jpcert",
+      "botconf",
+      "botlib[.]aes",
+      "botlib[.]base",
+      "botlib[.]calculatemd",
+      "botlib[.]chunksm",
+      "botlib[.]cipher",
+      "botlib[.]command",
+      "botlib[.]convertfromstring",
+      "botlib[.]creatednsname",
+      "botlib[.]decipher",
+      "botlib[.]deletefile",
+      "botlib[.]download",
+      "botlib[.]downloaddns",
+      "botlib[.]encrypt",
+      "botlib[.]encrypttext",
+      "botlib[.]fromnormaltobase",
+      "botlib[.]generaterandomstring",
+      "botlib[.]generatesymmkey",
+      "botlib[.]getrandombytes",
+      "botlib[.]init",
+      "botlib[.]join",
+      "botlib[.]joindnschunks",
+      "botlib[.]key",
+      "botlib[.]keysizeerror",
+      "botlib[.]new",
+      "botlib[.]pack",
+      "botlib[.]pad",
+      "botlib[.]parse",
+      "botlib[.]post",
+      "botlib[.]randint",
+      "botlib[.]randstringbytes",
+      "botlib[.]receivemessage",
+      "botlib[.]reply",
+      "botlib[.]savefile",
+      "botlib[.]send",
+      "botlib[.]senddns",
+      "botlib[.]sendmessage",
+      "botlib[.]service",
+      "botlib[.]split",
+      "botlib[.]udfile",
+      "botlib[.]unpack",
+      "botlib[.]unpackb",
+      "botlib[.]wellmess",
+      "botlib[.]work",
+      "gov[.]uk",
+      "lets-go-with-a-go-rat-_final[.]pdf",
+      "main[.]go",
+      "main[.]zipit",
+      "malware-wellmes-9b78[.]html",
+      "ncsc",
+      "nvd[.]nist",
+      "or[.]jp"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "00654dd07721e7551641f90cba832e98c0acb030e2848e5efc0e1752c067ec07",
+      "0322c4c2d511f73ab55bf3f43b1b0f152188d7146cc67ff497ad275d9dd1c20f",
+      "03e9adae529155961f1f18212ff70181bde0e3da3d7f22961a6e2b1c9da2dd2e",
+      "0b8e6a11adaa3df120ec15846bb966d674724b6b92eae34d63b665e0698e0193",
+      "14e9b5e214572cb13ff87727d680633f5ee238259043357c94302654c546cad2"
+    ],
+    "domains": [
+      "ncsc.gov.uk",
+      "blogs.jpcert.or.jp"
+    ],
+    "mutexes": []
+  },
+  "narrative": "WellMail malware WellMail is a lightweight tool designed to run commands or scripts with the results being sent to a hardcoded Command and Control (C2) server. Persistent access Upon gaining access to a system, the group likely drops further tooling and/or seeks to obtain legitimate credentials to the compromised systems in order to maintain persistent access. WellMess is a lightweight malware designed to execute arbitrary shell commands, upload and download files.",
+  "_meta": {
+    "label": "G0016",
+    "doc_id": "c55512b88f91",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2020/2020.07.16.apt29-targets-covid-19-vaccine-development/Advisory-APT29-targets-COVID-19-vaccine-development.pdf"
+  }
+}

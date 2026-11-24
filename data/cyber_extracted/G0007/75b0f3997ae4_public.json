@@ -1,0 +1,79 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "attachment",
+    "email"
+  ],
+  "sectors": [
+    "Defense",
+    "Legal"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "api",
+      "http"
+    ],
+    "tools": [
+      "rundll32"
+    ],
+    "domains": [
+      "2z[.]htm",
+      "5w2a[.]htm",
+      "acledit",
+      "api-ms-win-downlevel-profile-l1-1-0[.]dll",
+      "app[.]class",
+      "arrayreplace[.]class",
+      "ausameetings[.]com",
+      "ausameetings[.]org",
+      "ausumeetings[.]com",
+      "biocpl",
+      "bit[.]ly",
+      "converter[.]class",
+      "cormac[.]mcr",
+      "crossdomain[.]xml",
+      "downlevel-profile-l1-1-0[.]dll",
+      "er[.]pdf",
+      "go[.]class",
+      "google",
+      "help[.]class",
+      "html_jnlper[.]haq",
+      "index[.]htm",
+      "init[.]jnlp",
+      "java_dloadr[.]efd",
+      "jndi[.]properties",
+      "l1-1-0[.]dll",
+      "line[.]jpg",
+      "lj9[.]zip",
+      "mfs[.]pdf",
+      "mybytearrayinputstream[.]class",
+      "none2[.]class",
+      "none[.]class",
+      "passhandlecontroller[.]class",
+      "phantomsuper[.]class",
+      "profile-l1-1-0[.]dll",
+      "right[.]jpg",
+      "rundll32[.]exe",
+      "troj_droppr[.]cxc",
+      "vhgg5hkvn25[.]exe"
+    ]
+  },
+  "iocs": {
+    "hashes": [],
+    "domains": [
+      "ausameetings.com",
+      "ausameetings.org",
+      "ausumeetings.com",
+      "acledit.com",
+      "biocpl.org"
+    ],
+    "mutexes": []
+  },
+  "narrative": "Once the PE file is Fake porn sites lead to #mobile #malware downloaded and executed it drops and runs the DLL file (Stage 3) which is the final component to infect bit.ly/1P1oGlw about 4 hours ago the machine with SEDNIT. In phase 1, opening the email attachment or clicking on the malicious URI initiates the download of the first level dropper, which installs the downloader component (.DLL file). Once the malware is executed, it will drop the Stage 3 DLL file with filename api-ms-win-downlevel- profile-l1-1-0.dll in the %TEMP% directory.",
+  "_meta": {
+    "label": "G0007",
+    "doc_id": "75b0f3997ae4",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2015/2015.07.14.How_Pawn_Storm_Java_Zero-Day_Was_Used/an-in-depth-look-at-how-pawn-storms-java-zero-day-was-used.pdf"
+  }
+}

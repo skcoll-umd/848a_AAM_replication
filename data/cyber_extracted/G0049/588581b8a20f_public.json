@@ -1,0 +1,90 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "attachment",
+    "document",
+    "email",
+    "macro",
+    "website"
+  ],
+  "sectors": [
+    "Legal",
+    "Media",
+    "Technology"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "beacon",
+      "c2",
+      "command and control",
+      "dns",
+      "http",
+      "https"
+    ],
+    "tools": [
+      "cmd",
+      "powershell",
+      "schtasks",
+      "tasklist"
+    ],
+    "domains": [
+      "303e5cf0a861479b80e2[.]ntpupdateserver",
+      "55957d20569c43c9a401e5d446b92b9e[.]mslicensecheck",
+      "adobeproduct[.]com",
+      "b642[.]txt",
+      "cache-service[.]net",
+      "chrome-dns[.]com",
+      "cmd[.]exe",
+      "enc[.]getbytes",
+      "fireeye",
+      "fireeyeupdate[.]com",
+      "io[.]file",
+      "level3-resolvers[.]net",
+      "licensecheck[.]vbs",
+      "mail[.]com",
+      "microsoft-publisher[.]com",
+      "miedafire[.]com",
+      "mslicensecheck[.]com",
+      "ns1[.]ntupdateserver",
+      "ns2[.]ntpupdateserver",
+      "ntpupdateserver",
+      "ntpupdateserver[.]com",
+      "officeservicesstatus[.]vbs",
+      "outlook[.]com",
+      "p[.]length",
+      "paul[.]mcalister",
+      "res[.]split",
+      "servicereset[.]exe",
+      "system[.]net",
+      "system[.]text",
+      "targeted_attacksaga[.]html",
+      "tatavpnservices[.]com",
+      "u[.]replace"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "3eb14b6705179590f0476d3d3cbd71665e7c1935ecac3df7b876edc9bd7641b6",
+      "52366b9ab2eb1d77ca6719a40f4779eb302dca97a832bd447abf10512dc51ed9",
+      "5ac939a5426db8614165bd8b6a02d3e8d9f167379c6ed28025bf3b37f1aea902",
+      "aa52dcaf6df43c6aa872fe0f73725f61e082d32c33fc976741d4eca17679533d",
+      "ca8cec08b4c74cf68c71a39176bfc8ee1ae4372f98f75c892706b2648b1e7530"
+    ],
+    "domains": [
+      "fireeye.com",
+      "ntpupdateserver.com",
+      "n.n.c.303e5cf0a861479b80e2.ntpupdateserver.com",
+      "ahr0cdovlze0m.0.d.303e5cf0a861479b80e2.ntpupdateserver.com",
+      "n.8.f.303e5cf0a861479b80e2.ntpupdateserver.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "As\u0000 mentioned previously, ISMAgent has a far more limited, but flexible command set, allowing an\u0000 adversary to upload and download files, in addition to command execution via command\u0000 prompt. [output of command prompt] While we did not observe the C2 server attempting to run additional commands via ISMAgent, we were able to analyze the Trojan itself to determine the functionality of its available commands. The “%%%%” string exists within the following larger string, that the Trojan uses as a command to execute in order to create a scheduled task named “TimeUpdate” to execute the payload after the specified\u0000 number of minutes passes: 1 cmd /c schtasks /query.",
+  "_meta": {
+    "label": "G0049",
+    "doc_id": "588581b8a20f",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2017/2017.07.27.oilrig-uses-ismdoor-variant-possibly-linked-greenbug-threat-group/unit42-oilrig-uses-ismdoor-variant-possibly-linked-greenbug-threat-group.pdf"
+  }
+}

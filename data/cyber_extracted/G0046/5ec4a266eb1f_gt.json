@@ -1,0 +1,20 @@
+{
+  "threat_actor": "FIN6",
+  "group_name": "FIN6",
+  "group_id": "G0037",
+  "mitre_intrusion_set": {
+    "id": "intrusion-set--2a7914cf-dff3-428d-ab0f-1014d1c28aeb",
+    "gid": "G0037",
+    "name": "FIN6",
+    "matched_alias": "fin6"
+  },
+  "malware_family": "RYUK ransomware",
+  "campaign_name": null,
+  "attack_ttp_map": {},
+  "technique_to_tactics": {},
+  "_meta": {
+    "label": "G0046",
+    "doc_id": "5ec4a266eb1f",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2020/2020.12.22.FIN7_RYUK/blog.truesec.com-Collaboration between FIN7 and the RYUK group a Truesec Investigation.pdf"
+  }
+}

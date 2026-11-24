@@ -1,0 +1,50 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "watering hole"
+  ],
+  "sectors": [
+    "Defense",
+    "Financial",
+    "Government",
+    "Legal",
+    "Mining"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "http"
+    ],
+    "tools": [
+      "cmd",
+      "powershell",
+      "wmic"
+    ],
+    "domains": [
+      "bkdr_ratankba[.]zael",
+      "chm_dloader[.]zcel",
+      "cmd[.]exe",
+      "js_dloader[.]zbel",
+      "vbs_dloadr[.]zael",
+      "x97m_dloadr[.]zbel"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "1768f2e9cea5f8c97007c6f822531c1c9043c151187c54ebfb289980ff63d666",
+      "6cac0be2120be7b3592fe4e1f7c86f4abc7b168d058e07dc8975bf1eafd7cb25",
+      "d844777dcafcde8622b9472b6cd442c50c3747579868a53a505ef2f5a4f0e26a",
+      "db8163d054a35522d0dec35743cfd2c9872e0eb446467b573a79f84d61761471",
+      "f7f2dd674532056c0d67ef1fb7c8ae8dd0484768604b551ee9b6c4405008fe6b"
+    ],
+    "domains": [],
+    "mutexes": []
+  },
+  "narrative": "This RATANKBA backdoor is what is used to communicate with RATANKBA’s Command-and-Control (C&C) server. Instead, both the remote controller and the backdoor connect to its main communication control server to push or pull pieces of information. If the profiles are already downloaded by the controller, they are deleted [REDACTED_MALWARE] the server side.",
+  "_meta": {
+    "label": "G0032",
+    "doc_id": "a9ebd9ec9885",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2018/2018.01.24.lazarus-campaign-targeting-cryptocurrencies/Lazarus_Campaign_Targeting_Cryptocurrencies.pdf"
+  }
+}

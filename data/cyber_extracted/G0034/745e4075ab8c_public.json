@@ -1,0 +1,71 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "document",
+    "malvertising",
+    "website"
+  ],
+  "sectors": [
+    "Defense",
+    "Mining"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "api",
+      "c2",
+      "command and control",
+      "http",
+      "https",
+      "proxy",
+      "smtp",
+      "ssh",
+      "ssl",
+      "telnet"
+    ],
+    "tools": [],
+    "domains": [
+      "blog[.]trendmicro",
+      "cl[.]exe",
+      "cloudnet[.]exe",
+      "dsefix[.]exe",
+      "i2pd[.]log",
+      "ip-api[.]com",
+      "nxtfdata[.]xyz",
+      "patch[.]exe",
+      "vc[.]exe",
+      "venoxcontrol[.]com",
+      "winmon32[.]sys",
+      "winmon64[.]sys",
+      "winmonfs32[.]sys",
+      "winmonfs64[.]sys",
+      "winmonprocessmonitor32[.]sys",
+      "winmonprocessmonitor64[.]sys",
+      "winmonsystemmonitor-10-64[.]sys",
+      "winmonsystemmonitor-7-10-32[.]sys",
+      "winmonsystemmonitor-7-64[.]sys",
+      "wup[.]exe"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "0f8f7cd39e1a5231b49f986b877befce0c2f558f0c1a9844833ac702cb3eba6e"
+    ],
+    "domains": [
+      "blog.trendmicro.com",
+      "ip-api.com",
+      "venoxcontrol.com"
+    ],
+    "mutexes": [
+      "-exists",
+      "name"
+    ]
+  },
+  "narrative": "Pop-up malvertising on file-sharing websites downloaded Glupteba dropper Analysis of the Glupteba dropper The downloaded dropper binary is packed with a custom packer, written in Go programming language, and compiled to executable. The discoverDomain function can be run either by sending a backdoor command, or automatically by the dropper. It will schedule a task on the router for command and control (C&C) and upload the stolen administrator credentials to a remote server.",
+  "_meta": {
+    "label": "G0034",
+    "doc_id": "745e4075ab8c",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2019/2019.09.04.Glupteba_Campaign/Glupteba Campaign Hits Network Routers and Updates C&C Servers with Data from Bitcoin Transactions.pdf"
+  }
+}

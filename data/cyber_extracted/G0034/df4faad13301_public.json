@@ -1,0 +1,73 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "document",
+    "email",
+    "macro"
+  ],
+  "sectors": [
+    "Defense",
+    "Energy",
+    "Media",
+    "Technology",
+    "Transport"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "api",
+      "command and control",
+      "dhcp",
+      "http",
+      "https",
+      "onion",
+      "proxy",
+      "ssh",
+      "tor"
+    ],
+    "tools": [
+      "cmd",
+      "curl",
+      "mimikatz",
+      "nmap",
+      "powershell",
+      "psexec",
+      "rundll32"
+    ],
+    "domains": [
+      "cmd[.]exe",
+      "conhost[.]exe",
+      "favicon[.]ico",
+      "moonraker[.]dll",
+      "msvcrt120b[.]dll",
+      "pbank[.]co",
+      "readme[.]txt",
+      "rundll32[.]exe",
+      "srv[.]dll",
+      "svc[.]dll",
+      "svchost[.]exe",
+      "thumbs[.]db",
+      "user32[.]dll"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "177af8f6e8d6f4952d13f88cdf1887cb7220a645",
+      "455d9eb9e11aa9af9717e0260a70611ff84ef900",
+      "51309371673acd310f327a10476f707eb914e255",
+      "cb11f36e271306354998bb8abb6ca67c1d6a3e24",
+      "cc1ce3073937552459fb8ed0adb5d56fa00bcd43"
+    ],
+    "domains": [
+      "pbank.co.ua"
+    ],
+    "mutexes": []
+  },
+  "narrative": "Here is an actual command line used in the initial stage of GreyEnergy’s in-memory-only execution: cmd.exe /c “C:\\Windows\\System32\\rundll32.exe “C:\\Sun\\Thumbs.db”,#1 CAIAABBmAAAgAAAA8GFGvkHVGDtGRqcl3Z3nYJ9aXCm7TVZX8klEdjacOSU=”. Yes internal proxies External configuration encryption Modified RC4 DPAPI Used compression aPlib LZNT1 Mini version persistence LNK file LNK file Mini version configuration format X 509 JSON C&C servers run Tor relay. Once the macro is enabled, its code attempts to download and execute a binary from a remote server Figure 3. //.",
+  "_meta": {
+    "label": "G0034",
+    "doc_id": "df4faad13301",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2018/2018.10.17.GreyEnergy/ESET_GreyEnergy.pdf"
+  }
+}

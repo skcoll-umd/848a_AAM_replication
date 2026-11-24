@@ -1,0 +1,20 @@
+{
+  "threat_actor": "APT39",
+  "group_name": "APT39",
+  "group_id": "G0087",
+  "mitre_intrusion_set": {
+    "id": "intrusion-set--44e43fad-ffcb-4210-abcf-eaaed9735f80",
+    "gid": "G0087",
+    "name": "APT39",
+    "matched_alias": "chafer"
+  },
+  "malware_family": "Backdoor.",
+  "campaign_name": null,
+  "attack_ttp_map": {},
+  "technique_to_tactics": {},
+  "_meta": {
+    "label": "G0049",
+    "doc_id": "d72d9d599db0",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2017/2017.01.05.Iranian_Threat_Agent_OilRig/Iranian Threat Agent OilRig Delivers Digitally Signed Malware, Impersonates University of Oxford _ ClearSky Cybersecurity.pdf"
+  }
+}

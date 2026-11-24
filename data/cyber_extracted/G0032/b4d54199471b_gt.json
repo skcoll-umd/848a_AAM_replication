@@ -1,0 +1,20 @@
+{
+  "threat_actor": "Kimsuky",
+  "group_name": "Kimsuky",
+  "group_id": "G0094",
+  "mitre_intrusion_set": {
+    "id": "intrusion-set--0ec2f388-bf0f-4b5c-97b1-fc736d26c25f",
+    "gid": "G0094",
+    "name": "Kimsuky",
+    "matched_alias": "kimsuky"
+  },
+  "malware_family": "aou Trojan",
+  "campaign_name": "that McAfee Advanced Threat Research",
+  "attack_ttp_map": {},
+  "technique_to_tactics": {},
+  "_meta": {
+    "label": "G0032",
+    "doc_id": "b4d54199471b",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2020/2020.07.29.Operation_North_Star/mcafee.com-Operation 노스 스타 North Star A Job Offer Thats Too Good to be True.pdf"
+  }
+}

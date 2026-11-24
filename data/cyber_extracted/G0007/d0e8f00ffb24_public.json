@@ -1,0 +1,72 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "document",
+    "email"
+  ],
+  "sectors": [
+    "Defense",
+    "Legal",
+    "Media"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "http",
+      "https"
+    ],
+    "tools": [
+      "powershell",
+      "rundll32"
+    ],
+    "domains": [
+      "config[.]txt",
+      "eh[.]dll",
+      "io[.]file",
+      "isisattackinnewyork[.]docx",
+      "msword[.]exe",
+      "mvdrt[.]bat",
+      "mvdrt[.]dll",
+      "netmediaresources[.]com",
+      "ns1[.]njal",
+      "ns2[.]njal",
+      "powershell[.]exe",
+      "rundll32[.]exe",
+      "saberguardian2017[.]docx",
+      "saberguardian[.]docx",
+      "satellitedeluxpanorama[.]com",
+      "secnt[.]dll",
+      "sendmevideo[.]org",
+      "system[.]net",
+      "t[.]co",
+      "vms[.]bat",
+      "vms[.]dll",
+      "w[.]downloadfile",
+      "webviewres[.]net"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "1c6c700ceebfbe799e115582665105caa03c5c9e",
+      "4bc722a9b0492a50bd86a1341f02c74c0d773db7",
+      "ab354807e687993fbeb1b325eb6e4ab38d428a1e",
+      "68c2809560c7623d2307d8797691abf3eafe319a",
+      "8a68f26d01372114f660e32ac4c9117e5d0577f1"
+    ],
+    "domains": [
+      "netmediaresources.com",
+      "sendmevideo.org",
+      "t.co",
+      "webviewres.net",
+      "satellitedeluxpanorama.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "Control server: webviewres[.]net The document downloads a version of the Seduploader first-stage reconnaissance implant, which profiles\u0000\u0000 prospective victims, pulling basic host information from the infected system to the attackers. Further McAfee research identified the following related sample:\u0000 Filename: secnt.dll Sha1: ab354807e687993fbeb1b325eb6e4ab38d428a1e Compile date: 2017-10-30 23:53:02 Control server: satellitedeluxpanorama[.]com. The malicious document 68c2809560c7623d2307d8797691abf3eafe319a is responsible for dropping the Seduploader payload (secnt.dll).",
+  "_meta": {
+    "label": "G0007",
+    "doc_id": "d0e8f00ffb24",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2017/2017.11.07.APT28_Slips_Office_Malware/Threat_Group_APT28_Slips_Office_Malware.pdf"
+  }
+}

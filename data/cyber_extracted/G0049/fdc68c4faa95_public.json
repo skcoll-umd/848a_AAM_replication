@@ -1,0 +1,63 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "attachment",
+    "document",
+    "email",
+    "macro",
+    "phishing",
+    "supply chain"
+  ],
+  "sectors": [
+    "Chemical",
+    "Energy",
+    "Financial",
+    "Government",
+    "Media",
+    "Telecom",
+    "Telecommunications"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "c2",
+      "command and control",
+      "http",
+      "https"
+    ],
+    "tools": [
+      "cmd"
+    ],
+    "domains": [
+      "blog[.]talosintelligence",
+      "blog[.]telsy",
+      "dnspionage-brings-out-karkoff[.]html",
+      "godoycrus[.]com",
+      "monitor[.]exe",
+      "resume[.]txt",
+      "telsy[.]com",
+      "xxx[.]local"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "ebae23be2e24139245cc32ceda4b05c77ba393442482109cc69a6cecc6ad1393",
+      "c53d785917c1da4d40cd9fac1455d096faa4b672",
+      "b08dff2a95426a0e32731ef337eab542"
+    ],
+    "domains": [
+      "blog.telsy.com",
+      "blog.talosintelligence.com",
+      "telsy.com",
+      "godoycrus.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "[+] arbitrary commands execution [+] download and upload of files [+] data exfiltration. As shown above, the retrieved commands are executed using the “ExecAllCmds” method and the result is sent to the C2 through the “SendResult” method. In this case, the threat group probably compromised a Microsoft Exchange account of a sensitive entity related to Lebanese government, and used the mail server as command-and-control of the implant.",
+  "_meta": {
+    "label": "G0049",
+    "doc_id": "fdc68c4faa95",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2020/2020.03.02_APT34_MAILDROPPER/apt34-aka-oilrig-attacks-lebanon-government-entities-with-maildropper-implant.pdf"
+  }
+}

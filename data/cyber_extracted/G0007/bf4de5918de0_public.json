@@ -1,0 +1,38 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "email",
+    "exploit kit",
+    "malvertising"
+  ],
+  "sectors": [
+    "Energy",
+    "Legal"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "dns",
+      "http"
+    ],
+    "tools": [],
+    "domains": [
+      "bit[.]ly",
+      "blog[.]trendmicro"
+    ]
+  },
+  "iocs": {
+    "hashes": [],
+    "domains": [
+      "blog.trendmicro.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "TinyLoader has two small components—a screen grabber and a process enumerator. As a tandem, these two can lead to stealthier and more flexible attacks. These modules are used to gather information or reconnaissance on infected systems.",
+  "_meta": {
+    "label": "G0007",
+    "doc_id": "bf4de5918de0",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2016/2016.05.10.tinyPOS_tinyloader/tinyPOS_tinyloader.pdf"
+  }
+}

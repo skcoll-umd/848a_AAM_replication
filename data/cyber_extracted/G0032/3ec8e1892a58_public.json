@@ -1,0 +1,48 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [],
+  "sectors": [
+    "Aerospace",
+    "Defense",
+    "Energy",
+    "Financial",
+    "Government",
+    "Legal",
+    "Manufacturing",
+    "Media",
+    "Mining"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "http",
+      "https",
+      "vpn"
+    ],
+    "tools": [],
+    "domains": [
+      "20guards[.]pdf",
+      "airs[.]com",
+      "foreigna",
+      "iranprimer[.]usip",
+      "tandfonline"
+    ]
+  },
+  "iocs": {
+    "hashes": [],
+    "domains": [
+      "iranprimer.usip.org",
+      "foreigna\u0000airs.com",
+      "tandfonline.com",
+      "airs.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "As described by the Center for Strategic and International Studies in 2015 report: The RGB is a hub of North Korean intelligence, commando, and sabotage operations. The RGB and, prior to 2009 its component parts, have been involved in everything from maritime-inserted commando raids to abductions and spying. Upon discovery the North Korean soldiers engaged in a series of \u0000re\u0000ghts with South Korean forces; 68 South Koreans and three U.S. soldiers were killed.",
+  "_meta": {
+    "label": "G0032",
+    "doc_id": "3ec8e1892a58",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2017/2017.06.15.north-korea-cyber-activity/North Korea Is Not Crazy.pdf"
+  }
+}

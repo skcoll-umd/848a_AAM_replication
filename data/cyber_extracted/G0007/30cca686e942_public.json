@@ -1,0 +1,86 @@
+{
+  "attack_ttp_ids": [
+    "T1005",
+    "T1020",
+    "T1027",
+    "T1041",
+    "T1082",
+    "T1105",
+    "T1132",
+    "T1204",
+    "T1555",
+    "T1566",
+    "T1572"
+  ],
+  "attack_tactic_ids": [
+    "TA0001",
+    "TA0002",
+    "TA0005",
+    "TA0006",
+    "TA0007",
+    "TA0009",
+    "TA0010",
+    "TA0011"
+  ],
+  "attack_tactics": [
+    "Initial Access",
+    "Execution",
+    "Stealth",
+    "Credential Access",
+    "Discovery",
+    "Collection",
+    "Exfiltration",
+    "Command and Control"
+  ],
+  "delivery_vectors": [
+    "document",
+    "email",
+    "phishing",
+    "website"
+  ],
+  "sectors": [
+    "Defense",
+    "Government",
+    "Media",
+    "Technology"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "c2",
+      "command and control",
+      "dns",
+      "https"
+    ],
+    "tools": [],
+    "domains": [
+      "0black[.]workers",
+      "1-10-20-hb44_final[.]exe",
+      "af47[.]fromhell",
+      "bl4ck_s0ul6s5_1d7704b469[.]blacksoul",
+      "bl4ck_s0ul6s5_faac59ebe2[.]blacksoullib",
+      "cloudflare-dns[.]com",
+      "loader[.]reconhellcat",
+      "quointelligence[.]eu",
+      "usrclass[.]data",
+      "usrclass[.]json",
+      "workers[.]dev"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "3be1dd49f01e8b7ddf9af765693690d44356399b9e6043e51d5e13c82194b2a4",
+      "c49cad471a61adb5ea8a6d260887d1dd7f22de75d1143ce2a72828842ef4bb52",
+      "fdd310ce1b4f03a79f7a6eda8df793f4c0718766228a9a0700cf0b5a4ea648e2"
+    ],
+    "domains": [
+      "cloudflare-dns.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "Attribution When we initially discovered ReconHellcat, its campaign characteristics and Tactics, Techniques, and Procedures (TTPs) were unique enough to classify it as a new threat actor. Similarities between ReconHellcat‘s BlackSoul and BlackWater malware: Supports DNS-over-HTTPS (DoH) using cloudflare-dns.com. Essentially, ReconHellcat uses this legitimate document as a decoy.",
+  "_meta": {
+    "label": "G0007",
+    "doc_id": "30cca686e942",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2021/2021.01.05.ReconHellcat_APT_BlackSoul_Malware/quointelligence.eu-ReconHellcat Uses NIST Theme as Lure To Deliver New BlackSoul Malware.pdf"
+  }
+}

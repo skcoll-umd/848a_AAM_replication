@@ -1,0 +1,79 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "email",
+    "phishing"
+  ],
+  "sectors": [
+    "Financial"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "googledrive",
+      "https"
+    ],
+    "tools": [],
+    "domains": [
+      "1driv[.]org",
+      "bcs[.]dll",
+      "blogs[.]jpcert",
+      "chromeupdate[.]publicvm",
+      "clearskysec",
+      "clearskysec[.]com",
+      "cloudfiles[.]club",
+      "drivegoogle[.]publicvm",
+      "drivegooglshare[.]xyz",
+      "explorer[.]exe",
+      "f-secure[.]com",
+      "f-securelabs-tlp-white-lazarus-threat-intel-report2[.]pdf",
+      "googledrive[.]download",
+      "googledrive[.]email",
+      "googledrive[.]network",
+      "googledrive[.]online",
+      "googledrive[.]publicvm",
+      "googleexplore[.]net",
+      "googleupdate[.]publicvm",
+      "lsass[.]exe",
+      "lssvc[.]dll",
+      "mskpupdate[.]publicvm",
+      "msomain[.]sdb",
+      "msupdatepms[.]xyz",
+      "ntuser[.]cat",
+      "onedrivems[.]online",
+      "onedriveupdate[.]publicvm",
+      "or[.]jp",
+      "perflog[.]dat",
+      "scaeve[.]dat",
+      "spear-phishing-against-cryptocurrency-businesses[.]html",
+      "twosigma[.]publicvm",
+      "uploadsfiles[.]xyz",
+      "vb2020-takai-etal[.]pdf",
+      "vblocalhost[.]com"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "8b6887c5ec6fadaefee78f089e9a347a539bcedf52f5827f866a49a1839f8c4b",
+      "d7b8c3c986495a814c9b8bd10d3f5eef",
+      "cd0a391331c1d4268bd622080ba68bce",
+      "db3c54038e0b2db2c058a5e9761e4819",
+      "ee15bec0e9ba39f186d721515efd6a00"
+    ],
+    "domains": [
+      "blogs.jpcert.or.jp",
+      "vblocalhost.com",
+      "labs.f-secure.com",
+      "clearskysec.com",
+      "googleexplore.net"
+    ],
+    "mutexes": []
+  },
+  "narrative": "Injection of malware to process lsass.exe, probably done to dump user passwords and steal data. Injection of malware to process explorer.exe, and potentially to other processes. The following six IOC’s were all found in both the ClearSky and JPCERT/CC papers: Identical IOC's in both ClearSky’s and JPCERT/CC’s researches a9c5355fce2bd42e5cb3cd1fe6c375f1 drivegoogle.publicvm.com googledrive.email googledrive.network googledrive.publicvm.com mskpupdate.publicvm.com 3.",
+  "_meta": {
+    "label": "G0032",
+    "doc_id": "5a0eaa73384b",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2021/2021.05.01.CryptoCore-Lazarus/CryptoCore-Lazarus-Clearsky.pdf"
+  }
+}

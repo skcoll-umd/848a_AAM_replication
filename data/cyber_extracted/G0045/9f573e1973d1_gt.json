@@ -1,0 +1,20 @@
+{
+  "threat_actor": "admin@338",
+  "group_name": "admin@338",
+  "group_id": "G0018",
+  "mitre_intrusion_set": {
+    "id": "intrusion-set--16ade1aa-0ea1-4bb7-88cc-9079df2ae756",
+    "gid": "G0018",
+    "name": "admin@338",
+    "matched_alias": "admin@338"
+  },
+  "malware_family": "PIVY RAT",
+  "campaign_name": null,
+  "attack_ttp_map": {},
+  "technique_to_tactics": {},
+  "_meta": {
+    "label": "G0045",
+    "doc_id": "9f573e1973d1",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2013/2013.08.21.POISON_IVY/rpt-poison-ivy.pdf"
+  }
+}

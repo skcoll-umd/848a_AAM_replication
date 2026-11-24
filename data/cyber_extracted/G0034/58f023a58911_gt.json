@@ -1,0 +1,20 @@
+{
+  "threat_actor": "Sandworm Team",
+  "group_name": "Sandworm Team",
+  "group_id": "G0034",
+  "mitre_intrusion_set": {
+    "id": "intrusion-set--381fcf73-60f6-4ab2-9991-6af3cbc35192",
+    "gid": "G0034",
+    "name": "Sandworm Team",
+    "matched_alias": "electrum"
+  },
+  "malware_family": "Hawkeye Trojan",
+  "campaign_name": "that originates from outside these",
+  "attack_ttp_map": {},
+  "technique_to_tactics": {},
+  "_meta": {
+    "label": "G0034",
+    "doc_id": "58f023a58911",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2016/2016.06.26.Nigerian_Cybercriminals_Target_High_Impact_Industries_in_India/threat-update-nigerian-cybercriminals-target-high-impact-indian-industries-via-pony.pdf"
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "email"
+  ],
+  "sectors": [
+    "Defense",
+    "Financial",
+    "Legal",
+    "Media",
+    "Technology"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "tcp",
+      "udp"
+    ],
+    "tools": [
+      "python"
+    ],
+    "domains": [
+      "crc[.]pyc",
+      "imain[.]bin",
+      "inject[.]bin",
+      "libraries[.]zip",
+      "library[.]zip",
+      "nicholas[.]carr",
+      "sh[.]pyc",
+      "trilog[.]exe",
+      "ts_cnames[.]py",
+      "ts_cnames[.]pyc",
+      "tsbase[.]py",
+      "tsbase[.]pyc",
+      "tshi[.]py",
+      "tshi[.]pyc",
+      "tslow[.]py",
+      "tslow[.]pyc"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "e8542c07b2af63ee7e72ce5d97d91036c5da56e2b091aa2afe737b224305d230",
+      "08c34c6ac9186b61d9f29a77ef5e618067e0bc9fe85cab1ad25dc6049c376949",
+      "5fc4b0076eac7aa7815302b0c3158076e3569086c4c6aa2f71cd258238440d14",
+      "bef59b9a3e00a14956e0cd4a1f3e7524448cbe5d3cc1295d95a15b83a3579c59",
+      "2c1d3d0a9c6f76726994b88589219cb8d9c39dd9924bc8d2d02bf41d955fe326"
+    ],
+    "domains": [],
+    "mutexes": []
+  },
+  "narrative": "If the controller was in a running state, trilog.exe encoded the two payload files inject.bin and imain.bin and passed them to the communication libraries to be appended to the controller’s program memory and execution table. Along with the executable, two binary files, inject.bin (malicious function code) and imain.bin (malicious control logic), were deployed as the controller’s payload. Working with the asset owner, Mandiant ran trilog.exe in a lab environment with a valid Triconex controller and discovered a conditional check in the malware that prevented the payload binary from persisting in the environment.",
+  "_meta": {
+    "label": "G0034",
+    "doc_id": "043e143653af",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2017/2017.12.14.attackers-deploy-new-ics-attack-framework-triton/attackers-deploy-new-ics-attack-framework-triton.html.pdf"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "document",
+    "email",
+    "exploit kit",
+    "phishing",
+    "social media"
+  ],
+  "sectors": [
+    "Defense",
+    "Legal",
+    "Media"
+  ],
+  "infrastructure_hints": {
+    "types": [],
+    "tools": [],
+    "domains": [
+      "adfs-senate[.]email",
+      "adfs-senate[.]services",
+      "adfs[.]senate",
+      "biathlovvorld[.]com",
+      "chmail[.]ir",
+      "fil-luge[.]com",
+      "fisski[.]ca",
+      "iihf[.]eu",
+      "mail-ibu[.]eu",
+      "qov[.]info",
+      "udelivered[.]tk",
+      "webmail-ibsf[.]org"
+    ]
+  },
+  "iocs": {
+    "hashes": [],
+    "domains": [
+      "chmail.ir",
+      "webmail-ibsf.org",
+      "fil-luge.com",
+      "biathlovvorld.com",
+      "fisski.ca"
+    ],
+    "mutexes": []
+  },
+  "narrative": "We were able to collect evidence that credential phishing emails were sent to chmail.ir users on May 18, 2017, just one day before the presidential elections in Iran. Check the infographic While these emails might not seem to be advanced in nature, we’ve seen that credential loss is often the starting point of further attacks that include stealing sensitive data from email inboxes. While a successful influence campaign might seem relatively easy to do, it needs a lot of planning, persistence, and resources to be successful.",
+  "_meta": {
+    "label": "G0007",
+    "doc_id": "e1a1c04b3541",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2018/2018.01.12.update-pawn-storm-new-targets-politically/Pawn_Storm_Update_2018.Jan.pdf"
+  }
+}

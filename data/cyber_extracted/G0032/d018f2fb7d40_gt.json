@@ -1,0 +1,20 @@
+{
+  "threat_actor": "AppleJeus",
+  "group_name": "AppleJeus",
+  "group_id": "G1049",
+  "mitre_intrusion_set": {
+    "id": "intrusion-set--14225573-63b5-4e50-ba9a-5fdcaf6a7b4c",
+    "gid": "G1049",
+    "name": "AppleJeus",
+    "matched_alias": "applejeus"
+  },
+  "malware_family": "human-operated ransomware",
+  "campaign_name": null,
+  "attack_ttp_map": {},
+  "technique_to_tactics": {},
+  "_meta": {
+    "label": "G0032",
+    "doc_id": "d018f2fb7d40",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/Report/ENISA/ETL2020_Incidents_A4.pdf"
+  }
+}

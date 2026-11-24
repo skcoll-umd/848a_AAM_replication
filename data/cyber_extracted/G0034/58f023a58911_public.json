@@ -1,0 +1,74 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "attachment",
+    "email",
+    "malicious attachment",
+    "phishing",
+    "rdp",
+    "social media"
+  ],
+  "sectors": [
+    "Financial",
+    "Government",
+    "Manufacturing",
+    "Media",
+    "Transport"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "c2",
+      "ftp",
+      "http",
+      "imap",
+      "mysql",
+      "pop3",
+      "rdp",
+      "sftp",
+      "smtp"
+    ],
+    "tools": [
+      "ftp",
+      "sftp"
+    ],
+    "domains": [
+      "959[.]html",
+      "config[.]php",
+      "database[.]php",
+      "gmail[.]com",
+      "juxxxxxxxxxxxxxom",
+      "login[.]jsp",
+      "m[.]exxxxxxxxxxxxxomnin",
+      "my[.]fxxxxxxxxxxxxxomgnup",
+      "signin[.]exxxxxxxxxxxxxomsapi",
+      "traclxxxxxx[.]xxxx",
+      "wwwxxxxxxxxxxxxxomm[.]ng",
+      "wwxxxxxxxxxxxxxomos_[.]html",
+      "xxxxxxxxxxxxxom",
+      "xxxxxxxxxxxxxomgin[.]php",
+      "yahoo[.]com"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "9ece0cad4cbfe0cf2524880461d62419ed2dcc5f6531c4f4d0b88b16a8a29890",
+      "0f8995f8ece4ec14d6ad1745ec11987a02585c0e83ffa8f5c752331a16e0a02f",
+      "7009bde544c8cae66301899cd15963698fe78abf31d11b32a0e38028f3472fb9",
+      "6d53538d71e655b22a64e41dd986789fb0f81a0cec528fcfb9c7eff770f64363",
+      "1b7f600c8dbe9683e2e092e12ce6fc9a296e341c4106acfdb9fbf48c018b1fbe"
+    ],
+    "domains": [
+      "gmail.com",
+      "yahoo.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "Examples are listed below (exact URLs obfuscated): h x x p s / / -o nyeb4real@gmail.com:hope@www.maxxxxxxxxxxxxxxxxxxxxxxookmark h x x p s / /. Pony 2.2 Control Panel - 4 Figure 9: Pony 2.2 Control Panel - 5 Armed with ample sets of credentials, the attackers now have access to an enormous amount of sensitive information. By leveraging credential-stealing tools such as Pony and H\u0000awkeye, the attackers are able to gain access to personal and corporate email accounts as well as breaching corporate intranets and VPNs.",
+  "_meta": {
+    "label": "G0034",
+    "doc_id": "58f023a58911",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2016/2016.06.26.Nigerian_Cybercriminals_Target_High_Impact_Industries_in_India/threat-update-nigerian-cybercriminals-target-high-impact-indian-industries-via-pony.pdf"
+  }
+}

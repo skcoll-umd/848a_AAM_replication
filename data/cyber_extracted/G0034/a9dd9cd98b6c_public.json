@@ -1,0 +1,36 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "email",
+    "usb",
+    "website"
+  ],
+  "sectors": [
+    "Energy",
+    "Government"
+  ],
+  "infrastructure_hints": {
+    "types": [],
+    "tools": [],
+    "domains": [
+      "guitshub[.]com",
+      "truecryptrussia[.]ru"
+    ]
+  },
+  "iocs": {
+    "hashes": [],
+    "domains": [
+      "truecryptrussia.ru",
+      "guitshub.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "FakeTC is not, however, merely an infection vector for Potao (and possibly other malware) but a fully functional and [REDACTED_MALWARE] designed to exfiltrate files from the espionage victims’ encrypted drives. We found out that the website truecryptrussia.ru has been serving modified versions of the encryption software that included a backdoor to selected targets. However, perhaps the most attention-grabbing discovery related to this case was when we observed a connection to the popular open-source encryption software, TrueCrypt.",
+  "_meta": {
+    "label": "G0034",
+    "doc_id": "a9dd9cd98b6c",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2015/2015.07.30.Operation-Potao-Express/blog.pdf"
+  }
+}

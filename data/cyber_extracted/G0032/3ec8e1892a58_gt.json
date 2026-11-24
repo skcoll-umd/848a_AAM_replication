@@ -1,0 +1,20 @@
+{
+  "threat_actor": "Lazarus Group",
+  "group_name": "Lazarus Group",
+  "group_id": "G0032",
+  "mitre_intrusion_set": {
+    "id": "intrusion-set--c93fccb1-e8e8-42cf-ae33-2ad1d183913a",
+    "gid": "G0032",
+    "name": "Lazarus Group",
+    "matched_alias": "lazarus group"
+  },
+  "malware_family": "WannaCry ransomware",
+  "campaign_name": null,
+  "attack_ttp_map": {},
+  "technique_to_tactics": {},
+  "_meta": {
+    "label": "G0032",
+    "doc_id": "3ec8e1892a58",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2017/2017.06.15.north-korea-cyber-activity/North Korea Is Not Crazy.pdf"
+  }
+}

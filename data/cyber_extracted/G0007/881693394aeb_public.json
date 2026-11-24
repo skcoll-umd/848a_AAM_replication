@@ -1,0 +1,78 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "phishing",
+    "website"
+  ],
+  "sectors": [
+    "Defense",
+    "Government",
+    "Media"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "https"
+    ],
+    "tools": [],
+    "domains": [
+      "1adx[.]net",
+      "af-army[.]us",
+      "af[.]mil",
+      "afcea[.]org",
+      "afceaint[.]org",
+      "army[.]mil",
+      "ausa[.]info",
+      "ausa[.]org",
+      "ausameetings[.]com",
+      "defenceinform[.]com",
+      "dpko[.]info",
+      "easterview[.]com",
+      "eastreview[.]com",
+      "foreign-review[.]com",
+      "icisleri[.]com",
+      "icisleri[.]gov",
+      "jica[.]go",
+      "jimin-jp[.]biz",
+      "jimin[.]jp",
+      "jp[.]biz",
+      "jp[.]com",
+      "mea-gov[.]in",
+      "mea[.]gov",
+      "mfa-news[.]com",
+      "mia[.]com",
+      "mia[.]gov",
+      "mil[.]dk",
+      "minpal[.]gob",
+      "mofa[.]go",
+      "nevvs[.]org",
+      "ns1[.]afceaint",
+      "ns2[.]afceaint",
+      "rubincenter[.]org",
+      "tib-00003[.]html",
+      "tr",
+      "un[.]org",
+      "unanyc[.]org",
+      "unausanyc[.]com",
+      "webmail[.]mil"
+    ]
+  },
+  "iocs": {
+    "hashes": [],
+    "domains": [
+      "tr1adx.net",
+      "un.org",
+      "unausanyc.com",
+      "unanyc.org",
+      "ausa.org"
+    ],
+    "mutexes": []
+  },
+  "narrative": "Ankara Turkey icisleri.gov.tr legitimate MIA domain: icisleri[.]com 20 (MIA) icisleri.gov.tr (*) Legitimate organization appears to have claimed control over the spoofed/mimicked domain. In a few cases, intel data has been enriched by, derived from, and collected through other non-OSINT means. Domain was hosted on 216.155.143.27, also seen in AFCEA campaign. Seriously?",
+  "_meta": {
+    "label": "G0007",
+    "doc_id": "881693394aeb",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2017/2017.01.15.Bear_Spotting_Vol.1/[tr1adx]_ Intel.pdf"
+  }
+}

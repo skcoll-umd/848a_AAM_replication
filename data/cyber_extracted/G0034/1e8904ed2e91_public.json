@@ -1,0 +1,74 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "document",
+    "website"
+  ],
+  "sectors": [
+    "Energy",
+    "Finance",
+    "Financial",
+    "Media",
+    "Utilities"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "api",
+      "ftp",
+      "http",
+      "tor",
+      "vpn"
+    ],
+    "tools": [
+      "ftp",
+      "mimikatz",
+      "psexec",
+      "python"
+    ],
+    "domains": [
+      "agent[.]bb",
+      "agent[.]bd",
+      "agent[.]be",
+      "api[.]telegram",
+      "bankstat[.]kiev",
+      "capital",
+      "diskcoder[.]petya",
+      "e[.]doc",
+      "filecoder[.]aesni",
+      "filecoder[.]nkh",
+      "investing[.]com",
+      "medoc_online[.]php",
+      "protonmail[.]ch",
+      "psw[.]agent",
+      "readme[.]txt",
+      "riskware[.]mimikatz",
+      "telebot[.]ab",
+      "transfinance[.]com"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "1557e59985faab8ee3630641378d232541a8f6f9",
+      "31098779ce95235fed873ff32bb547fff02ac2f5",
+      "cf7b558726527551cdd94d71f7f21e2757ecd109",
+      "91d955d6ac6264fbd4324db2202f68d097deb241",
+      "dcf47141069aecf6291746d4cdf10a6482f2ee2b"
+    ],
+    "domains": [
+      "transfinance.com.ua",
+      "protonmail.ch",
+      "bankstat.kiev.ua",
+      "agent.be",
+      "investing.com.ua"
+    ],
+    "mutexes": []
+  },
+  "narrative": "Specifically, the malware encrypts only the first 1MB of data and it does not write any header or footer, only raw encrypted data and does not rename encrypted files, so it’s hard to say which files are encrypted and which are not. Mimikatz application C&C servers: transfinance.com[.]ua (IP: 130.185.250.171) bankstat.kiev[.]ua (IP: 82.221.128.27) www.capital­investing.com[.]ua. In addition, the attacker used the following tools: CredRaptor (password stealer) Plainpwd (modified Mimikatz used for recovering Windows credentials from memory) SysInternals’ PsExec (used for lateral movement).",
+  "_meta": {
+    "label": "G0034",
+    "doc_id": "1e8904ed2e91",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2017/2017.06.30.telebots-back-supply-chain/TeleBots are back_ supply-chain attacks against Ukraine.pdf"
+  }
+}

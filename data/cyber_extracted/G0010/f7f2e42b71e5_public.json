@@ -1,0 +1,57 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "usb"
+  ],
+  "sectors": [],
+  "infrastructure_hints": {
+    "types": [
+      "api",
+      "beacon",
+      "c2",
+      "http",
+      "https",
+      "tls"
+    ],
+    "tools": [
+      "cmd"
+    ],
+    "domains": [
+      "cmd[.]exe",
+      "dr[.]web",
+      "explorerframe[.]dll",
+      "geoplugin[.]net",
+      "iea94e3[.]tmp",
+      "ieframe[.]dll",
+      "ip-api[.]com",
+      "json[.]gp",
+      "nis[.]exe",
+      "securelist[.]com",
+      "smss[.]exe",
+      "spideragent[.]exe",
+      "telize[.]com"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "a6afa05cbd04e9af256d278e5b5ad050",
+      "c8e9cead2e084f58a94aedc14d423e1a",
+      "1bb03cbad293ca9ee3ddce6f054fc325"
+    ],
+    "domains": [
+      "securelist.com",
+      "geoplugin.net",
+      "ip-api.com",
+      "telize.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "The module then chooses a process to inject the code into, in order of decreasing priority, starting from Windows (cmd.exe, smss.exe), security-related applications (Symantec’s nis.exe, Dr.Web’s spideragent.exe) and browsers (IE, Opera, Firefox, Yandex browser, Chrome). Command functionality mand dir Send directory content to C2 encrypted with RSA public key from config upl Send file to C2 encrypted with RSA public key from config usb Not implemented yet. First, they bypassed TLS encrypted traffic via PRNG system function patching, and then we observed a unique implementation of C2 communications using uncommon HTTP status codes.",
+  "_meta": {
+    "label": "G0010",
+    "doc_id": "f7f2e42b71e5",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2020/2020.05.14.COMpfun/COMpfun authors spoof visa application with HTTP status-based Trojan _ Securelist.pdf"
+  }
+}

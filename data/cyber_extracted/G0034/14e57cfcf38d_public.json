@@ -1,0 +1,80 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "brute force"
+  ],
+  "sectors": [
+    "Chemical",
+    "Defense",
+    "Energy",
+    "Government",
+    "Media",
+    "Utilities"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "beacon",
+      "c2",
+      "command and control",
+      "http",
+      "https",
+      "proxy",
+      "s3",
+      "tcp",
+      "tor",
+      "udp"
+    ],
+    "tools": [],
+    "domains": [
+      "101[.]dll",
+      "104[.]dll",
+      "61850[.]dll",
+      "61850[.]exe",
+      "configuration[.]ini",
+      "crash101[.]dll",
+      "crash104[.]dll",
+      "crash61850[.]dll",
+      "crashd2multicommservice[.]exe",
+      "crashopcclientdemo[.]dll",
+      "d2multicommservice[.]exe",
+      "dragos",
+      "hash[.]sha",
+      "haslo[.]dat",
+      "haslo[.]exe",
+      "iec104[.]log",
+      "launcher[.]exe",
+      "opc[.]exe",
+      "opcclientdemo[.]dll",
+      "payload[.]dll",
+      "pe[.]characteristics",
+      "pe[.]exports",
+      "sys_bascon[.]com"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "f6c21f8189ced6ae150f9ef2e82a3a57843b587d",
+      "cccce62996d578b984984426a024d9b250237533",
+      "8e39eca1e48240c01ee570631ae8f0c9a9637187",
+      "2cb8230281b86fa944d3043ae906016c8b5984d9",
+      "79ca89711cdaedb16b0ccccfdcfbd6aa7e57120a"
+    ],
+    "domains": [
+      "dragos.com"
+    ],
+    "mutexes": [
+      "value",
+      "name",
+      "Value",
+      "creation"
+    ]
+  },
+  "narrative": "The various protocols purposes are largely the same though: control physical equipment through RTUs, programmable logic controllers (PLCs), and other final control elements via HMIs as a part of the larger SCADA system. Gaining a foothold in the network that had access to numerous components of the ICS while maintaining command and control to Internet locations, positioned it well for espionage. This information authenticates the targeted machine to the command and control (C2) server.",
+  "_meta": {
+    "label": "G0034",
+    "doc_id": "14e57cfcf38d",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2017/2017.06.12.CRASHOVERRIDE/CrashOverride-01.pdf"
+  }
+}

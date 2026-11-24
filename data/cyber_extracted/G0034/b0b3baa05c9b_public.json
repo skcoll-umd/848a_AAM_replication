@@ -1,0 +1,90 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "attachment",
+    "document",
+    "email",
+    "firmware update",
+    "macro",
+    "malicious attachment",
+    "phishing"
+  ],
+  "sectors": [
+    "Defense",
+    "Energy",
+    "Finance",
+    "Government",
+    "Legal",
+    "Media",
+    "Technology",
+    "Telecom",
+    "Utilities"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "api",
+      "c2",
+      "command and control",
+      "http",
+      "https",
+      "ldap",
+      "proxy",
+      "vpn"
+    ],
+    "tools": [],
+    "domains": [
+      "-cert[.]gov",
+      "1937899-russian-hackers-plan-energy-subversion-in-ukraine[.]html",
+      "ce1c739aa046ff6ba00fe8e8a4d857f3[.]app",
+      "cys-centrum[.]com",
+      "digitalbond",
+      "eset",
+      "galcomcomp[.]com",
+      "gov[.]ua",
+      "ics-cert[.]us",
+      "ics[.]sans",
+      "if[.]ua",
+      "index[.]php",
+      "iz-za-hakerskoy-ataki-obestochilo-polovinu-ivano-frankovskoy-oblasti-550406[.]html",
+      "mobile[.]reuters",
+      "money[.]cnn",
+      "mpe[.]kmu",
+      "news[.]finance",
+      "oe",
+      "politicalpistachio[.]blogspot",
+      "pravitelstva-ssha-ukrainy-rassmotryat-otchet-1454113214[.]html",
+      "rbc",
+      "ru[.]tsn",
+      "russian-hackers-take-down-power-grid-in[.]html",
+      "sans",
+      "securelist[.]com",
+      "showarticle[.]php",
+      "story[.]html",
+      "symantec",
+      "ukrinform",
+      "washingtonpost",
+      "youtube"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "ce1c739aa046ff6ba00fe8e8a4d857f3"
+    ],
+    "domains": [
+      "ics.sans.org",
+      "news.finance.ua",
+      "ru.tsn.ua",
+      "oe.if.ua",
+      "ukrinform.net"
+    ],
+    "mutexes": []
+  },
+  "narrative": "Consider using sandboxing technology to evaluate documents and emails coming into the network, using proxy systems to control outbound and inbound communication paths, and limiting workstations to communicate only through the proxy devices by implementing perimeter egress [REDACTED_MALWARE] controls. This ensured that even if 30http://mpe.kmu.gov.ua/minugol/control/uk/publish/article;jsessionid=CE1C739AA046FF6BA00FE8E8A4D857F3.app1?art id=24508688 6&cat id=35109 31. This reconnaissance would 7, multiple types of RTUs and gateways, have needed to include discovering field devices such as the and various industrial switches.",
+  "_meta": {
+    "label": "G0034",
+    "doc_id": "b0b3baa05c9b",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2016/2016.03.18.Analysis_of_the_Cyber_Attack_on_the_Ukrainian_Power_Grid/E-ISAC_SANS_Ukraine_DUC_5.pdf"
+  }
+}

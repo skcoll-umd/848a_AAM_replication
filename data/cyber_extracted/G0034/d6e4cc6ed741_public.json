@@ -1,0 +1,67 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "document",
+    "macro"
+  ],
+  "sectors": [
+    "Energy",
+    "Government",
+    "Healthcare",
+    "Media",
+    "Transport",
+    "Utilities"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "api",
+      "c2",
+      "http",
+      "rpc",
+      "udp"
+    ],
+    "tools": [
+      "cmd",
+      "rundll32"
+    ],
+    "domains": [
+      "cmd[.]exe",
+      "desktop[.]ini",
+      "favicon[.]ico",
+      "fontcache[.]dat",
+      "iexplore[.]exe",
+      "kc074913[.]php",
+      "macro[.]exe",
+      "mail1[.]auditoriavanzada",
+      "mal[.]vbs",
+      "malicious[.]xls",
+      "ntuser[.]log",
+      "packager[.]dll",
+      "packet[.]dll",
+      "rundll32[.]exe",
+      "runndll32[.]exe",
+      "vba_macro[.]exe"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "052ebc9a518e5ae02bbd1bd3a5a86c3560aefc9313c18d81f6670c3430f1d4d4",
+      "07e726b21e27eefb2b2887945aa8bdec116b09dbd4e1a54e1c137ae8c7693660",
+      "f5785842682bc49a69b2cbc3fded56b8b4a73c8fd93e35860ecd1b9a88b9d3d8",
+      "aa67ca4fb712374f5301d1d2bab0ac66107a4df1",
+      "4c424d5c8cfedf8d2164b9f833f7c631f94c5a4c"
+    ],
+    "domains": [],
+    "mutexes": [
+      "shares"
+    ]
+  },
+  "narrative": "Finding portable executable As mentioned above, the main executable being dropped from the Excel Spreadsheet (vba_macro.exe) executes an additional two binaries that it creates: FONTCACHE.DAT and runndll32.exe, then it deletes the original executable (vba_ macro.exe). The file name is a GUID (globally unique identifier) format that is a unique reference number The binary gets executed by the following command from the startup menu lnk: rundll32.exe FONTCACHE.DAT #1. It executes iexplore.exe and will initiate communication with the C2 server.",
+  "_meta": {
+    "label": "G0034",
+    "doc_id": "d6e4cc6ed741",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2016/2016.01.26.BlackEnergy3/BlackEnergy3_WP_012716_1c.pdf"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "document",
+    "email",
+    "phishing",
+    "rdp"
+  ],
+  "sectors": [
+    "Defense",
+    "Healthcare",
+    "Insurance",
+    "Legal",
+    "Technology"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "http",
+      "rdp",
+      "vnc"
+    ],
+    "tools": [
+      "bitsadmin"
+    ],
+    "domains": [
+      "bit[.]ly",
+      "bitsadmin[.]exe",
+      "gate[.]php",
+      "refud[.]me"
+    ]
+  },
+  "iocs": {
+    "hashes": [],
+    "domains": [],
+    "mutexes": []
+  },
+  "narrative": "It can easily bypass firewalls and has long been used by malware to Shutdown of Refud.me and Cryptex Reborn sneak in malicious downloads. Diamond Fox or Gorynych builder After downloading its plugins, Gorynych reports to its server via gate.php using HTTP POST. It continues to spread across small and medium-sized businesses across the globe, using the modular Gorynych/Diamond Fox botnet to exfiltrate stolen data.",
+  "_meta": {
+    "label": "G0007",
+    "doc_id": "45f273f629fc",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2015/2015.12.16.Operation_Black_Atlas/operation-black-atlas-part-2-tools-and-malware-used-and-how-to-detect-them.pdf"
+  }
+}

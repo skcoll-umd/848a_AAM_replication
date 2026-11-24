@@ -1,0 +1,38 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "email",
+    "exploit kit",
+    "malvertising",
+    "phishing"
+  ],
+  "sectors": [
+    "Defense",
+    "Government",
+    "Media",
+    "Technology"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "command and control",
+      "dns"
+    ],
+    "tools": [
+      "powershell"
+    ],
+    "domains": []
+  },
+  "iocs": {
+    "hashes": [],
+    "domains": [],
+    "mutexes": []
+  },
+  "narrative": "The LNK files execute Command Prompt that downloads a PowerShell script, which would either directly drop or reflectively load ChChes into the machine. DNS records also showed that some of their command and control (C&C) servers and domains resolved to the same IP address, or resided in the same subnet. An archive that drops an executable (EXE), a dynamic-link library (DLL), and a binary file (.BIN).",
+  "_meta": {
+    "label": "G0045",
+    "doc_id": "684d33671e25",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2017/2017.07.27.chessmaster-cyber-espionage-campaign/chessmaster-cyber-espionage-campaign.pdf"
+  }
+}

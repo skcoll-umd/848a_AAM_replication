@@ -1,0 +1,20 @@
+{
+  "threat_actor": "APT1",
+  "group_name": "APT1",
+  "group_id": "G0006",
+  "mitre_intrusion_set": {
+    "id": "intrusion-set--6a2e693f-24e5-451a-9f88-b36a108e5662",
+    "gid": "G0006",
+    "name": "APT1",
+    "matched_alias": "apt1"
+  },
+  "malware_family": "ICEFOG Backdoor",
+  "campaign_name": "OnionDog",
+  "attack_ttp_map": {},
+  "technique_to_tactics": {},
+  "_meta": {
+    "label": "G0032",
+    "doc_id": "47a930a8fe5d",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2016/2016.03.08.OnionDog/APT-C-03-en.pdf"
+  }
+}

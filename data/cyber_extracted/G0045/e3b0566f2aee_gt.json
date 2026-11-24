@@ -1,0 +1,20 @@
+{
+  "threat_actor": "menuPass",
+  "group_name": "menuPass",
+  "group_id": "G0045",
+  "mitre_intrusion_set": {
+    "id": "intrusion-set--222fbd21-fc4f-4b7e-9f85-0e6e3a76c33f",
+    "gid": "G0045",
+    "name": "menuPass",
+    "matched_alias": "apt10"
+  },
+  "malware_family": "Dharma ransomware",
+  "campaign_name": null,
+  "attack_ttp_map": {},
+  "technique_to_tactics": {},
+  "_meta": {
+    "label": "G0045",
+    "doc_id": "e3b0566f2aee",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2019/2019.02.25.APT10_Defeating_Compiler_Level/Defeating Compiler-Level Obfuscations Used in APT10 Malware.pdf"
+  }
+}

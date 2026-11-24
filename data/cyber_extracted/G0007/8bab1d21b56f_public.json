@@ -1,0 +1,70 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "document",
+    "email",
+    "phishing",
+    "usb",
+    "website"
+  ],
+  "sectors": [
+    "Energy",
+    "Government"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "http",
+      "proxy",
+      "smtp",
+      "tcp",
+      "tls"
+    ],
+    "tools": [
+      "mimikatz",
+      "powershell",
+      "psexec",
+      "python",
+      "rundll32"
+    ],
+    "domains": [
+      "-google[.]com",
+      "acpi[.]sys",
+      "dnscli1[.]dll",
+      "esetlabs[.]com",
+      "explorer[.]exe",
+      "f1[.]ab",
+      "fsflt[.]pdb",
+      "fsflt[.]sys",
+      "gmail[.]com",
+      "kenlynton[.]com",
+      "linkinfo[.]dll",
+      "login[.]accoounts",
+      "main[.]cpp",
+      "msi[.]dll",
+      "pi[.]log",
+      "rundll32[.]exe",
+      "softwaresupportsv[.]com",
+      "updmanager[.]com",
+      "winload[.]exe"
+    ]
+  },
+  "iocs": {
+    "hashes": [],
+    "domains": [
+      "login.accoounts-google.com",
+      "gmail.com",
+      "kenlynton.com",
+      "softwaresupportsv.com",
+      "updmanager.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "C&C servers Configuration Overview (Decrypted) ('600000', '600000', ‘SERGE-PC…', 'kenlynton.com', 'softwaresupportsv.com', 'mtcf', '10000', '600000', '1', 'updmanager.com', '', '', '', '', '', '', '', '', '', ''). So, WHY such advanced persistence methods for such a simple component? esetlabs.com • Whitepaper coming soon!... (“dans deux mois”) 126.",
+  "_meta": {
+    "label": "G0007",
+    "doc_id": "8bab1d21b56f",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2016/2016.06.21.visiting_the_bear_den_recon_2016_calvet_campos_dupuy/visiting_the_bear_den_recon_2016_calvet_campos_dupuy-1.pdf"
+  }
+}

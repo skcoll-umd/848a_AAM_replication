@@ -1,0 +1,20 @@
+{
+  "threat_actor": "APT34",
+  "group_name": "APT34",
+  "group_id": "G0057",
+  "mitre_intrusion_set": {
+    "id": "intrusion-set--68ba94ab-78b8-43e7-83e2-aed3466882c6",
+    "gid": "G0057",
+    "name": "APT34",
+    "matched_alias": "apt34"
+  },
+  "malware_family": "called Backdoor",
+  "campaign_name": "as recently as July 2019",
+  "attack_ttp_map": {},
+  "technique_to_tactics": {},
+  "_meta": {
+    "label": "G0049",
+    "doc_id": "e33dbf8ce55b",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2019/2019.09.18.Tortoiseshell-APT/Tortoiseshell Group Targets IT Providers in Saudi Arabia in Probable Supply Chain Attacks.pdf"
+  }
+}

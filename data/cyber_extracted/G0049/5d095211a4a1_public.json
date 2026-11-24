@@ -1,0 +1,84 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "document",
+    "email",
+    "macro",
+    "phishing",
+    "website"
+  ],
+  "sectors": [
+    "Defense",
+    "Financial",
+    "Legal",
+    "Mining",
+    "Technology",
+    "Telecom",
+    "Telecommunications"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "beacon",
+      "c2",
+      "command and control",
+      "dns",
+      "http"
+    ],
+    "tools": [
+      "powershell",
+      "schtasks"
+    ],
+    "domains": [
+      "0gie[.]com",
+      "30[.]go",
+      "adbmanager[.]exe",
+      "adbtray[.]exe",
+      "andre[.]serkisian",
+      "certificate[.]ico",
+      "checkgoogle[.]org",
+      "chmail[.]ir",
+      "config[.]txt",
+      "dns[.]ps",
+      "go0gie[.]com",
+      "helminth[.]pdb",
+      "joboffer[.]chm",
+      "joboffer[.]zip",
+      "kernel[.]ws",
+      "kk[.]tmp",
+      "managment[.]lnk",
+      "minfosecu[.]doosan",
+      "mydomain1110[.]com",
+      "mydomain1607[.]com",
+      "mydomain1609[.]com",
+      "sysupdate[.]aspx",
+      "thumb[.]db",
+      "update[.]vbs",
+      "wintrust[.]hlm",
+      "wss[.]run",
+      "yahoo[.]com"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "fb424443ad3e27ef535574cf7e67fbf9054949c48ec19be0b9ddfbfc733f9b07"
+    ],
+    "domains": [
+      "minfosecu.doosan.com",
+      "go0gie.com",
+      "checkgoogle.org",
+      "mydomain1110.com",
+      "mydomain1607.com"
+    ],
+    "mutexes": [
+      "named"
+    ]
+  },
+  "narrative": "The purpose of the Select a Month VBScript is to send network beacons to its command and control server using HTTP requests and will either download a file or run a batch script provided within the HTTP response. The main difference between the beacons sent from the two variants of [REDACTED_MALWARE] is the data included within the beacon, as the script variant does not send any system information within the beacons, whereas the executable version sends system and malware specific information within both the HTTP and DNS beacons. Figure 12 [REDACTED_MALWARE] HTTP C2 beacon [REDACTED_MALWARE] sends data within DNS beacons differently than the HTTP beacons and includes additional information as well.",
+  "_meta": {
+    "label": "G0049",
+    "doc_id": "5d095211a4a1",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2016/2016.05.26.OilRig_Campaign/the-oilrig-campaign-attacks-on-saudi-arabian-organizations-deliver-helminth-backdoor.pdf"
+  }
+}

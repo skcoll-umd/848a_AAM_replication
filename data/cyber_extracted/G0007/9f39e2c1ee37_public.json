@@ -1,0 +1,76 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "document",
+    "email",
+    "macro",
+    "phishing",
+    "website"
+  ],
+  "sectors": [
+    "Chemical",
+    "Financial",
+    "Government"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "c2",
+      "command and control",
+      "http"
+    ],
+    "tools": [
+      "empire",
+      "powershell",
+      "python"
+    ],
+    "domains": [
+      "access[.]log",
+      "admin[.]php",
+      "convergence[.]doc",
+      "corporativ_2018[.]doc",
+      "default[.]php",
+      "e-mail-adressliste_2018[.]doc",
+      "edu[.]br",
+      "error[.]log",
+      "get[.]php",
+      "investigation_file[.]doc",
+      "korporativ[.]doc",
+      "korporativ_2018[.]doc",
+      "main[.]php",
+      "mysent[.]org",
+      "nakaz[.]doc",
+      "nakaz[.]zip",
+      "narpaninew[.]linuxuatwebspiders",
+      "news[.]php",
+      "order[.]doc",
+      "process[.]php",
+      "recommandation[.]doc",
+      "scan-2018-03-13[.]doc",
+      "securelist[.]com"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "ff59cb2b4a198d1e6438e020bb11602bd7d2510d",
+      "0e7b32d23fbd6d62a593c234bafa2311",
+      "9bc365a16c63f25dfddcbe11da042974",
+      "da93e6651c5ba3e3e96f4ae2dd763d94",
+      "e2e102291d259f054625cc85318b7ef5"
+    ],
+    "domains": [
+      "securelist.com",
+      "edu.br",
+      "narpaninew.linuxuatwebspiders.com",
+      "mysent.org"
+    ],
+    "mutexes": []
+  },
+  "narrative": "The obfuscator is using array-based rearranging to mutate original code, and protects all commands and strings such as the command and control (C2) server address. Obfuscated commandline Powershell scriptlet This script disables Powershell script logging to avoid leaving traces: It has an inline implementation of the RC4 routine in Powershell, which is used to decrypt additional payload downloaded from Microsoft OneDrive. Powershell Empire is a post-exploitation free and open-source framework written in Python and Powershell that allows fileless control of the compromised hosts, has modular architecture and relies on encrypted communication.",
+  "_meta": {
+    "label": "G0007",
+    "doc_id": "9f39e2c1ee37",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2018/2018.06.19.olympic-destroyer-is-still-alive/olympic-destroyer.pdf"
+  }
+}

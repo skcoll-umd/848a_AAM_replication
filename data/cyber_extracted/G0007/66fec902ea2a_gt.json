@@ -1,0 +1,20 @@
+{
+  "threat_actor": "Windigo",
+  "group_name": "Windigo",
+  "group_id": "G0124",
+  "mitre_intrusion_set": {
+    "id": "intrusion-set--4e868dad-682d-4897-b8df-2dc98f46c68a",
+    "gid": "G0124",
+    "name": "Windigo",
+    "matched_alias": "windigo"
+  },
+  "malware_family": "Delphi backdoor",
+  "campaign_name": null,
+  "attack_ttp_map": {},
+  "technique_to_tactics": {},
+  "_meta": {
+    "label": "G0007",
+    "doc_id": "66fec902ea2a",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2018/2018.04.24.sednit-update-analysis-zebrocy/sednit-update-analysis-zebrocy_.pdf"
+  }
+}

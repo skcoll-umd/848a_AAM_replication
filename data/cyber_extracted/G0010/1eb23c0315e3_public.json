@@ -1,0 +1,91 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "attachment",
+    "document",
+    "email"
+  ],
+  "sectors": [
+    "Defense",
+    "Government",
+    "Media",
+    "Technology",
+    "Transport"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "api",
+      "http",
+      "https"
+    ],
+    "tools": [
+      "cmd",
+      "empire",
+      "powershell",
+      "regsvr32"
+    ],
+    "domains": [
+      "26cyber[.]html",
+      "admin[.]ch",
+      "an_attachment[.]pdf",
+      "bb756926[.]aspx",
+      "calc[.]exe",
+      "docs[.]microsoft",
+      "eset-gazer[.]pdf",
+      "eset[.]com",
+      "eset_turla_mosquito[.]pdf",
+      "example[.]com",
+      "example[.]net",
+      "exatrack[.]com",
+      "firstname[.]lastname",
+      "flobcsnd[.]dat",
+      "gdatasoftware",
+      "gmx[.]com",
+      "gouv[.]fr",
+      "last_presentation[.]pdf",
+      "mapid[.]tlb",
+      "melani",
+      "msdn[.]microsoft",
+      "nytimes",
+      "olmapi32[.]dll",
+      "politico",
+      "powershell[.]exe",
+      "regsvr32[.]exe",
+      "report_apt_case_ruag[.]html",
+      "ritlabs",
+      "scawrdot[.]db",
+      "sueddeutsche",
+      "tbplugin[.]ini",
+      "theguardian",
+      "turla[.]aw",
+      "turla[.]da",
+      "uroburos_en[.]pdf",
+      "welivesecurity",
+      "yle[.]fi"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "8a7e2399a61ec025c15d06ecdd9b7b37d6245ec2",
+      "f992abe8a67120667a01b88cd5bf11ca39d491a0",
+      "cf943895684c6ff8d1e922a76b71a188cfb371d7",
+      "851dffa6cd611dc70c9a0d5b487ff00bc3853f30"
+    ],
+    "domains": [
+      "nytimes.com",
+      "yle.fi",
+      "melani.admin.ch",
+      "theguardian.com",
+      "sueddeutsche.de"
+    ],
+    "mutexes": []
+  },
+  "narrative": "Execute additional programs and /or Data exfiltration commands • All outgoing emails are forwarded to the • Download additional files attackers. Data, such as files requested via a command of the backdoor, is exfiltrated in specially-crafted PDF documents attached to emails, and commands are also received in PDF attachments. Functions The backdoor implements many different commands, from file exfiltration to execution of commands.",
+  "_meta": {
+    "label": "G0010",
+    "doc_id": "1eb23c0315e3",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2018/2018.08.21.Turla.Outlook.Backdoor/Eset-Turla-Outlook-Backdoor.pdf"
+  }
+}

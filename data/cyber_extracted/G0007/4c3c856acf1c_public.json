@@ -1,0 +1,45 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "document",
+    "email",
+    "exploit kit"
+  ],
+  "sectors": [
+    "Defense",
+    "Energy",
+    "Financial",
+    "Legal",
+    "Media",
+    "Mining"
+  ],
+  "infrastructure_hints": {
+    "types": [],
+    "tools": [],
+    "domains": [
+      "bit[.]ly",
+      "csrss[.]exe",
+      "dimens[.]exe",
+      "lsass[.]exe",
+      "recycle[.]bin",
+      "troj_killdisk[.]iub",
+      "wininit[.]exe",
+      "winlogon[.]exe"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "8a81a1d0fae933862b51f63064069aa5af3854763f5edc29c997964de5e284e5"
+    ],
+    "domains": [],
+    "mutexes": []
+  },
+  "narrative": "With capabilities like web/URL filtering, behavioral analysis, and custom sandboxing, XGen protects against today’s purpose-built threats that bypass traditional controls and exploit known, unknown, or undisclosed vulnerabilities. Trend Micro and NCA Partnership bit.ly/2mHKN8R @TrendMicro about 5 hours ago #FakeBank targets Russian banking apps and can potentially steal funds using intercepted SMS. The ransom note, like in the case of Petya, was a ruse: Because KillDisk overwrites facilitate massive malware attacks, IoT and deletes files (and doesn’t store the encryption keys on disk or online), recovering the scrambled hacks, and operational disruptions.",
+  "_meta": {
+    "label": "G0007",
+    "doc_id": "4c3c856acf1c",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2018/2018.01.15.new-killdisk-variant-hits-financial-organizations-in-latin-america/New_killdisk.pdf"
+  }
+}

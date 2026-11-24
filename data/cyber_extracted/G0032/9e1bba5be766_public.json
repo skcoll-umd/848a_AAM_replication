@@ -1,0 +1,156 @@
+{
+  "attack_ttp_ids": [
+    "T1002",
+    "T1005",
+    "T1012",
+    "T1018",
+    "T1035",
+    "T1036",
+    "T1047",
+    "T1048",
+    "T1050",
+    "T1053",
+    "T1059",
+    "T1070",
+    "T1071",
+    "T1078",
+    "T1082",
+    "T1085",
+    "T1086",
+    "T1087",
+    "T1106",
+    "T1110",
+    "T1114",
+    "T1116",
+    "T1117",
+    "T1140",
+    "T1194",
+    "T1204",
+    "T1220",
+    "T1537"
+  ],
+  "attack_tactic_ids": [
+    "TA0001",
+    "TA0002",
+    "TA0003",
+    "TA0004",
+    "TA0005",
+    "TA0006",
+    "TA0007",
+    "TA0009",
+    "TA0010",
+    "TA0011"
+  ],
+  "attack_tactics": [
+    "Initial Access",
+    "Execution",
+    "Persistence",
+    "Privilege Escalation",
+    "Stealth",
+    "Credential Access",
+    "Discovery",
+    "Collection",
+    "Exfiltration",
+    "Command and Control"
+  ],
+  "delivery_vectors": [
+    "attachment",
+    "brute force",
+    "email",
+    "malicious attachment"
+  ],
+  "sectors": [
+    "Aerospace",
+    "Defense",
+    "Media",
+    "Mining",
+    "Technology",
+    "Utilities"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "api",
+      "beacon",
+      "dns",
+      "dropbox",
+      "http",
+      "https",
+      "proxy",
+      "tcp"
+    ],
+    "tools": [
+      "certutil",
+      "cmd",
+      "powershell",
+      "regsvr32",
+      "rundll32",
+      "schtasks",
+      "wmic"
+    ],
+    "domains": [
+      "apmsgapp[.]exe",
+      "certutil[.]exe",
+      "chuta[.]jp",
+      "cmd[.]exe",
+      "crtutl[.]exe",
+      "ctrutl[.]exe",
+      "ctutl[.]exe",
+      "data[.]length",
+      "delltpadmobile[.]exe",
+      "delltpadrepair[.]exe",
+      "dvdstudiosync[.]exe",
+      "dvdtools[.]exe",
+      "fx[.]rmb",
+      "iconcache[.]db",
+      "inception[.]dll",
+      "intelr[.]lor",
+      "intelv[.]cgi",
+      "job[.]offer",
+      "key[.]length",
+      "ntuser45f7[.]pol",
+      "nvc[.]exe",
+      "nvd[.]exe",
+      "nvdaemon[.]exe",
+      "nve[.]cgb",
+      "nve[.]cgr",
+      "nve[.]cgt",
+      "nve[.]cgy",
+      "nve[.]exe",
+      "nve[.]loe",
+      "nve[.]lom",
+      "nve[.]lop",
+      "onedrive[.]exe",
+      "onedrivesync[.]exe",
+      "politicia[.]asp",
+      "powershell[.]exe",
+      "pwshld3[.]dat",
+      "regsvr32[.]exe",
+      "skype[.]exe",
+      "wmic[.]exe"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "717622361d0c96b753fcde57334119341a1e7691",
+      "a01fbc61448ea1368b276bb34e4de32445ca2076",
+      "1f8cf1746ae7cf7a840fd22e638e51697c336cc8",
+      "40bd2000d545fc1f7eeb6ea4c31a3d0fd39b452e",
+      "68da304dac7f713f7707e6cc849dd5ed587bfcf9"
+    ],
+    "domains": [
+      "chuta.jp"
+    ],
+    "mutexes": [
+      "Local\\NTUSER45F7.POL",
+      "Local\\Microsoft\\OneDrive\\OneDrive.exe",
+      "Local\\Microsoft\\oneDrive\\oneDriveSync.exe",
+      "Local\\IconCache.db7"
+    ]
+  },
+  "narrative": "Indicator Removal on Host Attackers attempt to remove generated artifacts Malware directories and files are named as, or similar to, legitimate software T1036 Masquerading Defense or companies Evasion T1117 Obfuscated Files or Information Malware is heavily obfuscated and delivered in base64-encoded form T1085 Regsvr32. The regsvr32 utility is used to execute malware components T1085 Rundll32. Targeted attacks against European aerospace and military companies TLP: WHITE 3.2.5 Supported commands Table 7 presents the commands supported by the analyzed sample Offset Content 0x00000001 Receive AES key string for module file encryption/decryption, and list initialized classes and modules 0x00000002.",
+  "_meta": {
+    "label": "G0032",
+    "doc_id": "9e1bba5be766",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2020/2020.06.17.Operation_Interception/ESET_Operation_Interception.pdf"
+  }
+}

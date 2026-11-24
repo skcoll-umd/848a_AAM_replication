@@ -1,0 +1,20 @@
+{
+  "threat_actor": "BRONZE BUTLER",
+  "group_name": "BRONZE BUTLER",
+  "group_id": "G0060",
+  "mitre_intrusion_set": {
+    "id": "intrusion-set--93f52415-0fe4-4d3d-896c-fc9b8e88ab90",
+    "gid": "G0060",
+    "name": "BRONZE BUTLER",
+    "matched_alias": "tick"
+  },
+  "malware_family": "server-mode RAT",
+  "campaign_name": "Blockbuster",
+  "attack_ttp_map": {},
+  "technique_to_tactics": {},
+  "_meta": {
+    "label": "G0032",
+    "doc_id": "21266449e326",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2016/2016.02.24.Operation_Blockbuster/Operation-Blockbuster-RAT-and-Staging-Report.pdf"
+  }
+}

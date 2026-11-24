@@ -1,0 +1,89 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "document",
+    "email",
+    "phishing"
+  ],
+  "sectors": [
+    "Energy",
+    "Government",
+    "Media"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "command and control",
+      "http",
+      "https"
+    ],
+    "tools": [],
+    "domains": [
+      "aolnets[.]com",
+      "apt28-sofacy-so-funny[.]html",
+      "apt28[.]pdf",
+      "asus-service[.]net",
+      "blog[.]trendmicro",
+      "bmlv-gv[.]eu",
+      "brnlv-gv[.]eu",
+      "defencereview[.]eu",
+      "defencereview[.]net",
+      "delivery-yahoo[.]com",
+      "enisa-europa[.]com",
+      "enisa-europa[.]org",
+      "europeanda[.]com",
+      "fireeye",
+      "foreignreview[.]com",
+      "globalnewsweekly[.]com",
+      "government-defence-and-energy[.]html",
+      "iacr-tcc[.]org",
+      "intelsupport[.]net",
+      "mediarea[.]org",
+      "militaryobserver[.]net",
+      "nato-hq[.]com",
+      "nato-info[.]com",
+      "nato-int[.]com",
+      "natopress[.]com",
+      "natopress[.]org",
+      "netassistcache[.]com",
+      "osce-military[.]org",
+      "osce-oscc[.]org",
+      "privacy-live[.]com",
+      "privacy-yahoo[.]com",
+      "probable_apt28_useo[.]html",
+      "pwc[.]blogs",
+      "settings-live[.]com",
+      "settings-yahoo[.]com",
+      "softupdates[.]info",
+      "tactical-intelligence-bulletin---sofacy-phishing-[.]pdf",
+      "techcruncln[.]com",
+      "trendmicro",
+      "uk[.]pwc",
+      "virustotal",
+      "webmail[.]westinqhousenuclear",
+      "welivesecurity",
+      "westinqhousenuclear[.]com",
+      "wp-operation-pawn-storm[.]pdf"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "67ecc3b8c6057090c7982883e8d9d0389a8a8f6e8b00f9e9b73c45b008241322"
+    ],
+    "domains": [
+      "blog.trendmicro.com",
+      "fireeye.com",
+      "pwc.blogs.com",
+      "welivesecurity.com",
+      "trendmicro.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "Typically registered domains are employed for phishing and/or malware command and control. Please review our earlier bulletin5 or contact us for further information on analysis, targeting and recommended actions relating to Sofacy’s credential phishing. Please contact us on threatintelligence@uk.pwc.com and we would be happy to send you a TLP- GREEN version of this report containing further indicators that you are welcome to distribute further in line with US-CERT definition for TLP.",
+  "_meta": {
+    "label": "G0007",
+    "doc_id": "98f55c9cf844",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2015/2015.04.20.Sofacy_II/cto-tib-20150420-01a.pdf"
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "usb",
+    "website"
+  ],
+  "sectors": [
+    "Education",
+    "Government",
+    "Media",
+    "Technology"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "command and control",
+      "https",
+      "rpc"
+    ],
+    "tools": [
+      "certutil",
+      "cmd",
+      "meterpreter",
+      "mimikatz",
+      "nbtscan",
+      "powershell",
+      "psexec"
+    ],
+    "domains": [
+      "7234[.]com",
+      "backdoor[.]whisperer",
+      "certutil[.]exe",
+      "cmd[.]exe",
+      "codewizard[.]ml",
+      "counter[.]aspx",
+      "dubaiexpo2020[.]cf",
+      "googleupdate[.]txt",
+      "hacktool[.]mimikatz",
+      "javavs[.]exe",
+      "javaws[.]exe",
+      "markham-travel[.]com",
+      "microsoft[.]updatemeltdownkb",
+      "msfgi[.]exe",
+      "photobased[.]dll",
+      "powershell[.]exe",
+      "securlsa[.]chk",
+      "symantec",
+      "tasklistw[.]exe",
+      "trojan[.]cadanif",
+      "update[.]aspx",
+      "updatenodes[.]site",
+      "vision2030[.]cf",
+      "vision2030[.]tk",
+      "zebra[.]wikaba"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "24fe571f3066045497b1d8316040734c81c71dcb1747f1d7026cda810085fad7",
+      "66893ab83a7d4e298720da28cd2ea4a860371ae938cdd86035ce920b933c9d85",
+      "7942eee31d8cb1c8853ce679f686ee104d359023645c7cb808361df791337145",
+      "7bd3ff9ba43020688acaa05ce4e0a8f92f53d9d9264053255a5937cbd7a5465e",
+      "a1d9f5b9ca7dda631f30bd1220026fc8c3a554d61db09b5030b8eb9d33dc9356"
+    ],
+    "domains": [
+      "microsoft.updatemeltdownkb7234.com",
+      "markham-travel.com",
+      "zebra.wikaba.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "Publicly available tools such as IntelliAdmin to execute RPC commands, SScan and NBTScan for network reconnaissance, PsExec for execution and lateral movement, and Mimikatz (Hacktool.Mimikatz) for credential theft, and Certutil.exe to download and decode remote files. Visual Basic scripts that perform system reconnaissance after initial infection and then send information to Waterbug command and control (C&C) servers. It used Certutil.exe to download files from the repository, which is an application whitelist bypass technique for remote downloads.",
+  "_meta": {
+    "label": "G0010",
+    "doc_id": "99021af3e101",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2019/2019.06.21.Waterbug/Waterbug_ Espionage Group Rolls Out Brand-New Toolset in Attacks Against Governments.pdf"
+  }
+}

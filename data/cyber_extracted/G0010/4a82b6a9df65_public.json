@@ -1,0 +1,48 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [],
+  "sectors": [
+    "Media",
+    "Telecom",
+    "Telecommunications"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "c2",
+      "command and control",
+      "tcp",
+      "udp"
+    ],
+    "tools": [
+      "netstat"
+    ],
+    "domains": [
+      "agent[.]btz",
+      "backdoor[.]linux",
+      "bbc[.]podzone",
+      "circl[.]lu",
+      "news-bbc[.]podzone",
+      "turla[.]gen"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "0994d9deb50352e76b0322f48ee576c6",
+      "14ecd5e6fc8e501037b54ca263896a11",
+      "19fbd8cbfb12482e8020a887d6427315"
+    ],
+    "domains": [
+      "news-bbc.podzone.org",
+      "bbc.podzone.org"
+    ],
+    "mutexes": []
+  },
+  "narrative": "This [REDACTED_ACTOR] cd00r-based malware maintains [REDACTED_MALWARE] without requiring elevated privileges while running arbitrary remote commands. Perhaps the most interesting part here is the unusual command and control mechanism based on TCP/UDP packets, as well as the C&C hostname which fits previously known [REDACTED_ACTOR] activity. The newly discovered [REDACTED_ACTOR] sample is unusual in the fact that it's the first [REDACTED_ACTOR] sample targeting the Linux operating system that we have discovered.",
+  "_meta": {
+    "label": "G0010",
+    "doc_id": "4a82b6a9df65",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2014/2014.12.08.Penquin_Turla/Turla_2_Penquin.pdf"
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "attack_ttp_ids": [
+    "T1001",
+    "T1005",
+    "T1008",
+    "T1012",
+    "T1020",
+    "T1022",
+    "T1024",
+    "T1025",
+    "T1032",
+    "T1039",
+    "T1041",
+    "T1043",
+    "T1047",
+    "T1053",
+    "T1056",
+    "T1057",
+    "T1060",
+    "T1071",
+    "T1074",
+    "T1079",
+    "T1082",
+    "T1083",
+    "T1085",
+    "T1089",
+    "T1107",
+    "T1113",
+    "T1122",
+    "T1132",
+    "T1192",
+    "T1204"
+  ],
+  "attack_tactic_ids": [
+    "TA0001",
+    "TA0002",
+    "TA0003",
+    "TA0004",
+    "TA0005",
+    "TA0006",
+    "TA0007",
+    "TA0009",
+    "TA0010",
+    "TA0011"
+  ],
+  "attack_tactics": [
+    "Initial Access",
+    "Execution",
+    "Persistence",
+    "Privilege Escalation",
+    "Stealth",
+    "Credential Access",
+    "Discovery",
+    "Collection",
+    "Exfiltration",
+    "Command and Control"
+  ],
+  "delivery_vectors": [
+    "document",
+    "email",
+    "phishing"
+  ],
+  "sectors": [
+    "Defense",
+    "Media"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "command and control",
+      "http",
+      "https"
+    ],
+    "tools": [
+      "cmd",
+      "netstat",
+      "rundll32",
+      "wmic"
+    ],
+    "domains": [
+      "97[.]pdf",
+      "account[.]cfn",
+      "cert8[.]db",
+      "hacktool[.]pswdump",
+      "key3[.]db",
+      "key4[.]db",
+      "logins[.]json",
+      "msoffice[.]exe",
+      "mtrcpl[.]dll",
+      "out[.]txt",
+      "psw[.]agent",
+      "rundll32[.]exe",
+      "service-and-action[.]php",
+      "text[.]txt",
+      "trojandownloader[.]sednit",
+      "wand[.]dat",
+      "welivesecurity",
+      "welivesecurity[.]com"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "48f8b152b86bed027b9152725505fbf4a24a39fd",
+      "1e9f40ef81176190e1ed9a0659473b2226c53f57",
+      "bfa26857575c49abb129aac87207f03f2b062e07"
+    ],
+    "domains": [
+      "welivesecurity.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "Moreover, the backdoor contains a list of filenames related to credentials from software listed below (database names): key3.db Firefox private keys (now named key4.db) cert8.db Firefox certificate database logins.json Firefox encrypted password database account.cfn The Bat! Folder T1122 Component Ob‐ COM hijacking for persistence. Drive T1025 Data from Re‐ Enumerates remote and local drives and then ex‐ movable Media filtrates files matching specific extensions.",
+  "_meta": {
+    "label": "G0007",
+    "doc_id": "5ebaa852227a",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2019/2019.05.22.Zebrocy_Land/A journey to Zebrocy land.pdf"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "email",
+    "phishing"
+  ],
+  "sectors": [
+    "Government",
+    "Media"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "beacon",
+      "c2",
+      "dns",
+      "http",
+      "https",
+      "kerberos",
+      "proxy",
+      "sharepoint",
+      "smtp",
+      "ssl",
+      "vpn"
+    ],
+    "tools": [
+      "mimikatz"
+    ],
+    "domains": [
+      "1oo7[.]net",
+      "driversupdate[.]info",
+      "edg6ef885e2[.]tmp",
+      "microsofthelpcenter[.]info",
+      "militaryexponews[.]com",
+      "netids[.]dll"
+    ]
+  },
+  "iocs": {
+    "hashes": [],
+    "domains": [
+      "militaryexponews.com",
+      "1oo7.net"
+    ],
+    "mutexes": []
+  },
+  "narrative": "1oo7.net 5.199.171.58 HTTPS C2 Note: Some of the discovered C2s are in 66.172.12.133 66.172.12.133 Coreshell C2 common with other 45.64.105.23 45.64.105.23. This backdoor is delivered through CORESHELL downloader to gain  system access for reconnaissance, monitoring, credential theft, and shellcode execution. The group uses a complex set of tools and strategies to put a foothold in an  environment and to control and steal interesting data.",
+  "_meta": {
+    "label": "G0007",
+    "doc_id": "507fafa2fa33",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2015/2015.11.04_Evolving_Threats/cct-w08_evolving-threats-dissection-of-a-cyber-espionage-attack.pdf"
+  }
+}

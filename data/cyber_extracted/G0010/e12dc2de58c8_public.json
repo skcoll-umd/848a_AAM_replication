@@ -1,0 +1,36 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "document",
+    "website"
+  ],
+  "sectors": [
+    "Defense",
+    "Government"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "command and control"
+    ],
+    "tools": [],
+    "domains": [
+      "agent[.]btz",
+      "reutersreprints"
+    ]
+  },
+  "iocs": {
+    "hashes": [],
+    "domains": [
+      "reutersreprints.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "Chien said that in some cases when a command and control server was taken offline, [REDACTED_ACTOR]'s operators have quickly pushed out new versions of the malware that directed infected computers to new command and control servers. They have used dozens of different \"command and control\" servers located in countries around the world to control infected systems, according to Symantec, whose researchers have helped identify and shut down some of those systems. Those tools include password stealers, tiny programs for gathering information about the system and document stealers.",
+  "_meta": {
+    "label": "G0010",
+    "doc_id": "e12dc2de58c8",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2014/2014.03.08.Russian_spyware_Turla/Reuters_Turla.pdf"
+  }
+}

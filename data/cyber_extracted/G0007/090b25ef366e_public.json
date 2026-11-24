@@ -1,0 +1,53 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "email",
+    "usb",
+    "website"
+  ],
+  "sectors": [
+    "Energy",
+    "Media"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "api",
+      "c2",
+      "http",
+      "https"
+    ],
+    "tools": [
+      "powershell"
+    ],
+    "domains": [
+      "algorithmics[.]bu",
+      "bs[.]dll",
+      "ccprojectmgr[.]exe",
+      "driver[.]sys",
+      "dstr[.]dll",
+      "favicon[.]ico",
+      "grc[.]dll",
+      "usb[.]dll",
+      "xxxxxxxx[.]pdb"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "8a0a9166cd1bc665d965575d32dfa972",
+      "c4426555b1f04ea7f2e71cf18b0e5b6c",
+      "2cde6f8423e5c01da27316a9d1fe8510",
+      "ee735c244a22b4308ea5d36afee026ab",
+      "0d4de21a2140f0ca3670e406c4a3b6a9"
+    ],
+    "domains": [],
+    "mutexes": []
+  },
+  "narrative": "In these events, the attackers attempted to force the ccprojectmgr.exe process to download and execute a specific BlackEnergy2 payload. The usb plugin collects all available information on connected USB drives, and writes out all of these details to a text file, packs it, provides to the main BlackEnergy code, which communicates to a c2. In all four of these attempts on two different targets, the attackers tried to download their payload from hxxp://94.185.85(dot)122/favicon.ico.",
+  "_meta": {
+    "label": "G0007",
+    "doc_id": "090b25ef366e",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2016/2016.01.28.BlackEnergy_APT/reference/be2-extraordinary-plugins-siemens-targeting-dev-fails.pdf"
+  }
+}

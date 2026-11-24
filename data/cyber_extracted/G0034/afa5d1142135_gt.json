@@ -1,0 +1,20 @@
+{
+  "threat_actor": "Dragonfly",
+  "group_name": "Dragonfly",
+  "group_id": "G0035",
+  "mitre_intrusion_set": {
+    "id": "intrusion-set--1c63d4ec-0a75-4daa-b1df-0d11af3d3cc1",
+    "gid": "G0035",
+    "name": "Dragonfly",
+    "matched_alias": "energetic bear"
+  },
+  "malware_family": "NotPetya ransomware",
+  "campaign_name": "activity",
+  "attack_ttp_map": {},
+  "technique_to_tactics": {},
+  "_meta": {
+    "label": "G0034",
+    "doc_id": "afa5d1142135",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2020/2020.05.29_russian-cyber-attack-campaigns-and-actors/Russian Cyber Attack Campaigns and Actors - Threat Research.pdf"
+  }
+}

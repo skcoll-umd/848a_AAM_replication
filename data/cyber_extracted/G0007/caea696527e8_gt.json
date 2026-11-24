@@ -1,0 +1,20 @@
+{
+  "threat_actor": "Confucius",
+  "group_name": "Confucius",
+  "group_id": "G0142",
+  "mitre_intrusion_set": {
+    "id": "intrusion-set--6eded342-33e5-4451-b6b2-e1c62863129f",
+    "gid": "G0142",
+    "name": "Confucius",
+    "matched_alias": "confucius"
+  },
+  "malware_family": "Komplex Trojan",
+  "campaign_name": null,
+  "attack_ttp_map": {},
+  "technique_to_tactics": {},
+  "_meta": {
+    "label": "G0007",
+    "doc_id": "caea696527e8",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2016/2016.09.26_Sofacy_Komplex_OSX_Trojan/unit42-sofacys-komplex-os-x-trojan.pdf"
+  }
+}

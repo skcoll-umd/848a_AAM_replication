@@ -1,0 +1,20 @@
+{
+  "threat_actor": "Turla",
+  "group_name": "Turla",
+  "group_id": "G0010",
+  "mitre_intrusion_set": {
+    "id": "intrusion-set--7a19ecb1-3c65-4de3-a230-993516aed6a6",
+    "gid": "G0010",
+    "name": "Turla",
+    "matched_alias": "snake"
+  },
+  "malware_family": "sophisticated RAT",
+  "campaign_name": null,
+  "attack_ttp_map": {},
+  "technique_to_tactics": {},
+  "_meta": {
+    "label": "G0010",
+    "doc_id": "9a4b16b7a9dc",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2014/2014.11.11.ComRAT/The_Uroburos_case.pdf"
+  }
+}

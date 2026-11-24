@@ -1,0 +1,49 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "document",
+    "email",
+    "macro",
+    "phishing"
+  ],
+  "sectors": [
+    "Government",
+    "Hospitality",
+    "Legal"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "c2",
+      "command and control",
+      "smb",
+      "udp"
+    ],
+    "tools": [
+      "python"
+    ],
+    "domains": [
+      "hotel_reservation_form[.]doc",
+      "mvband[.]net",
+      "mvtband[.]net"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "9b10685b774a783eabfecdb6119a8aa3",
+      "1421419d1be31f1f9ea60e8ed87277db"
+    ],
+    "domains": [
+      "mvband.net",
+      "mvtband.net"
+    ],
+    "mutexes": []
+  },
+  "narrative": "Once received, Responder masquerades as the sought-out resource and causes the victim computer to send the username and hashed password to the attacker-controlled machine. Cyber espionage activity against the hospitality industry is typically focused on collecting information on or from hotel guests of interest rather than on the hotel industry itself, though actors may also collect information on the hotel as a means of facilitating operations. [REDACTED_ACTOR] is using novel techniques involving the EternalBlue exploit and the open source tool Responder to spread laterally through networks and likely target travelers.",
+  "_meta": {
+    "label": "G0007",
+    "doc_id": "d894a9f7f2a4",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2017/2017.08.11.apt28-targets-hospitality-sector/apt28-targets-hospitality-sector.html.pdf"
+  }
+}

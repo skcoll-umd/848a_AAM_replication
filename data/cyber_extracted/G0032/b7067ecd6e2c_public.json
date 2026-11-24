@@ -1,0 +1,42 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "email"
+  ],
+  "sectors": [
+    "Defense",
+    "Financial",
+    "Mining"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "command and control",
+      "proxy"
+    ],
+    "tools": [],
+    "domains": [
+      "auditcred[.]dll",
+      "bkdr64_binlodr[.]znfj",
+      "bkdr_binlodr[.]znfj",
+      "blog[.]trendmicro",
+      "filetokenbroker[.]dll",
+      "roptimizer[.]dll",
+      "troj_binlodrconf[.]znfj"
+    ]
+  },
+  "iocs": {
+    "hashes": [],
+    "domains": [
+      "blog.trendmicro.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "Our analysis of the backdoors used in the September 2018 attacks show that AuditCred.dll/ROptimizer.dll was similarly used: FileTokenBroker.dll (2017 att AuditCred.dll/Roptimizer.dll (2018 ack) attack). With capabilities like web/URL filtering, behavioral analysis, and custom sandboxing, XGen security protects against today’s threats that bypass traditional controls; exploit known, unknown, or undisclosed vulnerabilities; either steal or encrypt personally identifiable data; or conduct malicious cryptocurrency mining. Once the backdoor is loaded, it will then load the [REDACTED_MALWARE] configuration file Auditcred.dll.mui/rOptimizer.dll.mui to extract the C&C information and connect to it.",
+  "_meta": {
+    "label": "G0032",
+    "doc_id": "b7067ecd6e2c",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2018/2018.11.20.lazarus-in-latin-america/blog.trendmicro.com-Lazarus Continues Heists Mounts Attacks on Financial Organizations in Latin America.pdf"
+  }
+}

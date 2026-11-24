@@ -1,0 +1,110 @@
+{
+  "attack_ttp_ids": [
+    "T1012",
+    "T1036",
+    "T1053.005",
+    "T1057",
+    "T1059.001",
+    "T1070.003",
+    "T1071.001",
+    "T1078",
+    "T1082",
+    "T1132.002",
+    "T1133",
+    "T1210",
+    "T1497.001",
+    "T1574.001",
+    "T1574.002"
+  ],
+  "attack_tactic_ids": [
+    "TA0001",
+    "TA0002",
+    "TA0003",
+    "TA0004",
+    "TA0005",
+    "TA0007",
+    "TA0008",
+    "TA0011"
+  ],
+  "attack_tactics": [
+    "Initial Access",
+    "Execution",
+    "Persistence",
+    "Privilege Escalation",
+    "Stealth",
+    "Discovery",
+    "Lateral Movement",
+    "Command and Control"
+  ],
+  "delivery_vectors": [
+    "email",
+    "phishing"
+  ],
+  "sectors": [
+    "Defense",
+    "Finance",
+    "Manufacturing",
+    "Telecom"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "api",
+      "c2",
+      "http",
+      "https",
+      "vpn",
+      "web protocols"
+    ],
+    "tools": [
+      "cobalt strike",
+      "powershell"
+    ],
+    "domains": [
+      "-coisns[.]com",
+      "c_apo_ipoib6x[.]dll",
+      "ccfipc64[.]dll",
+      "client[.]exe",
+      "jli[.]dll",
+      "microsoft[.]net",
+      "msdtcuiu[.]adi",
+      "msftedit[.]prf",
+      "pcasvc[.]dll",
+      "policytool[.]exe",
+      "rare",
+      "securelist[.]com",
+      "vac[.]dll",
+      "vboxservice[.]exe",
+      "vmtools[.]dll",
+      "vmtoolsd[.]exe",
+      "vmwarehostopen[.]exe",
+      "web_lowtrust[.]config",
+      "wevtutil[.]exe",
+      "wiaky002_cnc1755d[.]dll"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "3b8ce709fc2cee5e7c037a242ac8c84e2e00bd597711093d7c0e85ec68e14a4c",
+      "a04849da674bc8153348301d2ff1103a7537ed2ee55a1588350ededa43ff09f6",
+      "5eb69114b2405a6ea0780b627cd68b86954a596b",
+      "0543bfebff937039e304146c23bbde7693a67f4e",
+      "7e2b9e1f651fa5454d45b974d00512fb"
+    ],
+    "domains": [
+      "securelist.com",
+      "microsoft.net",
+      "rare-coisns.com"
+    ],
+    "mutexes": [
+      "value",
+      "with",
+      "names"
+    ]
+  },
+  "narrative": "Based on these strings, which were removed from the P8RAT samples in August 2020, we speculate that these commands are possibly used to control the intervals of the C2 communication by defining sleep time, reconnect time and reconnect timeout in order to blend C2 communication with normal network traffic of the system. It reads encrypted data from the end of ‘pcasvc.dll’, which is signed using a digital certificate as is the case with ‘vac.dll’. In total we found 10 backdoor commands in all the collected P8RAT samples.",
+  "_meta": {
+    "label": "G0045",
+    "doc_id": "59a7c97f5906",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2021/2021.03.30.APT10/APT10_ sophisticated multi-layered loader Ecipekac discovered in A41APT campaign _ Securelist.pdf"
+  }
+}

@@ -1,0 +1,65 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "document",
+    "email",
+    "phishing"
+  ],
+  "sectors": [
+    "Defense",
+    "Energy",
+    "Financial",
+    "Government",
+    "Legal",
+    "Technology"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "api",
+      "command and control",
+      "http",
+      "https"
+    ],
+    "tools": [],
+    "domains": [
+      "1868[.]vhd",
+      "2020[.]exe",
+      "22-243[.]vhd",
+      "243[.]cb",
+      "243_bio_sinopharm[.]exe",
+      "30-22-243[.]vhd",
+      "3[.]evacuation",
+      "cloud[.]life",
+      "intezer",
+      "intezer[.]com",
+      "letter[.]exe",
+      "letter[.]vhd",
+      "online-service-description[.]php",
+      "support-cloud[.]life",
+      "technology[.]php",
+      "vb[.]net"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "d5d9210ef49c6780016536b0863cc50f6de03f73e70c2af46cc3cff0e2bf9353",
+      "43c65d87d690aea7c515fe84317af40b7e64b350304b0fc958a51d62826feade",
+      "d444fde5885ec1241041d04b3001be17162523d2058ab1a7f88aac50a6059bc0",
+      "f36a0ee7f4ec23765bb28fbfa734e402042278864e246a54b8c4db6f58275662",
+      "61c2e524dcc25a59d7f2fe7eff269865a3ed14d6b40e4fea33b3cd3f58c14f19"
+    ],
+    "domains": [
+      "intezer.com",
+      "vb.net"
+    ],
+    "mutexes": []
+  },
+  "narrative": "Zebrocy operates as a downloader and collects information about the infected host that is uploaded to the command and control (C&C) server before downloading and executing the next stage. It appears that the threat group has now switched from delivering the [REDACTED_MALWARE] downloader to the Go downloader. Zebrocy samples written in AutoIT, C++, C#, [REDACTED_MALWARE], Go, and VB.NET have been discovered by the research community.",
+  "_meta": {
+    "label": "G0007",
+    "doc_id": "9c903c1938aa",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2020/2020.12.09.Sofacy_APT/Russian APT Uses COVID-19 Lures to Deliver Zebrocy - Intezer.pdf"
+  }
+}

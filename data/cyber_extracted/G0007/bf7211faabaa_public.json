@@ -1,0 +1,91 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "exploit kit",
+    "phishing"
+  ],
+  "sectors": [
+    "Aerospace",
+    "Defense",
+    "Government",
+    "Media",
+    "Technology",
+    "Telecom"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "api",
+      "command and control",
+      "ftp",
+      "http",
+      "proxy",
+      "tcp"
+    ],
+    "tools": [
+      "cmd",
+      "ftp",
+      "mimikatz",
+      "nmap",
+      "python",
+      "rundll32"
+    ],
+    "domains": [
+      "1c9[.]xml",
+      "43[.]py",
+      "71[.]ced",
+      "advstoreshell[.]dll",
+      "advstorshell[.]dll",
+      "api-ms-win-downlevel-profile-l1-1-0[.]dll",
+      "backup2[.]pst",
+      "backup[.]pst",
+      "bitdefender",
+      "blog[.]gentilkiwi",
+      "cve-2014-4076[.]pdb",
+      "enterprise[.]bitdefender",
+      "er[.]com",
+      "file[.]csv",
+      "gen_ip[.]py",
+      "kydla[.]dbx",
+      "msc",
+      "ore[.]net",
+      "pr[.]dll",
+      "run[.]exe",
+      "rundll32[.]exe",
+      "runrun[.]exe",
+      "scan-bot-03[.]py",
+      "svehost[.]exe",
+      "te[.]info",
+      "ter[.]info",
+      "tmp[.]dat",
+      "tt[.]ehxee",
+      "vw[.]com",
+      "winloat[.]exe",
+      "xp[.]exe"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "78450806e56b1f224d00455efcd04ce3",
+      "075b6695ab63f36af65f7ffd45cccd39",
+      "f3bf929a35c3f198226b88537d9ccb1a",
+      "2683624eacc490238e98c449bddbb573",
+      "5bf524a4860f3c33e3ad77b6b625db37"
+    ],
+    "domains": [
+      "blog.gentilkiwi.com",
+      "bitdefender.com",
+      "ore.net",
+      "er.com",
+      "vw.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "An additional component is also downloaded (pr.dll) that is a modular component used to upload stolen data to the C&C. First [REDACTED_MALWARE] Dropper (runrun.exe) First [REDACTED_MALWARE] downloader (api-ms-win-downlevel-profile-l1-1-0.dll) Second [REDACTED_MALWARE] dropper (winloat.exe). Its main purpose is to drop a file (api-ms-win-downlevel-profile-l1-1-0.dll) and execute it using rundll32.exe. First, a dropper is executed (winloat.exe) which writes one of the key components of the attack (advstoreshell.dll) to the disk, along with a configuration file (msd).",
+  "_meta": {
+    "label": "G0007",
+    "doc_id": "bf7211faabaa",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2015/2015.12.17.APT28_Under_The_Scope/Bitdefender_In-depth_analysis_of_APT28__The_Political_Cyber-Espionage.pdf"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "email",
+    "macro",
+    "website"
+  ],
+  "sectors": [],
+  "infrastructure_hints": {
+    "types": [
+      "command and control",
+      "dns",
+      "http",
+      "vpn"
+    ],
+    "tools": [
+      "schtasks",
+      "schtasks.exe"
+    ],
+    "domains": [
+      "-careers[.]com",
+      "2016[.]xls",
+      "87pqxz159[.]dockerjsbin",
+      "airline[.]xls",
+      "backdoor[.]cadelspy",
+      "backdoor[.]remexi",
+      "backup[.]vbs",
+      "clearskysec",
+      "clearskysec[.]com",
+      "cv[.]xls",
+      "dne[.]ps",
+      "dns[.]ps",
+      "gcaa_report_series15561[.]chm",
+      "junipersetupclientinstaller[.]exe",
+      "list[.]xls",
+      "ls1[.]doc",
+      "ls2[.]doc",
+      "ls3[.]doc",
+      "ls4[.]do",
+      "main[.]vbs",
+      "offers[.]xls",
+      "oilrig-indicators[.]csv",
+      "oxford",
+      "oxford-careers[.]com",
+      "oxford-employee[.]com",
+      "oxford-symposia[.]com",
+      "oxford[.]in",
+      "oxfordcvcreator[.]exe",
+      "oxfordsymposiumregtool[.]exe",
+      "pic[.]xls",
+      "project_domain_no337[.]chm",
+      "schtasks[.]exe",
+      "survey[.]xls",
+      "tecsupport[.]in",
+      "updater[.]li",
+      "users[.]xls"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "f340c0d841f9d99dbc289151c13391000366631c",
+      "92b8c0872bacdc226b9ce4d783d5ccad61c6158a",
+      "6a65d762fb548d2dc56cfde4842a4d3c",
+      "dcac79d7dc4365c6d742a49244e81fd0",
+      "7fe0cb5edc11861bc4313a6b04aeedb2"
+    ],
+    "domains": [
+      "clearskysec.com",
+      "oxford.in",
+      "oxford-careers.com",
+      "tecsupport.in",
+      "oxford-symposia.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "If the victim downloads and installs the \u0000le, their computer would get infected, while the legitimate VPN software is installed. The legitimate and the malicious installations can be seen in the process tree when the \u0000le is run in a Cuckoo sandbox. payment details from online shops Later, the attackers set up two fake websites pretending to be a University of Oxford conference sign-up Operation DustySky - Part 2 page and a job application website.",
+  "_meta": {
+    "label": "G0049",
+    "doc_id": "d72d9d599db0",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2017/2017.01.05.Iranian_Threat_Agent_OilRig/Iranian Threat Agent OilRig Delivers Digitally Signed Malware, Impersonates University of Oxford _ ClearSky Cybersecurity.pdf"
+  }
+}

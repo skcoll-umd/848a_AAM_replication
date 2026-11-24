@@ -1,0 +1,20 @@
+{
+  "threat_actor": "Darkhotel",
+  "group_name": "Darkhotel",
+  "group_id": "G0012",
+  "mitre_intrusion_set": {
+    "id": "intrusion-set--9e729a7e-0dd6-4097-95bf-db8d64911383",
+    "gid": "G0012",
+    "name": "Darkhotel",
+    "matched_alias": "darkhotel"
+  },
+  "malware_family": null,
+  "campaign_name": null,
+  "attack_ttp_map": {},
+  "technique_to_tactics": {},
+  "_meta": {
+    "label": "G0007",
+    "doc_id": "d894a9f7f2a4",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2017/2017.08.11.apt28-targets-hospitality-sector/apt28-targets-hospitality-sector.html.pdf"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "threat_actor": "APT28",
+  "group_name": "APT28",
+  "group_id": "G0007",
+  "mitre_intrusion_set": {
+    "id": "intrusion-set--bef4c620-0787-42a8-a96d-b7eb6e85917c",
+    "gid": "G0007",
+    "name": "APT28",
+    "matched_alias": "apt28"
+  },
+  "malware_family": "provides backdoor",
+  "campaign_name": null,
+  "attack_ttp_map": {},
+  "technique_to_tactics": {},
+  "_meta": {
+    "label": "G0007",
+    "doc_id": "5b21351ad528",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2018/2018.06.07.dobe-flash-zero-day-targeted-attack/adobe-flash-zero-day-targeted-attack.pdf"
+  }
+}

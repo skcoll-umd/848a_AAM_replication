@@ -1,0 +1,20 @@
+{
+  "threat_actor": "APT3",
+  "group_name": "APT3",
+  "group_id": "G0022",
+  "mitre_intrusion_set": {
+    "id": "intrusion-set--0bbdf25b-30ff-4894-a1cd-49260d0dd2d9",
+    "gid": "G0022",
+    "name": "APT3",
+    "matched_alias": "apt3"
+  },
+  "malware_family": "OPERATIONS",
+  "campaign_name": null,
+  "attack_ttp_map": {},
+  "technique_to_tactics": {},
+  "_meta": {
+    "label": "G0010",
+    "doc_id": "29b220533e2e",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2015/2015.11.17.Pinpointing_Targets_Exploiting_Web_Analytics_to_Ensnare_Victims/rpt-witchcoven.pdf"
+  }
+}

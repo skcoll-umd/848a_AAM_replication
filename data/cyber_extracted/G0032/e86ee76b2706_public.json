@@ -1,0 +1,60 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "email",
+    "rdp"
+  ],
+  "sectors": [],
+  "infrastructure_hints": {
+    "types": [
+      "http",
+      "https",
+      "rdp",
+      "smb",
+      "vnc"
+    ],
+    "tools": [
+      "adfind",
+      "procdump",
+      "wget"
+    ],
+    "domains": [
+      "blogs[.]jpcert",
+      "cybereason",
+      "docs[.]microsoft",
+      "download[.]php",
+      "joeware",
+      "lazarus_tools[.]html",
+      "or[.]jp",
+      "rarlab",
+      "tcpdump",
+      "tightvnc",
+      "xenarmor[.]com"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "cfd201ede3ebc0deb0031983b2bda9fc54e24d244063ed323b0e421a535cff92",
+      "b1102ed4bca6dae6f2f498ade2f73f76af527fa803f0e0b46e100d4cf5150682",
+      "65ddf061178ad68e85a2426caf9cb85dc9acc2e00564b8bcb645c8b515200b67",
+      "da4ad44e8185e561354d29c153c0804c11798f26915274f678db0a51c42fe656",
+      "7dccc776c464a593036c597706016b2c8355d09f9539b28e13a3c4ffcda13de3"
+    ],
+    "domains": [
+      "blogs.jpcert.or.jp",
+      "joeware.net",
+      "xenarmor.com",
+      "rarlab.com",
+      "tightvnc.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "Tool to lead clients https://github.com/lgandx/Responder- Windows with spoof Windows LLMNR, NBT-NS, and WPAD Stealing sensitive data These three tools are used for information theft. Lateral movement These three tools are used for lateral movement. Hidden Cobra, also uses such tools to collect information and spread the infection.",
+  "_meta": {
+    "label": "G0032",
+    "doc_id": "e86ee76b2706",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2021/2021.01.20.Commonly_Known_Tools_Lazarus/Commonly Known Tools Used by Lazarus - JPCERT_CC Eyes _ JPCERT Coordination Center official Blog.pdf"
+  }
+}

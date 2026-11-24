@@ -1,0 +1,74 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "iso"
+  ],
+  "sectors": [],
+  "infrastructure_hints": {
+    "types": [
+      "beacon",
+      "c2",
+      "http",
+      "https",
+      "kerberos",
+      "proxy",
+      "ssl",
+      "tcp",
+      "tls"
+    ],
+    "tools": [
+      "bash",
+      "cmd",
+      "socat"
+    ],
+    "domains": [
+      "-agr[.]com",
+      "360[.]cn",
+      "360[.]com",
+      "areac",
+      "blog[.]netlab",
+      "c_2910[.]cls",
+      "check[.]vm",
+      "hdata[.]dat",
+      "hdv[.]log",
+      "hdv[.]rm",
+      "init[.]pid",
+      "k_3872[.]cls",
+      "ldata[.]dat",
+      "linux[.]dacls",
+      "mdata[.]dat",
+      "public[.]avi",
+      "r[.]vm",
+      "rdata[.]dat",
+      "sdata[.]dat",
+      "thevagabondsatchel[.]com",
+      "win32[.]dacls",
+      "wm64[.]avi",
+      "wowrack[.]com"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "e14724498374cb9b80a77b7bfeb1d1bd342ee139",
+      "80c0efb9e129f7f9b05a783df6959812",
+      "6de65fc57a4428ad7e262e980a7f6cc7",
+      "b578ccf307d55d3267f98349e20ecff1",
+      "a99b7ef095f44cf35453465c64f0c70c"
+    ],
+    "domains": [
+      "thevagabondsatchel.com",
+      "blog.netlab.360.com",
+      "areac-agr.com",
+      "wowrack.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "[REDACTED_MALWARE]，开源程 序Socat，以及Confluence CVE-2019-3396 Payload。所以，我们推测[REDACTED_ACTOR]曾经利⽤ CVE-2019-3396 N-day漏洞传播[REDACTED_MALWARE]程序。 MD5 (check.vm) = a99b7ef095f44cf35453465c64f0c70c //Confluence CVE-2019-3396 Payload MD5 (hdata.dat) = 982bf527b9fe16205fea606d1beed7fa //Log. = e883bf5fd22eb6237eb84d80bbcf2ac9 //Open-Source Socat 逆向分析 样本分析 Log Collector MD5: 982bf527b9fe16205fea606d1beed7fa ELF 64-bit LSB executable, x86-64, version 1 (GNU/Linux), statically linked, no section header 这个样本的功能很简单，它通过运⾏参数指定⽇志搜集接⼝然后收集⽬标主机信息。它会避开扫描 ⼀些指定的根⽬录和⼆. [REDACTED_MALWARE] MD5: 80c0efb9e129f7f9b05a783df6959812 ELF 64-bit LSB executable, x86-64, version 1 (GNU/Linux), statically linked, for GNU/Linux 3.2.0, BuildID[sha1]=e14724498374cb9b80a77b7bfeb1d1bd342ee139, stripped Linux.",
+  "_meta": {
+    "label": "G0032",
+    "doc_id": "ff0a87e81f5f",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2019/2019.12.17.Dacls_RAT/CN_Dacls, the Dual platform RAT.pdf"
+  }
+}

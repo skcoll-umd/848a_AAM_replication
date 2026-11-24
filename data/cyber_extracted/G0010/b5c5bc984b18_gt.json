@@ -1,0 +1,77 @@
+{
+  "threat_actor": "Sandworm Team",
+  "group_name": "Sandworm Team",
+  "group_id": "G0034",
+  "mitre_intrusion_set": {
+    "id": "intrusion-set--381fcf73-60f6-4ab2-9991-6af3cbc35192",
+    "gid": "G0034",
+    "name": "Sandworm Team",
+    "matched_alias": "telebots"
+  },
+  "malware_family": "full-feature backdoor",
+  "campaign_name": null,
+  "attack_ttp_map": {
+    "T1114": "Email Collection",
+    "T1119": "Automated Collection",
+    "T1071": "Application Layer Protocol",
+    "T1005": "Data from Local System",
+    "T1032": "Standard Cryptographic Protocol",
+    "T1029": "Scheduled Transfer",
+    "T1016": "System Network Configuration Discovery",
+    "T1020": "Automated Exfiltration",
+    "T1041": "Exfiltration Over C2 Channel",
+    "T1001": "Data Obfuscation",
+    "T1078": "Valid Accounts",
+    "T1022": "Data Encrypted",
+    "T1086": "PowerShell"
+  },
+  "technique_to_tactics": {
+    "T1114": [
+      "TA0009"
+    ],
+    "T1119": [
+      "TA0009"
+    ],
+    "T1071": [
+      "TA0011"
+    ],
+    "T1005": [
+      "TA0009"
+    ],
+    "T1032": [
+      "TA0011"
+    ],
+    "T1029": [
+      "TA0010"
+    ],
+    "T1016": [
+      "TA0007"
+    ],
+    "T1020": [
+      "TA0010"
+    ],
+    "T1041": [
+      "TA0010"
+    ],
+    "T1001": [
+      "TA0011"
+    ],
+    "T1078": [
+      "TA0001",
+      "TA0003",
+      "TA0004",
+      "TA0005"
+    ],
+    "T1022": [
+      "TA0010"
+    ],
+    "T1086": [
+      "TA0002"
+    ]
+  },
+  "_meta": {
+    "label": "G0010",
+    "doc_id": "b5c5bc984b18",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2019/2019.05.07.Turla_LightNeuron/ESET-LightNeuron.pdf"
+  }
+}

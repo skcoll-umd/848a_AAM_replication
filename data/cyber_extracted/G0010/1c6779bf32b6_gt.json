@@ -1,0 +1,20 @@
+{
+  "threat_actor": "HAFNIUM",
+  "group_name": "HAFNIUM",
+  "group_id": "G0125",
+  "mitre_intrusion_set": {
+    "id": "intrusion-set--2688b13e-8e71-405a-9c40-0dee94bddf87",
+    "gid": "G0125",
+    "name": "HAFNIUM",
+    "matched_alias": "hafnium"
+  },
+  "malware_family": "New backdoor",
+  "campaign_name": null,
+  "attack_ttp_map": {},
+  "technique_to_tactics": {},
+  "_meta": {
+    "label": "G0010",
+    "doc_id": "1c6779bf32b6",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/Report/ESET/eset_threat_report_t12021.pdf"
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "email",
+    "phishing"
+  ],
+  "sectors": [
+    "Defense"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "http"
+    ],
+    "tools": [
+      "ngrok",
+      "powershell"
+    ],
+    "domains": [
+      "-free[.]app",
+      "-stagepayloadfromngrok-free[.]app",
+      "a[.]menmedov",
+      "auf[.]org",
+      "b125[.]ps",
+      "carforsale[.]eml",
+      "coe[.]int",
+      "d287-206-123-149-139[.]ngrok",
+      "diplomatic-car-for-sale-bmw[.]pdf",
+      "diplomatic-car-for-sale-bmw[.]rar",
+      "ec[.]europa",
+      "euro[.]who",
+      "f78ee3005ca9f0e78a9dd136fc69afe7c06d69d1fc6218bc9e7eb3adec045977zip[.]zip",
+      "francophonie[.]org",
+      "gccsg[.]org",
+      "iom[.]int",
+      "ngrok-free[.]app",
+      "outlook[.]com",
+      "payload_1[.]ps",
+      "selec[.]org",
+      "unhcr[.]org",
+      "unicef[.]org",
+      "worldbank[.]org"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "f78ee3005ca9f0e78a9dd136fc69afe7c06d69d1fc6218bc9e7eb3adec045977",
+      "5d6bfb8fd1102273ef489060219293f8da796d07e8b2872efbda55050512b71f",
+      "eec902a61886198a8e48ac862fabeecd628f2fa4122b78a0d7d6ee5c256ae724",
+      "37c619b18ba52956c249551587b955e7b2066b73",
+      "448047b975175cb9c1e8b36036324835a9e9943e"
+    ],
+    "domains": [
+      "gccsg.org",
+      "unhcr.org",
+      "unicef.org",
+      "auf.org",
+      "francophonie.org"
+    ],
+    "mutexes": []
+  },
+  "narrative": "Simultaneously, in the background, a PowerShell script is downloaded and executed from the next-stage payload server. @iom.int InternationalOrganizationforMigration @worldbank.org TheWorldBank @selec.org SoutheastEuropeanLawEnforcementCenter @coe.int CouncilofEurope @euro.who.int WorldHealthOrganizationEuropeanRegion Table.1ListofinternationalorganizationstargetedinAPT29campaign. This clever adaptation allows the adversaries to obfuscate their activities and communicate with compromised systems while evading detection.",
+  "_meta": {
+    "label": "G0016",
+    "doc_id": "1310ac28b979",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2023/2023.11.14.APT29_CVE-2023-38831/APT29 attacks Embassies using CVE-2023-38831 - report en.pdf"
+  }
+}

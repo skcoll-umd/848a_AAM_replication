@@ -1,0 +1,99 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "attachment",
+    "document",
+    "email",
+    "phishing",
+    "usb",
+    "website"
+  ],
+  "sectors": [
+    "Defense",
+    "Energy",
+    "Legal",
+    "Media",
+    "Technology"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "command and control",
+      "http",
+      "https",
+      "vpn"
+    ],
+    "tools": [
+      "cmd"
+    ],
+    "domains": [
+      "-cert[.]gov",
+      "-ip[.]com",
+      "advapi32[.]dll",
+      "blog[.]trendmicro",
+      "category[.]xml",
+      "cert[.]us",
+      "cimcmsafegs[.]exe",
+      "cimwrappnps[.]exe",
+      "cmd[.]exe",
+      "config[.]bak",
+      "cscript[.]exe",
+      "default[.]txt",
+      "devlist[.]cim",
+      "dhs[.]gov",
+      "ge",
+      "hq[.]dhs",
+      "ics-alert-14-281-01[.]yara",
+      "ics-cert[.]us",
+      "imagehlp[.]dll",
+      "industry",
+      "isightpartners",
+      "netapi32[.]dll",
+      "newsfeed[.]xml",
+      "oldaut32[.]dll",
+      "payload[.]cim",
+      "plusvic[.]github",
+      "principles[.]cssp",
+      "psapi[.]dll",
+      "regedt32[.]exe",
+      "shell32[.]dll",
+      "siemens[.]com",
+      "support[.]ge",
+      "us",
+      "user32[.]dll",
+      "version[.]dll",
+      "web[.]nvd",
+      "wininet[.]dll",
+      "ws3_32[.]dll",
+      "yara32[.]exe",
+      "yara64[.]exe",
+      "yara_results[.]txt",
+      "yarac32[.]exe",
+      "yarac64[.]exe"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "865992534620d38b988df10a79a39bb12519f44aee8a56233a58cfb54a48c895",
+      "94ece384cded7e35ca8d600deeea7d59776098f4e459ddab5a94b1f470e59174",
+      "77c657dacac4d737c3791d284ea8c750ff7fffe88d47397e049586a1980710be",
+      "7bfcbafc1b814be1ec337fd653289c073913140325685119445afa471e65eb94",
+      "fddd3831d7026c81cbd189ac567421ab"
+    ],
+    "domains": [
+      "plusvic.github.io",
+      "blog.trendmicro.com",
+      "isightpartners.com",
+      "support.ge-ip.com",
+      "ge.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "However, analysis of the technical findings in the two report shows linkages in the shared command and control infrastructure between the campaigns, suggesting both are part of a broader campaign by the same threat actor. The obfuscated script downloads the file “newsfeed.xml” [REDACTED_MALWARE] the same remote server, which it saves in the Cimplicity directory using the name <41 character string>.wsf. The .wsf script is then executed using the Windows command-based script host (cscript.exe).",
+  "_meta": {
+    "label": "G0034",
+    "doc_id": "107c0c8026e3",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2016/2016.01.28.BlackEnergy_APT/reference/ICS-ALERT-14-281-01B.pdf"
+  }
+}

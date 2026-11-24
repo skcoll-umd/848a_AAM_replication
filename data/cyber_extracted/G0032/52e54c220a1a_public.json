@@ -1,0 +1,57 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "document",
+    "email",
+    "phishing",
+    "social media"
+  ],
+  "sectors": [
+    "Financial",
+    "Government",
+    "Legal",
+    "Media",
+    "Technology"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "command and control",
+      "http",
+      "https"
+    ],
+    "tools": [],
+    "domains": [
+      "baesystems",
+      "baesystems[.]com",
+      "europa[.]eu",
+      "europol",
+      "experian",
+      "fasterpayments",
+      "gov[.]uk",
+      "home[.]treasury",
+      "nationalcrimeagency",
+      "org[.]uk",
+      "rusi[.]org",
+      "virusbulletin"
+    ]
+  },
+  "iocs": {
+    "hashes": [],
+    "domains": [
+      "baesystems.com",
+      "experian.com",
+      "nationalcrimeagency.gov.uk",
+      "virusbulletin.com",
+      "rusi.org"
+    ],
+    "mutexes": []
+  },
+  "narrative": "Someone’s bank account being controlled and taken over by a cyber-criminal / selling control to a cyber- criminal. These front companies and relationships offer a method of laundering the proceeds from a cyber-heist in order to expedite and obfuscate the process of stolen funds being used for nefarious purposes, such as purchasing equipment to bypass sanctions. Threat actors have shown they will persist to seek to find ways around controls, including collaborating between groups where combining their skills will provide the desired reward for each threat actor.",
+  "_meta": {
+    "label": "G0032",
+    "doc_id": "52e54c220a1a",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/Report/2020.09.07_Follow_the_Money/swift_bae_report_Follow-The Money.pdf"
+  }
+}

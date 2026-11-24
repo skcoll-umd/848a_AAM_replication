@@ -1,0 +1,73 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "document",
+    "macro"
+  ],
+  "sectors": [
+    "Defense",
+    "Legal",
+    "Technology"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "c2",
+      "http"
+    ],
+    "tools": [
+      "certutil"
+    ],
+    "domains": [
+      "a[.]ray",
+      "accenture",
+      "accenture[.]com",
+      "algorithm[.]ddnsgeek",
+      "ayrunsc[.]exe",
+      "bart[.]parys",
+      "bnortepkh[.]lnk",
+      "eaahldrej[.]lnk",
+      "firefoxcomt[.]arkouowi",
+      "friendlysupport[.]giize",
+      "gppitemms[.]lnk",
+      "iexplore[.]exe",
+      "index[.]php",
+      "libcef[.]dll",
+      "ptl[.]aym",
+      "ptl[.]dll",
+      "revision[.]doc",
+      "update[.]arkouowi",
+      "yjhdj[.]cab",
+      "zshuvtnctkybgpj[.]txt"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "d956e2ff1b22ccee2c5d9819128103d4c31ecefde3ce463a6dea19ecaaf418a1",
+      "5504e04083d6146a67cb0d671d8ad5885315062c9ee08a62e40e264c2d5eab91",
+      "f6449e255bc1a9d4a02391be35d0dd37def19b7e20cfcc274427a0b39cb21b7b",
+      "db7c1534dede15be08e651784d3a5d2ae41963d192b0f8776701b4b72240c38d",
+      "f9acc706d7bec10f88f9cfbbdf80df0d85331bd4c3c0188e4d002d6929fe4eac"
+    ],
+    "domains": [
+      "firefoxcomt.arkouowi.com",
+      "update.arkouowi.com",
+      "algorithm.ddnsgeek.com",
+      "friendlysupport.giize.com",
+      "accenture.com"
+    ],
+    "mutexes": [
+      "jH10689DS",
+      "rV6880B9",
+      "2N6541mb",
+      "named"
+    ]
+  },
+  "narrative": "However, rather than the original DLL, it only has two imports as the authors have implemented a simple, single-byte XOR obfuscation (using key 0x40) to obfuscate other imports and strings. For persistence, RedLeaves will add a shortcut “.lnk” file in the user’s Startup folder, which points to `AYRUNSC.exe’, as shown in Exhibit 5. Drop the embedded base64-encoded content into a new file, ZsHUvtNctKYbgPj.txt, in the %temp% folder Copyright © 2018 Accenture Security.",
+  "_meta": {
+    "label": "G0045",
+    "doc_id": "31d50b314387",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2018/2018.04.23.HOGFISH_REDLEAVES_CAMPAIGN/Accenture-Hogfish-Threat-Analysis.pdf"
+  }
+}

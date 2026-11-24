@@ -1,0 +1,198 @@
+{
+  "threat_actor": "APT41",
+  "group_name": "APT41",
+  "group_id": "G0096",
+  "mitre_intrusion_set": {
+    "id": "intrusion-set--18854f55-ac7c-4634-bd9a-352dd07613b7",
+    "gid": "G0096",
+    "name": "APT41",
+    "matched_alias": "barium"
+  },
+  "malware_family": "Solorigate backdoor",
+  "campaign_name": null,
+  "attack_ttp_map": {
+    "T1583": "Acquire Infrastructure",
+    "T1014": "Rootkit",
+    "T1543": "Create or Modify System Process",
+    "T1568.002": "Domain Generation Algorithms",
+    "T1071.004": "DNS",
+    "T1587.003": "Digital Certificates",
+    "T1587.001": "Malware",
+    "T1543.003": "Windows Service",
+    "T1553.002": "Code Signing",
+    "T1071": "Application Layer Protocol",
+    "T1005": "Data from Local System",
+    "T1195": "Supply Chain Compromise",
+    "T1583.001": "Domains",
+    "T1036": "Masquerading",
+    "T1497.003": "Time Based Checks",
+    "T1021": "Remote Services",
+    "T1070": "Indicator Removal",
+    "T1583.003": "Virtual Private Server",
+    "T1568": "Dynamic Resolution",
+    "T1036.004": "Masquerade Task or Service",
+    "T1497": "Virtualization/Sandbox Evasion",
+    "T1583.006": "Web Services",
+    "T1057": "Process Discovery",
+    "T1072": "Software Deployment Tools",
+    "T1041": "Exfiltration Over C2 Channel",
+    "T1562.001": "Disable or Modify Tools",
+    "T1078": "Valid Accounts",
+    "T1027": "Obfuscated Files or Information",
+    "T1553": "Subvert Trust Controls",
+    "T1195.002": "Compromise Software Supply Chain",
+    "T1036.003": "Rename Legitimate Utilities",
+    "T1012": "Query Registry",
+    "T1078.002": "Domain Accounts",
+    "T1132": "Data Encoding",
+    "T1569": "System Services",
+    "T1070.004": "File Deletion",
+    "T1071.001": "Web Protocols",
+    "T1543.002": "Systemd Service",
+    "T1587": "Develop Capabilities",
+    "T1569.002": "Service Execution",
+    "T1480.001": "Environmental Keying"
+  },
+  "technique_to_tactics": {
+    "T1583": [
+      "TA0042"
+    ],
+    "T1014": [
+      "TA0005"
+    ],
+    "T1543": [
+      "TA0003",
+      "TA0004"
+    ],
+    "T1568.002": [
+      "TA0011"
+    ],
+    "T1071.004": [
+      "TA0011"
+    ],
+    "T1587.003": [
+      "TA0042"
+    ],
+    "T1587.001": [
+      "TA0042"
+    ],
+    "T1543.003": [
+      "TA0003",
+      "TA0004"
+    ],
+    "T1553.002": [
+      "TA0112"
+    ],
+    "T1071": [
+      "TA0011"
+    ],
+    "T1005": [
+      "TA0009"
+    ],
+    "T1195": [
+      "TA0001"
+    ],
+    "T1583.001": [
+      "TA0042"
+    ],
+    "T1036": [
+      "TA0005"
+    ],
+    "T1497.003": [
+      "TA0005",
+      "TA0007"
+    ],
+    "T1021": [
+      "TA0008"
+    ],
+    "T1070": [
+      "TA0005"
+    ],
+    "T1583.003": [
+      "TA0042"
+    ],
+    "T1568": [
+      "TA0011"
+    ],
+    "T1036.004": [
+      "TA0005"
+    ],
+    "T1497": [
+      "TA0005",
+      "TA0007"
+    ],
+    "T1583.006": [
+      "TA0042"
+    ],
+    "T1057": [
+      "TA0007"
+    ],
+    "T1072": [
+      "TA0002",
+      "TA0008"
+    ],
+    "T1041": [
+      "TA0010"
+    ],
+    "T1562.001": [
+      "TA0005"
+    ],
+    "T1078": [
+      "TA0001",
+      "TA0003",
+      "TA0004",
+      "TA0005"
+    ],
+    "T1027": [
+      "TA0005"
+    ],
+    "T1553": [
+      "TA0112"
+    ],
+    "T1195.002": [
+      "TA0001"
+    ],
+    "T1036.003": [
+      "TA0005"
+    ],
+    "T1012": [
+      "TA0007"
+    ],
+    "T1078.002": [
+      "TA0001",
+      "TA0003",
+      "TA0004",
+      "TA0005"
+    ],
+    "T1132": [
+      "TA0011"
+    ],
+    "T1569": [
+      "TA0002"
+    ],
+    "T1070.004": [
+      "TA0005"
+    ],
+    "T1071.001": [
+      "TA0011"
+    ],
+    "T1543.002": [
+      "TA0003",
+      "TA0004"
+    ],
+    "T1587": [
+      "TA0042"
+    ],
+    "T1569.002": [
+      "TA0002"
+    ],
+    "T1480.001": [
+      "TA0005"
+    ]
+  },
+  "_meta": {
+    "label": "G0016",
+    "doc_id": "e4a570f6c544",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2020/2020.12.30.SolarWinds_Attribution/pov-2020-1230.pdf"
+  }
+}

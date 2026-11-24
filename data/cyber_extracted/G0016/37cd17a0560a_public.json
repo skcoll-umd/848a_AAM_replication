@@ -1,0 +1,30 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [],
+  "sectors": [
+    "Government",
+    "Technology"
+  ],
+  "infrastructure_hints": {
+    "types": [],
+    "tools": [],
+    "domains": [
+      "washingtonpost[.]com"
+    ]
+  },
+  "iocs": {
+    "hashes": [],
+    "domains": [
+      "washingtonpost.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "Russian government hackers penetrated DNC, stole opposition research on Trump Russian government hackers caught in DNC's networks [REDACTED_ACTOR] Video 1:26 RRuussssiiaann ggoovveerrmmeenntt hhaacckkeerrss ppeenneettrraatteedd tthhee. TThhee iinnttrruussiioonn iinnttoo tthhee DDNNCC wwaass oonnee ooff sseevveerraall ttaarrggeettiinngg AAmmeerriiccaann ppoolliittiiccaall oorrggaanniizzaattiioonnss.. BBuutt ddeettaaiillss oonn tthhoossee ccaasseess wweerree nnoott aavvaaiillaabbllee..",
+  "_meta": {
+    "label": "G0016",
+    "doc_id": "37cd17a0560a",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2016/2016.06.16.Threat_Group-4127_Targets_Hillary_Clinton_Presidential_Campaign/cf006cb4-316e-11e6-8ff7-7b6c1998b7a0_story.html.pdf"
+  }
+}

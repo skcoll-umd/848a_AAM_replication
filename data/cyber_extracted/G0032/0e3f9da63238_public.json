@@ -1,0 +1,76 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "email",
+    "iso"
+  ],
+  "sectors": [],
+  "infrastructure_hints": {
+    "types": [
+      "beacon",
+      "c2",
+      "http",
+      "https",
+      "kerberos",
+      "proxy",
+      "ssl",
+      "tcp",
+      "tls"
+    ],
+    "tools": [
+      "bash",
+      "cmd",
+      "socat"
+    ],
+    "domains": [
+      "-agr[.]com",
+      "360[.]com",
+      "agr[.]com",
+      "areac",
+      "blog[.]netlab",
+      "c_2910[.]cls",
+      "check[.]vm",
+      "hdata[.]dat",
+      "hdv[.]log",
+      "hdv[.]rm",
+      "init[.]pid",
+      "k_3872[.]cls",
+      "ldata[.]dat",
+      "linux[.]dacls",
+      "mdata[.]dat",
+      "public[.]avi",
+      "r[.]vm",
+      "rdata[.]dat",
+      "sdata[.]dat",
+      "thevagabondsatchel[.]com",
+      "win32[.]dacls",
+      "wm64[.]avi",
+      "wowrack[.]com"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "e14724498374cb9b80a77b7bfeb1d1bd342ee139",
+      "80c0efb9e129f7f9b05a783df6959812",
+      "6de65fc57a4428ad7e262e980a7f6cc7",
+      "b578ccf307d55d3267f98349e20ecff1",
+      "a99b7ef095f44cf35453465c64f0c70c"
+    ],
+    "domains": [
+      "thevagabondsatchel.com",
+      "blog.netlab.360.com",
+      "areac-agr.com",
+      "agr.com",
+      "wowrack.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "Yes Execute the bash command issued by C2 /bin/bash 0x00010002 Yes Connect to the specified C2 and execute the issued system command plugin_file 0x00010100 Yes Write file plugin_file 0x00010101 Yes Read file plugin_file 0x00010103. When all the work is done, it executes the system tar command to compress the log file tar - cvzf /tmp/hdv.rm /tmp/hdv.log and upload it to the specified log collecting interface. [REDACTED_MALWARE] and C2 communication is mainly divided into three stages, and uses TLS and RC4 double-layer encryption algorithms to ensure data communication security.",
+  "_meta": {
+    "label": "G0032",
+    "doc_id": "0e3f9da63238",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2019/2019.12.17.Dacls_RAT/Dacls, the Dual platform RAT.pdf"
+  }
+}

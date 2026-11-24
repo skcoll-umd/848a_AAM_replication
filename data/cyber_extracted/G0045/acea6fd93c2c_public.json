@@ -1,0 +1,85 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [],
+  "sectors": [
+    "Media"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "c2",
+      "command and control",
+      "https"
+    ],
+    "tools": [],
+    "domains": [
+      "advapi32[.]dll",
+      "batch[.]dll",
+      "blogs[.]blackberry",
+      "cessres[.]dll",
+      "daoris[.]dll",
+      "enabledebugpriv[.]cpp",
+      "engine[.]dll",
+      "entapp[.]dll",
+      "filecopy[.]dll",
+      "globalserif[.]compositefont",
+      "injectcode[.]cpp",
+      "loader2[.]dat",
+      "loader[.]dat",
+      "lsmsvc[.]dll",
+      "math[.]entropy",
+      "microsoft[.]build",
+      "microsoft[.]net",
+      "nphost[.]dll",
+      "ods[.]log",
+      "pe[.]characteristics",
+      "pe[.]dll",
+      "pe[.]exports",
+      "pe[.]imports",
+      "pe[.]section",
+      "pe[.]sections",
+      "phost[.]dll",
+      "prints[.]dll",
+      "q[.]dll",
+      "rdim[.]dll",
+      "readme[.]md",
+      "res[.]dll",
+      "rvc[.]dll",
+      "ssvc[.]dll",
+      "svc[.]dll",
+      "svcdll[.]dll",
+      "t[.]dll",
+      "tk[.]dll",
+      "to[.]dll",
+      "useracc[.]dll",
+      "vc[.]dll",
+      "waservc[.]dll",
+      "zlnsrsvc[.]dll"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "9bbc5b8ad7fb4ce7044a2ced4433bf83b4ccc624a74f8bafb1c5932c76511308",
+      "fe65e5c089f8a09c8a526ae5582aef6530e1139d4a995eb471349de16e76ec71",
+      "cf08dec0b2d1e3badde626dbbc042bc507733e2454ae9a0a7aa256e04af0788d",
+      "cf981bda89f5319a4a30d78e2a767c54dc8075dd2a499ddf79b25f12ec6edd64",
+      "1ddb533be5fa167c9a6fce5d1777690f26f015fcf4bd82efebd0c5c0b1e135f2"
+    ],
+    "domains": [
+      "blogs.blackberry.com",
+      "microsoft.net"
+    ],
+    "mutexes": [
+      "ERveMB6XRx2pmYdoKjMnoN1f",
+      "ABCDEFGHIGKLMNOPQRSTUVWXYZ",
+      "AntiLib\\injectcode"
+    ]
+  },
+  "narrative": "Features Several layers of obfuscation Payload and its immediate loader are .NET assemblies Initial loader uses the CppHostCLR[2] technique to inject and execute the .NET loader assembly Payload encrypted and stored under Microsoft. It can collect system information, download and execute applications, upload files, log keystrokes, grab screenshots/camera captures, retrieve system passwords and run shell commands. README.md from Quasar GitHub repository Behaviour The .NET payload is a heavily obfuscated backdoor based on an open-source remote administration tool called QuasarRAT[3].",
+  "_meta": {
+    "label": "G0045",
+    "doc_id": "acea6fd93c2c",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2019/2019.06.10.MenuPass_QuasarRAT_Backdoor/Threat Spotlight_ MenuPass_QuasarRAT Backdoor.pdf"
+  }
+}

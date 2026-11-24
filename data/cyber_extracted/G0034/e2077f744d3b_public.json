@@ -1,0 +1,85 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "document",
+    "email",
+    "exploit kit",
+    "iso",
+    "macro",
+    "website"
+  ],
+  "sectors": [
+    "Energy",
+    "Financial",
+    "Legal",
+    "Media"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "api",
+      "http",
+      "ldap",
+      "proxy",
+      "smtp"
+    ],
+    "tools": [
+      "cmd",
+      "git",
+      "mimikatz",
+      "psexec",
+      "python"
+    ],
+    "domains": [
+      "agent[.]ad",
+      "agent[.]ae",
+      "agent[.]ao",
+      "agent[.]ap",
+      "agent[.]aq",
+      "api[.]telegram",
+      "explorer[.]exe",
+      "hacktool[.]nethacker",
+      "killdisk[.]nbh",
+      "killdisk[.]nbi",
+      "outlook[.]com",
+      "phost_cnv[.]exe",
+      "phost_win[.]exe",
+      "phost_win_log[.]exe",
+      "pi[.]telegram",
+      "psw[.]agent",
+      "psw[.]delf",
+      "putdrive[.]com",
+      "riskware[.]mimikatz",
+      "smtp-mail[.]outlook",
+      "spy[.]keylogger",
+      "srv70[.]putdrive",
+      "telebot[.]aa",
+      "trojandownloader[.]agent",
+      "trojandropper[.]agent"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "7fc462f1734c09d8d70c6779a4f1a3e6e2a9cc9f",
+      "c361a06e51d2e2cd560f43d4cc9dabe765536179",
+      "f1bf54186c2c64cd104755f247867238c8472504",
+      "16c206d9cfd4c82d6652afb1eebb589a927b041b",
+      "1dc1660677a41b6622b795a1eb5aa5e5118d8f18"
+    ],
+    "domains": [
+      "putdrive.com",
+      "pi.telegram.org",
+      "outlook.com",
+      "agent.ae",
+      "srv70.putdrive.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "The dropped binary belongs to a trojan downloader family, its main purpose being to download and execute another piece of malware. Executes shell command and sends results back to the server !cmdd Executes shell command but does not send result back to the server !dump DecodesBase64 data and saves it to %TEMP% folder ! But what really makes [REDACTED_MALWARE] interesting is the way in which it communicates with attackers in order to receive commands.",
+  "_meta": {
+    "label": "G0034",
+    "doc_id": "e2077f744d3b",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2016/2016.12.13.rise-telebots-analyzing-disruptive-killdisk-attacks/rise-telebots-analyzing-disruptive-killdisk-attacks.pdf"
+  }
+}

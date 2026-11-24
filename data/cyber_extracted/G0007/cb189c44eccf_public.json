@@ -1,0 +1,48 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [],
+  "sectors": [
+    "Aerospace",
+    "Defense"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "api",
+      "ftp",
+      "http",
+      "smtp"
+    ],
+    "tools": [
+      "cmd",
+      "ftp",
+      "nbtscan",
+      "powercat",
+      "powershell"
+    ],
+    "domains": [
+      "cmd[.]exe",
+      "filesystem[.]dll",
+      "processretranslator[.]dll",
+      "splm[.]dll"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "973ff7eb7a5b720c5f6aafe4cd0469d5",
+      "cc9e6578a47182a941a478b276320e06",
+      "452ed4c80c1d20d111a1dbbd99d649d5",
+      "efd8a516820c44ddbf4cc8ed7f30df9c",
+      "ff0e4f31a6b18b676b9518d4a748fed1"
+    ],
+    "domains": [],
+    "mutexes": []
+  },
+  "narrative": "Sofacy attackers had recorded a previous Grey Lambert remote session and replayed the communication after discovering this host, essentially compromising the Grey Lambert module on the system to gain access and later injecting SPLM modules 2. We observe the “retranslator” code, or ProcessRetranslator.dll, currently being delivered to systems without the presence of the previous, large, SPLM code and injection capabilities. Retranslator is already running Retranslator is not running exit command is successful command is unsuccessful SPLM crypto v3 (DNC hack).",
+  "_meta": {
+    "label": "G0007",
+    "doc_id": "cb189c44eccf",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2018/2018.03.09.masha-and-these-bears/masha-and-these-bears.pdf"
+  }
+}

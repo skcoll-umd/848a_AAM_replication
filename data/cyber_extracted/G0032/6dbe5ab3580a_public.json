@@ -1,0 +1,70 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "document",
+    "macro",
+    "phishing"
+  ],
+  "sectors": [
+    "Aerospace",
+    "Defense"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "api",
+      "c2",
+      "command and control",
+      "http",
+      "https"
+    ],
+    "tools": [
+      "mshta"
+    ],
+    "domains": [
+      "blog[.]malwarebytes",
+      "core_module[.]dll",
+      "drops_lnk[.]dll",
+      "explorer[.]exe",
+      "getbaseinfo[.]dll",
+      "lm-career[.]com",
+      "lockheed_martin_jobopportunities[.]docx",
+      "markettrendingcenter[.]com",
+      "member[.]htm",
+      "mshta[.]exe",
+      "readme[.]png",
+      "salary_lockheed_martin_job_opportunities_confidential[.]doc",
+      "stage1_winword[.]dll",
+      "stage2_explorer[.]dll",
+      "stage3_runtimebroker[.]dll",
+      "user32[.]dll",
+      "windowsupdateconf[.]lnk",
+      "winword[.]exe",
+      "wmvcore[.]dll",
+      "wuauclt[.]exe",
+      "wuaueng[.]dll"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "0160375e19e606d06f672be6e43f70fa70093d2a30031affd2929a5c446d07c1",
+      "0d01b24f7666f9bccf0f16ea97e41e0bc26f4c49cdfb7a4dabcc0a494b44ec9b",
+      "4216f63870e2cdfe499d09fce9caa301f9546f60a69c4032cb5fb6d5ceb9af32",
+      "829eceee720b0a3e505efbd3262c387b92abdf46183d51a50489e2b157dac3b1",
+      "f14b1a91ed1ecd365088ba6de5846788f86689c6c2f2182855d5e0954d62af3b"
+    ],
+    "domains": [
+      "blog.malwarebytes.com",
+      "markettrendingcenter.com",
+      "lm-career.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "This DLL can be loaded into memory in two ways: – If drops_lnk.dll loads this DLL into explorer.exe then it loads the core_module.dll and then executes it – If it is being executed from wuauclt.exe, then it retrieves the PID of explorer.exe and injects the core_module.dll into that process. It executes the drops_lnk.dll in the current process and then tries to create the RuntimeBroker process and if successful in creating RuntimeBroker, it injects stage3_runtimebroker.dll into the newly created process. This DLL has embedded inside another DLL which contains the core module (core_module.dll) of this malware responsible for communicating with the Command and Control (C2) server.",
+  "_meta": {
+    "label": "G0032",
+    "doc_id": "6dbe5ab3580a",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2022/2022.01.27.Lazarus_APT/North Korea's Lazarus APT leverages Windows Update client, GitHub in latest campaign _ Malwarebytes Labs.pdf"
+  }
+}

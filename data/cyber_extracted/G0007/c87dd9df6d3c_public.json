@@ -1,0 +1,101 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "document",
+    "email",
+    "macro",
+    "phishing",
+    "social media",
+    "watering-hole",
+    "website"
+  ],
+  "sectors": [
+    "Energy",
+    "Government",
+    "Healthcare",
+    "Legal",
+    "Media",
+    "Real estate",
+    "Technology",
+    "Telecom",
+    "Telecommunications"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "http",
+      "https",
+      "proxy",
+      "tor"
+    ],
+    "tools": [],
+    "domains": [
+      "a43a4d2bc8da[.]html",
+      "auf-kanzleramt-und-bundestag[.]html",
+      "bluecoat",
+      "brian[.]bartholomew",
+      "cbsnews",
+      "cnn",
+      "co[.]uk",
+      "cyb3rc[.]com",
+      "cyberberkut[.]org",
+      "darkreading",
+      "en[.]wikipedia",
+      "equation_group_questions_and_answers[.]pdf",
+      "eromang[.]zataz",
+      "explorer[.]exe",
+      "fbi",
+      "fi",
+      "ft",
+      "guerrero-saade-vb2015[.]pdf",
+      "intelreport[.]mandiant",
+      "juan[.]guerrero",
+      "mandiant_apt1_report[.]pdf",
+      "media[.]kaspersky",
+      "newsweek",
+      "nknews",
+      "orderboxdns[.]com",
+      "portserv[.]sys",
+      "reeye[.]com",
+      "returns[.]pdf",
+      "romanian[.]antihacker",
+      "santafenewmexican",
+      "schneier",
+      "securelist[.]com",
+      "securityweek",
+      "simultaneous_di[.]html",
+      "symantec",
+      "temp[.]hermit",
+      "termport[.]sys",
+      "theregister",
+      "trojan-hastati[.]html",
+      "trojan[.]hastati",
+      "ugly[.]gorilla",
+      "wboc",
+      "welt",
+      "wikisaleaks[.]com",
+      "yandex[.]com",
+      "yemenica[.]com",
+      "yemenica[.]net",
+      "yemenica[.]org"
+    ]
+  },
+  "iocs": {
+    "hashes": [],
+    "domains": [
+      "securelist.com",
+      "schneier.com",
+      "welt.de",
+      "bluecoat.com",
+      "ft.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "87.236.215.13 87.236.215.60 87.236.215.99 87.236.215.102 87.236.215.132 87.236.215.134. The [REDACTED_MALWARE] was injected into processes like explorer.exe and The formidable Duqu was fi rst discovered in 2011 by various browsers. http://www.wboc.com/story/28070058/ osx-pintsized-backdoor-additional-details/. wboc-text-alerts-cyberattacked.",
+  "_meta": {
+    "label": "G0007",
+    "doc_id": "c87dd9df6d3c",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2016/2016.10.05_Wave_Your_False_flag/Bartholomew-GuerreroSaade-VB2016.pdf"
+  }
+}

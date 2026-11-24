@@ -1,0 +1,88 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "website"
+  ],
+  "sectors": [
+    "Media"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "api",
+      "https",
+      "kerberos"
+    ],
+    "tools": [
+      "python"
+    ],
+    "domains": [
+      "advapi32[.]cryptacquirecontexta",
+      "advapi32[.]cryptgenrandom",
+      "advapi32[.]cryptreleasecontext",
+      "csrss[.]exe",
+      "dr[.]web",
+      "hal[.]dll",
+      "kerberos[.]dll",
+      "kernel32[.]basethreadinitthunk",
+      "kernel32[.]deviceiocontrol",
+      "kernel32[.]dll",
+      "kernel32[.]getsystemdirectorya",
+      "kernel32[.]getsystemdirectoryw",
+      "kernel32[.]lzdone",
+      "lsass[.]exe",
+      "msv1_0[.]dll",
+      "msv1_1[.]dll",
+      "ntdll[.]dll",
+      "ntdll[.]ldrlockloaderlock",
+      "ntdll[.]ldrunlockloaderlock",
+      "ntdll[.]rtlentercriticalsection",
+      "ntdll[.]rtlgetversion",
+      "ntdll[.]rtlpctofileheader",
+      "ntdll[.]rtlrbinsertnodeex",
+      "ntdll[.]rtlrbremovenode",
+      "ntdll[.]rtlupcaseunicodechar",
+      "ntdll[.]zwclose",
+      "ntdll[.]zwcreatefile",
+      "ntdll[.]zwcreatesection",
+      "ntdll[.]zwloaddriver",
+      "ntdll[.]zwmapviewofsection",
+      "ntdll[.]zwqueryinformationfile",
+      "ntdll[.]zwquerysysteminformation",
+      "ntdll[.]zwreadfile",
+      "ntdll[.]zwunloaddriver",
+      "ntdll[.]zwunmapviewofsection",
+      "ntdll[.]zwwritefile",
+      "ntkrnlpa[.]exe",
+      "ntoskrnl[.]exe",
+      "pku2u[.]dll",
+      "pku[.]dll",
+      "s[.]dll",
+      "unit42[.]paloaltonetworks",
+      "vboxdrv[.]sys",
+      "wdigest[.]dll",
+      "windigest[.]dll"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "eb30a1822bd6f503f8151cb04bfd315a62fa67dbfe1f573e6fcfd74636ecedd5",
+      "3ef071e0327e7014dd374d96bed023e6c434df6f98cce88a1e7335a667f6749d",
+      "b3166c417d49e94f3d9eab9b1e8ab853b58ba59f734f774b5de75ee631a9b66d",
+      "3ad20ca49a979e5ea4a5e154962e7caff17e4ca4f00bec7f3ab89275fcc8f58c",
+      "003669761229d3e1db0f5a5b333ef62b3dffcc8e27c821ce9018362e0a2df7e9"
+    ],
+    "domains": [],
+    "mutexes": [
+      "Global\\BFE_Event_{xxxxxxxxxxxx",
+      "Global\\{xxxxxxxxxxxx"
+    ]
+  },
+  "narrative": "ZwWriteFile 13 kernel32.GetSystemDirectoryA 14 kernel32.GetSystemDirectoryW 15 kernel32.BaseThreadInitThunk 16 kernel32.LZDone 17 advapi32.CryptAcquireContextA 18 advapi32.CryptGenRandom 19 advapi32.CryptReleaseContext 20 ntdll. You can abuse the SSP interface for malware persistency and also for injection purposes. Since then, this persistence and injection trick has become wider known, but it’s still rarely used in malware.",
+  "_meta": {
+    "label": "G0010",
+    "doc_id": "51937b64e9ee",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2020/2020.06.17.AcidBox/AcidBox_ Rare Malware Repurposing Turla Group Exploit Targeted Russian Organizations.pdf"
+  }
+}

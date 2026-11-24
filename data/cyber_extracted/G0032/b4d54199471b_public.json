@@ -1,0 +1,131 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "document",
+    "drive-by",
+    "email",
+    "macro",
+    "phishing",
+    "website"
+  ],
+  "sectors": [
+    "Aerospace",
+    "Defense",
+    "Finance",
+    "Government",
+    "Media",
+    "Technology"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "api",
+      "c2",
+      "command and control",
+      "http",
+      "https",
+      "proxy",
+      "tls"
+    ],
+    "tools": [
+      "rundll32"
+    ],
+    "domains": [
+      "-aste[.]it",
+      "-ba[.]org",
+      "-cert[.]gov",
+      "-hal-manager[.]doc",
+      "02e319af73a33547343b71d5cb1064bc[.]dotm",
+      "17[.]dotm",
+      "1[.]dotm",
+      "20200302[.]doc",
+      "2020[.]the",
+      "43[.]dotm",
+      "4print[.]com",
+      "61[.]dotm",
+      "83878c91171338902e0fe0fb97a8c47a[.]dotm",
+      "_2020_jd_sde[.]docx",
+      "_aero_gs[.]docx",
+      "_dds_log[.]jpg",
+      "_dss_se[.]docx",
+      "_ecs_epm[.]docx",
+      "_ifg_536r[.]docx",
+      "_jd_2020[.]docx",
+      "_jd_t034519[.]jpg",
+      "_pms[.]docx",
+      "_spectrolab[.]docx",
+      "all200[.]mireene",
+      "anca",
+      "astedams",
+      "batchpdfs[.]asp",
+      "bbc",
+      "co[.]uk",
+      "docs[.]microsoft",
+      "document[.]xml",
+      "downloader[.]bjp",
+      "downloader[.]cxu",
+      "dropper[.]aou",
+      "elite",
+      "elite4print[.]com",
+      "exploit-cve2017-0199[.]ch",
+      "file[.]json",
+      "gated-form[.]html",
+      "jmable[.]mireene",
+      "jmdesign[.]mireene",
+      "justice",
+      "manager[.]doc",
+      "mcafee",
+      "mcafee[.]com",
+      "mfc_dll[.]dll",
+      "mireene[.]com",
+      "ne",
+      "nhpurumy[.]mireene",
+      "od[.]lk",
+      "onenote[.]db",
+      "orblog[.]mireene",
+      "otx[.]alienvault",
+      "pubmaterial[.]dotm",
+      "rundll32[.]exe",
+      "saemaeul[.]mireene",
+      "sanlorenzoyacht",
+      "senior_design_engineer[.]docx",
+      "settings[.]xml",
+      "sgmedia[.]mireene",
+      "test[.]docx",
+      "thumbnail[.]db",
+      "us",
+      "virustotal",
+      "vnext[.]mireene",
+      "web[.]opendrive",
+      "welivesecurity",
+      "wsdts[.]db",
+      "wsuser[.]db"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "bff4d04caeaf8472283906765df34421d657bd631f5562c902e82a3a0177d114",
+      "b76b6bbda8703fa801898f843692ec1968e4b0c90dfae9764404c1a54abf650b",
+      "37a3c01bb5eaf7ecbcfbfde1aab848956d782bb84445384c961edebe8d0e9969",
+      "48b8486979973656a15ca902b7bb973ee5cde9a59e2f3da53c86102d48d7dad8",
+      "322aa22163954ff3ff017014e357b756942a2a762f1c55455c83fd594e844fdd"
+    ],
+    "domains": [
+      "web.opendrive.com",
+      "saemaeul.mireene.com",
+      "mcafee.com",
+      "anca-aste.it",
+      "elite4print.com"
+    ],
+    "mutexes": [
+      "Local\\Microsoft\\Notice\\wsdts.db"
+    ]
+  },
+  "narrative": "For both methods, the implant starts collecting the target information and then contacts the command and control (C2) server We focused our analysis into the DLLs files that are unpacked into the system. Further, both 2019 and 2020 job recruitment campaigns shared the same command and control server hosted at elite4print.com. Using the template injection technique, the adversary puts a link towards the template file in one of the .XML files, for example the link is in settings.xml.rels while the external oleobject load is in document.xml.rels.",
+  "_meta": {
+    "label": "G0032",
+    "doc_id": "b4d54199471b",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2020/2020.07.29.Operation_North_Star/mcafee.com-Operation 노스 스타 North Star A Job Offer Thats Too Good to be True.pdf"
+  }
+}

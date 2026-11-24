@@ -1,0 +1,69 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "email",
+    "website"
+  ],
+  "sectors": [
+    "Education",
+    "Financial",
+    "Government",
+    "Legal",
+    "Media"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "command and control",
+      "http",
+      "https"
+    ],
+    "tools": [
+      "cmd",
+      "python"
+    ],
+    "domains": [
+      "2fresearchcenter[.]paloaltonetworks",
+      "appcmd[.]exe",
+      "autofocus[.]paloaltonetworks",
+      "bb757040[.]aspx",
+      "connect[.]paloaltonetworks",
+      "facebook",
+      "httpparser[.]dll",
+      "ignite[.]paloaltonetworks",
+      "iishandler6[.]dll",
+      "linkedin",
+      "msdn[.]microsoft",
+      "paloaltonetworks",
+      "reddit",
+      "researchcenter[.]paloaltonetworks",
+      "rgdoor[.]gen",
+      "sharer[.]php",
+      "technet[.]microsoft",
+      "test[.]txt",
+      "traffichandler[.]dll",
+      "unit42[.]rgdoor"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "497e6965120a7ca6644da9b8291c65901e78d302139d221fcf0a3ec6c5cf9de3",
+      "a9c92b29ee05c1522715c7a2f9c543740b60e36373cb47b5620b1f3d8ad96bfa"
+    ],
+    "domains": [
+      "researchcenter.paloaltonetworks.com",
+      "msdn.microsoft.com",
+      "technet.microsoft.com",
+      "autofocus.paloaltonetworks.com",
+      "paloaltonetworks.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "Uploading a file to server via RGDoor Downloading a file from the server via RGDoor Figure 6 shows our testing of the download command within RGDoor, specifically a command “download$c:⧵windows⧵temp⧵test.txt” that downloads the file uploaded in our previous test. This backdoor has a rather limited set of commands, however, the three commands provide plenty of functionality for a competent backdoor, as they allow an actor to upload and download files to the sever, as well as run commands via command prompt. Command Description cmd$[command to Uses “popen” to run the specified execute] command.",
+  "_meta": {
+    "label": "G0049",
+    "doc_id": "61400775dd97",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2018/2018.01.25.oilrig_Middle_East/unit42-oilrig-uses-rgdoor-iis-backdoor-targets-middle-east.pdf"
+  }
+}

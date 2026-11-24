@@ -1,0 +1,20 @@
+{
+  "threat_actor": "APT28",
+  "group_name": "APT28",
+  "group_id": "G0007",
+  "mitre_intrusion_set": {
+    "id": "intrusion-set--bef4c620-0787-42a8-a96d-b7eb6e85917c",
+    "gid": "G0007",
+    "name": "APT28",
+    "matched_alias": "sednit"
+  },
+  "malware_family": "Nigerian Cuckoo Miner Campaign",
+  "campaign_name": null,
+  "attack_ttp_map": {},
+  "technique_to_tactics": {},
+  "_meta": {
+    "label": "G0007",
+    "doc_id": "75b0f3997ae4",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2015/2015.07.14.How_Pawn_Storm_Java_Zero-Day_Was_Used/an-in-depth-look-at-how-pawn-storms-java-zero-day-was-used.pdf"
+  }
+}

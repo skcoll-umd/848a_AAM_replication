@@ -1,0 +1,20 @@
+{
+  "threat_actor": "Dragonfly",
+  "group_name": "Dragonfly",
+  "group_id": "G0035",
+  "mitre_intrusion_set": {
+    "id": "intrusion-set--1c63d4ec-0a75-4daa-b1df-0d11af3d3cc1",
+    "gid": "G0035",
+    "name": "Dragonfly",
+    "matched_alias": "dragonfly"
+  },
+  "malware_family": null,
+  "campaign_name": null,
+  "attack_ttp_map": {},
+  "technique_to_tactics": {},
+  "_meta": {
+    "label": "G0045",
+    "doc_id": "bfdf40f76696",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/Report/2019.01.07.APT_chronicles_december_2018_edition/The APT Chronicles_December 2018nbspedition.pdf"
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "document",
+    "email",
+    "phishing"
+  ],
+  "sectors": [
+    "Defense",
+    "Energy",
+    "Government",
+    "Media"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "api",
+      "http",
+      "https"
+    ],
+    "tools": [
+      "rundll32"
+    ],
+    "domains": [
+      "acpi[.]sys",
+      "apisvcd[.]dll",
+      "apivscd[.]dll",
+      "apt28-a-window-into-russias-cyber-espionage-operations[.]html",
+      "ba_3_nov_2015[.]pdf",
+      "ba_3_nov_2015[.]pif",
+      "bk[.]exe",
+      "cf006cb4-316e-11e6-8ff7-7b6c1998b7a0_story[.]html",
+      "crowdstrike",
+      "digitaldefense",
+      "dnscli1[.]dll",
+      "dnshlp[.]dll",
+      "en[.]wikipedia",
+      "eset",
+      "eset[.]com",
+      "explorer[.]exe",
+      "explorer_install_shell[.]exe",
+      "extended[.]ini",
+      "fireeye",
+      "fs6na[.]exe",
+      "fsflt[.]pdb",
+      "fsflt[.]sys",
+      "greyhathacker",
+      "ibsensoftware[.]com",
+      "inst32[.]exe",
+      "install_com_x32_ll_full[.]dll",
+      "intelmeserver[.]com",
+      "kb0004542[.]exe",
+      "msdn[.]microsoft",
+      "ose000000[.]exe",
+      "passthrough[.]sys",
+      "pinlt[.]ini",
+      "products_aplib[.]html",
+      "reuters",
+      "rootkit[.]agent",
+      "rundll32[.]exe",
+      "securelist[.]com",
+      "sednit[.]az",
+      "sednit[.]ba",
+      "sednit[.]bb",
+      "serviceinstall[.]exe",
+      "serviceinstallx32[.]exe",
+      "sfpa",
+      "shcore[.]dll",
+      "syscfg[.]exe",
+      "sysprep[.]exe",
+      "technet[.]microsoft",
+      "the_evolution_of_tdl[.]pdf",
+      "trendmicro",
+      "userinit[.]exe",
+      "vb2014-rodionovmatrosov[.]pdf",
+      "virusbtn",
+      "virusradar",
+      "washingtonpost",
+      "welivesecurity",
+      "winload[.]exe",
+      "winuproll[.]exe",
+      "winxp1[.]exe",
+      "wsj",
+      "x32[.]exe"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "1cc2b6b208b7687763659aeb5dcb76c5c2fbbf26",
+      "49acba812894444c634b034962d46f986e0257cf",
+      "4c9c7c4fd83edaf7ec80687a7a957826de038dd7",
+      "4f92d364ce871c1aebbf3c5d2445c296ef535632",
+      "516ec3584073a1c05c0d909b8b6c15ecb10933f1"
+    ],
+    "domains": [
+      "washingtonpost.com",
+      "wsj.com",
+      "reuters.com",
+      "virusradar.com",
+      "welivesecurity.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "Case 4 Dropper Helper (serviceinstall.exe) (dnshlp.dll) UAC bypass Downdelph (dnscli1.dll) Registry-based persistence Helper Decoy document Case 6 (explorer_install_shell.exe) (EU_Eastern_ Dropper Europe_agenda_ (fs6na.exe) BA_3_Nov_2015.pdf). Downdelph UAC bypass (userinit.exe) Case 7 Downdelph Dropper (apisvcd.dll) (EU_Eastern_ Europe_agenda_ Cleaner BA_3_Nov_2015.pif) (ose000000.exe) Files shown in the same color serve the same Helper purpose (winUproll.exe) Figure 4. Case 5 Bootkit installer Dropper Bootkit installer Case 1 (bk.exe) (syscfg.exe) (bk.exe) Dropper UAC bypass (unknown name).",
+  "_meta": {
+    "label": "G0007",
+    "doc_id": "9a4e8d91545a",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2016/2016.10.27.En_Route_Part3/eset-sednit-part3.pdf"
+  }
+}

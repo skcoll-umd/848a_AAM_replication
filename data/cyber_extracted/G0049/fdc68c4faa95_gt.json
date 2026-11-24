@@ -1,0 +1,20 @@
+{
+  "threat_actor": "APT34",
+  "group_name": "APT34",
+  "group_id": "G0057",
+  "mitre_intrusion_set": {
+    "id": "intrusion-set--68ba94ab-78b8-43e7-83e2-aed3466882c6",
+    "gid": "G0057",
+    "name": "APT34",
+    "matched_alias": "apt34"
+  },
+  "malware_family": null,
+  "campaign_name": null,
+  "attack_ttp_map": {},
+  "technique_to_tactics": {},
+  "_meta": {
+    "label": "G0049",
+    "doc_id": "fdc68c4faa95",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2020/2020.03.02_APT34_MAILDROPPER/apt34-aka-oilrig-attacks-lebanon-government-entities-with-maildropper-implant.pdf"
+  }
+}

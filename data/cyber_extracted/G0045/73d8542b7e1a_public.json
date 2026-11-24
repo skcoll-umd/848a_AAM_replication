@@ -1,0 +1,79 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "document",
+    "email",
+    "phishing",
+    "social media",
+    "supply chain"
+  ],
+  "sectors": [
+    "Aerospace",
+    "Defense",
+    "Education",
+    "Government",
+    "Healthcare",
+    "Media",
+    "Technology",
+    "Telecom",
+    "Telecommunications",
+    "Transport"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "c2",
+      "http",
+      "https"
+    ],
+    "tools": [],
+    "domains": [
+      "1046720364336588899[.]html",
+      "146035392[.]html",
+      "20110600157934[.]shtml",
+      "223614321[.]html",
+      "288[.]htm",
+      "51cto[.]com",
+      "801f81cf-8f30-4aa4-8428-7f9d4e778e76[.]doc",
+      "alumni[.]ecnu",
+      "bjgwql[.]com",
+      "crowdstrike[.]com",
+      "djbh",
+      "edu[.]cn",
+      "foxmail[.]com",
+      "gov[.]cn",
+      "info80642[.]htm",
+      "job-001-607-536[.]html",
+      "kjbz[.]mca",
+      "lcx[.]exe",
+      "leveltestorgaction[.]do",
+      "recordedfuture",
+      "rjzyjsxy[.]zzia",
+      "vip[.]qq",
+      "xiaohong[.]org",
+      "yahoo[.]com",
+      "yingjiesheng",
+      "zhidao[.]baidu"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "402885cb35d11a540135d168e41e000c"
+    ],
+    "domains": [
+      "kjbz.mca.gov.cn",
+      "bjgwql.com",
+      "alumni.ecnu.edu.cn",
+      "down.51cto.com",
+      "djbh.net"
+    ],
+    "mutexes": []
+  },
+  "narrative": "Though the detente saw an initial drop in Chinese intrusion activity, it has steadily been increasing over the past several years, with a majority of the intrusions into western firms being conducted by suspected contractors. Though CrowdStrike® Falcon Intelligence™ is currently unable to confirm all of the details provided in these most recent posts with a high degree of confidence, several key pieces of information can be verified. Several of the named individuals have been active registering domains as recently as June 2018, and they responded to the IntrusionTruth blog posts by scrubbing their social media or by following IntrusionTruth’s Twitter account.",
+  "_meta": {
+    "label": "G0045",
+    "doc_id": "73d8542b7e1a",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2018/2018.08.30.Stone_Panda/Two Birds One STONE PANDA.pdf"
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "attack_ttp_ids": [
+    "T1041",
+    "T1056.001",
+    "T1071.001",
+    "T1071.003",
+    "T1113",
+    "T1125",
+    "T1132",
+    "T1140",
+    "T1204",
+    "T1547",
+    "T1562.001",
+    "T1564",
+    "T1566"
+  ],
+  "attack_tactic_ids": [
+    "TA0001",
+    "TA0002",
+    "TA0003",
+    "TA0004",
+    "TA0005",
+    "TA0006",
+    "TA0009",
+    "TA0010",
+    "TA0011"
+  ],
+  "attack_tactics": [
+    "Initial Access",
+    "Execution",
+    "Persistence",
+    "Privilege Escalation",
+    "Stealth",
+    "Credential Access",
+    "Collection",
+    "Exfiltration",
+    "Command and Control"
+  ],
+  "delivery_vectors": [
+    "attachment",
+    "document",
+    "email",
+    "macro",
+    "phishing",
+    "rdp"
+  ],
+  "sectors": [
+    "Defense",
+    "Energy",
+    "Manufacturing",
+    "Media",
+    "Transport"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "c2",
+      "command and control",
+      "https",
+      "rdp",
+      "smtp"
+    ],
+    "tools": [],
+    "domains": [
+      "-global[.]com",
+      "8owwkrfq0gqokt9[.]exe",
+      "aba-online[.]org",
+      "almoosa-oam[.]com",
+      "amzcomplete[.]de",
+      "babygrowmemories[.]co",
+      "beanboom[.]cn",
+      "berolahraga[.]com",
+      "bers[.]com",
+      "biyou[.]packing",
+      "c21affiliated[.]com",
+      "cahya[.]lesmana",
+      "cannabispropertybrokers[.]com",
+      "colchoeslowcost[.]pt",
+      "dledcardetails[.]pt",
+      "dombotenisz[.]hu",
+      "fisicalmente[.]it",
+      "ghrc-bk[.]org",
+      "globalelektrindo[.]com",
+      "hello[.]global",
+      "hfsr88[.]com",
+      "hitechpeopleinc[.]com",
+      "itcmanagementsolutions[.]com",
+      "loanabank[.]com",
+      "mail[.]bestelectricpanels",
+      "mail[.]dledcardetails",
+      "mail[.]loanabank",
+      "makbes[.]com",
+      "mchepuko[.]com",
+      "milanmandiri[.]com",
+      "monthly-threat-report-october-2020[.]pdf",
+      "msa[.]hinet",
+      "muarainternusa[.]com",
+      "negotiation[.]doc",
+      "nscmhmedicalcentre[.]com",
+      "ognnews[.]com",
+      "opw-global[.]com",
+      "opwes[.]insidesales",
+      "poptateseatery[.]com",
+      "samucongresos[.]es",
+      "sean[.]barker",
+      "smtp[.]opw",
+      "telsy",
+      "telsy[.]com",
+      "yeah[.]net"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "7007f35df3292a4ecd741839fc2dafde471538041e54cfc24207d9f49016dc77",
+      "cda07296d20a239bdb9cb5a2c9a814f69811bc85ced8bf32e998b906a413f416",
+      "d9335a58ec7d9016258640393f0cedf4a574ae6bf9e262772ac0b21be1b3f160",
+      "25b747c5b79774e91f72f07b81819b9d1548d958247b81a72dca223cda2182b0",
+      "168cddae42f300dbf9a398a79ed28f7d18d35791b02f13b14509e4a8c23b5a9b"
+    ],
+    "domains": [
+      "cannabispropertybrokers.com",
+      "ognnews.com",
+      "mail.loanabank.com",
+      "mail.dledcardetails.pt",
+      "smtp.opw-global.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "and Control Command and control (C2) information is encoded using a standard data encoding system T1056.001 Collection Threat actor may log user keystrokes to intercept credentials as the user types them. Adversaries may communicate using application layer protocols associated with web traffic to Command and Control T1071.001 avoid detection/network filtering by blending in with existing traffic. This means that once executed the malware is able to record keystrokes, to collect user clipboard data, to get screenshots from the victim machine and to send all to the attacker command and control.",
+  "_meta": {
+    "label": "G0049",
+    "doc_id": "3c099623031f",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2020/2020.12.03.Adversary_Tracking_Report/ATR_82599-1.pdf"
+  }
+}

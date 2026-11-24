@@ -1,0 +1,76 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "attachment",
+    "email",
+    "phishing",
+    "watering hole",
+    "watering-hole",
+    "website"
+  ],
+  "sectors": [
+    "Aerospace",
+    "Agriculture",
+    "Defense",
+    "Education",
+    "Energy",
+    "Financial",
+    "Government",
+    "Healthcare",
+    "Hospitality",
+    "Legal",
+    "Manufacturing",
+    "Media",
+    "Retail",
+    "Technology",
+    "Telecom",
+    "Transport",
+    "Utilities"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "http",
+      "https",
+      "tor"
+    ],
+    "tools": [],
+    "domains": [
+      "877[.]fireeye",
+      "browser-uniqueness[.]pdf",
+      "fireeye",
+      "fireeye[.]com",
+      "flashcritic[.]com",
+      "index[.]php",
+      "operation-clandestine-wolf-adobe-flash-zero-day[.]html",
+      "panopticlick[.]eff",
+      "pinlady",
+      "probable_apt28_useo[.]html",
+      "reports[.]html",
+      "securelist[.]com",
+      "sp[.]pt",
+      "symantec",
+      "waterbug-attack-group[.]pdf"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "634438a50ae1990c4f8636801c410460"
+    ],
+    "domains": [
+      "pinlady.net",
+      "panopticlick.eff.org",
+      "fireeye.com",
+      "securelist.com",
+      "flashcritic.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "Using evercookie in particular implies that the actors wanted to ensure that visitors could be identified and tracked persistently over time, without having to worry about users enabling private browsing or deleting persistent cookies. evercookie is designed to create “extremely persistent range of storage mechanisms) or “zombie cookies” cookies” on a user’s computer by: (because they may be recreated after deletion). http://www.symantec.com/content/en/us/enterprise/media/security_response/whitepapers/waterbug-attack-group.pdf.",
+  "_meta": {
+    "label": "G0010",
+    "doc_id": "29b220533e2e",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2015/2015.11.17.Pinpointing_Targets_Exploiting_Web_Analytics_to_Ensnare_Victims/rpt-witchcoven.pdf"
+  }
+}

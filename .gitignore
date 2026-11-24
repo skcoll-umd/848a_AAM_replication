@@ -8,3 +8,7 @@ data/raw/
 results/
 *.csv
 !data/siqa_sample.csv
+!data/prepared.csv
+!data/prepared_test.csv
+!data/cyber_pairs.csv
+data/enterprise-attack.json

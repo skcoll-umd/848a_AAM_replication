@@ -1,0 +1,66 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "document",
+    "email",
+    "phishing",
+    "website"
+  ],
+  "sectors": [
+    "Aerospace",
+    "Legal",
+    "Mining"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "beacon",
+      "c2",
+      "command and control",
+      "http"
+    ],
+    "tools": [],
+    "domains": [
+      "0[.]dtd",
+      "2025[.]pdf",
+      "apple",
+      "apple-iclouds[.]net",
+      "appleupdate[.]org",
+      "com[.]apple",
+      "google",
+      "helper[.]net",
+      "itunes-helper[.]net",
+      "main[.]mm",
+      "preview[.]app",
+      "roskosmos_2015-2025[.]app",
+      "roskosmos_2015-2025[.]pdf",
+      "sofacy[.]gen",
+      "start[.]sh",
+      "updates[.]plist"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "2a06f142d87bd9b66621a30088683d6fcec019ba5cc9e5793e54f8d920ab0134",
+      "c1b8fc00d815e777e39f34a520342d1942ebd29695c9453951a988c61875bcd7",
+      "cffa1d9fc336a1ad89af90443b15c98b71e679aeb03b3a68a5e9c3e7ecabc3d4",
+      "96a19a90caa41406b632a2046f3a39b5579fbf730aca2357f84bf23f2cbc1fd3",
+      "227b7fe495ad9951aebf0aae3c317c1ac526cdd255953f111341b0b11be3bbc5"
+    ],
+    "domains": [
+      "apple.com",
+      "appleupdate.org",
+      "apple-iclouds.net",
+      "helper.net",
+      "itunes-helper.net"
+    ],
+    "mutexes": []
+  },
+  "narrative": "Figure 5 Contents of the com.apple.updates.plist file showing how the dropper achieves persistence The ultimate purpose of the aforementioned components is to install and execute the [REDACTED_MALWARE] payload. In addition to shared code and functionality, we also discovered [REDACTED_MALWARE] command Business Email and control (C2) domains that overlapped with previously identified phishing campaign infrastructures associated with the Sofacy group. The shell script saved to ‘/Users/Shared/start.sh’ calls the system command ‘launchctl’ to add a plist entry into ‘launchd’ to automatically execute the [REDACTED_MALWARE] payload each time the system starts.",
+  "_meta": {
+    "label": "G0007",
+    "doc_id": "caea696527e8",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2016/2016.09.26_Sofacy_Komplex_OSX_Trojan/unit42-sofacys-komplex-os-x-trojan.pdf"
+  }
+}

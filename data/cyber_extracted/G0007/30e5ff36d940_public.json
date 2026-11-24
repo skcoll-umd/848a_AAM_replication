@@ -1,0 +1,41 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "website"
+  ],
+  "sectors": [
+    "Government"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "api",
+      "beacon",
+      "c2",
+      "command and control",
+      "ssl"
+    ],
+    "tools": [
+      "metasploit"
+    ],
+    "domains": [
+      "fireeye[.]com",
+      "icloud[.]com"
+    ]
+  },
+  "iocs": {
+    "hashes": [],
+    "domains": [
+      "fireeye.com",
+      "icloud.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "Through correlation of technical indicators and command and control infrastructure, FireEye assess that [REDACTED_ACTOR] is probably responsible for this activity. Shellcode downloads and runs executable payload 5. Executable payload exploits local privilege escalation (CVE­2015­1701) to steal System token The Flash exploit is served from unobfuscated HTML/JS. The malware uses an RC4 encryption key that was previously used by the [REDACTED_MALWARE].",
+  "_meta": {
+    "label": "G0007",
+    "doc_id": "30e5ff36d940",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2015/2015.04.18.Operation_RussianDoll/Operation RussianDoll.pdf"
+  }
+}

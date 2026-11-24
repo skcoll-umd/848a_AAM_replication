@@ -1,0 +1,51 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "document"
+  ],
+  "sectors": [
+    "Defense",
+    "Media"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "http",
+      "https",
+      "ssl"
+    ],
+    "tools": [],
+    "domains": [
+      "abelons[.]com",
+      "bayt[.]com",
+      "crt[.]sh",
+      "d[.]png",
+      "dohabayt[.]com",
+      "icebrg[.]io",
+      "internationsplanet[.]com",
+      "math[.]random",
+      "people[.]dohabayt"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "0b4f0d8d57fd1cb9b4408013aa7fe5986339ce66ad09c941e76626b5d872e0b5",
+      "6535abc68a777b82b8dca49ffbf2d80af7491e76020028a3e18186e1cad02abe"
+    ],
+    "domains": [
+      "dohabayt.com",
+      "bayt.com",
+      "abelons.com",
+      "people.dohabayt.com",
+      "internationsplanet.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "AES IV 0x14+L: AES encrypted data payload Figure 4: Structure of encrypted data To decrypt the data payload, the client decrypts the encrypted AES key using its randomly generated private key, then decrypts the data payload with the decrypted AES key. The command-and- control server has not responded with a payload for the third-stage even when phoning home from the assumed targeted region, which may signal that the campaign has been ended. The vulnerability (CVE-2018-5002) allows for a maliciously crafted Flash object to execute code on victim computers, which enables an attacker to execute a range of payloads and actions.",
+  "_meta": {
+    "label": "G0007",
+    "doc_id": "5b21351ad528",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2018/2018.06.07.dobe-flash-zero-day-targeted-attack/adobe-flash-zero-day-targeted-attack.pdf"
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [],
+  "sectors": [],
+  "infrastructure_hints": {
+    "types": [
+      "command and control",
+      "http"
+    ],
+    "tools": [
+      "rundll32"
+    ],
+    "domains": [
+      "03[.]com",
+      "agent[.]btz",
+      "credprov[.]tlb",
+      "decode[.]py",
+      "easport-news[.]publicvm",
+      "explorer[.]exe",
+      "foreignaffairs",
+      "libadcodec[.]dll",
+      "libadcodec[.]tlb",
+      "mskfp32[.]ocx",
+      "msvcrtd[.]tlb",
+      "new-book[.]linkpc",
+      "oleaut32[.]dll",
+      "oleaut32[.]tlb",
+      "rundll32[.]exe",
+      "shdocvw[.]tlb",
+      "shdocvw[.]tlp",
+      "shdocw[.]tlp",
+      "sportacademy[.]my",
+      "weather-online[.]hopto",
+      "webonline[.]mefound",
+      "winview[.]ocx"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "51e7e58a1e654b6e586fe36e10c67a73",
+      "e6ce1f962a47479a86ff2e67129f4ecc",
+      "ec7e3cfaeaac0401316d66e964be684e",
+      "0ae421691579ff6b27f65f49e79e88f6",
+      "255118ac14a9e66124f7110acd16f2cd"
+    ],
+    "domains": [
+      "weather-online.hopto.org",
+      "webonline.mefound.com",
+      "sportacademy.my03.com",
+      "easport-news.publicvm.com",
+      "new-book.linkpc.net"
+    ],
+    "mutexes": []
+  },
+  "narrative": "ComRAT’s communication to the command and control server is performed by the browser process and not by explorer.exe in order to avoid being blocked by a firewall on the system or any additional security products. Command and control server domains are shared between Uroburos and ComRAT. Dropper’s log file If the version of the malware is older than 3.26, the dropper creates an additional file called winview.ocx.",
+  "_meta": {
+    "label": "G0010",
+    "doc_id": "9a4b16b7a9dc",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2014/2014.11.11.ComRAT/The_Uroburos_case.pdf"
+  }
+}

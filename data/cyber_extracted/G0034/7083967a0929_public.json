@@ -1,0 +1,43 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "attachment",
+    "email",
+    "phishing"
+  ],
+  "sectors": [
+    "Defense",
+    "Energy",
+    "Government",
+    "Media",
+    "Telecom",
+    "Telecommunications"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "command and control",
+      "dns",
+      "tcp"
+    ],
+    "tools": [],
+    "domains": [
+      "isightpartners",
+      "temp[.]noble"
+    ]
+  },
+  "iocs": {
+    "hashes": [],
+    "domains": [
+      "isightpartners.com"
+    ],
+    "mutexes": []
+  },
+  "narrative": "Causes referenced files to be downloaded and – Windows RT executed with specific commands – Windows RT 8.1 . Mobile malware targeting multiple platforms a command and control server included a directory listing in Russian and a help – Android, Windows, IOS file for the BlackEnergyTrojan also . to – Windows Server 2012 R2 download and execute INF files – Windows 7 Service pack 1 – Windows 7 x64 Service Pack 1 –.",
+  "_meta": {
+    "label": "G0034",
+    "doc_id": "7083967a0929",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2014/2014.10.14.Sandworm/Sandworm_briefing2.pdf"
+  }
+}

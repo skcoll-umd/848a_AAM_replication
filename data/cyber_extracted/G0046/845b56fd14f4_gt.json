@@ -1,0 +1,20 @@
+{
+  "threat_actor": "FIN7",
+  "group_name": "FIN7",
+  "group_id": "G0046",
+  "mitre_intrusion_set": {
+    "id": "intrusion-set--3753cc21-2dae-4dfb-8481-d004e74502cc",
+    "gid": "G0046",
+    "name": "FIN7",
+    "matched_alias": "fin7"
+  },
+  "malware_family": "Clop ransomware",
+  "campaign_name": "Red Salt 04 ANALYSIS IN-DEPTH",
+  "attack_ttp_map": {},
+  "technique_to_tactics": {},
+  "_meta": {
+    "label": "G0046",
+    "doc_id": "845b56fd14f4",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/Report/AhnLab/ASEC_REPORT_vol.96_ENG.pdf"
+  }
+}

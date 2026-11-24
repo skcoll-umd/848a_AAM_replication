@@ -1,0 +1,65 @@
+{
+  "attack_ttp_ids": [],
+  "attack_tactic_ids": [],
+  "attack_tactics": [],
+  "delivery_vectors": [
+    "email"
+  ],
+  "sectors": [
+    "Education",
+    "Finance",
+    "Government",
+    "Legal",
+    "Media",
+    "Telecom",
+    "Telecommunications"
+  ],
+  "infrastructure_hints": {
+    "types": [
+      "api",
+      "custom protocol",
+      "http",
+      "https",
+      "proxy",
+      "ssl",
+      "tls"
+    ],
+    "tools": [
+      "cmd"
+    ],
+    "domains": [
+      "apvapi32[.]dll",
+      "backdoor[.]destover",
+      "backdoor[.]escad",
+      "cmd[.]exe",
+      "iphlpapi[.]dll",
+      "kernel32[.]dll",
+      "ntdll[.]dll",
+      "oleaut32[.]dll",
+      "proxysvc[.]dll",
+      "t[.]co",
+      "userenv[.]dll",
+      "ws2_32[.]dll",
+      "wtsapi32[.]dll"
+    ]
+  },
+  "iocs": {
+    "hashes": [
+      "8a7621dba2e88e32c02fe0889d2796a0c7cb5144",
+      "7fe373376e0357624a1d21cd803ce62aa86738b6",
+      "fe887fcab66d7d7f79f05e0266c0649f0114ba7c",
+      "8f2918c721511536d8c72144eabaf685ddc21a35",
+      "d0cb9b2d4809575e1bc1f4657e0eb56f307c7a76"
+    ],
+    "domains": [
+      "t.co"
+    ],
+    "mutexes": []
+  },
+  "narrative": "If the HTTP Content-Type matches the following value, then the implant executes the command specified by the control server: Content-Type: 8U7y3Ju387mVp49A HTTP Content-Type comparison with a custom implant value. For example, the implant can wipe and delete files, execute additional implants, read data out of files, etc. Valid command IDs reside between 0 and 0x1D. Switch case handling command execution based on command IDs.",
+  "_meta": {
+    "label": "G0032",
+    "doc_id": "887c440bb6bb",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2018/2018.04.24.Operation_GhostSecret/operation-ghostsecret.pdf"
+  }
+}

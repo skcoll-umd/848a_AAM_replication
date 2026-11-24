@@ -1,0 +1,112 @@
+{
+  "threat_actor": "Lazarus Group",
+  "group_name": "Lazarus Group",
+  "group_id": "G0032",
+  "mitre_intrusion_set": {
+    "id": "intrusion-set--c93fccb1-e8e8-42cf-ae33-2ad1d183913a",
+    "gid": "G0032",
+    "name": "Lazarus Group",
+    "matched_alias": "lazarus group"
+  },
+  "malware_family": "CommsCacher backdoor",
+  "campaign_name": null,
+  "attack_ttp_map": {
+    "T1047": "Windows Management Instrumentation",
+    "T1033": "System Owner/User Discovery",
+    "T1218.011": "Rundll32",
+    "T1087.001": "Local Account",
+    "T1543.003": "Windows Service",
+    "T1069.002": "Domain Groups",
+    "T1135": "Network Share Discovery",
+    "T1082": "System Information Discovery",
+    "T1106": "Native API",
+    "T1547.009": "Shortcut Modification",
+    "T1021.002": "SMB/Windows Admin Shares",
+    "T1016": "System Network Configuration Discovery",
+    "T1057": "Process Discovery",
+    "T1027": "Obfuscated Files or Information",
+    "T1012": "Query Registry",
+    "T1059.003": "Windows Command Shell",
+    "T1132.002": "Non-Standard Encoding",
+    "T1070.004": "File Deletion",
+    "T1071.001": "Web Protocols",
+    "T1136": "Create Account",
+    "T1564.001": "Hidden Files and Directories",
+    "T1566.003": "Spearphishing via Service"
+  },
+  "technique_to_tactics": {
+    "T1047": [
+      "TA0002"
+    ],
+    "T1033": [
+      "TA0007"
+    ],
+    "T1218.011": [
+      "TA0005"
+    ],
+    "T1087.001": [
+      "TA0007"
+    ],
+    "T1543.003": [
+      "TA0003",
+      "TA0004"
+    ],
+    "T1069.002": [
+      "TA0007"
+    ],
+    "T1135": [
+      "TA0007"
+    ],
+    "T1082": [
+      "TA0007"
+    ],
+    "T1106": [
+      "TA0002"
+    ],
+    "T1547.009": [
+      "TA0003",
+      "TA0004"
+    ],
+    "T1021.002": [
+      "TA0008"
+    ],
+    "T1016": [
+      "TA0007"
+    ],
+    "T1057": [
+      "TA0007"
+    ],
+    "T1027": [
+      "TA0005"
+    ],
+    "T1012": [
+      "TA0007"
+    ],
+    "T1059.003": [
+      "TA0002"
+    ],
+    "T1132.002": [
+      "TA0011"
+    ],
+    "T1070.004": [
+      "TA0005"
+    ],
+    "T1071.001": [
+      "TA0011"
+    ],
+    "T1136": [
+      "TA0003"
+    ],
+    "T1564.001": [
+      "TA0005"
+    ],
+    "T1566.003": [
+      "TA0001"
+    ]
+  },
+  "_meta": {
+    "label": "G0032",
+    "doc_id": "846344a38096",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2021/2021.04.27.Lazarus_Group_Recruitment/Lazarus Group Recruitment_ Threat Hunters vs Head Hunters.pdf"
+  }
+}

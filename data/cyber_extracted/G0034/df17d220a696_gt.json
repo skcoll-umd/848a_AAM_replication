@@ -1,0 +1,20 @@
+{
+  "threat_actor": "Dragonfly",
+  "group_name": "Dragonfly",
+  "group_id": "G0035",
+  "mitre_intrusion_set": {
+    "id": "intrusion-set--1c63d4ec-0a75-4daa-b1df-0d11af3d3cc1",
+    "gid": "G0035",
+    "name": "Dragonfly",
+    "matched_alias": "dragonfly"
+  },
+  "malware_family": "Other RAT",
+  "campaign_name": null,
+  "attack_ttp_map": {},
+  "technique_to_tactics": {},
+  "_meta": {
+    "label": "G0034",
+    "doc_id": "df17d220a696",
+    "source_pdf": "/Users/susan/Documents/PhD/HCI - Uncertainty/Project/TRACER/APT_CyberCriminal_Campagin_Collections/2016/2016.11.03.Ukraine_Cybersecurity_Threat_Briefing/ukraine-report-when-the-lights-went-out.pdf"
+  }
+}
